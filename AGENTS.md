@@ -1,4 +1,4 @@
-﻿# Plotquake ⚡ - Canal Dark de Documentários (Diretrizes Canônicas para Agentes e IAs)
+# Plotquake ⚡ - Canal Dark de Documentários (Diretrizes Canônicas para Agentes e IAs)
 
 Este documento é a instrução mandatória e guia mestre do canal **Plotquake**. Qualquer agente de IA ou assistente que atue neste repositório deve ler e seguir estritamente as regras abaixo.
 
@@ -46,8 +46,9 @@ Nenhum documentário do Plotquake é uma aula acadêmica chata; é um **duelo dr
 
 ## 4. Voz e Narração (Gemini 3.8 Live)
 - **Motor Canônico**: **Gemini 3.8 Live** (`google-genai` SDK WebSocket).
-- **Voz Canônica**: **Charon** (ou **Fenrir**) em inglês.
-- **Estilo de Entrega**: Narrador grave, cinematográfico, pausado e autoritário (estilo locutor de cinema e History Channel). Pausas dramáticas antes de números astronômicos e revelações.
+- **Voz Canônica**: Estritamente **Masculina** (**Charon** como padrão oficial ou **Fenrir**) em inglês.
+- **Calibração Tonal Grave**: Configurado para soar **pouca coisa mais grave que o padrão** (-1.0 semitom de afinação) com ressonância barítona de peito e dicção cinematográfica de "voz de autoridade/voz de cinema". O script `worker/synthesize_narration.py` aplica automaticamente a instrução vocal no Gemini Live e calibra o tom via FFmpeg preservando o tempo e a naturalidade milimétrica do áudio.
+- **Estilo de Entrega**: Narrador sério, dramático, pausado e autoritário (estilo locutor de documentários do History Channel/Netflix). Pausas dramáticas antes de números astronômicos e revelações de enredo.
 - **Trilha Sonora**: Base de tensão contínua em sub-graves (*tension drone*) em `public/assets/audio/tension_score.wav` somada a efeitos sonoros pontuais.
 - **Regra**: Nunca use sintetizadores básicos de sistema operacional (como Windows SAPI) para produções oficiais.
 
@@ -65,7 +66,7 @@ Nenhum documentário do Plotquake é uma aula acadêmica chata; é um **duelo dr
 
 ## 6. Fluxo de Produção e Entrega na Nuvem
 1. O roteiro é salvo estruturado em `episodes/` ou em `src/episodes/pilotEpisode.ts`.
-2. A voz é sintetizada via `python worker/synthesize_narration.py` com Gemini 3.8 Live.
+2. A voz é sintetizada via `python worker/synthesize_narration.py` com Gemini 3.8 Live (com calibração grave barítona).
 3. O render roda no **GitHub Actions** (`.github/workflows/render-documentary.yml`) sem consumir a máquina do usuário.
 4. O script `worker/upload_outputs_to_drive.py` faz o upload automático na pasta do Google Drive com:
    - `documentary_final.mp4` (Vídeo Full HD 1080p);
