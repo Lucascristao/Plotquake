@@ -1,0 +1,108 @@
+﻿name: Render Documentary - Plotquake
+
+on:
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: "Remotion Composition to render (Documentary / Act1)"
+        type: choice
+        options:
+          - Documentary
+          - Act1
+        default: Documentary
+        required: true
+      episode_name:
+        description: "Episode Folder Name in Google Drive"
+        type: string
+        default: "The $50 Billion Fall of BlackBerry"
+        required: true
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    env:
+      GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+      GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+      GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+
+      - name: Install Node Dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Install Python Dependencies
+        run: pip install -r worker/requirements.txt
+
+      - name: Create Renders Directory
+        run: mkdir -p renders
+
+      - name: Render Video with Remotion (Full HD 1080p)
+        run: |
+          npx remotion render src/index.ts ${{ inputs.composition }} renders/documentary_final.mp4 \
+            --gl=angle \
+            --concurrency=2
+
+      - name: Render Official Thumbnail Still (1280x720)
+        run: |
+          npx remotion still src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg \
+            --frame=120 \
+            --image-format=jpeg
+
+      - name: Generate YouTube Packaging Metadata
+        run: |
+          cat << 'EOF' > renders/youtube_package.txt
+          TITLE:
+          The $50 Billion Mistake: How BlackBerry Lost Everything
+
+          DESCRIPTION:
+          In 2007, BlackBerry controlled more than 50% of the entire smartphone market. Wall Street, the White House, and global executives could not live without their physical keyboards. But when Steve Jobs walked onto the stage in San Francisco to unveil the iPhone, BlackBerry executives laughed it off as a toy.
+
+          This is the inside story of how arrogance, blindness to touchscreens, and corporate delusion destroyed one of the greatest tech empires in human history.
+
+          TIMESTAMPS:
+          00:00 - The Monopoly of Power
+          02:30 - The Secret Meeting in Waterloo
+          06:15 - The Day the World Changed
+          12:45 - The Collapse
+
+          CHANNEL:
+          Plotquake • Stories That Shake Empires
+          EOF
+
+      - name: Upload Package to Google Drive
+        if: env.GOOGLE_CLIENT_ID != '' && env.GOOGLE_DRIVE_FOLDER_ID != ''
+        run: |
+          python worker/upload_outputs_to_drive.py \
+            --video renders/documentary_final.mp4 \
+            --thumbnail renders/thumbnail.jpg \
+            --metadata renders/youtube_package.txt \
+            --episode-name "${{ inputs.episode_name }}"
+
+      - name: Upload Artifacts to GitHub (Backup)
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentary-package
+          path: renders/

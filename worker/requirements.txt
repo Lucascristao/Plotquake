@@ -1,0 +1,6 @@
+﻿google-api-python-client>=2.110.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.0
+google-genai>=0.1.1
+requests>=2.31.0
+yt-dlp>=2024.08.06

@@ -1,0 +1,8 @@
+﻿node_modules/
+renders/
+.remotion/
+*.mp4
+*.wav
+__pycache__/
+*.pyc
+.env
