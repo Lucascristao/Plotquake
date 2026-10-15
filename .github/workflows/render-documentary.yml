@@ -55,8 +55,18 @@ jobs:
       - name: Install Python Dependencies
         run: pip install -r worker/requirements.txt
 
-      - name: Create Renders Directory
-        run: mkdir -p renders
+      - name: Create Directories
+        run: |
+          mkdir -p renders
+          mkdir -p public/assets/audio
+          mkdir -p public/assets/images
+
+      - name: Synthesize Studio Narration with Gemini 3.8 Live
+        if: env.GEMINI_API_KEY != ''
+        run: |
+          python worker/synthesize_narration.py \
+            --output public/assets/audio/narration.wav \
+            --voice Charon
 
       - name: Render Video with Remotion (Full HD 1080p)
         run: |
@@ -64,11 +74,15 @@ jobs:
             --gl=angle \
             --concurrency=2
 
-      - name: Render Official Thumbnail Still (1280x720)
+      - name: Prepare Official Thumbnail (Dedicated High-CTR Art)
         run: |
-          npm run still -- src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg \
-            --frame=120 \
-            --image-format=jpeg
+          if [ -f public/assets/images/thumbnail_concept.jpg ]; then
+            echo "Using dedicated Plotquake thumbnail art..."
+            cp public/assets/images/thumbnail_concept.jpg renders/thumbnail.jpg
+          else
+            echo "Fallback to still capture..."
+            npm run still -- src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg --frame=120 --image-format=jpeg
+          fi
 
       - name: Generate YouTube Packaging Metadata
         run: |
