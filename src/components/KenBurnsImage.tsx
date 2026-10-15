@@ -1,4 +1,5 @@
-﻿import {Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Img, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {PLOTQUAKE_THEME} from '../theme';
 
 type KenBurnsProps = {
   src: string;
@@ -93,7 +94,7 @@ export const KenBurnsImage = ({
         }}
       />
 
-      {/* Documentary Caption Lower Third */}
+      {/* Documentary Caption Lower Third with Plotquake Orange Accent */}
       {(caption || sourceLabel) && (
         <div
           style={{
@@ -103,9 +104,9 @@ export const KenBurnsImage = ({
             padding: '16px 28px',
             backgroundColor: 'rgba(9, 13, 20, 0.85)',
             backdropFilter: 'blur(12px)',
-            borderLeft: '4px solid #f59e0b',
+            borderLeft: `5px solid ${PLOTQUAKE_THEME.colors.primary}`,
             borderRadius: '0 12px 12px 0',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
+            boxShadow: '0 10px 40px rgba(0,0,0,0.5), -5px 0 20px rgba(255, 85, 0, 0.3)',
           }}
         >
           {caption && (

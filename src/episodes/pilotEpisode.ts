@@ -1,4 +1,4 @@
-﻿export type DocumentaryScene = {
+export type DocumentaryScene = {
   id: string;
   durationInFrames: number;
   type: 'kenburns' | 'newspaper' | 'chart' | 'quote' | 'broll';
@@ -92,9 +92,9 @@ export const pilotEpisode: DocumentaryEpisode = {
             year: '2007',
             data: [
               {label: 'BlackBerry (RIM)', percentage: 51, color: '#ff5500'},
-              {label: 'Nokia (Symbian)', percentage: 34, color: '#3b82f6'},
-              {label: 'Apple (iPhone 1st Gen)', percentage: 3, color: '#94a3b8'},
-              {label: 'Others', percentage: 12, color: '#64748b'},
+              {label: 'Nokia (Symbian)', percentage: 34, color: '#475569'},
+              {label: 'Apple (iPhone 1st Gen)', percentage: 3, color: '#334155'},
+              {label: 'Others', percentage: 12, color: '#1e293b'},
             ],
           },
         },

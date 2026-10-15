@@ -11,21 +11,26 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 
 ---
 
-## 2. Identidade Visual e Paleta de Cores
-- **Cor Primária de Assinatura**: **Laranja Plotquake (`#FF5500` / `#FF6B00`)**. Representa alerta sísmico, perigo, calor e energia de ruptura.
-- **Cores de Suporte**:
-  - Fundo: Preto/Grafite Cinematográfico Profundo (`#030712` / `#080B11`);
-  - Texto Primário: Branco Puro (`#FFFFFF`) e Branco Suave (`#F8FAFC`);
-  - Texto Secundário: Slate/Cinza Neutro (`#94A3B8`);
-  - Destaques de Contraste: Azul Corporativo (`#3B82F6`) e Dourado/Âmbar (`#F59E0B`).
+## 2. Identidade Visual e Paleta de Cores (REGRA DO LARANJA EXCLUSIVO)
+- **REGRA MANDATÓRIA DE COR**: A única cor de destaque (*accent color*) permitida no vídeo é o **Laranja Plotquake (`#FF5500` / `#FF6B00`)**. Se houver qualquer detalhe de cor em cena, **TEM QUE SER LARANJA**. É proibido usar detalhes em azul, amarelo, verde ou roxo na interface gráfica.
+- **Tokens Canônicos (em `src/theme.ts`)**:
+  - `PLOTQUAKE_THEME.colors.primary`: `#FF5500` (Laranja Sísmico)
+  - `PLOTQUAKE_THEME.colors.primaryLight`: `#FF6B00`
+  - `PLOTQUAKE_THEME.colors.primaryGlow`: `rgba(255, 85, 0, 0.45)` (Glow/brilho de neon)
+  - `PLOTQUAKE_THEME.colors.primaryHighlight`: `rgba(255, 85, 0, 0.45)` (Marca-texto neon laranja para jornais)
+- **Cores de Suporte (Monocromáticas e Cinematográficas)**:
+  - Fundo Geral: Preto e Grafite Profundo (`#030712` / `#05070c`);
+  - Fundo de Cartões: Slate Escuro (`#0c1322` / `rgba(15, 23, 42, 0.9)`);
+  - Tipografia: Branco Puro (`#FFFFFF`), Branco Suave (`#F8FAFC`) e Cinza Muted (`#94A3B8`);
+  - Gráficos Competitivos: O protagonista é sempre **Laranja (`#FF5500`)** com brilho. Os concorrentes usam tons neutros de slate escuro (`#475569`, `#334155`, `#1e293b`), garantindo que apenas o laranja salte aos olhos.
 - **Resolução e Formato**: **Full HD Horizontal (`1920x1080`) a 30 FPS**.
 - **Componentes Oficiais Remotion** (em `src/components/`):
-  1. `KenBurnsImage`: Zoom suave (in/out) de 1.0 a 1.15, pan, vinheta escura, textura sutil de filme e lower-third documental.
-  2. `NewspaperPop`: Jornal de época texturizado com rotação, manchete em caixa alta e marcação em marca-texto amarelo animado nas frases de choque.
-  3. `MarketChart`: Gráficos animados de barras mostrando disputa de fatia de mercado (*market share*).
-  4. `QuoteCard`: Cartão com citação de CEOs e figuras históricas, com ano e cargo em destaque.
-  5. `BrollPlayer`: Player de clipes de arquivo reais (cinemascope 2.39:1, granulação e badge de acervo histórico em laranja).
-  6. `ActMarker`: Cartões de transição sísmica que abrem cada um dos 4 atos com linhas de grade e tipografia monumental.
+  1. `KenBurnsImage`: Zoom cinematográfico suave, granulação, vinheta e lower-third com borda e glow no Laranja Plotquake.
+  2. `NewspaperPop`: Jornal com rotação 3D, manchete de época e submanchete destacada com **marca-texto neon laranja**.
+  3. `MarketChart`: Gráfico de barras animado com ano e barra principal no Laranja Plotquake.
+  4. `QuoteCard`: Cartão de citação executiva com aspas gigantes, borda esquerda e ano em destaque no Laranja Plotquake.
+  5. `BrollPlayer`: Player de arquivo histórico em cinemascope 2.39:1 com badge e LED de gravação no Laranja Plotquake.
+  6. `ActMarker`: Transição monumental dos 4 atos com grade sísmica e linha de energia no Laranja Plotquake.
 
 ---
 

@@ -1,4 +1,5 @@
-﻿import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {PLOTQUAKE_THEME} from '../theme';
 
 type QuoteCardProps = {
   quote: string;
@@ -53,22 +54,23 @@ export const QuoteCard = ({
           padding: '60px 70px',
           backgroundColor: 'rgba(15, 23, 42, 0.9)',
           border: '1px solid rgba(255, 255, 255, 0.12)',
-          borderLeft: '8px solid #f59e0b',
+          borderLeft: `8px solid ${PLOTQUAKE_THEME.colors.primary}`,
           borderRadius: 24,
-          boxShadow: '0 30px 100px rgba(0,0,0,0.7)',
+          boxShadow: '0 30px 100px rgba(0,0,0,0.7), -10px 0 35px rgba(255, 85, 0, 0.3)',
           transform: `translateY(${translateY}px)`,
         }}
       >
         <div
           style={{
-            color: '#f59e0b',
+            color: PLOTQUAKE_THEME.colors.primary,
             fontSize: 72,
             fontFamily: '"Georgia", serif',
             lineHeight: 0.5,
             marginBottom: 20,
+            textShadow: '0 0 20px rgba(255, 85, 0, 0.5)',
           }}
         >
-          “
+          "
         </div>
 
         <div
@@ -108,10 +110,11 @@ export const QuoteCard = ({
           {year && (
             <div
               style={{
-                color: '#f59e0b',
+                color: PLOTQUAKE_THEME.colors.primary,
                 fontSize: 24,
                 fontWeight: 800,
-                backgroundColor: 'rgba(245, 158, 11, 0.15)',
+                backgroundColor: 'rgba(255, 85, 0, 0.15)',
+                border: '1px solid rgba(255, 85, 0, 0.35)',
                 padding: '6px 18px',
                 borderRadius: 12,
               }}

@@ -1,4 +1,5 @@
-﻿import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {PLOTQUAKE_THEME} from '../theme';
 
 type MarketDataPoint = {
   label: string;
@@ -52,8 +53,9 @@ export const MarketChart = ({
           padding: '48px 56px',
           backgroundColor: '#0c1322',
           border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderTop: `4px solid ${PLOTQUAKE_THEME.colors.primary}`,
           borderRadius: 24,
-          boxShadow: '0 30px 100px rgba(0,0,0,0.8)',
+          boxShadow: '0 30px 100px rgba(0,0,0,0.8), 0 0 30px rgba(255, 85, 0, 0.15)',
         }}
       >
         <div
@@ -70,7 +72,7 @@ export const MarketChart = ({
             {title}
           </div>
           {year && (
-            <div style={{color: '#f59e0b', fontSize: 28, fontWeight: 900}}>
+            <div style={{color: PLOTQUAKE_THEME.colors.primary, fontSize: 28, fontWeight: 900}}>
               {year}
             </div>
           )}
@@ -89,6 +91,9 @@ export const MarketChart = ({
               extrapolateRight: 'clamp',
             });
 
+            const barColor = item.color ?? (index === 0 ? PLOTQUAKE_THEME.colors.primary : '#475569');
+            const isOrange = barColor === PLOTQUAKE_THEME.colors.primary || barColor.toLowerCase() === '#ff5500';
+
             return (
               <div key={item.label} style={{display: 'grid', gap: 10}}>
                 <div
@@ -101,7 +106,7 @@ export const MarketChart = ({
                   }}
                 >
                   <span>{item.label}</span>
-                  <span style={{color: item.color ?? '#f59e0b'}}>
+                  <span style={{color: barColor}}>
                     {Math.round(barWidth)}%
                   </span>
                 </div>
@@ -119,8 +124,9 @@ export const MarketChart = ({
                     style={{
                       width: `${barWidth}%`,
                       height: '100%',
-                      backgroundColor: item.color ?? '#f59e0b',
+                      backgroundColor: barColor,
                       borderRadius: 12,
+                      boxShadow: isOrange ? '0 0 16px rgba(255, 85, 0, 0.6)' : 'none',
                     }}
                   />
                 </div>

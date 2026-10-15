@@ -1,4 +1,5 @@
-﻿import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {PLOTQUAKE_THEME} from '../theme';
 
 type NewspaperPopProps = {
   headline: string;
@@ -115,7 +116,7 @@ export const NewspaperPop = ({
           {headline}
         </div>
 
-        {/* Subheadline with yellow highlighter marker effect */}
+        {/* Subheadline with Plotquake Orange neon highlighter marker effect */}
         {subheadline && (
           <div
             style={{
@@ -123,12 +124,13 @@ export const NewspaperPop = ({
               lineHeight: 1.35,
               fontWeight: 600,
               textAlign: 'center',
-              color: '#2a2620',
+              color: '#1a1815',
               padding: '12px 24px',
-              backgroundColor: 'rgba(250, 204, 21, 0.4)', // Marker highlight
+              backgroundColor: PLOTQUAKE_THEME.colors.primaryHighlight,
               display: 'inline-block',
               width: '100%',
               boxSizing: 'border-box',
+              borderRadius: 4,
             }}
           >
             {subheadline}

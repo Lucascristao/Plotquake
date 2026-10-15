@@ -1,4 +1,5 @@
-﻿import {OffthreadVideo, staticFile, useCurrentFrame, interpolate} from 'remotion';
+import {OffthreadVideo, staticFile, useCurrentFrame, interpolate} from 'remotion';
+import {PLOTQUAKE_THEME} from '../theme';
 
 type BrollPlayerProps = {
   src: string;
@@ -79,7 +80,7 @@ export const BrollPlayer = ({
         }}
       />
 
-      {/* Plotquake Orange Badge */}
+      {/* Plotquake Orange Archive Badge */}
       <div
         style={{
           position: 'absolute',
@@ -90,7 +91,7 @@ export const BrollPlayer = ({
           gap: 12,
           padding: '10px 22px',
           backgroundColor: 'rgba(10, 13, 20, 0.85)',
-          borderLeft: '5px solid #ff5500',
+          borderLeft: `5px solid ${PLOTQUAKE_THEME.colors.primary}`,
           backdropFilter: 'blur(10px)',
           borderRadius: '0 8px 8px 0',
         }}
@@ -100,8 +101,8 @@ export const BrollPlayer = ({
             width: 10,
             height: 10,
             borderRadius: '50%',
-            backgroundColor: '#ff5500',
-            boxShadow: '0 0 12px #ff5500',
+            backgroundColor: PLOTQUAKE_THEME.colors.primary,
+            boxShadow: `0 0 12px ${PLOTQUAKE_THEME.colors.primary}`,
           }}
         />
         <span
