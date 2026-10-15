@@ -5,10 +5,8 @@
   "description": "High-retention business, tech and historical documentaries engine in Remotion.",
   "scripts": {
     "studio": "remotion studio",
-    "dev": "remotion studio",
     "render": "remotion render",
-    "compositions": "remotion compositions",
-    "preview": "remotion preview"
+    "still": "remotion still"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.465",
@@ -17,6 +15,8 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "remotion": "^4.0.465",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "@remotion/bundler": "4.0.465",
+    "@remotion/renderer": "4.0.465"
   }
 }

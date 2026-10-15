@@ -41,7 +41,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -61,13 +60,13 @@ jobs:
 
       - name: Render Video with Remotion (Full HD 1080p)
         run: |
-          npx remotion render src/index.ts ${{ inputs.composition }} renders/documentary_final.mp4 \
+          npm run render -- src/index.ts ${{ inputs.composition }} renders/documentary_final.mp4 \
             --gl=angle \
             --concurrency=2
 
       - name: Render Official Thumbnail Still (1280x720)
         run: |
-          npx remotion still src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg \
+          npm run still -- src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg \
             --frame=120 \
             --image-format=jpeg
 
