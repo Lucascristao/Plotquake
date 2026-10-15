@@ -1,9 +1,10 @@
-﻿import {AbsoluteFill, Sequence} from 'remotion';
+﻿import {AbsoluteFill, Sequence, Audio, staticFile} from 'remotion';
 import {KenBurnsImage} from '../components/KenBurnsImage';
 import {NewspaperPop} from '../components/NewspaperPop';
 import {MarketChart} from '../components/MarketChart';
 import {QuoteCard} from '../components/QuoteCard';
 import {ActMarker} from '../components/ActMarker';
+import {BrollPlayer} from '../components/BrollPlayer';
 import type {DocumentaryEpisode} from '../episodes/pilotEpisode';
 
 type DocumentaryProps = {
@@ -13,18 +14,37 @@ type DocumentaryProps = {
 export const Documentary = ({episode}: DocumentaryProps) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#030712'}}>
+      {/* 1. Background Cinematic Tension Score */}
+      {episode.audio?.music && (
+        <Audio
+          src={staticFile(episode.audio.music)}
+          volume={0.35}
+        />
+      )}
+
+      {/* 2. Primary English Voice Narration (Starts at frame 30 after Act title) */}
+      {episode.audio?.narration && (
+        <Sequence from={25}>
+          <Audio
+            src={staticFile(episode.audio.narration)}
+            volume={1.0}
+          />
+        </Sequence>
+      )}
+
+      {/* 3. Visual Acts and Scenes */}
       {episode.acts.map((act) => {
         let currentFrameOffset = 0;
 
         return (
           <Sequence key={act.id} from={0} durationInFrames={act.durationInFrames}>
-            {/* Act Introduction Marker (first 60 frames) */}
-            <Sequence from={0} durationInFrames={60}>
+            {/* Act Introduction Marker (first 55 frames) */}
+            <Sequence from={0} durationInFrames={55}>
               <ActMarker
                 actNumber={act.actNumber}
                 actTitle={act.actTitle}
                 subtitle={act.subtitle}
-                durationInFrames={60}
+                durationInFrames={55}
               />
             </Sequence>
 
@@ -39,6 +59,14 @@ export const Documentary = ({episode}: DocumentaryProps) => {
                   from={fromFrame}
                   durationInFrames={scene.durationInFrames}
                 >
+                  {scene.type === 'broll' && scene.videoSrc && (
+                    <BrollPlayer
+                      src={scene.videoSrc}
+                      durationInFrames={scene.durationInFrames}
+                      label={scene.sourceLabel}
+                    />
+                  )}
+
                   {scene.type === 'kenburns' && scene.image && (
                     <KenBurnsImage
                       src={scene.image}

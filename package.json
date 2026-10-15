@@ -6,7 +6,9 @@
   "scripts": {
     "studio": "remotion studio",
     "render": "remotion render",
-    "still": "remotion still"
+    "still": "remotion still",
+    "compositions": "remotion compositions",
+    "preview": "remotion preview"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.465",

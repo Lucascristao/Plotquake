@@ -1,8 +1,9 @@
 ﻿export type DocumentaryScene = {
   id: string;
   durationInFrames: number;
-  type: 'kenburns' | 'newspaper' | 'chart' | 'quote';
+  type: 'kenburns' | 'newspaper' | 'chart' | 'quote' | 'broll';
   image?: string;
+  videoSrc?: string;
   zoom?: 'in' | 'out';
   pan?: 'left' | 'right' | 'up' | 'down';
   caption?: string;
@@ -40,6 +41,10 @@ export type DocumentaryEpisode = {
   title: string;
   subtitle: string;
   durationInFrames: number;
+  audio?: {
+    narration?: string;
+    music?: string;
+  };
   acts: DocumentaryAct[];
 };
 
@@ -47,23 +52,25 @@ export const pilotEpisode: DocumentaryEpisode = {
   id: 'the-fall-of-blackberry',
   title: 'The $50 Billion Fall of BlackBerry',
   subtitle: 'How two engineers created an empire that owned 50% of the market—and lost it all.',
-  durationInFrames: 360,
+  durationInFrames: 420, // 14 seconds test
+  audio: {
+    narration: 'assets/audio/narration.wav',
+    music: 'assets/audio/tension_score.wav',
+  },
   acts: [
     {
       id: 'act-1',
       actNumber: 1,
       actTitle: 'The Wall Street Addiction',
       subtitle: 'In 2007, BlackBerry was not just a phone. It was power.',
-      durationInFrames: 360,
+      durationInFrames: 420,
       scenes: [
         {
-          id: 'scene-1-marker',
-          durationInFrames: 90,
-          type: 'kenburns',
-          image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1920&auto=format&fit=crop',
-          zoom: 'in',
-          caption: 'Research In Motion (RIM) Headquarters • Ontario, Canada',
-          sourceLabel: 'Historical Archive',
+          id: 'scene-1-broll',
+          durationInFrames: 110,
+          type: 'broll',
+          videoSrc: 'assets/videos/archive_footage.mp4',
+          sourceLabel: 'Archival Database • Wall Street Footage (2007)',
         },
         {
           id: 'scene-2-newspaper',
@@ -78,13 +85,13 @@ export const pilotEpisode: DocumentaryEpisode = {
         },
         {
           id: 'scene-3-chart',
-          durationInFrames: 90,
+          durationInFrames: 110,
           type: 'chart',
           chart: {
             title: 'Global Smartphone Market Share (2007)',
             year: '2007',
             data: [
-              {label: 'BlackBerry (RIM)', percentage: 51, color: '#f59e0b'},
+              {label: 'BlackBerry (RIM)', percentage: 51, color: '#ff5500'},
               {label: 'Nokia (Symbian)', percentage: 34, color: '#3b82f6'},
               {label: 'Apple (iPhone 1st Gen)', percentage: 3, color: '#94a3b8'},
               {label: 'Others', percentage: 12, color: '#64748b'},
@@ -93,7 +100,7 @@ export const pilotEpisode: DocumentaryEpisode = {
         },
         {
           id: 'scene-4-quote',
-          durationInFrames: 80,
+          durationInFrames: 100,
           type: 'quote',
           quote: {
             text: 'It is okay, we will be fine. Apple is making a toy for kids. We make tools for real businessmen.',
