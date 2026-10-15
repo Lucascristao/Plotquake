@@ -51,7 +51,7 @@ jobs:
           cache-dependency-path: worker/requirements.txt
 
       - name: Install Node Dependencies
-        run: npm ci --no-audit --no-fund
+        run: npm install --no-audit --no-fund
 
       - name: Install Python Dependencies
         run: pip install -r worker/requirements.txt
