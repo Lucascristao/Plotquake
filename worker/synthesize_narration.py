@@ -6,10 +6,8 @@ import sys
 import wave
 from pathlib import Path
 
-# Gemini 3.8 Live constants
 PRIMARY_LIVE_MODEL = "gemini-3.8-live"
-FALLBACK_TTS_MODEL = "gemini-2.0-flash"
-DEFAULT_VOICE = "Charon"  # Deep, authoritative, cinematic American documentary narrator
+DEFAULT_VOICE = "Charon"  # Authoritative, deep, cinematic documentary narrator
 
 DOCUMENTARY_VOICE_PROMPT = """
 You are the official voice of Plotquake documentaries.
@@ -22,58 +20,58 @@ Crucial: Read the text exactly as provided without adding greetings, sign-offs, 
 
 async def synthesize_with_live_api(text: str, output_path: str, voice_name: str = DEFAULT_VOICE, api_key: str = ""):
     from google import genai
-    from google.genai import types
 
     client = genai.Client(api_key=api_key or os.getenv("GEMINI_API_KEY", ""))
 
-    config = types.LiveConnectConfig(
-        response_modalities=[types.LiveServerContentResponseModalities.AUDIO],
-        speech_config=types.SpeechConfig(
-            voice_config=types.VoiceConfig(
-                prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice_name)
-            )
-        ),
-        system_instruction=types.Content(
-            parts=[types.Part.from_text(text=DOCUMENTARY_VOICE_PROMPT)]
-        ),
-    )
+    config = {
+        "response_modalities": ["AUDIO"],
+        "speech_config": {
+            "voice_config": {
+                "prebuilt_voice_config": {"voice_name": voice_name}
+            }
+        },
+        "system_instruction": {
+            "parts": [{"text": DOCUMENTARY_VOICE_PROMPT}]
+        },
+    }
 
     pcm_chunks = []
-    print(f"[Plotquake Voice] Connecting to Gemini 3.8 Live ({voice_name})...")
+    print(f"[Plotquake Voice] Connecting to Gemini 3.8 Live with voice '{voice_name}'...")
 
-    # Connect to Gemini Live WebSocket
     async with client.aio.live.connect(model=PRIMARY_LIVE_MODEL, config=config) as session:
-        print("[Plotquake Voice] Sending narration script to Gemini Live...")
+        print("[Plotquake Voice] Sending documentary narration script...")
         await session.send_client_content(
             turns=[
-                types.Content(
-                    role="user",
-                    parts=[types.Part.from_text(text=f"Please narrate this script faithfully:\n\n{text}")]
-                )
+                {
+                    "role": "user",
+                    "parts": [{"text": f"Please narrate this script faithfully:\n\n{text}"}]
+                }
             ],
             turn_complete=True,
         )
 
         async for response in session.receive():
-            server_content = response.server_content
-            if server_content is not None:
-                model_turn = server_content.model_turn
-                if model_turn is not None:
-                    for part in model_turn.parts:
-                        if part.inline_data and part.inline_data.data:
-                            pcm_chunks.append(part.inline_data.data)
+            server = getattr(response, "server_content", None)
+            if server is None:
+                continue
 
-                if server_content.turn_complete:
-                    print("[Plotquake Voice] Gemini Live narration stream finished.")
-                    break
+            model_turn = getattr(server, "model_turn", None)
+            if model_turn:
+                for part in getattr(model_turn, "parts", []):
+                    inline = getattr(part, "inline_data", None)
+                    if inline and inline.data:
+                        pcm_chunks.append(inline.data)
+
+            if getattr(server, "turn_complete", False):
+                print("[Plotquake Voice] Narration stream successfully completed!")
+                break
 
     if not pcm_chunks:
-        raise RuntimeError("No audio data received from Gemini 3.8 Live.")
+        raise RuntimeError("No audio chunks received from Gemini 3.8 Live.")
 
     raw_pcm = b"".join(pcm_chunks)
     print(f"[Plotquake Voice] Received {len(raw_pcm)} bytes of studio audio (24kHz PCM). Saving to {output_path}...")
 
-    # Save as 24kHz, 16-bit Mono WAV
     out_file = Path(output_path)
     out_file.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(out_file), "wb") as wav:
@@ -82,7 +80,7 @@ async def synthesize_with_live_api(text: str, output_path: str, voice_name: str 
         wav.setframerate(24000)
         wav.writeframes(raw_pcm)
 
-    print(f"[Plotquake Voice] SUCCESS! Narrated audio saved to {output_path}")
+    print(f"[Plotquake Voice] SUCCESS! Narrated studio audio saved to {output_path}")
 
 def main():
     parser = argparse.ArgumentParser(description="Synthesize Plotquake narration with Gemini 3.8 Live")
@@ -99,7 +97,6 @@ def main():
         path = Path(args.script_file)
         if path.suffix == ".json":
             data = json.loads(path.read_text(encoding="utf-8"))
-            # If episode format, join all scene narration strings
             narration_text = data.get("narration") or " ".join(
                 scene.get("narration", "") for act in data.get("acts", []) for scene in act.get("scenes", [])
             )
