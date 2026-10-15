@@ -1,39 +1,22 @@
-﻿import {Composition} from 'remotion';
+import {Composition} from 'remotion';
 import {Documentary} from './compositions/Documentary';
-import {pilotEpisode} from './episodes/pilotEpisode';
+import preparedEpisode from './episodes/renderEpisode.json';
+import type {DocumentaryEpisode} from './types';
 
-export const RemotionRoot = () => {
-  return (
-    <>
-      {/* Full Documentary Composition (1920x1080 Full HD, 30fps) */}
-      <Composition
-        id="Documentary"
-        component={Documentary}
-        durationInFrames={pilotEpisode.durationInFrames}
-        fps={30}
-        width={1920}
-        height={1080}
-        defaultProps={{
-          episode: pilotEpisode,
-        }}
-      />
+const episode = preparedEpisode as DocumentaryEpisode;
 
-      {/* Act 1 Preview Composition for Fast Testing */}
-      <Composition
-        id="Act1"
-        component={Documentary}
-        durationInFrames={pilotEpisode.acts[0].durationInFrames}
-        fps={30}
-        width={1920}
-        height={1080}
-        defaultProps={{
-          episode: {
-            ...pilotEpisode,
-            durationInFrames: pilotEpisode.acts[0].durationInFrames,
-            acts: [pilotEpisode.acts[0]],
-          },
-        }}
-      />
-    </>
-  );
-};
+export const RemotionRoot = () => (
+  <>
+    <Composition id="Documentary" component={Documentary}
+      durationInFrames={episode.durationInFrames} fps={episode.fps || 30} width={1920} height={1080}
+      defaultProps={{episode}}
+      calculateMetadata={({props}) => ({
+        durationInFrames: props.episode.durationInFrames,
+        fps: props.episode.fps || 30,
+      })} />
+    <Composition id="OpeningPreview" component={Documentary}
+      durationInFrames={Math.min(60 * (episode.fps || 30), episode.durationInFrames)}
+      fps={episode.fps || 30} width={1920} height={1080}
+      defaultProps={{episode}} />
+  </>
+);

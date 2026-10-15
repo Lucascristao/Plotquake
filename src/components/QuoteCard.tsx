@@ -1,129 +1,25 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, useCurrentFrame} from 'remotion';
 import {PLOTQUAKE_THEME} from '../theme';
 
-type QuoteCardProps = {
-  quote: string;
-  author: string;
-  title?: string;
-  year?: string;
-  delay?: number;
-};
+type QuoteCardProps = {quote: string; author: string; title?: string; year?: string; delay?: number};
 
-export const QuoteCard = ({
-  quote,
-  author,
-  title,
-  year,
-  delay = 0,
-}: QuoteCardProps) => {
+/** A restrained quotation superimposed on a relevant photograph or archive shot. */
+export const QuoteCard = ({quote, author, title, year, delay = 0}: QuoteCardProps) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-
-  const progress = spring({
-    frame: frame - delay,
-    fps,
-    config: {damping: 16, stiffness: 90, mass: 0.8},
-  });
-
-  const opacity = interpolate(progress, [0, 0.7], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const translateY = interpolate(progress, [0, 1], [40, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        inset: 0,
-        display: 'grid',
-        placeItems: 'center',
-        background: 'rgba(3, 7, 18, 0.78)',
-        backdropFilter: 'blur(10px)',
-        zIndex: 25,
-        opacity,
-      }}
-    >
-      <div
-        style={{
-          maxWidth: 1100,
-          padding: '60px 70px',
-          backgroundColor: 'rgba(15, 23, 42, 0.9)',
-          border: '1px solid rgba(255, 255, 255, 0.12)',
-          borderLeft: `8px solid ${PLOTQUAKE_THEME.colors.primary}`,
-          borderRadius: 24,
-          boxShadow: '0 30px 100px rgba(0,0,0,0.7), -10px 0 35px rgba(229, 161, 88, 0.3)',
-          transform: `translateY(${translateY}px)`,
-        }}
-      >
-        <div
-          style={{
-            color: PLOTQUAKE_THEME.colors.primary,
-            fontSize: 72,
-            fontFamily: '"Georgia", serif',
-            lineHeight: 0.5,
-            marginBottom: 20,
-            textShadow: '0 0 20px rgba(229, 161, 88, 0.5)',
-          }}
-        >
-          "
-        </div>
-
-        <div
-          style={{
-            color: '#f8fafc',
-            fontSize: 44,
-            fontWeight: 700,
-            lineHeight: 1.28,
-            letterSpacing: -0.5,
-            marginBottom: 36,
-            fontStyle: 'italic',
-          }}
-        >
-          {quote}
-        </div>
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            borderTop: '1px solid rgba(255, 255, 255, 0.14)',
-            paddingTop: 20,
-          }}
-        >
-          <div>
-            <div style={{color: '#ffffff', fontSize: 28, fontWeight: 800}}>
-              {author}
-            </div>
-            {title && (
-              <div style={{color: '#94a3b8', fontSize: 20, fontWeight: 500}}>
-                {title}
-              </div>
-            )}
-          </div>
-
-          {year && (
-            <div
-              style={{
-                color: PLOTQUAKE_THEME.colors.primary,
-                fontSize: 24,
-                fontWeight: 800,
-                backgroundColor: PLOTQUAKE_THEME.colors.primaryPillBg,
-                border: `1px solid ${PLOTQUAKE_THEME.colors.primaryPillBorder}`,
-                padding: '6px 18px',
-                borderRadius: 12,
-              }}
-            >
-              {year}
-            </div>
-          )}
-        </div>
+  const entrance = interpolate(frame - delay, [0, 18], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center',
+    padding: '160px 130px', background: 'linear-gradient(90deg, rgba(3,7,13,0.92), rgba(3,7,13,0.72) 70%, rgba(3,7,13,0.4))',
+    opacity: entrance}}>
+    <div style={{maxWidth: 1370, borderLeft: `4px solid ${PLOTQUAKE_THEME.colors.primary}`, paddingLeft: 40,
+      transform: `translateX(${(1 - entrance) * 12}px)`}}>
+      <div style={{color: PLOTQUAKE_THEME.colors.primaryLight, fontSize: 88, fontFamily: 'Georgia, serif', height: 69, lineHeight: 1}}>“</div>
+      <div style={{color: '#f8fafc', fontSize: quote.length > 180 ? 44 : 54, fontFamily: 'Georgia, serif',
+        lineHeight: 1.3, letterSpacing: -0.7, marginBottom: 34}}>{quote}</div>
+      <div style={{display: 'flex', gap: 24, alignItems: 'baseline'}}>
+        <div style={{color: '#fff', fontSize: 25, fontWeight: 700}}>{author}</div>
+        {year && <div style={{color: PLOTQUAKE_THEME.colors.primaryLight, fontSize: 22}}>{year}</div>}
       </div>
+      {title && <div style={{color: '#a8b3c2', fontSize: 20, marginTop: 9}}>{title}</div>}
     </div>
-  );
+  </div>;
 };

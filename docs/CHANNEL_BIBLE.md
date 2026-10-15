@@ -5,7 +5,8 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 ---
 
 ## 1. O que é o Plotquake?
-- **Conceito**: Canal dark de documentários cinematográficos de alta retenção (15 a 20 minutos) focado na ascensão, guerras corporativas, tecnologias disruptivas e quedas catastróficas de grandes impérios e marcas (*"Plot twists that shake empires"*).
+- **Conceito**: Canal dark de documentários cinematográficos de alta retenção sobre ascensão, guerras corporativas, tecnologias disruptivas, quedas e reinvenções de grandes impérios e marcas (*"Plot twists that shake empires"*).
+- **Duração**: Aproximadamente **15 minutos como mínimo**, com **900 segundos de fala real como referência para o documentário completo**, e **sem teto fixo de 20 minutos**. A história determina a duração. Não encurtar a explicação para caber em uma faixa nem acrescentar repetição, silêncio ou tela final para atingir o mínimo.
 - **Idioma**: **Inglês nativo (US English)**, voltado exclusivamente para a audiência dos países Tier-1 com o maior CPM do mundo (Estados Unidos, Reino Unido, Canadá e Austrália).
 - **Referências de Sucesso**: *The Mega-Brands That Built America (History Channel)*, *MagnatesMedia*, *ColdFusion*, *Fern*, *Moon*.
 
@@ -26,9 +27,9 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
   - Tipografia: Branco Puro (`#FFFFFF`), Branco Suave (`#F8FAFC`) e Cinza Muted (`#94A3B8`);
   - Gráficos Competitivos: O protagonista é sempre **Dourado/Âmbar (`#E5A158`)** com brilho. Os concorrentes usam tons neutros de slate escuro (`#475569`, `#334155`, `#1e293b`), garantindo foco e elegância premium.
 - **Resolução e Formato**: **Full HD Horizontal (`1920x1080`) a 30 FPS**.
-- **Componentes Oficiais Remotion** (em `src/components/`):
+- **Recursos Remotion** (em `src/components/`, como ferramentas de montagem, sem sequência obrigatória):
   1. `KenBurnsImage`: Zoom cinematográfico suave, granulação, vinheta e lower-third com borda e glow no Dourado/Âmbar Plotquake.
-  2. `NewspaperPop`: Jornal com rotação 3D, manchete de época e submanchete destacada com **marca-texto dourado alaranjado**.
+  2. `NewspaperPop`: Tratamento de documento/manchete com movimento e **marca-texto dourado alaranjado**. Atribuir uma manchete a um veículo real exige o documento autêntico; reconstruções editoriais precisam ser identificadas.
   3. `MarketChart`: Gráfico de barras animado com ano e barra principal no Dourado Plotquake.
   4. `QuoteCard`: Cartão de citação executiva com aspas gigantes, borda esquerda e ano em destaque no Dourado Plotquake.
   5. `BrollPlayer`: Player de arquivo histórico em cinemascope 2.39:1 com badge e LED de gravação no Dourado Plotquake.
@@ -37,23 +38,26 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 ---
 
 ## 3. Roteiro e Estrutura Narrativa (Storytelling em 4 Atos)
-Nenhum documentário do Plotquake é uma aula acadêmica chata; é um **duelo dramático de poder e dinheiro**.
+O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, escolhas, conflitos, mecanismos econômicos e consequências concretas. A pesquisa sustenta a narrativa; a narração evita explicações burocráticas e drama sem evidência.
 
 ### A Estrutura dos 4 Atos:
 - **Gancho Inicial (Primeiros 5 a 10 segundos)**: Choque factual ou quebra violenta de expectativa. Nunca comece com "Hello guys" ou apresentações burocráticas.
-- **Ato 1: O Império e o Monopólio (00:00 - 04:00)**: O auge do poder. A invenção genial, os fundadores bilionários e a crença de que eram intocáveis.
-- **Ato 2: A Semente da Queda / O Conflito Invisível (04:00 - 09:00)**: Uma aposta arriscada, a chegada de um rival improvável ou a arrogância executiva.
-- **Ato 3: O Ponto de Ruptura / O Duelo de Titãs (09:00 - 15:00)**: O lançamento que muda as regras do jogo. A tentativa desesperada de reação e os erros milionários.
-- **Ato 4: O Colapso e a Lição Histórica (15:00 - 20:00)**: A perda de bilhões, a saída dos fundadores e o legado do terremoto na história.
+- **Ato 1: A Construção do Império**: Quem construiu o negócio, qual problema resolveu, de onde vieram o poder e a vantagem competitiva.
+- **Ato 2: O Conflito Invisível**: A aposta arriscada, o rival, a mudança tecnológica ou a contradição que ameaça a posição conquistada.
+- **Ato 3: O Ponto de Ruptura**: As decisões, tentativas de reação, lançamentos e consequências que mudam o rumo da história.
+- **Ato 4: O Desfecho e o Legado**: O resultado documentado, incluindo colapso, sobrevivência ou reinvenção, e a resposta à pergunta de abertura. Não forçar falência, perda total ou cifras que a pesquisa não comprova.
+- **Tempos flexíveis**: Os quatro atos são uma estrutura narrativa, sem faixas rígidas de 00:00 a 20:00 nem divisão igual de duração. Cortes, transições e capítulos seguem a história e o áudio sintetizado real.
 
 ### Ritmo Visual:
-- **Cadência de micro-beats**: Nenhuma cena, imagem ou gráfico pode ficar estático por mais de **4 a 5 segundos**. Toda virada de frase pede uma mudança de câmera, recorte de jornal ou novo foco visual.
+- **Montagem livre**: Usar arquivo, fotos, documentos, mapas, gráficos, vídeos e imagens geradas conforme a função de cada passagem. Os componentes são recursos disponíveis, sem obrigação de alternar cartões ou repetir um modelo de cena.
+- **Cadência de referência**: Buscar mudanças de informação, foco, enquadramento ou movimento a cada **4 a 5 segundos**, com pausas deliberadas quando a leitura e a tensão pedirem. A cadência orienta a direção, sem impor cortes mecânicos ou um gate automático de movimentos.
+- **Procedência**: Pesquisar mídias autênticas e registrar as fontes utilizadas. Imagens geradas e reconstruções podem apoiar a narrativa, com identificação clara quando puderem ser confundidas com arquivo histórico. Não fabricar citações, manchetes atribuídas a jornais, estatísticas ou cenas privadas apresentadas como fatos.
 
 ---
 
 ## 4. Voz e Narração (Gemini 3.8 Live)
 - **Motor Canônico**: **Gemini 3.8 Live** (`google-genai` SDK WebSocket).
-- **Voz Canônica**: Estritamente **Masculina** (**Charon** como padrão oficial ou **Fenrir**) em inglês.
+- **Voz Canônica**: **Charon**, masculina, em **US English**, mantida durante todo o episódio. Trocas de voz dependem de nova orientação explícita.
 - **Calibração Tonal Grave**: Configurado para soar **pouca coisa mais grave que o padrão** (-1.0 semitom de afinação) com ressonância barítona de peito e dicção cinematográfica de "voz de autoridade/voz de cinema". O script `worker/synthesize_narration.py` aplica automaticamente a instrução vocal no Gemini Live e calibra o tom via FFmpeg preservando o tempo e a naturalidade milimétrica do áudio.
 - **Estilo de Entrega**: Narrador sério, dramático, pausado e autoritário (estilo locutor de documentários do History Channel/Netflix). Pausas dramáticas antes de números astronômicos e revelações de enredo.
 - **Trilha Sonora**: Base de tensão contínua em sub-graves (*tension drone*) em `public/assets/audio/tension_score.wav` somada a efeitos sonoros pontuais.
@@ -66,16 +70,24 @@ Nenhum documentário do Plotquake é uma aula acadêmica chata; é um **duelo dr
 - **Conceito Visual**:
   - **Protagonista em Chiaroscuro**: Rosto expressivo de figura histórica/executiva ou silhueta misteriosa com iluminação dramática;
   - **Luz e Atmosfera Dourada**: Brilho de borda (*rim light*) no tom **Dourado/Âmbar Plotquake (`#E5A158` / `#F6C383`)** com fundo escuro e esfumaçado;
-  - **Micro-Copy de 2 a 3 Palavras**: Letras gigantes em caixa alta (ex.: `"THE $50B MISTAKE"`, `"EMPIRE FALLS"`, `"SECRET CALL"`), usando fundo de contraste e a cor dourada para a palavra de maior choque;
-  - **Resolução**: `1280x720` (16:9), formato JPG de alta qualidade, salva em `public/assets/images/thumbnail_concept.jpg`.
+  - **Micro-Copy de 2 a 3 Palavras**: Texto curto e legível (ex.: `"TOO LATE?"`, `"EMPIRE FALLS"`, `"THE WRONG BET"`), usando fundo de contraste e a cor dourada para a palavra principal. Título e capa devem entregar a promessa comprovada pelo roteiro;
+  - **Resolução e arquivo**: Composição horizontal 16:9, referência `1280x720`, em PNG ou JPG de alta qualidade. Salvar uma capa própria por episódio em `public/assets/images/` e indicar o caminho no JSON do episódio; o documentário BlackBerry usa `public/assets/images/blackberry-thumbnail.png`.
 
 ---
 
 ## 6. Fluxo de Produção e Entrega na Nuvem
-1. O roteiro é salvo estruturado em `episodes/` ou em `src/episodes/pilotEpisode.ts`.
-2. A voz é sintetizada via `python worker/synthesize_narration.py` com Gemini 3.8 Live (com calibração grave barítona).
-3. O render roda no **GitHub Actions** (`.github/workflows/render-documentary.yml`) sem consumir a máquina do usuário.
-4. O script `worker/upload_outputs_to_drive.py` faz o upload automático na pasta do Google Drive com:
+1. **Início manual**: A produção começa com o pedido do usuário neste chat/Codex ou no Antigravity. Não criar cron, rotina de notícias ou publicação autônoma por inferência.
+2. **Autoria com liberdade**: Dentro do episódio autorizado, o agente pesquisa, escreve, escolhe e prepara mídias, cria imagens de apoio e capa e conduz a produção sem pedir aprovação a cada etapa. Resolver escolhas editoriais e de montagem com julgamento próprio, respeitando as orientações explícitas da conversa.
+3. **Fonte única**: O episódio completo é salvo em `episodes/<episodio>.json`, com narração por cena, atos, referências de mídia, fontes e caminho da capa. Arquivos destinados ao renderer são derivados dessa fonte; o antigo piloto de 14 segundos é apenas uma demonstração técnica.
+4. **Voz e montagem**: A voz usa Gemini 3.8 Live, Charon e calibração de **-1 semitom**, preservando o tempo. A montagem acompanha as durações reais dos áudios, incluindo toda a fala. O mínimo de duração não pode ser cumprido com padding ou repetição.
+5. **Produção na nuvem**: Síntese, preparação pesada e render rodam no **GitHub Actions** (`.github/workflows/render-documentary.yml`), preservando a máquina do usuário. Acompanhar a execução, corrigir falhas concretas e aproveitar áudio já válido quando a alteração for somente visual.
+6. **Entrega somente ao Drive**: O fluxo envia à pasta do Google Drive:
    - `documentary_final.mp4` (Vídeo Full HD 1080p);
-   - `thumbnail.jpg` (Arte oficial dedicada);
-   - `youtube_package.txt` (Título de alto CTR + Descrição estruturada + Capítulos/Timestamps + Tags).
+   - a capa própria do episódio, em PNG ou JPG;
+   - `youtube_package.txt` (Título + Descrição estruturada + Capítulos/Timestamps reais + Tags + Fontes e créditos utilizados).
+7. **Conclusão**: Confirmar os arquivos entregues e informar o link da pasta. **A publicação no YouTube é manual**, feita pelo usuário; este fluxo não faz upload nem publicação automática no YouTube.
+
+### Simplicidade operacional
+- Aproveitar do O Dinheiro Explica a clareza da explicação, a pesquisa e a direção visual. **Não importar seus gates editoriais, contratos estruturados, preflights, auditorias obrigatórias ou ciclos de aprovação** para o Plotquake.
+- Manter apenas proteções automáticas essenciais à entrega: fala completa e sem corte, consistência das durações de áudio/vídeo, arquivos necessários presentes e íntegros, e confirmação do envio ao Drive. Qualquer problema concreto deve ser corrigido e relatado.
+- Pesquisa e cuidado factual fazem parte da autoria. Não transformar escolhas criativas, cadência, estrutura dos atos ou revisão de uma capa em barreiras automáticas adicionais. Informar limites reais de verificação sem inventar aprovação ou resultado.

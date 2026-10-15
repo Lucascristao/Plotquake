@@ -1,121 +1,118 @@
-﻿name: Render Documentary - Plotquake
+name: Render Documentary - Plotquake
 
 on:
   workflow_dispatch:
     inputs:
-      composition:
-        description: "Remotion Composition to render (Documentary / Act1)"
-        type: choice
-        options:
-          - Documentary
-          - Act1
-        default: Documentary
-        required: true
-      episode_name:
-        description: "Episode Folder Name in Google Drive"
+      episode_path:
+        description: Episode JSON
         type: string
-        default: "The $50 Billion Fall of BlackBerry"
+        default: episodes/blackberry.json
         required: true
+  push:
+    branches: [main]
+    paths: ['render-trigger/**']
 
 permissions:
   contents: read
   actions: read
 
+concurrency:
+  group: plotquake-documentary
+  cancel-in-progress: false
+
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
-
+    timeout-minutes: 360
     env:
+      EPISODE_PATH: ${{ inputs.episode_path || 'episodes/blackberry.json' }}
       GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
       GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
       GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-      GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID || vars.GOOGLE_DRIVE_FOLDER_ID || '1t_G2GMGgexWTT__2i0adglk1ZGjB_sw1' }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      PYTHONUNBUFFERED: '1'
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 22
+      - name: Node 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Setup Python 3.11
+      - name: Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
           cache: pip
           cache-dependency-path: worker/requirements.txt
 
-      - name: Install Node Dependencies
-        run: npm install --no-audit --no-fund
-
-      - name: Install Python Dependencies
-        run: pip install -r worker/requirements.txt
-
-      - name: Create Directories
+      - name: Install FFmpeg and dependencies
         run: |
-          mkdir -p renders
-          mkdir -p public/assets/audio
-          mkdir -p public/assets/images
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
+          pip install -r worker/requirements.txt
+          mkdir -p renders public/generated-audio
 
-      - name: Synthesize Studio Narration with Gemini 3.8 Live
-        if: env.GEMINI_API_KEY != ''
+      - name: Create the documentary score and discreet sound accents
+        run: python scripts/create_score.py
+
+      - name: Restore previously completed narration scenes
+        uses: actions/cache/restore@v4
+        with:
+          path: public/generated-audio
+          key: plotquake-voice-v2-${{ hashFiles('episodes/*.json', 'worker/synthesize_narration.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            plotquake-voice-v2-${{ hashFiles('episodes/*.json', 'worker/synthesize_narration.py') }}-
+            plotquake-voice-v2-
+
+      - name: Narrate the episode with Charon and canonical baritone pitch
+        run: python worker/synthesize_narration.py --episode "$EPISODE_PATH"
+
+      - name: Save completed scenes for recovery
+        if: always() && hashFiles('public/generated-audio/**/*.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: public/generated-audio
+          key: plotquake-voice-v2-${{ hashFiles('episodes/*.json', 'worker/synthesize_narration.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Build the actual narration timeline and publication package
         run: |
-          python worker/synthesize_narration.py \
-            --output public/assets/audio/narration.wav \
-            --voice Charon
+          python worker/build_episode.py --episode "$EPISODE_PATH"
+          python worker/build_youtube_package.py --episode "$EPISODE_PATH"
 
-      - name: Render Video with Remotion (Full HD 1080p)
+      - name: Render the complete documentary in Full HD
         run: |
-          npm run render -- src/index.ts ${{ inputs.composition }} renders/documentary_final.mp4 \
-            --gl=angle \
-            --concurrency=2
+          npm run render -- src/index.ts Documentary renders/documentary_final.mp4 \
+            --gl=swangle --concurrency=2 --codec=h264 --audio-codec=aac --crf=18
 
-      - name: Prepare Official Thumbnail (Dedicated High-CTR Art)
-        run: |
-          if [ -f public/assets/images/thumbnail_concept.jpg ]; then
-            echo "Using dedicated Plotquake thumbnail art..."
-            cp public/assets/images/thumbnail_concept.jpg renders/thumbnail.jpg
-          else
-            echo "Fallback to still capture..."
-            npm run still -- src/index.ts ${{ inputs.composition }} renders/thumbnail.jpg --frame=120 --image-format=jpeg
-          fi
-
-      - name: Generate YouTube Packaging Metadata
-        run: |
-          cat << 'EOF' > renders/youtube_package.txt
-          TITLE:
-          The $50 Billion Mistake: How BlackBerry Lost Everything
-
-          DESCRIPTION:
-          In 2007, BlackBerry controlled more than 50% of the entire smartphone market. Wall Street, the White House, and global executives could not live without their physical keyboards. But when Steve Jobs walked onto the stage in San Francisco to unveil the iPhone, BlackBerry executives laughed it off as a toy.
-
-          This is the inside story of how arrogance, blindness to touchscreens, and corporate delusion destroyed one of the greatest tech empires in human history.
-
-          TIMESTAMPS:
-          00:00 - The Monopoly of Power
-          02:30 - The Secret Meeting in Waterloo
-          06:15 - The Day the World Changed
-          12:45 - The Collapse
-
-          CHANNEL:
-          Plotquake • Stories That Shake Empires
-          EOF
-
-      - name: Upload Package to Google Drive
-        if: env.GOOGLE_CLIENT_ID != '' && env.GOOGLE_DRIVE_FOLDER_ID != ''
+      - name: Deliver the complete package to Google Drive
         run: |
           python worker/upload_outputs_to_drive.py \
+            --episode "$EPISODE_PATH" \
             --video renders/documentary_final.mp4 \
             --thumbnail renders/thumbnail.jpg \
-            --metadata renders/youtube_package.txt \
-            --episode-name "${{ inputs.episode_name }}"
+            --metadata renders/youtube_package.txt
+          python - <<'PY'
+          import json, os
+          receipt = json.load(open('renders/drive_receipt.json'))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f"Documentary delivered: [{receipt['title']}]({receipt['folderUrl']})\n\n")
+              summary.write(f"Runtime: {receipt['video']['durationSeconds'] / 60:.2f} minutes; 1920×1080.\n")
+          PY
 
-      - name: Upload Artifacts to GitHub (Backup)
+      - name: Preserve the film, package and recovery evidence
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: documentary-package
-          path: renders/
+          name: documentary-package-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            renders/
+            src/episodes/renderEpisode.json
+            public/generated-audio/**/*.json
+            public/generated-audio/**/*.wav

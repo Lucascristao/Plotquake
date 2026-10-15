@@ -1,0 +1,318 @@
+{
+  "id": "blackberry-touchscreen-revolution",
+  "title": "BlackBerry: The Empire That Missed the Touchscreen Revolution",
+  "subtitle": "A keyboard built an empire. A changing idea of the smartphone broke its defenses.",
+  "description": "BlackBerry helped put the office in a pocket. Then the smartphone became a platform for everything else. This documentary follows the people, product decisions, software transition, and inventory crisis behind BlackBerry's retreat from internally developed phones, and the software business that survived. Based on company filings, contemporary product announcements, and official technical documentation. Financial figures are in U.S. dollars unless stated otherwise. Analysis of strategy is identified in the research notes; illustrative visuals are not evidence of private meetings.",
+  "tags": ["BlackBerry", "Research In Motion", "Mike Lazaridis", "Jim Balsillie", "Steve Jobs", "iPhone", "business documentary", "technology history", "corporate strategy", "QNX", "Plotquake"],
+  "voice": "Charon",
+  "pitchSemitones": -1,
+  "minimumDurationSeconds": 900,
+  "thumbnail": "public/assets/images/blackberry-thumbnail.png",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "The Machine That Made You Essential",
+      "subtitle": "Waterloo, Ontario. A new kind of connection.",
+      "scenes": [
+        {
+          "id": "bb-01",
+          "chapter": "The cost of being late",
+          "caption": "2013 | The comeback becomes an inventory crisis",
+          "narration": "Nine hundred thirty-four million dollars. In 2013, BlackBerry recorded a charge against inventory and supply commitments, primarily tied to its new Z10. The phone meant to lead a comeback had become a financial burden. Six years earlier, a touchscreen had challenged its world. But this is not the story of a company that saw a new screen and simply refused to change. What happened was more dangerous.",
+          "visualKeys": ["blackberry_z10", "wall_street", "blackberry_keyboard", "iphone_original", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-02",
+          "caption": "A changing battlefield",
+          "narration": "BlackBerry kept selling. It built touchscreens, bought a new operating system, and fought to reinvent itself. Each response consumed time while the meaning of a smartphone changed around it. The central question is not why its leaders did nothing. They did plenty. It is why a company that helped create mobile communication could no longer control what customers expected from the device in their hands.",
+          "visualKeys": ["blackberry_devices", "blackberry_storm", "blackberry_playbook", "blackberry_z10", "smartphone_crowd"]
+        },
+        {
+          "id": "bb-03",
+          "caption": "1984 | Research In Motion begins",
+          "narration": "The beginning was Waterloo, Ontario. In 1984, Mike Lazaridis and Douglas Fregin founded Research In Motion, the company later known as BlackBerry. Its eventual breakthrough was not a giant display or a library of entertainment. It was access. In 1999, the BlackBerry solution made a business proposition tangible: important messages could reach you when you were away from your desk. The office no longer had to stay inside the office.",
+          "visualKeys": ["waterloo", "mike_lazaridis", "circuit", "blackberry_devices", "office"]
+        },
+        {
+          "id": "bb-04",
+          "caption": "Push email | Information comes to you",
+          "narration": "To understand the attraction, forget today's phone for a moment. Picture a working day organized around a computer and an inbox. BlackBerry's push technology reversed the routine of checking for news. Messages came to the device automatically. A manager could answer between appointments. A colleague could receive a decision without waiting for someone to return. The technology sold a practical advantage: a shorter distance between an event and a response.",
+          "visualKeys": ["office", "blackberry_keyboard", "data_center", "blackberry_devices", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-05",
+          "caption": "The keyboard becomes a habit",
+          "narration": "The little keyboard mattered because it made that promise usable. Physical keys gave fingers a repeatable place to land. Short replies became a habit, and the device became part of the working day. Its design was an answer to a specific question: how do you communicate efficiently while moving? That answer would become a powerful identity. It would also shape the terms on which BlackBerry judged the machines coming next.",
+          "visualKeys": ["blackberry_keyboard", "blackberry_bold", "blackberry_devices", "office", "circuit"]
+        },
+        {
+          "id": "bb-06",
+          "caption": "More than a handset",
+          "narration": "Behind the keyboard stood a larger system. BlackBerry combined devices, software, services, and security features for organizations. The customer was not always one person choosing a phone at a store. A company had to consider administration, information, and the people who supported its employees. That made the contest broader than hardware. A rival had to become useful to the person carrying the phone and acceptable to the organization responsible for it.",
+          "visualKeys": ["data_center", "office", "blackberry_devices", "circuit", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-07",
+          "caption": "Lazaridis and Balsillie | A shared command",
+          "narration": "For years, the company was led by co-chief executives Mike Lazaridis and Jim Balsillie. Two leaders stood behind an unusually integrated business: the object in the customer's hand and the services making it valuable. But the structure also illustrates the scale of the coming problem. Reinvention would touch a whole organization, not one product team replacing a keyboard with glass.",
+          "visualKeys": ["mike_lazaridis", "jim_balsillie", "waterloo", "office", "blackberry_devices"]
+        },
+        {
+          "id": "bb-08",
+          "caption": "BBM | The network inside the phone",
+          "narration": "The appeal escaped the boardroom. BlackBerry Messenger, or BBM, connected friends as well as colleagues. The company's 2011 annual report described more than thirty-nine million BBM users worldwide. Messaging gave people a reason to join, and people gave their friends another reason to stay. This was already a social network built around a device. BlackBerry understood that a phone could be more valuable because of everyone else using it.",
+          "visualKeys": ["blackberry_curve", "smartphone_crowd", "blackberry_keyboard", "blackberry_devices", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-09",
+          "caption": "The business behind the connection",
+          "narration": "There was money on both sides of that connection. Research In Motion sold hardware and earned service revenue. Its 2008 annual report described monthly service fees charged to carriers for active subscriber accounts. The handset brought a customer into a continuing relationship. For the business, that relationship could be valuable beyond the original sale. For a competitor, replacing the handset was only one part of breaking into BlackBerry's position.",
+          "visualKeys": ["blackberry_devices", "data_center", "wall_street", "office", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-10",
+          "caption": "Success leaves evidence everywhere",
+          "narration": "And the evidence of success kept arriving. In fiscal 2008, revenue nearly doubled to just over six billion dollars. More than half of new subscriber additions in the final quarter came from outside the enterprise market. BlackBerry was expanding beyond its original stronghold, not retreating into it. That matters because the next chapter did not begin with a dying company. It began with a company receiving powerful confirmation that its strategy worked.",
+          "visualKeys": ["jim_balsillie", "blackberry_curve", "wall_street", "smartphone_crowd", "waterloo"]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "The Rules Change While Sales Rise",
+      "subtitle": "The rival is selling a different future.",
+      "scenes": [
+        {
+          "id": "bb-11",
+          "chapter": "A phone becomes a platform",
+          "caption": "January 9, 2007 | Apple introduces iPhone",
+          "narration": "On January ninth, 2007, Steve Jobs introduced the iPhone in San Francisco. Apple presented a phone, a music player, and an internet communications device in one object. The interface was a large multitouch display. Its significance was not simply that the buttons had disappeared. The same surface could become a keyboard, a map, a photograph, or a web page. The device could change its shape in software.",
+          "visualKeys": ["steve_jobs", "iphone_original", "blackberry_keyboard", "circuit", "smartphone_crowd"]
+        },
+        {
+          "id": "bb-12",
+          "caption": "The first iPhone was not the final answer",
+          "narration": "The first model also had limits. Apple's announcement listed EDGE networking and Wi-Fi, not a modern high-speed cellular experience. Its American launch was tied to one carrier, and its starting price was four hundred ninety-nine dollars. Seen from an established communications business, this was a rival with tradeoffs. History can make a revolution appear inevitable. In the moment, an incumbent has to judge an unfinished product against a business that already pays.",
+          "visualKeys": ["iphone_original", "office", "blackberry_bold", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-13",
+          "caption": "Two definitions of the same object",
+          "narration": "That is where the strategic danger begins. If the main job is answering messages, a practiced thumb on physical keys has an obvious appeal. If the main job becomes browsing, viewing, navigating, and running whatever software comes next, the balance shifts. The question is no longer which phone performs the old task best. It is which platform lets people discover new tasks.",
+          "visualKeys": ["blackberry_keyboard", "iphone_original", "iphone_modern", "smartphone_crowd", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-14",
+          "caption": "2008 | Apple opens the software door",
+          "narration": "In March 2008, Apple announced development tools for native iPhone applications and a new way to distribute them: the App Store. Outside developers could build software, set a price, and reach customers through one storefront. Apple said developers would retain seventy percent of sales revenue. The phone was becoming a business opportunity for people who did not work at Apple. Their effort could make Apple's product more useful without Apple inventing every use.",
+          "visualKeys": ["steve_jobs", "iphone_original", "circuit", "office", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-15",
+          "caption": "July 2008 | Ten million downloads in a weekend",
+          "narration": "By July, the mechanism was visible. Apple reported more than ten million application downloads in the App Store's first weekend. The catalog ranged from games to medical tools and business software. The important change was distribution. A developer could place a new idea in front of people already carrying compatible devices. A customer could add a capability without replacing the phone. The screen was the entrance. The growing software economy was the deeper threat.",
+          "visualKeys": ["iphone_original", "smartphone_crowd", "circuit", "iphone_modern", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-16",
+          "caption": "2008 | Google opens another front",
+          "narration": "Apple was not alone. In August 2008, Google previewed Android Market, another route connecting developers with people carrying smartphones. BlackBerry faced a wider shift than a duel with one famous device. Distribution could attract developers; useful applications could attract buyers; buyers could justify more development. That feedback loop helps explain why copying a screen was not enough. A company needed other businesses to believe its platform deserved their time, even as alternatives multiplied.",
+          "visualKeys": ["circuit", "smartphone_crowd", "iphone_modern", "office", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-17",
+          "caption": "The rival approaches the enterprise",
+          "narration": "Apple also moved toward the office. Its 2008 software announcement included Microsoft Exchange ActiveSync support for push email, contacts, and calendars, alongside remote wipe and corporate security features. This did not make every organization abandon BlackBerry. It made the boundary less secure. An employee could want the consumer experience while an administrator gained more tools to support it. BlackBerry's rival was learning to cross the line between personal desire and institutional approval.",
+          "visualKeys": ["office", "iphone_original", "data_center", "blackberry_bold", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-18",
+          "caption": "2008 | BlackBerry answers with Storm",
+          "narration": "BlackBerry did respond. In 2008, Verizon announced the BlackBerry Storm, a touchscreen model aimed at consumers and business users. The point is crucial: this was not a company that never touched a touchscreen. The Storm offered browsing, multimedia, navigation, and messaging on the BlackBerry platform. But entering a category is different from setting its direction. A new handset still had to make the whole experience convincing, while the rival's software opportunity kept expanding.",
+          "visualKeys": ["blackberry_storm", "iphone_original", "blackberry_devices", "smartphone_crowd", "circuit"]
+        },
+        {
+          "id": "bb-19",
+          "caption": "Fiscal 2011 | Record sales after the iPhone",
+          "narration": "Then came the result that complicates the familiar story. For fiscal 2011, Research In Motion reported fifty-two point three million smartphone shipments and nineteen point nine billion dollars in revenue. Both were records. Jim Balsillie celebrated the performance. Four years after the iPhone's introduction, BlackBerry was still reaching new financial heights. A business can grow in absolute terms while the future becomes less favorable. Strong results can buy time. They can also disguise its price.",
+          "visualKeys": ["jim_balsillie", "blackberry_bold", "wall_street", "blackberry_curve", "office"],
+          "quote": {
+            "text": "record shipments and financial performance",
+            "author": "Jim Balsillie",
+            "year": "2011",
+            "sourceId": "S09"
+          }
+        },
+        {
+          "id": "bb-20",
+          "caption": "The cost of changing everything",
+          "narration": "Now put yourself inside that dilemma. Existing products serve real customers and bring in money. A radical replacement demands engineers, new tools, new applications, and the cooperation of partners. Move too slowly, and expectations escape. Move too abruptly, and the business funding the transition can weaken. It shows why the decisive battle would be fought over timing, integration, and execution as much as industrial design.",
+          "visualKeys": ["mike_lazaridis", "jim_balsillie", "office", "circuit", "abstract_reconstruction"]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "The Reinvention Runs Out of Time",
+      "subtitle": "A new foundation cannot stop the clock.",
+      "scenes": [
+        {
+          "id": "bb-21",
+          "chapter": "Building a second BlackBerry",
+          "caption": "2010 | Research In Motion acquires QNX",
+          "narration": "In 2010, Research In Motion agreed to acquire QNX Software Systems from Harman. QNX brought operating-system expertise from demanding fields, including automotive and industrial systems. Lazaridis publicly pointed to its technology and unannounced product plans. This was a serious attempt to secure a new foundation. But acquiring an operating system does not deliver a finished consumer platform. The engineering purchase is the opening move. Integration, applications, and adoption still have to follow.",
+          "visualKeys": ["mike_lazaridis", "circuit", "data_center", "waterloo", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-22",
+          "caption": "2011 | A tablet carries the next bet",
+          "narration": "The PlayBook put that new direction in a customer's hands. Research In Motion and Best Buy announced an April nineteenth, 2011 launch in the United States and Canada. The tablet had a seven-inch display, cameras, multitasking, and a starting price of four hundred ninety-nine dollars. It was pitched as a professional product. The ambition was clear: BlackBerry wanted a place in the larger world of mobile computing, beyond the familiar keyboard handset.",
+          "visualKeys": ["blackberry_playbook", "mike_lazaridis", "office", "circuit", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-23",
+          "caption": "The missing step between promise and product",
+          "narration": "Yet completing a platform is harder than listing its specifications. BlackBerry's own annual report recorded that PlayBook's major February 2012 software update added native email and calendar capabilities. Those additions came months after the tablet's launch. For a brand built around communication, the sequence exposed an awkward gap between reputation and delivery. The issue was not whether its engineers could build advanced technology. It was whether the complete proposition reached customers at the right moment.",
+          "visualKeys": ["blackberry_playbook", "blackberry_keyboard", "office", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-24",
+          "caption": "December 2011 | A $485 million inventory provision",
+          "narration": "The commercial cost surfaced before that update arrived. In December 2011, Research In Motion announced an approximately four hundred eighty-five million dollar pretax inventory provision for PlayBook tablets. It cited competition, high inventory, and the software delay, and described increased promotions to encourage sales. This was largely a noncash accounting charge. But the signal was real: products planned for one level of demand were meeting another. Expectations were now expensive objects sitting in the distribution system.",
+          "visualKeys": ["blackberry_playbook", "wall_street", "office", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-25",
+          "caption": "January 2012 | A change at the top",
+          "narration": "In January 2012, the co-chief executives handed leadership to Thorsten Heins. Lazaridis became vice chair, and Balsillie initially remained a director. Heins came from inside the organization, having joined from Siemens in 2007. The transition was presented as a succession plan, not an admission that the business had no future. He also inherited a schedule that competitors would not pause to accommodate.",
+          "visualKeys": ["waterloo", "mike_lazaridis", "jim_balsillie", "office", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-26",
+          "caption": "June 2012 | BlackBerry 10 slips into 2013",
+          "narration": "By June, the schedule had slipped again. Research In Motion said the integration of features and a large volume of code was taking longer than anticipated. Its first BlackBerry 10 smartphones were now expected in the first quarter of calendar 2013. The same results announcement described a planned workforce reduction of about five thousand people. The company was trying to construct its next engine while cutting costs around the engine still keeping it moving.",
+          "visualKeys": ["circuit", "office", "waterloo", "blackberry_devices", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-27",
+          "caption": "Waiting has a second cost",
+          "narration": "A delay does more than postpone revenue from a new device. It can complicate the sale of the old one. In December 2012, the company warned that anticipation of BlackBerry 10 could cause some customers to defer purchases of existing BlackBerry 7 products. The bridge between generations was becoming its own financial problem. Customers were being asked to wait, while competitors could keep offering phones, attracting developers, and establishing habits that a later launch would have to break.",
+          "visualKeys": ["blackberry_bold", "blackberry_z10", "smartphone_crowd", "iphone_modern", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-28",
+          "caption": "January 30, 2013 | The new BlackBerry arrives",
+          "narration": "On January thirtieth, 2013, BlackBerry 10 finally arrived. The company unveiled the all-touch Z10 and the keyboard-equipped Q10. A gesture-based interface and a central communications Hub promised a fresh experience. The launch also showed how much had changed. This was no longer a small adjustment to the old formula. BlackBerry was asking the market to reconsider its software, its interface, and its identity at the same time. Research In Motion began operating under the BlackBerry name.",
+          "visualKeys": ["blackberry_z10", "blackberry_keyboard", "blackberry_devices", "smartphone_crowd", "waterloo"]
+        },
+        {
+          "id": "bb-29",
+          "caption": "A comeback needs more than a launch",
+          "narration": "BlackBerry announced seventy thousand applications for the new platform. That was a substantial launch catalog, but a count cannot guarantee that each customer finds the particular services they want. Availability also rolled out by market: the United Kingdom first, Canada in February, with American availability expected in March. A global unveiling was not an instant global reset. The new phones had to earn purchases one market, one distribution channel, and one customer's decision at a time.",
+          "visualKeys": ["blackberry_z10", "circuit", "smartphone_crowd", "office", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-30",
+          "caption": "2013 | The Z10 inventory charge",
+          "narration": "Then the turnaround collided with demand. BlackBerry's filings described lower sales through to customers than expected and growing stock in distribution channels. In its second quarter of fiscal 2014, the company recorded the nine hundred thirty-four million dollar charge introduced at the beginning of this story. It was primarily attributable to Z10 devices. The expensive part was not simply designing a new phone. It was committing resources on the assumption that enough people would buy it.",
+          "visualKeys": ["blackberry_z10", "wall_street", "office", "blackberry_devices", "abstract_reconstruction"]
+        }
+      ]
+    },
+    {
+      "id": "act-4",
+      "title": "The Empire Falls. The Company Survives.",
+      "subtitle": "The final decision is what to stop defending.",
+      "scenes": [
+        {
+          "id": "bb-31",
+          "chapter": "What remained after the phones",
+          "caption": "Inventory is a forecast made physical",
+          "narration": "Inventory turns a prediction into a commitment. Devices, components, and supply agreements exist before the final customer decides. When expected demand falls, a company may have to recognize that those commitments are worth less than planned. The charge was not a suitcase of cash disappearing overnight. It was a recognition that the commercial future behind the Z10 had become smaller than the business had expected.",
+          "visualKeys": ["blackberry_z10", "circuit", "wall_street", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-32",
+          "caption": "November 2013 | Financing buys another chance",
+          "narration": "But the company was not erased. In November 2013, BlackBerry announced an agreement for a one billion dollar investment through convertible debt from Fairfax Financial and other institutional investors. Debt that can convert into shares is financing, not revenue from selling phones. The distinction matters. Investors were supplying resources for the next phase, not proving that the old smartphone strategy had recovered. Survival and the restoration of an empire are very different outcomes.",
+          "visualKeys": ["wall_street", "office", "waterloo", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-33",
+          "caption": "John Chen | A different assignment",
+          "narration": "The agreement also brought John Chen into the leadership transition, as executive chair and interim chief executive. His assignment was increasingly about transforming the business model. That changes the question a leader must answer. Instead of asking only how to win the next handset contest, the company could ask which capabilities customers would still pay for without a BlackBerry phone. Security, communications, and embedded software could have a future even if mass-market hardware did not.",
+          "visualKeys": ["office", "data_center", "circuit", "blackberry_devices", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-34",
+          "caption": "The software can serve a rival's device",
+          "narration": "A concrete example was enterprise device management. BlackBerry's documentation for Enterprise Service 10 described managing BlackBerry, iOS, and Android devices from a unified interface. That is a profound reversal of perspective. A rival's handset could become something BlackBerry helped a customer administer. The value moved away from requiring everyone to carry the same branded object. An organization still needed to connect people and protect information, even when the phones came from somewhere else.",
+          "visualKeys": ["data_center", "office", "iphone_modern", "blackberry_devices", "circuit"]
+        },
+        {
+          "id": "bb-35",
+          "caption": "September 2016 | Internal hardware development ends",
+          "narration": "In September 2016, Chen announced that BlackBerry planned to end all internal hardware development and outsource that function to partners. The company would concentrate on software, including security and applications. This did not mean every BlackBerry-branded handset vanished at that instant. It meant the company was changing its role. The business that had once integrated the handheld experience would no longer carry the same responsibility for developing the physical product itself.",
+          "visualKeys": ["blackberry_devices", "office", "circuit", "data_center", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-36",
+          "caption": "Changing the business changes the risk",
+          "narration": "Chen explained the financial logic: reducing capital requirements and improving returns on invested capital. Hardware demands commitments before demand is certain. Software has its own costs, competition, and execution risks, but it changes where the company places its resources. After years spent defending a place in the phone market, BlackBerry was choosing a different contest. The difficult decision was no longer which handset could restore its status. It was how much of that status to leave behind.",
+          "visualKeys": ["wall_street", "circuit", "data_center", "blackberry_keyboard", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-37",
+          "caption": "January 4, 2022 | Legacy services reach their end",
+          "narration": "The emotional ending came later. BlackBerry set January fourth, 2022 as the end of legacy services for older BlackBerry operating systems, BlackBerry 10, and PlayBook software. It warned that affected devices would no longer function reliably for services including calls, messages, and data. That notice applied to specified legacy platforms. It was not the death certificate of the corporation. For people who remembered the keyboard as a badge of connection, though, it marked an era's closing door.",
+          "visualKeys": ["blackberry_keyboard", "blackberry_bold", "blackberry_z10", "blackberry_playbook", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-38",
+          "caption": "A quieter BlackBerry remains",
+          "narration": "The present-day company tells a less visible story. BlackBerry describes businesses in secure communications and QNX foundational software for automotive and other demanding systems. The technology no longer has to announce itself with a keyboard in someone's palm. The QNX acquisition belonged to the struggle to build a new mobile future. Its importance outlasted the smartphone comeback. A move can fail to save one business and still help support the business that survives it.",
+          "visualKeys": ["circuit", "data_center", "office", "waterloo", "abstract_reconstruction"]
+        },
+        {
+          "id": "bb-39",
+          "caption": "The lesson is bigger than a keyboard",
+          "narration": "BlackBerry's fall from the center of the smartphone market cannot be explained by a single dismissive quotation or one stubborn preference. The record shows responses, investment, a new platform, delays, and demand that failed to meet expectations. Its old strengths did not become worthless overnight. Their relative importance changed. The company had to build for new expectations while serving customers who valued the old system. That is the trap a successful business can build around itself.",
+          "visualKeys": ["mike_lazaridis", "jim_balsillie", "blackberry_storm", "blackberry_z10", "smartphone_crowd"]
+        },
+        {
+          "id": "bb-40",
+          "caption": "The future can arrive before the numbers reveal it",
+          "narration": "At the beginning, BlackBerry shortened the distance between a message and an answer. Its rivals expanded the question: what else could a phone become? By the time BlackBerry delivered its most ambitious answer, it was competing against established habits as well as devices. The company survived by changing what it chose to defend. The empire in people's pockets did not. And the warning remains: the most dangerous moment for a market leader may arrive while the sales figures still look extraordinary.",
+          "visualKeys": ["blackberry_keyboard", "iphone_modern", "smartphone_crowd", "waterloo", "abstract_reconstruction"]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {"id":"S01","title":"BlackBerry Investor FAQs","url":"https://investors.blackberry.com/faq","note":"Primary company record: Research In Motion founded in 1984 by Mike Lazaridis and Douglas Fregin. Supports bb-03. Accessed 2026-10-15."},
+    {"id":"S02","title":"About BlackBerry: archived product explanation","url":"https://www.blackberry.com/solutions/appdemo/about.shtml","note":"Primary historical product page describing push email, QWERTY keyboards, integrated services, and enterprise/government security. Supports bb-04 through bb-06. Marketing claims are not treated as independent performance measurements."},
+    {"id":"S03","title":"Research In Motion 2008 Annual Report","url":"https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2008.pdf","note":"Company-authored primary filing hosted by AnnualReports. Printed pp.9 and17: revenue, non-enterprise net subscriber additions, and monthly carrier service fees. Supports bb-09 and bb-10. Fiscal-year figures are not calendar-year market shares."},
+    {"id":"S04","title":"Research In Motion 2011 Annual Report","url":"https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2011.pdf","note":"Company-authored primary annual report. BBM discussion and more than39 million users; integrated enterprise and consumer offerings. Supports bb-06 and bb-08. Does not establish a worldwide smartphone share of50 percent."},
+    {"id":"S05","title":"Apple Reinvents the Phone with iPhone, January 9, 2007","url":"https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/","note":"Primary contemporary launch announcement. Multitouch, music/internet/phone proposition, EDGE/Wi-Fi, Cingular exclusivity, announced starting price$499. Supports bb-11 and bb-12. Promotional superlatives are omitted."},
+    {"id":"S06","title":"Apple Announces iPhone 2.0 Software Beta, March 6, 2008","url":"https://www.apple.com/newsroom/2008/03/06Apple-Announces-iPhone-2-0-Software-Beta/","note":"Primary contemporary announcement: SDK, App Store distribution, developer70 percent share, Exchange ActiveSync, remote wipe and corporate tools. Supports bb-14 and bb-17. Announcement date is distinguished from final availability."},
+    {"id":"S07","title":"iPhone App Store Downloads Top 10 Million in First Weekend, July 14, 2008","url":"https://www.apple.com/newsroom/2008/07/14iPhone-App-Store-Downloads-Top-10-Million-in-First-Weekend/","note":"Primary Apple-reported downloads and application categories. Supports bb-15. Figures are attributed to Apple, not described as independently audited. Feedback-loop explanation in bb-16 is editorial economic analysis."},
+    {"id":"S08","title":"Verizon Investor Quarterly: Third Quarter 2008","url":"https://www.verizon.com/about/system/files/quarterly-report-presentations/vz_3q_2008_qb.pdf","note":"Primary carrier report, Additional Highlights/Wireless: Storm touchscreen announcement, consumer and business positioning, browsing and multimedia, carrier distribution. Supports bb-18 without unsupported defect rates or alleged private conversations."},
+    {"id":"S09","title":"Research In Motion Reports Year-End and Fourth Quarter Results for Fiscal 2011","url":"https://www.globenewswire.com/news-release/2011/03/24/1430467/0/en/research-in-motion-reports-year-end-and-fourth-quarter-results-for-fiscal-2011.html","note":"Primary RIM-issued release distributed by Marketwire/GlobeNewswire, March 24, 2011. Fiscal year ended February 26, 2011: 52.3 million smartphone shipments, $19.9 billion revenue. bb-19 quotation is an exact five-word excerpt from Balsillie's published statement, not fabricated dialogue."},
+    {"id":"S10","title":"Research In Motion to Acquire QNX Software Systems from Harman International","url":"https://www.qnx.com/news/pr_4114_1.html","note":"Primary joint announcement,2010. QNX fields, acquisition agreement, Lazaridis's stated interest in OS expertise and unannounced product plans. Supports bb-21. Later strategic outcome is analyzed, not attributed to an undisclosed motive."},
+    {"id":"S11","title":"Best Buy Begins Accepting Orders For BlackBerry PlayBook Today, March 22, 2011","url":"https://www.globenewswire.com/news-release/2011/03/22/1430460/0/en/Best-Buy-Begins-Accepting-Orders-For-BlackBerry-PlayBook-Today.html","note":"Primary joint RIM/Best Buy release: announced April19 U.S./Canada availability,7-inch screen, starting$499, cameras and multitasking. Supports bb-22. Professional-grade language is described as positioning, not certification."},
+    {"id":"S12","title":"Research In Motion 2012 Annual Report","url":"https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2012.pdf","note":"Company-authored primary annual report; printed p.19/PDF p.26 describes February2012 PlayBook OS2.0 update adding native email and advanced calendar. Supports bb-23. Script does not claim that browser-based email was impossible at launch."},
+    {"id":"S13","title":"Research In Motion Reports Third Quarter Fiscal 2012 Results, December 15, 2011","url":"https://www.globenewswire.com/news-release/2011/12/15/1430755/0/en/Research-In-Motion-Reports-Third-Quarter-Fiscal-2012-Results.html","note":"Primary RIM-issued results release confirms approximately $485 million pretax PlayBook inventory provision, predominantly noncash. Supports bb-24. S12 annual report, PDF pp.174 and183, supplies competition, high inventory, software delay, increased promotions and the original December 2 announcement date."},
+    {"id":"S14","title":"Research In Motion Names Thorsten Heins President and CEO, January 22, 2012","url":"https://www.globenewswire.com/news-release/2012/01/23/1430774/0/en/research-in-motion-names-thorsten-heins-president-and-ceo.html","note":"Primary RIM succession release. Co-CEO roles, Heins appointment, Lazaridis vice-chair role, Balsillie initially remaining director;1999 BlackBerry solution launch in About section. Supports bb-03,bb-07,bb-25. Release was issued January22 ET despite URL path January23."},
+    {"id":"S15","title":"Research In Motion Reports First Quarter Fiscal 2013 Results, June 28, 2012","url":"https://www.globenewswire.com/news-release/2012/06/28/1430914/0/en/research-in-motion-reports-first-quarter-fiscal-2013-results.html","note":"Primary RIM-issued release: BB10 integration more time-consuming than anticipated, first launch moved to calendar Q1 2013, planned workforce reduction approximately5,000. Supports bb-26. Fiscal2013 announcement occurred during calendar2012."},
+    {"id":"S16","title":"Research In Motion Reports Third Quarter Fiscal 2013 Results, December 20, 2012","url":"https://www.globenewswire.com/news-release/2012/12/20/1431104/0/en/Research-In-Motion-Reports-Third-Quarter-Fiscal-2013-Results.html","note":"Primary RIM release outlook explicitly notes some customers may defer BB7 purchases while awaiting BB10. Supports bb-27; the claimed deferral is a company warning, not a measured universal behavior."},
+    {"id":"S17","title":"BlackBerry 10: Re-designed, Re-engineered, and Re-invented, January 30, 2013","url":"https://www.globenewswire.com/news-release/2013/01/30/1431153/0/en/blackberry-10-re-designed-re-engineered-and-re-invented.html","note":"Primary BlackBerry-issued launch release: Z10 all-touch,Q10 physical keyboard,Hub,gesture interface,70,000 launch apps and staged regional availability. Supports bb-28 and bb-29. United States March availability was an expectation at announcement."},
+    {"id":"S18","title":"Research In Motion Changes Its Name to BlackBerry, January 30, 2013","url":"https://www.globenewswire.com/news-release/2013/01/30/1431147/0/en/Research-In-Motion-Changes-Its-Name-to-BlackBerry.html","note":"Primary company release announcing immediate operation under BlackBerry brand; legal corporate-name approval followed separately. Supports bb-28 wording 'began operating under', avoiding conflation of branding with legal name-change date."},
+    {"id":"S19","title":"BlackBerry December 2013 Form 6-K: financial statements and MD&A","url":"https://www.sec.gov/Archives/edgar/data/1070235/000144530513003250/bbry-20131130x6k.htm","note":"Primary filing: Z10 inventory charge approximately$934 million pretax in Q2 fiscal2014, primarily noncash; channel stock and reduced sell-through. Supports bb-01,bb-30,bb-31. This is not total lifetime loss, market-cap decline, cash burned, or proof the corporation ceased to exist."},
+    {"id":"S20","title":"BlackBerry Receives Investment of U.S.$1 Billion from Fairfax Financial and Other Institutional Investors, November 4, 2013","url":"https://www.globenewswire.com/news-release/2013/11/04/1431356/0/en/BlackBerry-Receives-Investment-of-U-S-1-Billion-from-Fairfax-Financial-and-Other-Institutional-Investors.html","note":"Primary company announcement of convertible-debenture investment agreement and John Chen's prospective executive chair/interim CEO appointment on closing. Supports bb-32 and bb-33. Financing is distinguished from revenue and profitability."},
+    {"id":"S21","title":"What is BlackBerry Enterprise Service 10?","url":"https://content.blackberry.com/blackberrytraining/hostedhelp/en/admin/help/65213/jla1351109750129.html","note":"Primary BlackBerry technical documentation, updated February23,2015: unified management of BlackBerry,iOS,Android devices. Supports bb-34; cross-platform functionality is concrete evidence, strategic interpretation is editorial."},
+    {"id":"S22","title":"BlackBerry Q2 Fiscal 2017 Earnings Press Release, September 28, 2016","url":"https://www.blackberry.com/content/dam/blackberry-com/Documents/pdf/financial-reports/2017/q2fy2017/Q2FY17_Earnings_Press_Release.pdf","note":"Primary company release: plans to end internal hardware development, outsource to partners, focus software/security/apps; Chen's capital requirements and return-on-invested-capital explanation. Supports bb-35 and bb-36. Does not say all branded phones immediately stopped being sold."},
+    {"id":"S23","title":"BlackBerry 10 and BlackBerry OS Services FAQ: End of Life","url":"https://www.blackberry.com/en/secure-communications/support/end-of-life","note":"Primary official notice, updated December22,2021: legacy services ending January4,2022 for specified BBOS,BB10 and PlayBook platforms; reliability warning, not universal immediate device shutdown. Supports bb-37."},
+    {"id":"S24","title":"BlackBerry: Secure Communications and QNX","url":"https://www.blackberry.com/en","note":"Primary company homepage verified October 15, 2026: secure communications and QNX foundational automotive/embedded software remain active offerings. Supports bb-38. Script deliberately omits changing current revenue, leadership, valuation, vehicle counts, and forecasts."},
+    {"id":"S25","title":"Android Market: a user-driven content distribution system, August 28, 2008","url":"https://android-developers.googleblog.com/2008/08/android-market-user-driven-content.html","note":"Primary Google Android Developers announcement previewing Android Market and its developer-to-user distribution model. Supports historical opening of bb-16. Subsequent explanation of platform feedback loops is editorial economic analysis, not a quotation or measured causal effect."}
+  ]
+}

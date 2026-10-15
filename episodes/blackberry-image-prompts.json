@@ -1,0 +1,17 @@
+[
+  {
+    "key": "keyboard",
+    "prompt": "Use case: historical-scene. Asset type: cinematic documentary illustrative reconstruction, widescreen 16:9, 1920x1080. Photorealistic extreme close-up of a worn late-2000s black enterprise smartphone physical QWERTY keyboard, shallow depth of field, tiny keys with realistic lettering, subtle finger wear and dust, warm golden amber #E5A158 side light against charcoal shadows, a hint of an out-of-focus office at night. The smartphone resembles a period BlackBerry Bold, no fake extra screen text, no claims of depicting a specific historical event, no people, no logos added, no caption, no frame or watermarks. Premium restrained History Channel documentary cinematography, 85mm macro lens, natural material texture. Composition permits slow camera movement across keyboard.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "boardroom",
+    "prompt": "Use case: historical-scene. Asset type: cinematic documentary illustrative reconstruction, widescreen 16:9, 1920x1080. A believable late-2000s North American technology company boardroom after a difficult meeting, viewed through frosted office glass. Long walnut conference table, empty leather chairs, a closed laptop and paper reports with no readable writing, one small black QWERTY smartphone left on the table. Distant Waterloo-style low-rise office skyline at dusk, rain on window. No recognizable people or staged exact historical event. Photorealistic period set, dark charcoal and gentle golden amber practical lamp lighting #E5A158, natural grain, restrained 35mm anamorphic documentary cinematography. No text, no logos, no watermark. Calm ominous atmosphere; uncluttered composition for a slow push-in.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "key": "thumbnail",
+    "prompt": "Use case: ads-marketing. Asset type: dedicated YouTube documentary thumbnail, landscape 16:9 exactly 1280x720 if possible. Plotquake premium business documentary about BlackBerry losing its smartphone empire. Main image: an instantly recognizable early BlackBerry-style black smartphone with a physical QWERTY keyboard in dramatic crisp close-up, upright at a slight angle on the left two thirds, subtle realistic cracked reflection on the glass but no fire. On the right background a glowing first-generation touchscreen smartphone silhouette, suggesting a change of era. Dark smoky charcoal background with elegant cinematic golden amber #E5A158 and pale gold #F6C383 edge lighting, not neon orange. Text verbatim: \"THE WRONG BET\" in huge condensed bold uppercase white, with \"WRONG\" in golden amber; short copy clearly readable at 320x180, placed with generous margins, no other text and no dollar figure. Strong clean hierarchy, high contrast, no arbitrary executive face, no fake historic headline, no watermark. Original thumbnail art, not a video frame.",
+    "tool": "built-in image_gen"
+  }
+]

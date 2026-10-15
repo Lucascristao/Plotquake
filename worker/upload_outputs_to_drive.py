@@ -1,60 +1,86 @@
-﻿import argparse
-import os
-import sys
-import re
+"""Upload a complete documentary package and save a concrete Drive delivery receipt."""
+from __future__ import annotations
+import argparse
 from datetime import datetime, timezone
+import json
 from pathlib import Path
+import re
+import subprocess
 from drive import uploader_from_env
+from synthesize_narration import digest, write_json
+
 
 def safe_name(value: str) -> str:
-    value = re.sub(r"[^a-zA-Z0-9._ -]+", "", value).strip()
-    return value[:120] or "episode"
+    return re.sub(r"[^a-zA-Z0-9._ -]+", "", value).strip()[:120] or "episode"
 
-def main():
-    parser = argparse.ArgumentParser(description="Upload documentary assets to Google Drive.")
-    parser.add_argument("--video", required=True, help="Path to rendered MP4 video")
-    parser.add_argument("--thumbnail", help="Path to thumbnail image")
-    parser.add_argument("--metadata", help="Path to YouTube metadata package (txt/json)")
-    parser.add_argument("--episode-name", default="Episode", help="Episode display name for subfolder")
 
+def verify_video(video: Path, timeline: dict, minimum_seconds: float) -> dict:
+    result = subprocess.run(["ffprobe", "-v", "error", "-show_format", "-show_streams", "-of", "json", str(video)],
+                            check=True, capture_output=True, text=True)
+    info = json.loads(result.stdout)
+    streams = info.get("streams", [])
+    visuals = [item for item in streams if item.get("codec_type") == "video"]
+    audio = [item for item in streams if item.get("codec_type") == "audio"]
+    if len(visuals) != 1 or not audio:
+        raise ValueError("Final MP4 must contain its video and narration audio streams.")
+    expected = timeline["durationInFrames"] / timeline["fps"]
+    duration = float(info["format"]["duration"])
+    if duration < minimum_seconds or abs(expected - duration) > .2:
+        raise ValueError(f"Final video is {duration:.2f}s; expected {expected:.2f}s and minimum {minimum_seconds:.0f}s.")
+    if (visuals[0].get("width"), visuals[0].get("height")) != (1920, 1080):
+        raise ValueError("Final documentary must be Full HD 1920x1080.")
+    return {"durationSeconds": duration, "width": 1920, "height": 1080, "sha256": digest(video)}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--video", required=True)
+    parser.add_argument("--thumbnail", required=True)
+    parser.add_argument("--metadata", required=True)
+    parser.add_argument("--episode", default="episodes/blackberry.json")
+    parser.add_argument("--render-input", default="src/episodes/renderEpisode.json")
+    parser.add_argument("--receipt", default="renders/drive_receipt.json")
     args = parser.parse_args()
-
+    paths = [Path(args.video), Path(args.thumbnail), Path(args.metadata)]
+    for path in paths:
+        if not path.is_file() or path.stat().st_size == 0:
+            raise FileNotFoundError(f"Complete delivery requires this nonempty file: {path}")
+    source = json.loads(Path(args.episode).read_text(encoding="utf-8-sig"))
+    timeline = json.loads(Path(args.render_input).read_text(encoding="utf-8-sig"))
+    if source["id"] != timeline["id"]:
+        raise ValueError("Episode id does not match the rendered timeline.")
+    video_info = verify_video(paths[0], timeline, max(900, float(source.get("minimumDurationSeconds", 900))))
     uploader = uploader_from_env()
     if uploader is None:
-        print("ERROR: Google Drive credentials or GOOGLE_DRIVE_FOLDER_ID missing from environment.")
-        sys.exit(1)
+        raise RuntimeError("Google Drive requires GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN and GOOGLE_DRIVE_FOLDER_ID.")
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    folder_name = f"{safe_name(source['title'])}_{stamp}"
+    folder_id = uploader.create_folder(folder_name)
+    receipt = {"episodeId": source["id"], "title": source["title"], "status": "uploading",
+               "folderId": folder_id, "folderUrl": f"https://drive.google.com/drive/folders/{folder_id}",
+               "video": video_info, "files": [], "createdAt": datetime.now(timezone.utc).isoformat()}
+    receipt_path = Path(args.receipt)
+    write_json(receipt_path, receipt)
+    extra = Path(args.metadata).with_suffix(".json")
+    if extra.is_file():
+        paths.append(extra)
+    credits = Path(args.metadata).parent / "visual_credits.txt"
+    if credits.is_file():
+        paths.append(credits)
+    for path in paths:
+        print(f"[Drive] Uploading {path.name} ({path.stat().st_size / 1048576:.1f} MB)...", flush=True)
+        file_id = uploader.upload(path, name=path.name, folder_id=folder_id,
+                                  progress_cb=lambda value: print(f"[Drive] {value:.0%}", flush=True))
+        receipt["files"].append({"name": path.name, "id": file_id,
+                                 "url": f"https://drive.google.com/file/d/{file_id}/view",
+                                 "bytes": path.stat().st_size, "sha256": digest(path)})
+        write_json(receipt_path, receipt)
+    receipt["status"] = "complete"
+    receipt["completedAt"] = datetime.now(timezone.utc).isoformat()
+    write_json(receipt_path, receipt)
+    uploader.upload(receipt_path, name="drive_receipt.json", folder_id=folder_id)
+    print(f"[DELIVERY COMPLETE] {receipt['folderUrl']}", flush=True)
 
-    clean_name = safe_name(args.episode_name)
-    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M")
-    folder_name = f"{clean_name}_{stamp}"
-    
-    print(f"Creating episode folder in Google Drive: {folder_name}...")
-    episode_folder_id = uploader.create_folder(folder_name)
-
-    # 1. Upload video
-    video_path = Path(args.video)
-    if video_path.exists():
-        print(f"Uploading video: {video_path.name} ({video_path.stat().st_size / (1024*1024):.1f} MB)...", flush=True)
-        uploader.upload(video_path, name=video_path.name, folder_id=episode_folder_id)
-        print("Video upload complete!")
-    else:
-        print(f"WARNING: Video file not found at {video_path}")
-
-    # 2. Upload thumbnail
-    if args.thumbnail and Path(args.thumbnail).exists():
-        thumb_path = Path(args.thumbnail)
-        print(f"Uploading thumbnail: {thumb_path.name}...", flush=True)
-        uploader.upload(thumb_path, name=thumb_path.name, folder_id=episode_folder_id)
-        print("Thumbnail upload complete!")
-
-    # 3. Upload metadata
-    if args.metadata and Path(args.metadata).exists():
-        meta_path = Path(args.metadata)
-        print(f"Uploading metadata: {meta_path.name}...", flush=True)
-        uploader.upload(meta_path, name=meta_path.name, folder_id=episode_folder_id)
-        print("Metadata upload complete!")
-
-    print(f"\nSUCCESS! All assets uploaded to Google Drive in folder: {folder_name}")
 
 if __name__ == "__main__":
     main()

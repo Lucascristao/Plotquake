@@ -1,0 +1,761 @@
+{
+  "assets": [
+    {
+      "key": "blackberry_devices",
+      "src": "assets/media/blackberry_devices-1.jpg",
+      "kind": "image",
+      "credit": "Nowforever · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Blackberry_Q20_smartphone.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3709,
+      "height": 3709,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_devices",
+      "src": "assets/media/blackberry_devices-2.jpg",
+      "kind": "image",
+      "credit": "Kt38138 · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_8820,_BlackBerry_Bold_9900_and_BlackBerry_Classic.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3264,
+      "height": 2448,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_keyboard",
+      "src": "assets/media/blackberry_keyboard-1.jpg",
+      "kind": "image",
+      "credit": "Wiki.cullin · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000_front_view_with_TELUS_branding.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 837,
+      "height": 1278,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_keyboard",
+      "src": "assets/media/blackberry_keyboard-2.jpg",
+      "kind": "image",
+      "credit": "Zvivi · CC BY-SA 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerryBold9000.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1936,
+      "height": 2592,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_curve",
+      "src": "assets/media/blackberry_curve-1.jpg",
+      "kind": "image",
+      "credit": "Klaeiis · CC BY-SA 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Curve_8520.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1920,
+      "height": 2560,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_curve",
+      "src": "assets/media/blackberry_curve-2.jpg",
+      "kind": "image",
+      "credit": "A7N8X · CC BY-SA 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BB_8520.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2600,
+      "height": 2217,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_bold",
+      "src": "assets/media/blackberry_bold-1.jpg",
+      "kind": "image",
+      "credit": "Metrónomo · CC BY-SA 2.5 ar",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000.JPG",
+      "license": "CC BY-SA 2.5 ar",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4320,
+      "height": 3240,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_bold",
+      "src": "assets/media/blackberry_bold-2.jpg",
+      "kind": "image",
+      "credit": "Metrónomo · CC BY-SA 2.5 ar",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000_-_2.JPG",
+      "license": "CC BY-SA 2.5 ar",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4320,
+      "height": 3240,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_storm",
+      "src": "assets/media/blackberry_storm-1.jpg",
+      "kind": "image",
+      "credit": "aaltonen · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Blackberry-storm-orig.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2659,
+      "height": 2385,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_storm",
+      "src": "assets/media/blackberry_storm-2.jpg",
+      "kind": "image",
+      "credit": "aaltonen · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Storm_(4140712207).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3648,
+      "height": 2736,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_playbook",
+      "src": "assets/media/blackberry_playbook-1.jpg",
+      "kind": "image",
+      "credit": "Abehn · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_PlayBook_2.jpg",
+      "license": "Public domain",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 800,
+      "height": 533,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_playbook",
+      "src": "assets/media/blackberry_playbook-2.jpg",
+      "kind": "image",
+      "credit": "Luca Viscardi · CC BY-SA 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_PlayBook_(1).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3264,
+      "height": 2448,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_playbook",
+      "src": "assets/media/blackberry_playbook-3.jpg",
+      "kind": "image",
+      "credit": "Slcreza · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_PlayBook_Rear.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4320,
+      "height": 3240,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "blackberry_z10",
+      "src": "assets/media/blackberry_z10-1.jpg",
+      "kind": "image",
+      "credit": "Enrique Dans · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Z10.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4057,
+      "height": 3043,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "mike_lazaridis",
+      "src": "assets/media/mike_lazaridis-1.jpg",
+      "kind": "image",
+      "credit": "Hi-Tech@Mail.ru (Дмитрий Смирнов, dmitriy.smirnov@corp.mail.ru) · CC BY 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Mike_Lazaridis_(02).jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 800,
+      "height": 483,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.34
+      }
+    },
+    {
+      "key": "mike_lazaridis",
+      "src": "assets/media/mike_lazaridis-2.jpg",
+      "kind": "image",
+      "credit": "textlad · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Mike_Lazaridis.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3072,
+      "height": 2304,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.34
+      }
+    },
+    {
+      "key": "jim_balsillie",
+      "src": "assets/media/jim_balsillie-1.jpg",
+      "kind": "image",
+      "credit": "AtelMedia Technologies · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Jim_Balsillie.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 686,
+      "height": 690,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.34
+      }
+    },
+    {
+      "key": "steve_jobs",
+      "src": "assets/media/steve_jobs-2.jpg",
+      "kind": "image",
+      "credit": "Blake Patterson · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_presents_iPhone.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1936,
+      "height": 1296,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "iphone_original",
+      "src": "assets/media/iphone_original-2.jpg",
+      "kind": "image",
+      "credit": "Yutaka Tsutano from Lincoln, United States · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Original_iPhone_-_iPhone_3G_-_iPhone_4_-_Flickr_-_Yutaka_Tsutano.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4752,
+      "height": 3168,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "iphone_modern",
+      "src": "assets/media/iphone_modern-1.jpg",
+      "kind": "image",
+      "credit": "K2025 · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:IPhone_5C_-_front.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2935,
+      "height": 2479,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "iphone_modern",
+      "src": "assets/media/iphone_modern-2.jpg",
+      "kind": "image",
+      "credit": "Janitors · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Size_comparison_of_iPhone_5C_5S_4S.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3542,
+      "height": 2360,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "waterloo",
+      "src": "assets/media/waterloo-1.jpg",
+      "kind": "image",
+      "credit": "Flickr user 'gloom' · CC BY-SA 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:RIM_hq.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2048,
+      "height": 1536,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "wall_street",
+      "src": "assets/media/wall_street-1.jpg",
+      "kind": "image",
+      "credit": "Arild Vågen · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:New_York_Stock_Exchange_August_2017_02.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 5843,
+      "height": 3901,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "wall_street",
+      "src": "assets/media/wall_street-2.jpg",
+      "kind": "image",
+      "credit": "Carlos Delgado · CC BY-SA 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Wall_Street_-_New_York_Stock_Exchange.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3000,
+      "height": 2250,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "wall_street",
+      "src": "assets/media/wall_street-3.jpg",
+      "kind": "image",
+      "credit": "Billie Grace Ward · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Sign_of_the_New_York_Stock_Exchange,_Broad_Street.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4240,
+      "height": 2832,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "office",
+      "src": "assets/media/office-1.jpg",
+      "kind": "image",
+      "credit": "Oleg Brovko · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Office_with_Siemens_workstation_(1).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2048,
+      "height": 1536,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "data_center",
+      "src": "assets/media/data_center-1.jpg",
+      "kind": "image",
+      "credit": "PiDatacenters · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Racks_Amravati_Data_Center.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 6000,
+      "height": 4004,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "data_center",
+      "src": "assets/media/data_center-2.jpg",
+      "kind": "image",
+      "credit": "Carl Lender from Sunrise, USA · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 6000,
+      "height": 4000,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "data_center",
+      "src": "assets/media/data_center-3.jpg",
+      "kind": "image",
+      "credit": "Derrick Coetzee from Berkeley, CA, USA · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Rear_of_rack_at_NERSC_data_center_-_closeup.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2860,
+      "height": 4304,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "circuit",
+      "src": "assets/media/circuit-1.jpg",
+      "kind": "image",
+      "credit": "kjackman · CC BY-SA 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:DIY_Printed_Circuit_Board_(7059452663).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 720,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "circuit",
+      "src": "assets/media/circuit-2.jpg",
+      "kind": "image",
+      "credit": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994 · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Aviation_Electronics_Technician_3rd_Class_W._Chislett_uses_a_magnifier_as_he_does_detail_work_on_a_printed_circuit_board_in_an_Aircraft_Intermediate_Maintenance_Department_(AIMD)_sh_-_DPLA_-_4d65ac64ff5afc03a8057c148ecc6284.jpeg",
+      "license": "Public domain",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2830,
+      "height": 1900,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "circuit",
+      "src": "assets/media/circuit-3.jpg",
+      "kind": "image",
+      "credit": "Raimond Spekking · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Kramer_Electronics_PT-102AN_-_board-9846.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3589,
+      "height": 2692,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "circuit",
+      "src": "assets/media/circuit-4.jpg",
+      "kind": "image",
+      "credit": "ComputerUserUser · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Caviar_2340_Hard_Drive_Circuit_Board_Side_1.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4032,
+      "height": 3024,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "smartphone_crowd",
+      "src": "assets/media/smartphone_crowd-1.jpg",
+      "kind": "image",
+      "credit": "Rawpixel.com · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Smartphone_use_at_railway_station.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1200,
+      "height": 800,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "smartphone_crowd",
+      "src": "assets/media/smartphone_crowd-2.jpg",
+      "kind": "image",
+      "credit": "Rawpixel Ltd · CC BY 2.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Diverse_people_using_phones.jpeg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4000,
+      "height": 2667,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "abstract_reconstruction",
+      "src": "assets/media/boardroom-reconstruction.png",
+      "kind": "image",
+      "credit": "Plotquake · Original illustrative reconstruction",
+      "origin": "generated",
+      "reconstruction": true,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "license": "Original AI-assisted illustration",
+      "changes": "Cinematic framing and slow camera motion"
+    },
+    {
+      "key": "abstract_reconstruction",
+      "src": "assets/media/keyboard-reconstruction.png",
+      "kind": "image",
+      "credit": "Plotquake · Original illustrative reconstruction",
+      "origin": "generated",
+      "reconstruction": true,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "license": "Original AI-assisted illustration",
+      "changes": "Cinematic framing and slow camera motion"
+    },
+    {
+      "key": "office",
+      "src": "assets/media/boardroom-reconstruction.png",
+      "kind": "image",
+      "credit": "Plotquake · Original illustrative reconstruction",
+      "origin": "generated",
+      "reconstruction": true,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "license": "Original AI-assisted illustration",
+      "changes": "Cinematic framing and slow camera motion"
+    },
+    {
+      "key": "blackberry_keyboard",
+      "src": "assets/media/keyboard-reconstruction.png",
+      "kind": "image",
+      "credit": "Plotquake · Original illustrative reconstruction",
+      "origin": "generated",
+      "reconstruction": true,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "license": "Original AI-assisted illustration",
+      "changes": "Cinematic framing and slow camera motion"
+    },
+    {
+      "key": "office",
+      "src": "assets/media/office-phone.mp4",
+      "kind": "video",
+      "durationSeconds": 17.76,
+      "credit": "Ketut Subiyanto · Pexels",
+      "origin": "https://www.pexels.com/video/a-man-typing-on-his-cellphone-and-laptop-4629172/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "smartphone_crowd",
+      "src": "assets/media/office-phone.mp4",
+      "kind": "video",
+      "durationSeconds": 17.76,
+      "credit": "Ketut Subiyanto · Pexels",
+      "origin": "https://www.pexels.com/video/a-man-typing-on-his-cellphone-and-laptop-4629172/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "office",
+      "src": "assets/media/office-woman.mp4",
+      "kind": "video",
+      "durationSeconds": 9.08,
+      "credit": "SHVETS production · Pexels",
+      "origin": "https://www.pexels.com/video/a-woman-typing-on-her-smartphone-7196196/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "smartphone_crowd",
+      "src": "assets/media/office-woman.mp4",
+      "kind": "video",
+      "durationSeconds": 9.08,
+      "credit": "SHVETS production · Pexels",
+      "origin": "https://www.pexels.com/video/a-woman-typing-on-her-smartphone-7196196/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "office",
+      "src": "assets/media/typing.mp4",
+      "kind": "video",
+      "durationSeconds": 14.32,
+      "credit": "Jep Gambardella · Pexels",
+      "origin": "https://www.pexels.com/video/person-typing-on-computer-7661323/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "data_center",
+      "src": "assets/media/server-close.mp4",
+      "kind": "video",
+      "durationSeconds": 9.386667,
+      "credit": "MrColo · Pexels",
+      "origin": "https://www.pexels.com/video/close-up-of-a-cpu-7140928/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "circuit",
+      "src": "assets/media/server-close.mp4",
+      "kind": "video",
+      "durationSeconds": 9.386667,
+      "credit": "MrColo · Pexels",
+      "origin": "https://www.pexels.com/video/close-up-of-a-cpu-7140928/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    },
+    {
+      "key": "data_center",
+      "src": "assets/media/server-room.mp4",
+      "kind": "video",
+      "durationSeconds": 31.573333,
+      "credit": "ALL IZ Well · Pexels",
+      "origin": "https://www.pexels.com/video/database-storage-of-a-server-5028622/",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
+      "trimStartSeconds": 0.3,
+      "fit": "cover"
+    }
+  ]
+}

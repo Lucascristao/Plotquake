@@ -8,16 +8,17 @@
     "render": "remotion render",
     "still": "remotion still",
     "compositions": "remotion compositions",
-    "preview": "remotion preview"
+    "preview": "remotion preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@remotion/cli": "^4.0.465",
-    "@types/react": "^19.2.15",
-    "@types/react-dom": "^19.2.3",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "remotion": "^4.0.465",
-    "typescript": "^6.0.3",
+    "@remotion/cli": "4.0.465",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "remotion": "4.0.465",
+    "typescript": "6.0.3",
     "@remotion/bundler": "4.0.465",
     "@remotion/renderer": "4.0.465"
   }

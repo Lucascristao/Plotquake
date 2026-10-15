@@ -1,0 +1,68 @@
+{
+  "id": "blackberry-preview-awaiting-preparation",
+  "title": "BlackBerry: The Empire in Your Pocket",
+  "subtitle": "Technical preview — prepare an episode before rendering a documentary.",
+  "fps": 30,
+  "durationInFrames": 533,
+  "metadata": {
+    "status": "preview-awaiting-narration"
+  },
+  "audio": {
+    "music": {
+      "src": "assets/audio/tension_score.wav",
+      "volume": 0.12
+    }
+  },
+  "acts": [
+    {
+      "id": "act-1",
+      "actNumber": 1,
+      "actTitle": "The Empire in Your Pocket",
+      "subtitle": "How the smartphone changed the rules of power.",
+      "startFrame": 0,
+      "durationInFrames": 533,
+      "scenes": [
+        {
+          "id": "preview",
+          "startFrame": 0,
+          "durationInFrames": 533,
+          "audioSrc": "assets/audio/narration.wav",
+          "shots": [
+            {
+              "id": "preview-keyboard",
+              "type": "image",
+              "from": 0,
+              "durationInFrames": 160,
+              "src": "assets/media/keyboard-reconstruction.png",
+              "origin": "generated",
+              "reconstruction": true,
+              "zoomStart": 1.03,
+              "zoomEnd": 1.11
+            },
+            {
+              "id": "preview-phone",
+              "type": "image",
+              "from": 160,
+              "durationInFrames": 160,
+              "src": "assets/media/blackberry_z10-1.jpg",
+              "fit": "contain",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.12
+            },
+            {
+              "id": "preview-room",
+              "type": "image",
+              "from": 320,
+              "durationInFrames": 213,
+              "src": "assets/media/boardroom-reconstruction.png",
+              "origin": "generated",
+              "reconstruction": true,
+              "zoomStart": 1.04,
+              "zoomEnd": 1.12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
