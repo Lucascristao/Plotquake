@@ -19,6 +19,17 @@ def normalize_chart(chart: dict) -> dict:
     return result
 
 
+def image_card_background(shot: dict, shots: list[dict]) -> dict:
+    """Cards use the image renderer: reuse a still, never an MP4/WebM source."""
+    image = shot if shot["type"] == "image" else next((item for item in reversed(shots) if item["type"] == "image"), None)
+    result = {key: shot[key] for key in ("id", "from", "durationInFrames", "transition") if key in shot}
+    if image:
+        result.update({key: image[key] for key in ("src", "sourceLabel", "origin", "reconstruction", "focus",
+                      "fit", "zoomStart", "zoomEnd", "motion") if key in image})
+    # No still in this scene: omit src and let the renderer use its clean card background.
+    return result
+
+
 def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Path) -> dict:
     assets = {}
     for asset in catalog["assets"]:
@@ -88,12 +99,12 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
                 shots.append(shot)
             if scene.get("chart"):
                 index = min(len(shots) - 1, max(1, len(shots) // 2))
-                shots[index] = {**shots[index], "id": f"{scene_id}-chart", "type": "chart",
+                shots[index] = {**image_card_background(shots[index], shots), "id": f"{scene_id}-chart", "type": "chart",
                                 "chart": normalize_chart(scene["chart"])}
             if scene.get("quote"):
                 value = scene["quote"]
                 quote = {"text": value} if isinstance(value, str) else value
-                shots[-1] = {**shots[-1], "id": f"{scene_id}-quote", "type": "quote", "quote": quote}
+                shots[-1] = {**image_card_background(shots[-1], shots), "id": f"{scene_id}-quote", "type": "quote", "quote": quote}
                 result["audio"]["effects"].append({"src": "assets/audio/reveal_accent.wav",
                     "from": cursor + act_cursor + shots[-1]["from"], "durationInFrames": 60, "volume": .11})
             output_scene = {"id": scene_id, "startFrame": act_cursor, "durationInFrames": frames,

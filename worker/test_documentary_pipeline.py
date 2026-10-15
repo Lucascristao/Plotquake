@@ -96,6 +96,23 @@ class DocumentaryPipelineTests(unittest.TestCase):
         path.write_bytes(data)
         self.assertIsNone(cached_scene(path, fingerprint))
 
+    def test_cards_never_send_video_files_to_the_image_renderer(self):
+        (self.public / "movie.mp4").write_bytes(b"video-fixture")
+        self.catalog["assets"].append({"key": "video", "src": "movie.mp4", "kind": "video"})
+        scene = self.source["acts"][0]["scenes"][0]
+        scene.update({"quote": {"text": "A verified quote", "author": "A witness"},
+                      "chart": {"title": "Comparison", "values": [{"label": "A", "value": 1}]}})
+        for keys, expected in ((["video", "photo"], "photo.jpg"), (["video"], None)):
+            with self.subTest(keys=keys), patch("build_episode.cached_scene", return_value={"durationSeconds": 115.137}):
+                scene["visualKeys"] = keys
+                result = build_episode(self.source, self.catalog, self.audio_dir, self.public)
+            cards = [shot for shot in result["acts"][0]["scenes"][0]["shots"] if shot["type"] in ("quote", "chart")]
+            self.assertEqual(len(cards), 2)
+            for card in cards:
+                self.assertEqual(card.get("src"), expected)
+                self.assertNotIn("trimBefore", card)
+                self.assertNotIn("playbackRate", card)
+
     def test_pitch_keeps_exact_duration(self):
         source, target = self.audio_dir / "raw.wav", self.audio_dir / "deep.wav"
         sample_count = 27103
