@@ -116,7 +116,7 @@ export const NewspaperPop = ({
           {headline}
         </div>
 
-        {/* Subheadline with Plotquake Orange neon highlighter marker effect */}
+        {/* Subheadline with Golden Amber highlighter marker effect (logo-matched) */}
         {subheadline && (
           <div
             style={{

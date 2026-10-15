@@ -91,7 +91,7 @@ export const pilotEpisode: DocumentaryEpisode = {
             title: 'Global Smartphone Market Share (2007)',
             year: '2007',
             data: [
-              {label: 'BlackBerry (RIM)', percentage: 51, color: '#ff5500'},
+              {label: 'BlackBerry (RIM)', percentage: 51, color: '#e5a158'},
               {label: 'Nokia (Symbian)', percentage: 34, color: '#475569'},
               {label: 'Apple (iPhone 1st Gen)', percentage: 3, color: '#334155'},
               {label: 'Others', percentage: 12, color: '#1e293b'},

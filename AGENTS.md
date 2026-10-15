@@ -11,26 +11,28 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 
 ---
 
-## 2. Identidade Visual e Paleta de Cores (REGRA DO LARANJA EXCLUSIVO)
-- **REGRA MANDATÓRIA DE COR**: A única cor de destaque (*accent color*) permitida no vídeo é o **Laranja Plotquake (`#FF5500` / `#FF6B00`)**. Se houver qualquer detalhe de cor em cena, **TEM QUE SER LARANJA**. É proibido usar detalhes em azul, amarelo, verde ou roxo na interface gráfica.
+## 2. Identidade Visual e Paleta Oficial (O DOURADO/ÂMBAR DO LOGO)
+- **COR DE ASSINATURA CANÔNICA**: **Plotquake Golden Amber / Dourado Alaranjado (`#E5A158` / `#F6C383`)**, extraído milimetricamente do feixe de luz quente e cinematográfico que emana do monólito/porta do logotipo oficial (`public/assets/branding/plotquake_logo.png`).
+- **Atmosfera de Cor**: Um **amarelo alaranjado, quase dourado**, sofisticado, misterioso e documental. Não é um laranja neon forte ou agressivo; é uma luz dourada cinematográfica que lembra segredos revelados, riqueza e conspirações corporativas.
 - **Tokens Canônicos (em `src/theme.ts`)**:
-  - `PLOTQUAKE_THEME.colors.primary`: `#FF5500` (Laranja Sísmico)
-  - `PLOTQUAKE_THEME.colors.primaryLight`: `#FF6B00`
-  - `PLOTQUAKE_THEME.colors.primaryGlow`: `rgba(255, 85, 0, 0.45)` (Glow/brilho de neon)
-  - `PLOTQUAKE_THEME.colors.primaryHighlight`: `rgba(255, 85, 0, 0.45)` (Marca-texto neon laranja para jornais)
+  - `PLOTQUAKE_THEME.colors.primary`: `#E5A158` (Golden Amber / Amarelo alaranjado dourado)
+  - `PLOTQUAKE_THEME.colors.primaryLight`: `#F6C383` (Luz do ponto alto da porta)
+  - `PLOTQUAKE_THEME.colors.primaryDeep`: `#BF6D2C` (Sombra bronze/âmbar)
+  - `PLOTQUAKE_THEME.colors.primaryGlow`: `rgba(229, 161, 88, 0.40)` (Aura luminosa suave)
+  - `PLOTQUAKE_THEME.colors.primaryHighlight`: `rgba(229, 161, 88, 0.45)` (Marca-texto dourado elegante para jornais)
 - **Cores de Suporte (Monocromáticas e Cinematográficas)**:
   - Fundo Geral: Preto e Grafite Profundo (`#030712` / `#05070c`);
   - Fundo de Cartões: Slate Escuro (`#0c1322` / `rgba(15, 23, 42, 0.9)`);
   - Tipografia: Branco Puro (`#FFFFFF`), Branco Suave (`#F8FAFC`) e Cinza Muted (`#94A3B8`);
-  - Gráficos Competitivos: O protagonista é sempre **Laranja (`#FF5500`)** com brilho. Os concorrentes usam tons neutros de slate escuro (`#475569`, `#334155`, `#1e293b`), garantindo que apenas o laranja salte aos olhos.
+  - Gráficos Competitivos: O protagonista é sempre **Dourado/Âmbar (`#E5A158`)** com brilho. Os concorrentes usam tons neutros de slate escuro (`#475569`, `#334155`, `#1e293b`), garantindo foco e elegância premium.
 - **Resolução e Formato**: **Full HD Horizontal (`1920x1080`) a 30 FPS**.
 - **Componentes Oficiais Remotion** (em `src/components/`):
-  1. `KenBurnsImage`: Zoom cinematográfico suave, granulação, vinheta e lower-third com borda e glow no Laranja Plotquake.
-  2. `NewspaperPop`: Jornal com rotação 3D, manchete de época e submanchete destacada com **marca-texto neon laranja**.
-  3. `MarketChart`: Gráfico de barras animado com ano e barra principal no Laranja Plotquake.
-  4. `QuoteCard`: Cartão de citação executiva com aspas gigantes, borda esquerda e ano em destaque no Laranja Plotquake.
-  5. `BrollPlayer`: Player de arquivo histórico em cinemascope 2.39:1 com badge e LED de gravação no Laranja Plotquake.
-  6. `ActMarker`: Transição monumental dos 4 atos com grade sísmica e linha de energia no Laranja Plotquake.
+  1. `KenBurnsImage`: Zoom cinematográfico suave, granulação, vinheta e lower-third com borda e glow no Dourado/Âmbar Plotquake.
+  2. `NewspaperPop`: Jornal com rotação 3D, manchete de época e submanchete destacada com **marca-texto dourado alaranjado**.
+  3. `MarketChart`: Gráfico de barras animado com ano e barra principal no Dourado Plotquake.
+  4. `QuoteCard`: Cartão de citação executiva com aspas gigantes, borda esquerda e ano em destaque no Dourado Plotquake.
+  5. `BrollPlayer`: Player de arquivo histórico em cinemascope 2.39:1 com badge e LED de gravação no Dourado Plotquake.
+  6. `ActMarker`: Transição monumental dos 4 atos com grade sísmica e linha de energia no Dourado Plotquake.
 
 ---
 
@@ -63,8 +65,8 @@ Nenhum documentário do Plotquake é uma aula acadêmica chata; é um **duelo dr
 - **REGRA DE OURO**: **NUNCA use um frame aleatório extraído do vídeo para a capa!** A capa é uma peça de arte independente e autoral feita sob medida.
 - **Conceito Visual**:
   - **Protagonista em Chiaroscuro**: Rosto expressivo de figura histórica/executiva ou silhueta misteriosa com iluminação dramática;
-  - **Luz e Atmosfera Laranja**: Brilho de borda (*rim light*) no **Laranja Plotquake (`#FF5500`)** com fundo escuro e esfumaçado;
-  - **Micro-Copy de 2 a 3 Palavras**: Letras gigantes em caixa alta (ex.: `"THE $50B MISTAKE"`, `"EMPIRE FALLS"`, `"SECRET CALL"`), usando fundo de contraste e a cor laranja para a palavra de maior choque;
+  - **Luz e Atmosfera Dourada**: Brilho de borda (*rim light*) no tom **Dourado/Âmbar Plotquake (`#E5A158` / `#F6C383`)** com fundo escuro e esfumaçado;
+  - **Micro-Copy de 2 a 3 Palavras**: Letras gigantes em caixa alta (ex.: `"THE $50B MISTAKE"`, `"EMPIRE FALLS"`, `"SECRET CALL"`), usando fundo de contraste e a cor dourada para a palavra de maior choque;
   - **Resolução**: `1280x720` (16:9), formato JPG de alta qualidade, salva em `public/assets/images/thumbnail_concept.jpg`.
 
 ---

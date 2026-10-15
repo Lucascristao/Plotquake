@@ -55,7 +55,7 @@ export const MarketChart = ({
           border: '1px solid rgba(255, 255, 255, 0.1)',
           borderTop: `4px solid ${PLOTQUAKE_THEME.colors.primary}`,
           borderRadius: 24,
-          boxShadow: '0 30px 100px rgba(0,0,0,0.8), 0 0 30px rgba(255, 85, 0, 0.15)',
+          boxShadow: '0 30px 100px rgba(0,0,0,0.8), 0 0 30px rgba(229, 161, 88, 0.15)',
         }}
       >
         <div
@@ -92,7 +92,7 @@ export const MarketChart = ({
             });
 
             const barColor = item.color ?? (index === 0 ? PLOTQUAKE_THEME.colors.primary : '#475569');
-            const isOrange = barColor === PLOTQUAKE_THEME.colors.primary || barColor.toLowerCase() === '#ff5500';
+            const isHighlighted = barColor.toLowerCase() === PLOTQUAKE_THEME.colors.primary.toLowerCase() || barColor.toLowerCase() === '#e5a158';
 
             return (
               <div key={item.label} style={{display: 'grid', gap: 10}}>
@@ -126,7 +126,7 @@ export const MarketChart = ({
                       height: '100%',
                       backgroundColor: barColor,
                       borderRadius: 12,
-                      boxShadow: isOrange ? '0 0 16px rgba(255, 85, 0, 0.6)' : 'none',
+                      boxShadow: isHighlighted ? '0 0 16px rgba(229, 161, 88, 0.6)' : 'none',
                     }}
                   />
                 </div>

@@ -94,7 +94,7 @@ export const KenBurnsImage = ({
         }}
       />
 
-      {/* Documentary Caption Lower Third with Plotquake Orange Accent */}
+      {/* Documentary Caption Lower Third with Golden Amber Accent */}
       {(caption || sourceLabel) && (
         <div
           style={{
@@ -106,7 +106,7 @@ export const KenBurnsImage = ({
             backdropFilter: 'blur(12px)',
             borderLeft: `5px solid ${PLOTQUAKE_THEME.colors.primary}`,
             borderRadius: '0 12px 12px 0',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.5), -5px 0 20px rgba(255, 85, 0, 0.3)',
+            boxShadow: '0 10px 40px rgba(0,0,0,0.5), -5px 0 20px rgba(229, 161, 88, 0.3)',
           }}
         >
           {caption && (

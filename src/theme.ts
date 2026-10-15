@@ -1,19 +1,22 @@
 /**
  * Plotquake Official Brand Design System & Color Tokens
  * 
- * Signature Color: Plotquake Orange (#FF5500 / #FF6B00)
- * Rule: Any colorful UI accent, border, highlight, indicator, glow, or kinetic badge
- * in Plotquake videos MUST strictly use Plotquake Orange.
+ * Signature Color: Plotquake Golden Amber (#E5A158 / #F6C383)
+ * Exact palette sampled directly from the official logo doorway beam of light.
+ * Tone: Amarelo alaranjado, quase dourado, luxuoso e cinematográfico.
  */
 
 export const PLOTQUAKE_THEME = {
   colors: {
-    // Primary Signature Orange
-    primary: '#FF5500',
-    primaryLight: '#FF6B00',
-    primaryGlow: 'rgba(255, 85, 0, 0.45)',
-    primaryHighlight: 'rgba(255, 85, 0, 0.45)', // Neon orange marker for newspaper pop
-    primaryBorder: 'rgba(255, 85, 0, 0.85)',
+    // Primary Signature Gold / Amber (Direto do feixe de luz do logo)
+    primary: '#E5A158',           // Golden Amber (Amarelo alaranjado quase dourado)
+    primaryLight: '#F6C383',      // Luminous Doorway Gold (Ponto alto de luz)
+    primaryDeep: '#BF6D2C',       // Rich Amber Bronze
+    primaryGlow: 'rgba(229, 161, 88, 0.40)',
+    primaryHighlight: 'rgba(229, 161, 88, 0.45)', // Marca-texto dourado elegante para jornais
+    primaryBorder: 'rgba(229, 161, 88, 0.85)',
+    primaryPillBg: 'rgba(229, 161, 88, 0.15)',
+    primaryPillBorder: 'rgba(229, 161, 88, 0.35)',
 
     // Deep Cinematic Dark Neutrals
     background: '#030712',
@@ -27,8 +30,8 @@ export const PLOTQUAKE_THEME = {
     textDark: '#1a1815',
   },
   shadows: {
-    orangeGlow: '0 0 20px rgba(255, 85, 0, 0.5)',
-    orangeGlowIntense: '0 0 35px rgba(255, 85, 0, 0.8)',
+    goldGlow: '0 0 20px rgba(229, 161, 88, 0.45)',
+    goldGlowIntense: '0 0 35px rgba(246, 195, 131, 0.70)',
     cinematicDrop: '0 25px 70px rgba(0, 0, 0, 0.85)',
   },
 } as const;

@@ -47,13 +47,13 @@ export const ActMarker = ({
         opacity,
       }}
     >
-      {/* Seismic Orange Grid Lines */}
+      {/* Seismic Golden Grid Lines */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
           backgroundImage:
-            'linear-gradient(rgba(255, 85, 0, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 85, 0, 0.08) 1px, transparent 1px)',
+            'linear-gradient(rgba(229, 161, 88, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(229, 161, 88, 0.08) 1px, transparent 1px)',
           backgroundSize: '120px 120px',
         }}
       />
@@ -73,7 +73,7 @@ export const ActMarker = ({
             letterSpacing: 6,
             textTransform: 'uppercase',
             marginBottom: 16,
-            textShadow: '0 0 20px rgba(255, 85, 0, 0.5)',
+            textShadow: '0 0 20px rgba(229, 161, 88, 0.5)',
           }}
         >
           {typeof actNumber === 'number' ? `ACT ${actNumber}` : actNumber}
@@ -115,7 +115,7 @@ export const ActMarker = ({
             backgroundColor: PLOTQUAKE_THEME.colors.primary,
             margin: '36px auto 0 auto',
             borderRadius: 2,
-            boxShadow: '0 0 18px #ff5500',
+            boxShadow: `0 0 18px ${PLOTQUAKE_THEME.colors.primary}`,
           }}
         />
       </div>

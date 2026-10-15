@@ -80,7 +80,7 @@ export const BrollPlayer = ({
         }}
       />
 
-      {/* Plotquake Orange Archive Badge */}
+      {/* Plotquake Golden Archive Badge */}
       <div
         style={{
           position: 'absolute',

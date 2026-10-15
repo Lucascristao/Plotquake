@@ -56,7 +56,7 @@ export const QuoteCard = ({
           border: '1px solid rgba(255, 255, 255, 0.12)',
           borderLeft: `8px solid ${PLOTQUAKE_THEME.colors.primary}`,
           borderRadius: 24,
-          boxShadow: '0 30px 100px rgba(0,0,0,0.7), -10px 0 35px rgba(255, 85, 0, 0.3)',
+          boxShadow: '0 30px 100px rgba(0,0,0,0.7), -10px 0 35px rgba(229, 161, 88, 0.3)',
           transform: `translateY(${translateY}px)`,
         }}
       >
@@ -67,7 +67,7 @@ export const QuoteCard = ({
             fontFamily: '"Georgia", serif',
             lineHeight: 0.5,
             marginBottom: 20,
-            textShadow: '0 0 20px rgba(255, 85, 0, 0.5)',
+            textShadow: '0 0 20px rgba(229, 161, 88, 0.5)',
           }}
         >
           "
@@ -113,8 +113,8 @@ export const QuoteCard = ({
                 color: PLOTQUAKE_THEME.colors.primary,
                 fontSize: 24,
                 fontWeight: 800,
-                backgroundColor: 'rgba(255, 85, 0, 0.15)',
-                border: '1px solid rgba(255, 85, 0, 0.35)',
+                backgroundColor: PLOTQUAKE_THEME.colors.primaryPillBg,
+                border: `1px solid ${PLOTQUAKE_THEME.colors.primaryPillBorder}`,
                 padding: '6px 18px',
                 borderRadius: 12,
               }}
