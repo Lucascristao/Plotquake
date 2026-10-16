@@ -40,6 +40,8 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 ## 3. Roteiro e Estrutura Narrativa (Storytelling em 4 Atos)
 O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, escolhas, conflitos, mecanismos econômicos e consequências concretas. A pesquisa sustenta a narrativa; a narração evita explicações burocráticas e drama sem evidência.
 
+- **Roteiro original e humanizado**: Escrever texto próprio a partir da pesquisa, com síntese e condução narrativa autorais. Usar o History como referência de linguagem documental, sem copiar seus roteiros ou recontar um episódio por paráfrase. Escrever para ser ouvido em inglês americano natural, com situações concretas, pessoas, decisões e consequências. Variar tamanho das frases, duração das cenas e ritmo das explicações; evitar blocos simétricos, contrastes repetidos, anúncios da própria técnica narrativa e uma frase de efeito obrigatória no fim de cada trecho. A naturalidade nasce da autoria e da interpretação; não inventar diálogos, depoimentos ou motivações privadas para simulá-la.
+
 ### A Estrutura dos 4 Atos:
 - **Gancho Inicial (Primeiros 5 a 10 segundos)**: Choque factual ou quebra violenta de expectativa. Nunca comece com "Hello guys" ou apresentações burocráticas.
 - **Ato 1: A Construção do Império**: Quem construiu o negócio, qual problema resolveu, de onde vieram o poder e a vantagem competitiva.
@@ -62,7 +64,7 @@ O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, es
 - **Motor Canônico**: **Gemini 3.8 Live** (`google-genai` SDK WebSocket).
 - **Voz Canônica**: **Charon**, masculina, em **US English**, mantida durante todo o episódio. Trocas de voz dependem de nova orientação explícita.
 - **Calibração Tonal Grave**: Configurado para soar **pouca coisa mais grave que o padrão** (-1.0 semitom de afinação) com ressonância barítona de peito e dicção cinematográfica de "voz de autoridade/voz de cinema". O script `worker/synthesize_narration.py` aplica automaticamente a instrução vocal no Gemini Live e calibra o tom via FFmpeg preservando o tempo e a naturalidade milimétrica do áudio.
-- **Estilo de Entrega**: Narrador sério, dramático, pausado e autoritário (estilo locutor de documentários do History Channel/Netflix). Pausas dramáticas antes de números astronômicos e revelações de enredo.
+- **Estilo de Entrega**: Narração documental séria, envolvente e natural, com presença e autoridade no estilo do History Channel. Variar ritmo, ênfase e intensidade de acordo com pessoas, acontecimentos e revelações. Usar pausas motivadas pelo sentido e pela tensão da cena, com fluidez de inglês americano falado. Evitar cadência robótica, solenidade constante, voz de trailer em todas as frases e interpretação idêntica de blocos diferentes. Manter a voz canônica e a calibração tonal definidas acima.
 - **Trilha Sonora**: Base de tensão contínua em sub-graves (*tension drone*) em `public/assets/audio/tension_score.wav` somada a efeitos sonoros pontuais.
 - **Regra**: Nunca use sintetizadores básicos de sistema operacional (como Windows SAPI) para produções oficiais.
 
