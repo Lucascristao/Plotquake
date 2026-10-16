@@ -86,11 +86,12 @@ export const Documentary = ({episode}: DocumentaryProps) => {
     voiced: Boolean(scene.audioSrc),
   })));
   const isVoiced = sceneWindows.some((scene) => scene.voiced && frame >= scene.from && frame < scene.until);
+  const musicCue = music?.cues?.filter((cue) => frame >= cue.from && frame < cue.from + cue.durationInFrames).at(-1);
 
   return (
     <AbsoluteFill style={{backgroundColor: '#05070c', fontFamily: 'Arial, Helvetica, sans-serif'}}>
       {music && <Audio src={resolveMedia(music.src)} loop
-        volume={(music.volume ?? 0.13) * masterFade * (isVoiced ? 1 : 1.22)} />}
+        volume={(musicCue?.volume ?? music.volume ?? 0.13) * masterFade * (isVoiced ? 1 : 1.22)} />}
       {episode.audio?.narration && <Audio src={resolveMedia(episode.audio.narration)} volume={1} />}
       {episode.audio?.effects?.map((effect, index) => <Sequence key={index} from={effect.from}
         durationInFrames={effect.durationInFrames}>

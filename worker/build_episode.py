@@ -30,6 +30,143 @@ def image_card_background(shot: dict, shots: list[dict]) -> dict:
     return result
 
 
+def shot_lengths(weights: list[float], frames: int, caps: list[int | None]) -> list[int]:
+    """Fit authored relative lengths to the real voice, without running past a clip's end."""
+    if not weights or len(weights) > frames or any(not math.isfinite(w) or w <= 0 for w in weights):
+        raise ValueError("Visual plan needs positive finite weights and at least one frame per shot.")
+    limits = [frames if cap is None else cap for cap in caps]
+    if any(cap < 1 for cap in limits) or sum(limits) < frames:
+        raise ValueError("Selected video excerpts cannot cover this scene; include a still or a longer excerpt.")
+    targets = [0.0] * len(weights)
+    remaining, active = frames, set(range(len(weights)))
+    while active:
+        total = sum(weights[i] for i in active)
+        bounded = [i for i in active if remaining * weights[i] / total > limits[i]]
+        if not bounded:
+            for i in active:
+                targets[i] = remaining * weights[i] / total
+            break
+        for i in bounded:
+            targets[i] = float(limits[i])
+            remaining -= limits[i]
+            active.remove(i)
+    lengths = [max(1, math.floor(value)) for value in targets]
+    # A one-frame minimum can only need borrowing for exceptionally small weights.
+    while sum(lengths) > frames:
+        i = max((i for i, n in enumerate(lengths) if n > 1), key=lambda i: lengths[i] - targets[i])
+        lengths[i] -= 1
+    order = sorted(range(len(weights)), key=lambda i: targets[i] - lengths[i], reverse=True)
+    while sum(lengths) < frames:
+        for i in order:
+            if lengths[i] < limits[i]:
+                lengths[i] += 1
+                if sum(lengths) == frames:
+                    break
+    return lengths
+
+
+def build_shots(scene: dict, assets: dict, frames: int, public_root: Path,
+                media_credits: dict, global_scene_index: int) -> list[dict]:
+    scene_id = safe_id(scene["id"])
+    authored = scene.get("visualPlan")
+    keys = scene.get("visualKeys") or []
+    if authored is None:
+        if not keys:
+            raise ValueError(f"No visual media selected for scene {scene_id}.")
+        missing = [key for key in keys if key not in assets]
+        if missing:
+            raise ValueError(f"Unknown visualKeys in {scene_id}: {missing}")
+        count = max(1, math.ceil(frames / (4.7 * FPS)))
+        plan = [{"mediaKey": keys[i % len(keys)],
+                 "variantIndex": (global_scene_index + i) % len(assets[keys[i % len(keys)]])}
+                for i in range(count)]
+    else:
+        if not isinstance(authored, list) or not authored:
+            raise ValueError(f"Empty visualPlan in {scene_id}.")
+        plan = authored
+    prepared, caps = [], []
+    for index, entry in enumerate(plan):
+        key = entry.get("mediaKey")
+        candidates = assets.get(key, [])
+        variant = entry.get("variantIndex", 0)
+        if key is None and entry.get("type") in ("chart", "quote"):
+            asset = {"kind": "image"}
+        elif not candidates or not isinstance(variant, int) or not 0 <= variant < len(candidates):
+            raise ValueError(f"Unknown visualPlan asset/variant in {scene_id}: {key}/{variant}.")
+        else:
+            asset = candidates[variant]
+        src = asset.get("src")
+        if src:
+            if not src.startswith(("https://", "http://")):
+                local = (public_root / src).resolve()
+                if not local.is_relative_to(public_root.resolve()) or not local.is_file():
+                    raise ValueError(f"Selected media does not exist: {src}")
+            media_credits[src] = {field: asset[field] for field in
+                                  ("src", "credit", "origin", "license", "licenseUrl", "changes") if field in asset}
+        kind = entry.get("type", asset["kind"])
+        if kind not in ("image", "video", "chart", "quote"):
+            raise ValueError(f"Unknown shot type in {scene_id}: {kind}")
+        if kind in ("image", "video") and kind != asset["kind"]:
+            raise ValueError(f"Shot type does not match selected media: {scene_id}/{key}.")
+        if kind in ("chart", "quote") and asset["kind"] == "video":
+            raise ValueError(f"Card background must be a still: {scene_id}/{key}.")
+        origin = asset.get("origin", "documentary")
+        shot = {"id": f"{scene_id}-shot-{index + 1}", "type": kind,
+                "sourceLabel": asset.get("credit", ""), "origin": origin,
+                "reconstruction": bool(asset.get("reconstruction") or origin in ("generated", "reconstruction", "ai-generated")),
+                "motion": asset.get("motion", ("push", "pan-left", "pull", "pan-right")[index % 4]),
+                "focus": asset.get("focus", {"x": .5, "y": .5}), "fit": asset.get("fit", "cover"),
+                "transition": asset.get("transition", "cut"), "muted": True,
+                "zoomStart": asset.get("zoomStart", 1.03 if index % 2 == 0 else 1.13),
+                "zoomEnd": asset.get("zoomEnd", 1.13 if index % 2 == 0 else 1.03)}
+        if src:
+            shot["src"] = src
+        for field in ("motion", "focus", "fit", "transition", "zoomStart", "zoomEnd", "caption", "vintageFilter"):
+            if field in entry:
+                shot[field] = copy.deepcopy(entry[field])
+            elif field in asset:
+                shot[field] = copy.deepcopy(asset[field])
+        # Explicit motion must control direction, rather than the shot's ordinal position.
+        defaults = (1.13, 1.03) if shot["motion"] == "pull" else (1.03, 1.13)
+        if shot["motion"] == "still":
+            defaults = (1.035, 1.035)
+        for field, value in zip(("zoomStart", "zoomEnd"), defaults):
+            if field not in entry and field not in asset:
+                shot[field] = value
+        cap = None
+        if kind == "video":
+            start = float(entry.get("trimStartSeconds", asset.get("trimStartSeconds", asset.get("trimStart", 0))))
+            rate = float(entry.get("playbackRate", asset.get("playbackRate", 1)))
+            if not math.isfinite(start) or start < 0 or not math.isfinite(rate) or rate <= 0:
+                raise ValueError(f"Invalid video trim/rate in {scene_id}/{key}.")
+            shot.update({"trimBefore": round(start * FPS), "playbackRate": rate})
+            if asset.get("durationSeconds"):
+                # Leave a short tail for the renderer's dissolve overlap.
+                cap = math.floor((float(asset["durationSeconds"]) - start) / rate * FPS) - 12
+        if kind == "chart":
+            shot["chart"] = normalize_chart(scene["chart"])
+        elif kind == "quote":
+            value = scene["quote"]
+            shot["quote"] = {"text": value} if isinstance(value, str) else copy.deepcopy(value)
+        prepared.append(shot)
+        caps.append(cap)
+    lengths = shot_lengths([float(entry.get("weight", 1)) for entry in plan], frames, caps)
+    cursor = 0
+    for shot, length in zip(prepared, lengths):
+        shot.update({"from": cursor, "durationInFrames": length})
+        cursor += length
+    if authored is None:
+        if scene.get("chart"):
+            i = min(len(prepared) - 1, max(1, len(prepared) // 2))
+            prepared[i] = {**image_card_background(prepared[i], prepared), "id": f"{scene_id}-chart",
+                           "type": "chart", "chart": normalize_chart(scene["chart"])}
+        if scene.get("quote"):
+            value = scene["quote"]
+            prepared[-1] = {**image_card_background(prepared[-1], prepared), "id": f"{scene_id}-quote",
+                            "type": "quote", "quote": {"text": value} if isinstance(value, str) else value}
+    return prepared
+
+
 def build_newspaper(value: dict, assets: dict, scene_frames: int, public_root: Path,
                     media_credits: dict, scene_id: str) -> dict:
     """An author-timed evidence overlay; it never replaces a visual shot or changes narration."""
@@ -127,54 +264,17 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
             seconds = float(audio["durationSeconds"])
             measured_seconds += seconds
             frames = math.ceil(seconds * FPS)
-            keys = scene.get("visualKeys") or []
-            if not keys:
-                raise ValueError(f"No visual media selected for scene {scene_id}.")
-            missing = [key for key in keys if key not in assets]
-            if missing:
-                raise ValueError(f"Unknown visualKeys in {scene_id}: {missing}")
-            count = max(1, math.ceil(frames / (4.7 * FPS)))
-            boundaries = [round(index * frames / count) for index in range(count + 1)]
-            shots = []
-            for shot_index in range(count):
-                variants = assets[keys[shot_index % len(keys)]]
-                asset = variants[(global_scene_index + shot_index) % len(variants)]
-                src = asset["src"]
-                media_credits[src] = {key: asset[key] for key in
-                                      ("src", "credit", "origin", "license", "licenseUrl", "changes") if key in asset}
-                if not src.startswith(("https://", "http://")):
-                    local = (public_root / src).resolve()
-                    if not local.is_relative_to(public_root.resolve()) or not local.is_file():
-                        raise ValueError(f"Selected media does not exist: {src}")
-                origin = asset.get("origin", "documentary")
-                shot = {"id": f"{scene_id}-shot-{shot_index + 1}", "type": asset["kind"], "src": src,
-                        "from": boundaries[shot_index], "durationInFrames": boundaries[shot_index + 1] - boundaries[shot_index],
-                        "sourceLabel": asset.get("credit", ""), "origin": origin,
-                        "reconstruction": bool(asset.get("reconstruction") or origin in ("generated", "reconstruction", "ai-generated")),
-                        "motion": asset.get("motion", ("push", "pan-left", "pull", "pan-right")[shot_index % 4]),
-                        "focus": asset.get("focus", {"x": .5, "y": .5}), "transition": asset.get("transition", "cut"),
-                        "fit": asset.get("fit", "cover"), "muted": True,
-                        "zoomStart": asset.get("zoomStart", 1.03 if shot_index % 2 == 0 else 1.13),
-                        "zoomEnd": asset.get("zoomEnd", 1.13 if shot_index % 2 == 0 else 1.03)}
-                if asset["kind"] == "video":
-                    available = asset.get("durationSeconds")
-                    shot_seconds = shot["durationInFrames"] / FPS
-                    start = float(asset.get("trimStartSeconds", asset.get("trimStart", 0)))
-                    if available:
-                        start += min(max(0, float(available) - start - shot_seconds - .1), (shot_index // len(keys)) * 5.0)
-                    shot["trimBefore"] = round(start * FPS)
-                    shot["playbackRate"] = float(asset.get("playbackRate", 1))
-                shots.append(shot)
-            if scene.get("chart"):
-                index = min(len(shots) - 1, max(1, len(shots) // 2))
-                shots[index] = {**image_card_background(shots[index], shots), "id": f"{scene_id}-chart", "type": "chart",
-                                "chart": normalize_chart(scene["chart"])}
-            if scene.get("quote"):
-                value = scene["quote"]
-                quote = {"text": value} if isinstance(value, str) else value
-                shots[-1] = {**image_card_background(shots[-1], shots), "id": f"{scene_id}-quote", "type": "quote", "quote": quote}
-                result["audio"]["effects"].append({"src": "assets/audio/reveal_accent.wav",
-                    "from": cursor + act_cursor + shots[-1]["from"], "durationInFrames": 60, "volume": .11})
+            shots = build_shots(scene, assets, frames, public_root, media_credits, global_scene_index)
+            for shot in shots:
+                if shot["type"] == "quote":
+                    result["audio"]["effects"].append({"src": "assets/audio/reveal_accent.wav",
+                        "from": cursor + act_cursor + shot["from"], "durationInFrames": 60, "volume": .11})
+            if "musicVolume" in scene:
+                volume = float(scene["musicVolume"])
+                if not math.isfinite(volume) or volume < 0:
+                    raise ValueError(f"Invalid musicVolume in {scene_id}.")
+                result["audio"]["music"].setdefault("cues", []).append({
+                    "from": cursor + act_cursor, "durationInFrames": frames, "volume": volume})
             output_scene = {"id": scene_id, "startFrame": act_cursor, "durationInFrames": frames,
                             "narration": scene["narration"], "caption": scene.get("caption", ""),
                             "audioSrc": path.resolve().relative_to(public_root.resolve()).as_posix(), "shots": shots}
@@ -195,7 +295,7 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
                          "Expand the actual script. No repeated footage or silence is added to stretch runtime.")
     result["durationInFrames"] = cursor
     result["metadata"]["narrationSeconds"] = measured_seconds
-    result["mediaCredits"] = list(media_credits.values())
+    result["mediaCredits"] = list(media_credits.values()) + copy.deepcopy(source.get("thumbnailCredits", []))
     result["chapters"] = sorted(result["chapters"], key=lambda item: item["startFrame"])
     return result
 

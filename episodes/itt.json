@@ -20,7 +20,7 @@
   "voice": "Charon",
   "pitchSemitones": -1,
   "minimumDurationSeconds": 900,
-  "thumbnail": "public/assets/images/itt-thumbnail.png",
+  "thumbnail": "public/assets/images/itt-thumbnail-v2.png",
   "acts": [
     {
       "id": "act-1",
@@ -33,14 +33,54 @@
           "narration": "One million dollars. In 1970, the chairman of an American telephone company offered money to the CIA to help stop a presidential candidate in Chile. The CIA rejected the offer. But that refusal was not the end of the relationship. It was the beginning of a question that would reach the United States Senate: how far could a corporation go to protect a business it feared losing?",
           "visualKeys": [
             "rotary_phone",
-            "cia_headquarters",
-            "itt_building",
+            "telephone_dial_archive",
+            "document_offer",
             "allende",
-            "document_offer"
+            "john_mccone",
+            "document_1973",
+            "itt_building"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "telephone_dial_archive",
+              "variantIndex": 0,
+              "weight": 0.8
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1.2
+            }
+          ],
+          "musicVolume": 0.12
         },
         {
           "id": "itt-02",
@@ -48,16 +88,55 @@
           "narration": "The company was International Telephone and Telegraph. ITT. Behind those three letters stood telephone networks, hotels, insurance, and a sprawling collection of acquisitions. One of its directors had run American intelligence. Its executives could move between corporate offices and the national security world. When Chile threatened the value of its telephone investment, the company sought more than a better commercial deal. It sought help shaping the political outcome.",
           "visualKeys": [
             "itt_building",
-            "switchboard",
+            "telephone_operators_archive",
             "sheraton",
+            "itt_conglomerate",
             "john_mccone",
-            "itt_conglomerate"
+            "allende"
           ],
           "sourceIds": [
             "S01",
             "S06",
             "S07"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_operators_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_conglomerate",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.09
         },
         {
           "id": "itt-03",
@@ -65,30 +144,105 @@
           "narration": "ITT began in 1920, long before the smartphone, when a telephone connection required physical infrastructure and local permission. The name described an international ambition. A network could join distant customers, but the business behind it depended on cables, switching equipment, workers, and the rules of each country. Expansion meant putting valuable assets inside someone else's borders. The connection could cross a frontier. Ownership still had to answer to a government.",
           "visualKeys": [
             "telephone_network",
-            "switchboard",
-            "rotary_phone",
-            "itt_building",
+            "telephone_cable_archive",
+            "telephone_exchange_archive",
             "santiago"
           ],
           "sourceIds": [
             "S05"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1,
+              "caption": "Preserved ITT teletype · 1967 equipment"
+            },
+            {
+              "mediaKey": "telephone_cable_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_exchange_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-04",
           "caption": "The asset cannot leave with the investor",
           "narration": "That is the special risk of an infrastructure business. A retailer can stop ordering merchandise. An investor can sell a security. A telephone operator cannot simply pack up the network when politics changes. The lines still run through the city. Customers still need service. The equipment remains where it was installed. A foreign owner's financial interest and a nation's control over essential services can occupy the same wires, with very different priorities.",
           "visualKeys": [
+            "telephone_engineering_archive",
             "telephone_network",
             "santiago",
-            "switchboard",
-            "itt_office",
-            "rotary_phone",
-            "itt_reconstruction"
+            "telephone_cable_archive",
+            "switchboard"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "telephone_engineering_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_cable_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "switchboard",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-05",
@@ -96,13 +250,54 @@
           "narration": "Harold Geneen gave ITT a different kind of scale. He took command in 1959 and turned diversification into a corporate identity. The company's own later history credits the Geneen era with more than three hundred fifty acquisitions between 1960 and 1977. This was expansion by purchasing existing businesses. Instead of waiting for one telephone operation to grow, headquarters could add another company, another management team, another stream of earnings.",
           "visualKeys": [
             "itt_building",
-            "itt_office",
-            "telephone_network"
+            "telephone_accounting_archive",
+            "itt_conglomerate",
+            "sheraton",
+            "avis",
+            "telephone_lab_archive"
           ],
           "sourceIds": [
             "S05",
             "S07"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_conglomerate",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "avis",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_lab_archive",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.07
         },
         {
           "id": "itt-06",
@@ -112,43 +307,167 @@
           "visualKeys": [
             "sheraton",
             "itt_conglomerate",
-            "itt_building",
             "avis",
+            "telephone_accounting_archive",
+            "itt_building",
             "telephone_network"
           ],
           "sourceIds": [
             "S06",
             "S07"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 0.7,
+              "focus": {
+                "x": 0.5,
+                "y": 0.3
+              },
+              "zoomStart": 1.13,
+              "zoomEnd": 1.2
+            },
+            {
+              "mediaKey": "itt_conglomerate",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "avis",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.065
         },
         {
           "id": "itt-07",
           "caption": "Diversification | The promise of the conglomerate",
           "narration": "The attraction was understandable. Different industries do not move in perfect unison. A business having a difficult year might sit beside another generating cash. Headquarters could compare results, choose investments, and buy additional operations. But adding businesses does not eliminate the need to understand them. A hotel, an insurer, and a telephone network depend on different relationships. A consolidated financial statement can bring their earnings together without bringing their risks under control.",
           "visualKeys": [
-            "itt_conglomerate",
             "sheraton",
+            "telephone_accounting_archive",
+            "telephone_engineering_archive",
             "itt_building",
             "telephone_network",
-            "itt_office"
+            "santiago"
           ],
           "sourceIds": [
             "S05"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_engineering_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.06
         },
         {
           "id": "itt-08",
           "caption": "An empire meets a national boundary",
           "narration": "For a multinational, one of those risks sits outside the balance sheet's neat columns. A government may decide that a private service should become public property. To the investor, that threatens an asset and future income. To supporters of nationalization, the same asset can represent foreign control over a basic necessity. A negotiation about compensation is possible. So is a political fight over who should have owned the business in the first place.",
           "visualKeys": [
-            "telephone_network",
             "santiago",
+            "telephone_cable_archive",
             "allende",
+            "telephone_network",
+            "telephone_exchange_archive",
             "itt_building"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_cable_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_exchange_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.07
         },
         {
           "id": "itt-09",
@@ -158,27 +477,105 @@
             "santiago",
             "telephone_network",
             "allende",
-            "switchboard",
-            "itt_building"
+            "allende_cabinet",
+            "telephone_operators_close_archive"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "allende_cabinet",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_operators_close_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.08
         },
         {
           "id": "itt-10",
           "caption": "1970 | Two interests begin to converge",
           "narration": "Washington approached the same election through the Cold War. Officials feared the spread of Marxist influence and another hostile government in the hemisphere. ITT approached it with a corporate investment at stake. Those interests overlapped, but they were not identical. A government could pursue an anti-Communist strategy whether or not a telephone company benefited. A company could protect its property while describing the danger in the language that Washington already understood.",
           "visualKeys": [
+            "nixon",
+            "kissinger",
             "allende",
-            "cia_headquarters",
             "telephone_network",
             "itt_building",
+            "telephone_dial_archive",
             "santiago"
           ],
           "sourceIds": [
             "S11"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_dial_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.095
         }
       ]
     },
@@ -195,12 +592,50 @@
             "john_mccone",
             "cia_headquarters",
             "itt_building",
-            "itt_office"
+            "rotary_phone"
           ],
           "sourceIds": [
             "S08",
             "S09"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1.6
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.08
         },
         {
           "id": "itt-12",
@@ -209,14 +644,53 @@
           "visualKeys": [
             "john_mccone",
             "richard_helms",
+            "telephone_dial_archive",
             "cia_headquarters",
             "rotary_phone",
-            "itt_office",
-            "itt_reconstruction"
+            "document_early_offer",
+            "santiago"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_dial_archive",
+              "variantIndex": 0,
+              "weight": 0.7
+            },
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.09
         },
         {
           "id": "itt-13",
@@ -224,29 +698,108 @@
           "narration": "In July 1970, before Chileans voted, Geneen met Broe. The proposal was to have the CIA channel substantial private business money to Jorge Alessandri, Allende's conservative opponent. Broe refused to handle it. Agency policy at that stage allowed an operation against Allende's coalition, but not direct backing for a particular presidential candidate. The distinction created a strange boundary: Washington was already trying to damage one side while declining to finance the other candidate directly.",
           "visualKeys": [
             "document_early_offer",
-            "itt_office",
-            "john_mccone",
-            "rotary_phone",
-            "richard_helms"
-          ],
-          "sourceIds": [
-            "S03"
-          ]
-        },
-        {
-          "id": "itt-14",
-          "caption": "A refusal with another door left open",
-          "narration": "Broe's refusal did not end the discussion. A CIA memorandum later prepared for congressional hearings acknowledged that the agency advised ITT about the security of its proposed funding channels. The company could proceed on its own, with guidance about getting money through discreetly. That is the first important turn in this story. The agency declined to carry the corporation's money, while helping the corporation understand how it might move the money itself.",
-          "visualKeys": [
-            "document_funding",
-            "cia_headquarters",
-            "itt_office",
+            "jorge_alessandri",
+            "richard_helms",
+            "allende",
             "rotary_phone",
             "santiago"
           ],
           "sourceIds": [
             "S03"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.6
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.4,
+              "motion": "still"
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.065
+        },
+        {
+          "id": "itt-14",
+          "caption": "A refusal with another door left open",
+          "narration": "Broe checked with the CIA station in Santiago. There was already a funding channel, and the agency's officers had advised on its security. At a second July meeting, he reported back to Geneen. ITT would have to move its own money, but it could do so with guidance from people who knew the local contacts. Years later, a CIA briefing for congressional hearings acknowledged that advice in writing.",
+          "visualKeys": [
+            "santiago",
+            "document_funding",
+            "rotary_phone",
+            "itt_reconstruction",
+            "document_early_offer",
+            "jorge_alessandri"
+          ],
+          "sourceIds": [
+            "S03"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_reconstruction",
+              "variantIndex": 1,
+              "weight": 0.8
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.07
         },
         {
           "id": "itt-15",
@@ -254,10 +807,10 @@
           "narration": "At least three hundred fifty thousand dollars. That is the amount the Senate's later investigation said ITT passed to the Alessandri campaign. The committee described CIA advice on secure funding mechanisms, including a channel involving agency assets. The agency had declined to handle the company's money. The company nevertheless found a way to fund the campaign. A rejected proposal and a completed transfer now sat in the same documentary record, describing different parts of the relationship.",
           "visualKeys": [
             "document_funding",
+            "jorge_alessandri",
             "santiago",
-            "itt_office",
-            "telephone_network",
-            "cia_headquarters"
+            "richard_helms",
+            "document_early_offer"
           ],
           "newspaper": {
             "mode": "clipping",
@@ -278,7 +831,42 @@
           },
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 2.6,
+              "motion": "still"
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1.3,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.045
         },
         {
           "id": "itt-16",
@@ -287,38 +875,118 @@
           "narration": "On September fourth, Allende won the largest share of the popular vote, about thirty-six percent. He had a plurality, not an outright majority. Under Chile's constitutional process, Congress would choose between the leading candidates. Tradition favored the popular-vote leader, but the parliamentary decision had not yet happened. To Allende's opponents, that interval looked like a final opening. The campaign had ended. The struggle over who would become president had not.",
           "visualKeys": [
             "allende",
-            "itt_election_timeline",
             "santiago",
+            "jorge_alessandri",
+            "itt_election_timeline",
+            "allende_cabinet",
             "rotary_phone"
           ],
           "sourceIds": [
             "S10"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_election_timeline",
+              "variantIndex": 0,
+              "weight": 1.6
+            },
+            {
+              "mediaKey": "allende_cabinet",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.075
         },
         {
           "id": "itt-17",
           "caption": "A parliamentary route around the result",
-          "narration": "One scenario envisioned Congress choosing Alessandri instead. He would resign, allowing outgoing President Eduardo Frei to contest a new election against Allende. It was an attempt to use the remaining constitutional steps to reverse the direction set by the popular vote. Its success depended on Chilean politicians making choices they had not yet made. For executives watching from abroad, the uncertain parliamentary arithmetic offered something more immediate than waiting to negotiate with an Allende government.",
+          "narration": "One scenario had Congress choose Alessandri. He would then resign, opening a new election in which outgoing President Eduardo Frei could run against Allende. There was an awkward obstacle: before the popular vote, Alessandri had said he wouldn't accept the presidency unless he finished first. A CIA analysis doubted the maneuver would work. Still, the weeks before Congress met offered Allende's opponents an opening, and ITT was ready to pursue it.",
           "visualKeys": [
-            "itt_election_timeline",
-            "santiago",
+            "jorge_alessandri",
+            "eduardo_frei",
             "allende",
-            "itt_office",
+            "santiago",
+            "document_1973",
+            "itt_building",
             "rotary_phone"
           ],
           "sourceIds": [
             "S10"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "eduardo_frei",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.09
         },
         {
           "id": "itt-18",
           "caption": "September 1970 | Another million-dollar proposal",
-          "narration": "One million dollars appears again after the election. According to the Senate's 1973 report, Geneen offered that amount to support a United States government plan to build a coalition in Chile's Congress and prevent Allende from becoming president. McCone carried the offer to Helms and Henry Kissinger. The intended customer was now unmistakably the American government. The proposed service was a political outcome in another country, before its president had even taken office.",
+          "narration": "One million dollars appears again after the election. According to the Senate's 1973 report, Geneen offered that amount to support a United States government plan to build a coalition in Chile's Congress and prevent Allende from becoming president. McCone carried the offer to Helms and Henry Kissinger. ITT was putting a price on what it was willing to contribute. With the congressional vote approaching, its chairman wanted Washington to help keep Allende out.",
           "visualKeys": [
             "document_offer",
-            "itt_building",
             "john_mccone",
             "richard_helms",
+            "kissinger",
             "allende"
           ],
           "newspaper": {
@@ -340,38 +1008,157 @@
           },
           "sourceIds": [
             "S02"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 2.7,
+              "motion": "still"
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1.3,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.11
         },
         {
           "id": "itt-19",
           "caption": "September 15, 1970 | Washington's own money",
           "narration": "At the White House, a different sum entered the record. Notes Helms took at a September fifteenth meeting with President Nixon recorded ten million dollars available, more if necessary, and a demand for a plan within forty-eight hours. An amount made available was not an amount actually spent. But it showed the government's own commitment. ITT was approaching officials already willing to direct American resources against Allende. The corporation's proposed million was not the source of Washington's entire operation.",
           "visualKeys": [
+            "nixon",
             "richard_helms",
-            "cia_headquarters",
             "rotary_phone",
-            "itt_office",
+            "kissinger",
+            "cia_headquarters",
             "allende",
-            "itt_reconstruction"
+            "document_offer"
           ],
           "sourceIds": [
             "S20"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1.2
+            }
+          ],
+          "musicVolume": 0.1
         },
         {
           "id": "itt-20",
           "caption": "Track One and Track Two | Different operations",
-          "narration": "Washington was pursuing more than one route. A September CIA message distinguished a parliamentary approach, Track One, from a military approach, Track Two. The latter was to be concealed even from the American ambassador and State Department. These were government operations with their own chains of authority. The existence of ITT contacts does not turn every secret American action into an ITT project. It shows the dangerous environment into which the company's proposal had entered.",
+          "narration": "Washington was pursuing two routes. Track One sought a way through Chile's Congress. Track Two sought military action. A September CIA message ordered that the second operation be concealed even from the American ambassador and State Department. The ambassador could work on the parliamentary route without knowing the agency's other instructions. These secret government operations were moving forward as ITT pressed its case in Washington.",
           "visualKeys": [
-            "cia_headquarters",
-            "richard_helms",
-            "document_1973",
+            "nixon",
             "santiago",
-            "itt_office"
+            "richard_helms",
+            "cia_headquarters",
+            "kissinger",
+            "allende",
+            "itt_building"
           ],
           "sourceIds": [
             "S12"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.11
         }
       ]
     },
@@ -385,31 +1172,106 @@
           "caption": "Economic pressure | Credit, equipment, and confidence",
           "narration": "Economic pressure could operate without a soldier crossing a border. A diplomatic cable recorded suggestions to stop renewing loans, delay orders and spare parts, and encourage businesses to close. These were proposals circulating in the crisis, not proof that every suggested step occurred. The mechanism was concrete. A firm short of credit might cut activity. Equipment without parts might fail. A population expecting shortages might rush to buy. Financial confidence could become a political weapon.",
           "visualKeys": [
-            "itt_building",
-            "itt_office",
+            "telephone_accounting_archive",
             "telephone_network",
-            "switchboard",
-            "santiago"
+            "telephone_lab_archive",
+            "santiago",
+            "telephone_operators_archive"
           ],
           "sourceIds": [
             "S13"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_lab_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_operators_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.1
         },
         {
           "id": "itt-22",
           "caption": "A further twist | ITT rejects a CIA proposal",
-          "narration": "The relationship did not move in only one direction. The Senate's 1973 conclusions said ITT's leaders considered a CIA proposal to create economic chaos in Chile, then rejected it as impractical. The company that had sought government intervention now balked at a plan coming back from the agency. Shared opposition to Allende had brought the two sides into contact. It had not given them an agreed method, or made either side willing to accept every proposal from the other.",
+          "narration": "Then the CIA brought ITT a proposal of its own. According to the Senate's 1973 conclusions, the company's leaders considered a plan to create economic chaos in Chile. Geneen, McCone, and executive Edward Gerrity rejected it as impractical. ITT wanted American help against Allende, but its leaders weren't willing to follow that plan. The contacts had opened a discussion about economic warfare; the company declined to join the proposed operation.",
           "visualKeys": [
             "document_1973",
             "itt_building",
             "john_mccone",
-            "cia_headquarters",
-            "itt_office",
-            "itt_reconstruction"
+            "rotary_phone",
+            "santiago"
           ],
           "sourceIds": [
             "S02"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.5
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.06
         },
         {
           "id": "itt-23",
@@ -417,28 +1279,108 @@
           "narration": "The immediate objective failed. On October twenty-fourth, Chile's Congress confirmed Allende. He was inaugurated on November third, 1970. The corporation now faced the government its executives had tried to prevent. This was the difference between influence and control, exposed by an outcome. ITT had access to powerful Americans. It had money available. Neither was enough to determine the final decision of Chile's Congress or keep Allende out of the presidential palace.",
           "visualKeys": [
             "allende",
-            "itt_election_timeline",
+            "allende_cabinet",
             "santiago",
             "itt_building",
+            "john_mccone",
             "telephone_network"
           ],
           "sourceIds": [
             "S21"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "allende_cabinet",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.05
         },
         {
           "id": "itt-24",
           "caption": "1971 | Corporate pressure continues",
-          "narration": "The company's effort did not simply stop at inauguration. The Senate investigation found that ITT encouraged other American companies to organize pressure on Kissinger and the White House in early 1971. Executives were still trying to turn shared commercial exposure into political leverage. A group of worried investors could present a larger problem than one telephone subsidiary. But organizing a corporate position was not the same as controlling what the government or Chile would do next.",
+          "narration": "ITT kept pressing after Allende took office. In early 1971, the Senate investigation found, the company encouraged other American firms to organize pressure on Kissinger and the White House. Their investments faced the same political threat. Acting together could carry more weight in Washington than one company asking for help with a telephone subsidiary. The effort to stop a candidate had become a campaign to influence how the United States dealt with a president.",
           "visualKeys": [
-            "itt_office",
             "itt_building",
+            "kissinger",
+            "nixon",
+            "telephone_accounting_archive",
             "telephone_network",
-            "santiago"
+            "santiago",
+            "allende"
           ],
           "sourceIds": [
             "S02"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.08
         },
         {
           "id": "itt-25",
@@ -449,41 +1391,161 @@
             "document_offer",
             "document_funding",
             "itt_building",
-            "itt_office"
+            "document_early_offer",
+            "rotary_phone",
+            "santiago"
           ],
           "sourceIds": [
             "S15"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.09
         },
         {
           "id": "itt-26",
           "caption": "Exposure | A political setback for Washington",
           "narration": "American officials recognized the damage. An interagency paper in April described publication of the ITT documents as a setback for United States policy and a political gain for Allende. The papers gave substance to accusations of foreign plotting and threatened to taint the Chilean opposition. The effort to protect American interests had produced evidence that could strengthen the politician those interests opposed. The corporation's private conversations were now helping its adversary make a public case.",
           "visualKeys": [
+            "nixon",
+            "kissinger",
             "allende",
             "document_1973",
             "santiago",
-            "cia_headquarters",
+            "jorge_alessandri",
             "itt_building"
           ],
           "sourceIds": [
             "S14"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "kissinger",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.075
         },
         {
           "id": "itt-27",
-          "caption": "April 18, 1972 | ITT's assets are expropriated",
-          "narration": "On April eighteenth, 1972, Chile expropriated ITT's assets. The feared loss of control had become reality. Nationalization had already been part of the political confrontation before the documents became public. But the disclosures transformed the company's position in that confrontation. ITT was no longer only a foreign owner defending an investment. Its internal records had exposed an effort to influence who would govern the country. The business it had tried to protect was now out of its control.",
+          "caption": "April 18, 1972 | Allende announces an expropriation plan",
+          "narration": "On April eighteenth, 1972, Allende announced that he would ask Congress to expropriate all ITT holdings in Chile. The telephone company's management was already under state control after intervention the previous year. Now the dispute extended across the corporation's Chilean properties. ITT had sought Washington's help to protect its investment. It faced an administration moving against those holdings, and a public record of its own efforts to prevent that administration from taking office.",
           "visualKeys": [
-            "telephone_network",
             "allende",
+            "allende_cabinet",
+            "telephone_network",
+            "telephone_exchange_archive",
             "santiago",
             "itt_building",
-            "document_1973"
+            "document_offer"
           ],
           "sourceIds": [
-            "S15"
-          ]
+            "S23"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "allende_cabinet",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_exchange_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.08
         },
         {
           "id": "itt-28",
@@ -491,45 +1553,164 @@
           "narration": "Chile's government translated the ITT memoranda into Spanish and made them available as an inexpensive paperback. A Washington memorandum noted the resulting damage to the opposition. That was a remarkable change in distribution. Information once meant for a small circle of executives could now be purchased and read by the people whose political future those executives had discussed. Secrecy had protected the company's freedom to maneuver. Publication made the maneuver itself a political fact.",
           "visualKeys": [
             "document_1973",
-            "document_offer",
             "santiago",
             "allende",
-            "itt_office"
+            "document_offer",
+            "document_funding",
+            "itt_building"
           ],
           "sourceIds": [
             "S16"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.3,
+              "caption": "U.S. Senate report, 1973 · later documentary record"
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.06
         },
         {
           "id": "itt-29",
           "chapter": "When the records reached the Senate",
-          "caption": "1973 | Witnesses, memoranda, and contradictions",
-          "narration": "Senator Frank Church's subcommittee investigated the relationship. Inside the hearings, the documents did not produce one agreed account. A government memorandum describing the inquiry records disputes over who initiated contacts, what officials had proposed, and whether an executive's written description matched an official's recollection. The written record could be placed beside the later explanation and the differences examined. Conversations once conducted between a handful of powerful men had become questions those men could no longer answer entirely in private.",
+          "caption": "1973 | Who made the calls?",
+          "narration": "Senator Frank Church's investigators asked who had initiated the contacts. Broe insisted that William Merriam, ITT's Washington representative, had called him. ITT's account put the initiative on the CIA side. Then investigators raised a company memorandum recording a call from Broe to another ITT employee. Broe said he didn't recall it. If he'd made that call, he suggested, he might have thought he was speaking to Merriam. Even the question of who picked up the phone produced conflicting accounts.",
           "visualKeys": [
+            "frank_church",
             "document_1973",
-            "john_mccone",
+            "rotary_phone",
             "richard_helms",
-            "itt_office"
+            "document_early_offer",
+            "itt_building",
+            "telephone_dial_archive"
           ],
           "sourceIds": [
             "S04"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "frank_church",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_dial_archive",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-30",
-          "caption": "The question behind the testimony",
-          "narration": "That process exposed the central tension. A business could describe its approach as giving the government information or requesting assistance. Yet the financial offers and proposed political outcomes required a more specific explanation. What exactly was the government being asked to do? Who would benefit? Who would bear the consequences? The hearing room brought a private calculation into public view: a company's concern about an investment had reached discussions about another nation's choice of president.",
+          "caption": "Economic pressure | What had been proposed?",
+          "narration": "The questioning turned to economic pressure. Broe denied discussing a run on Chilean banks. He also said he hadn't developed an action plan with ITT. But he acknowledged taking the initiative in discussing economic pressure as a way to speed Chile's deterioration. A State Department memorandum preserved that account of the questioning. The discussions were reaching well beyond a telephone investment, into the conditions under which an elected government would have to operate.",
           "visualKeys": [
+            "frank_church",
             "document_1973",
-            "itt_building",
+            "telephone_accounting_archive",
+            "santiago",
             "document_offer",
-            "allende",
-            "telephone_network",
-            "itt_reconstruction"
+            "allende"
           ],
           "sourceIds": [
             "S04"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "frank_church",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.06
         }
       ]
     },
@@ -543,46 +1724,168 @@
           "caption": "1975 | A wider investigation",
           "narration": "In 1975, the Senate's broader intelligence investigation placed the corporate contacts inside a longer history of American covert action in Chile. The enlarged record changed the scale of the picture. ITT was one participant in a struggle involving Chilean parties, American policymakers, intelligence officials, and other businesses. The rejected offer was one connection. The advice on secret channels was another. The corporate funding that reached a campaign was a third. Together, they exposed how commercial interests could enter a covert political struggle.",
           "visualKeys": [
-            "document_early_offer",
+            "frank_church",
             "document_funding",
-            "cia_headquarters",
-            "santiago",
-            "itt_building"
+            "nixon",
+            "richard_helms",
+            "jorge_alessandri",
+            "document_early_offer",
+            "document_offer",
+            "santiago"
           ],
           "sourceIds": [
             "S01"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "frank_church",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "jorge_alessandri",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_early_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-32",
-          "caption": "September 11, 1973 | The palace under attack",
-          "narration": "Chile's military overthrew Allende on September eleventh, 1973. The presidential palace came under attack. Allende died, and the country entered military rule. The struggle that had begun with ballots and congressional negotiations now ended in force. But the million-dollar offers belonged to 1970, when Allende had not yet taken office. The ITT inquiry had been examining those earlier efforts as Chile moved toward another, far more violent rupture.",
+          "caption": "September 11, 1973 | The military takes power",
+          "narration": "Before that wider investigation, Chile had suffered another rupture. On September eleventh, 1973, the military overthrew Allende. The presidential palace came under attack. Allende died, and the country entered military rule. Three years had passed since ITT's million-dollar offers. The company's efforts to stop him from taking office had failed in 1970. The military now removed the government by force.",
           "visualKeys": [
+            "santiago",
             "la_moneda",
             "allende",
-            "santiago",
-            "document_1973",
-            "telephone_network"
+            "santiago_late1970s",
+            "rotary_phone"
           ],
           "sourceIds": [
             "S22",
             "S11"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "la_moneda",
+              "variantIndex": 0,
+              "weight": 1.7,
+              "motion": "still"
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "la_moneda",
+              "variantIndex": 0,
+              "weight": 1.1,
+              "motion": "pull"
+            },
+            {
+              "mediaKey": "santiago_late1970s",
+              "variantIndex": 0,
+              "weight": 1,
+              "caption": "Santiago · later 1970s aerial view"
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.025
         },
         {
           "id": "itt-33",
           "caption": "The official record | Intervention and its limits",
-          "narration": "The CIA's report to Congress in 2000 acknowledged its attempt to instigate a coup in 1970. For 1973, it described knowledge of military plotting and relationships with some plotters, while saying the agency did not instigate that coup. That is the agency's retrospective account. Its admitted earlier intervention and continuing contacts remain part of the history. But the rejected ITT offers of 1970 do not establish that the company paid for the military takeover three years later.",
+          "narration": "In a report to Congress in 2000, the CIA acknowledged that it had tried to instigate a coup in 1970. For 1973, it described knowing about military plotting and maintaining relationships with some plotters, while saying it hadn't instigated that coup. The agency's own account revealed years of intervention and contact. It did not establish that ITT paid for the 1973 takeover. The corporation's documented offers and political funding belonged to the earlier campaign against Allende.",
           "visualKeys": [
             "cia_headquarters",
             "richard_helms",
-            "document_1973",
+            "nixon",
             "santiago",
-            "la_moneda"
+            "document_1973",
+            "document_offer",
+            "allende"
           ],
           "sourceIds": [
             "S11"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "richard_helms",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "nixon",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_1973",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.035
         },
         {
           "id": "itt-34",
@@ -591,26 +1894,107 @@
           "visualKeys": [
             "santiago",
             "la_moneda",
+            "santiago_late1970s",
             "allende",
-            "document_1973"
+            "document_funding"
           ],
           "sourceIds": [
             "S17"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "la_moneda",
+              "variantIndex": 0,
+              "weight": 1.2,
+              "motion": "still"
+            },
+            {
+              "mediaKey": "santiago_late1970s",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.025
         },
         {
           "id": "itt-35",
           "caption": "A company survives its scandal",
           "narration": "ITT did not disappear when the Chile story became public. The conglomerate continued for decades. That survival is another uncomfortable part of the record. Exposure can change a company's reputation without ending its ability to operate. A hotel still takes reservations. An insurer still writes policies. A manufacturing business still has orders to fill. The corporate machine can continue through institutions and customers whose immediate needs are far removed from the conduct under investigation.",
           "visualKeys": [
-            "sheraton",
             "itt_building",
-            "itt_office",
+            "sheraton",
+            "telephone_accounting_archive",
             "telephone_network"
           ],
           "sourceIds": [
             "S05"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_accounting_archive",
+              "variantIndex": 0,
+              "weight": 1,
+              "caption": "American telephone industry · late-1950s contextual archive"
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1,
+              "motion": "pull"
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-36",
@@ -619,28 +2003,100 @@
           "visualKeys": [
             "itt_building",
             "sheraton",
-            "itt_office",
+            "itt_split_1995",
             "telephone_network"
           ],
           "sourceIds": [
             "S05",
             "S19"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 1.7
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 1.2
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.06
         },
         {
           "id": "itt-37",
           "caption": "December 19, 1995 | Three companies replace one empire",
           "narration": "The separation was completed on December nineteenth, 1995. ITT Hartford held the insurance business. ITT Industries held manufacturing operations, including automotive, defense electronics, and fluid technology. The new ITT concentrated on hospitality, entertainment, gaming, and information services. The list itself reveals how far the original telephone company had traveled. One name had connected businesses with radically different customers and economics. The breakup gave those businesses separate corporate identities and separate financial futures.",
           "visualKeys": [
-            "itt_building",
+            "itt_split_1995",
             "sheraton",
-            "itt_conglomerate",
-            "telephone_network"
+            "telephone_network",
+            "itt_building"
           ],
           "sourceIds": [
             "S18",
             "S19"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 2.1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 1.6
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1.2
+            }
+          ],
+          "musicVolume": 0.065
         },
         {
           "id": "itt-38",
@@ -649,12 +2105,55 @@
           "visualKeys": [
             "sheraton",
             "itt_building",
-            "itt_office",
-            "rotary_phone"
+            "itt_split_1995",
+            "telephone_network"
           ],
           "sourceIds": [
             "S06"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1.4
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 0.8,
+              "focus": {
+                "x": 0.5,
+                "y": 0.25
+              }
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 2,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 1.5
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_building",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "sheraton",
+              "variantIndex": 0,
+              "weight": 1,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.055
         },
         {
           "id": "itt-39",
@@ -662,33 +2161,125 @@
           "narration": "Return to the telephone network in Chile. The original commercial problem was who would control an asset and what happened if that control changed. ITT's response reached beyond prices, service, and compensation into political funding and secret government contact. That crossing is what makes the case endure. When a corporation believes a political result threatens its property, the resources built to serve customers can become resources directed at influencing who is allowed to govern them.",
           "visualKeys": [
             "telephone_network",
-            "rotary_phone",
-            "itt_building",
+            "santiago",
             "allende",
+            "document_funding",
+            "rotary_phone",
+            "john_mccone",
             "cia_headquarters"
           ],
           "sourceIds": [
             "S01",
             "S02",
             "S03"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "cia_headquarters",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 0,
+              "weight": 1
+            }
+          ],
+          "musicVolume": 0.065
         },
         {
           "id": "itt-40",
           "caption": "The offer failed. The documents remained.",
           "narration": "The million-dollar offer did not buy the outcome. Allende became president. ITT lost control of its Chilean assets, and the documents outlived the secrecy around them. Years later, the conglomerate itself split apart. The lasting revelation is not that a company controlled everything. It is that executives with an investment to defend could reach the secret state and offer money to shape another country's future. A telephone business had found a line into power. The public discovered where that line led.",
           "visualKeys": [
-            "rotary_phone",
             "document_offer",
+            "allende",
+            "telephone_network",
             "document_funding",
-            "itt_building",
+            "itt_split_1995",
+            "john_mccone",
+            "rotary_phone",
             "santiago"
           ],
           "sourceIds": [
             "S01",
             "S15",
             "S19"
-          ]
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "document_offer",
+              "variantIndex": 0,
+              "weight": 1.3
+            },
+            {
+              "mediaKey": "allende",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "telephone_network",
+              "variantIndex": 3,
+              "weight": 1
+            },
+            {
+              "mediaKey": "document_funding",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "itt_split_1995",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "john_mccone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "rotary_phone",
+              "variantIndex": 0,
+              "weight": 1
+            },
+            {
+              "mediaKey": "santiago",
+              "variantIndex": 1,
+              "weight": 1.4,
+              "motion": "pull"
+            }
+          ],
+          "musicVolume": 0.045
         }
       ]
     }
@@ -782,7 +2373,7 @@
       "id": "S15",
       "title": "FRUS XXI, Document 296: editorial note on ITT disclosures and expropriation",
       "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d296",
-      "note": "Official documentary-edition chronology, citing primary archives: Anderson disclosures began March 21, 1972; expropriation April 18, 1972; Senate inquiry. Supports itt-25 and itt-27. Seizure of operational control is distinct from the later formal expropriation; the episode uses the April 18 expropriation date."
+      "note": "Official documentary-edition chronology cites primary archives for Anderson disclosures beginning March 21, 1972 and the Senate inquiry. Supports itt-25. Its compressed April 18 expropriation wording is clarified by the contemporary S23 memorandum, used for itt-27."
     },
     {
       "id": "S16",
@@ -825,6 +2416,21 @@
       "title": "FRUS XXI, Document 346: coup situation report, September 11, 1973",
       "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d346",
       "note": "Contemporary primary memorandum reports joint military/police operation and air attack on the presidential palace. Supports the limited chronology in itt-32, corroborated by S11. Preliminary speculation and unconfirmed casualty claims are omitted."
+    },
+    {
+      "id": "S23",
+      "title": "FRUS XXI, Document 299: Kissinger memorandum to Nixon, Chile Financial Issues, April 28, 1972",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d299",
+      "note": "Contemporary memorandum specifies that April 18 was an announcement that Allende would submit expropriation legislation, and that Chile had already assumed telephone-company management the previous year. Corrects the compressed chronology in S15. Supports itt-27; announcement, management intervention and legal expropriation are distinct events."
+    }
+  ],
+  "thumbnailCredits": [
+    {
+      "src": "public/assets/images/itt-thumbnail-v2.png",
+      "credit": "Western Electric Model 500 · preserved period equipment · ProhibitOnions at English Wikipedia · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:WE500dialphone.jpg",
+      "license": "Public domain",
+      "changes": "Editorial thumbnail using a preserved telephone as visual reference; new desk, folder, lighting and typography. Not a photograph of an ITT/CIA meeting; telephone model is not attributed to ITT."
     }
   ]
 }

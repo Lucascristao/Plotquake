@@ -5,7 +5,7 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
 ---
 
 ## 1. O que é o Plotquake?
-- **Conceito**: Canal dark de documentários cinematográficos de alta retenção sobre ascensão, guerras corporativas, tecnologias disruptivas, quedas e reinvenções de grandes impérios e marcas (*"Plot twists that shake empires"*).
+- **Conceito**: Canal dark de documentários cinematográficos de alta retenção sobre histórias, pessoas, lugares, descobertas, mistérios, tecnologias e disputas que despertam curiosidade. Inclui guerras de marcas e impérios, biografias, acontecimentos, fenômenos investigados e a transformação de lugares como Copacabana. Cada pauta recebe um tratamento narrativo próprio.
 - **Duração**: Aproximadamente **15 minutos como mínimo**, com **900 segundos de fala real como referência para o documentário completo**, e **sem teto fixo de 20 minutos**. A história determina a duração. Não encurtar a explicação para caber em uma faixa nem acrescentar repetição, silêncio ou tela final para atingir o mínimo.
 - **Idioma**: **Inglês nativo (US English)**, voltado exclusivamente para a audiência dos países Tier-1 com o maior CPM do mundo (Estados Unidos, Reino Unido, Canadá e Austrália).
 - **Referências de Sucesso**: *The Mega-Brands That Built America (History Channel)*, *MagnatesMedia*, *ColdFusion*, *Fern*, *Moon*.
@@ -31,29 +31,34 @@ Este documento é a instrução mandatória e guia mestre do canal **Plotquake**
   1. `KenBurnsImage`: Zoom cinematográfico suave, granulação, vinheta e lower-third com borda e glow no Dourado/Âmbar Plotquake.
   2. `NewspaperPop`: Tratamento de documento/manchete com movimento e **marca-texto dourado alaranjado**. Atribuir uma manchete a um veículo real exige o documento autêntico; reconstruções editoriais precisam ser identificadas.
   3. `MarketChart`: Gráfico de barras animado com ano e barra principal no Dourado Plotquake.
-  4. `QuoteCard`: Cartão de citação executiva com aspas gigantes, borda esquerda e ano em destaque no Dourado Plotquake.
+  4. `QuoteCard`: Cartão para citação documentada, com aspas, atribuição e ano em destaque no Dourado Plotquake, quando pertinente.
   5. `BrollPlayer`: Player de arquivo histórico em cinemascope 2.39:1 com badge e LED de gravação no Dourado Plotquake.
-  6. `ActMarker`: Transição monumental dos 4 atos com grade sísmica e linha de energia no Dourado Plotquake.
+  6. `ActMarker`: Transição de atos ou partes da história, quando fizer sentido, com grade sísmica e linha de energia no Dourado Plotquake.
 
 ---
 
-## 3. Roteiro e Estrutura Narrativa (Storytelling em 4 Atos)
-O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, escolhas, conflitos, mecanismos econômicos e consequências concretas. A pesquisa sustenta a narrativa; a narração evita explicações burocráticas e drama sem evidência.
+## 3. Roteiro e Direção Narrativa por Pauta
+O Plotquake conta histórias originais e envolventes, conduzidas por pessoas, acontecimentos, lugares, perguntas e consequências concretas. A pesquisa sustenta a narrativa; a narração evita explicações burocráticas e drama sem evidência.
+
+- **A pauta determina a forma**: Escolher a estrutura, o ritmo, a montagem, os recursos visuais e o tratamento sonoro que servem à história. Usar cronologia, investigação, comparação, trajetória pessoal, transformação de um lugar ou uma combinação autoral conforme o caso. O History é referência de qualidade e linguagem documental; não existe um formato único obrigatório. Quatro atos são uma possibilidade, sem número fixo de partes, cenas ou revelações.
+- **Tratamentos possíveis, sem novos moldes obrigatórios**: Uma disputa de marcas pode acompanhar estratégias e reações entre rivais; uma biografia pode seguir decisões e pontos de mudança de uma vida; um episódio de aliens ou mistérios pode examinar perguntas, relatos, hipóteses, evidências e explicações concorrentes, distinguindo o que é comprovado do que permanece incerto; a história de Copacabana pode ser guiada pelo território, pelas pessoas, pela cultura e pelas mudanças ao longo do tempo. Adaptar ou combinar esses caminhos livremente, sem forçar todo tema a virar ascensão e queda de um império.
 
 - **Roteiro original e humanizado**: Escrever texto próprio a partir da pesquisa, com síntese e condução narrativa autorais. Usar o History como referência de linguagem documental, sem copiar seus roteiros ou recontar um episódio por paráfrase. Escrever para ser ouvido em inglês americano natural, com situações concretas, pessoas, decisões e consequências. Variar tamanho das frases, duração das cenas e ritmo das explicações; evitar blocos simétricos, contrastes repetidos, anúncios da própria técnica narrativa e uma frase de efeito obrigatória no fim de cada trecho. A naturalidade nasce da autoria e da interpretação; não inventar diálogos, depoimentos ou motivações privadas para simulá-la.
 
-### A Estrutura dos 4 Atos:
-- **Gancho Inicial (Primeiros 5 a 10 segundos)**: Choque factual ou quebra violenta de expectativa. Nunca comece com "Hello guys" ou apresentações burocráticas.
+### Abertura e Exemplo Opcional de Estrutura
+- **Gancho inicial**: Estabelecer interesse nos primeiros segundos com uma cena significativa, uma pergunta, um conflito ou uma revelação sustentada pela pesquisa. Escolher a abertura apropriada ao tema, sem exigir choque ou cifra em toda pauta. Evitar apresentações burocráticas.
+
+Para histórias empresariais em que seja útil, os quatro atos abaixo são um exemplo de organização:
 - **Ato 1: A Construção do Império**: Quem construiu o negócio, qual problema resolveu, de onde vieram o poder e a vantagem competitiva.
 - **Ato 2: O Conflito Invisível**: A aposta arriscada, o rival, a mudança tecnológica ou a contradição que ameaça a posição conquistada.
 - **Ato 3: O Ponto de Ruptura**: As decisões, tentativas de reação, lançamentos e consequências que mudam o rumo da história.
 - **Ato 4: O Desfecho e o Legado**: O resultado documentado, incluindo colapso, sobrevivência ou reinvenção, e a resposta à pergunta de abertura. Não forçar falência, perda total ou cifras que a pesquisa não comprova.
-- **Tempos flexíveis**: Os quatro atos são uma estrutura narrativa, sem faixas rígidas de 00:00 a 20:00 nem divisão igual de duração. Cortes, transições e capítulos seguem a história e o áudio sintetizado real.
+- **Quantidade e tempos flexíveis**: Atos, partes e capítulos têm quantidade e duração determinadas pela história, sem faixas rígidas nem divisão igual. Cortes e transições acompanham a narrativa e o áudio sintetizado real.
 
 ### Ritmo Visual:
 - **Montagem livre**: Usar arquivo, fotos, documentos, mapas, gráficos, vídeos e imagens geradas conforme a função de cada passagem. Os componentes são recursos disponíveis, sem obrigação de alternar cartões ou repetir um modelo de cena.
 - **Vídeos junto às imagens**: Planejar cada episódio com uma combinação de trechos de vídeo, fotografias, documentos e gráficos. A preparação inclui pesquisa ativa de filmagens de arquivo e vídeos de apoio com procedência e licença adequadas, mesmo quando encontrá-los exigir mais trabalho que obter fotos. Selecionar movimento, ação, ambientes, objetos e registros de época que contribuam para a passagem narrada; dar às fotos e documentos o tempo necessário para leitura. Não impor uma proporção fixa nem preencher com vídeos genéricos desconectados da história. Uma montagem apenas de imagens em movimento é uma limitação editorial a informar, não o padrão esperado do Plotquake.
-- **Referência de linguagem History**: Desenvolver a história por cenas, pessoas, escolhas e evidências, com perguntas que conduzem à próxima descoberta. Planejar os planos e sua duração pelo conteúdo e pela tensão da passagem; variar filmagens, detalhes, fotos, documentos, mapas e gráficos com função narrativa. O rodízio automático de mídias e os intervalos semelhantes entre cortes são recursos de apoio, não a direção final desejada. Os quatro atos permanecem flexíveis, e a quantidade e a duração das cenas seguem a história. Aplicar essa linguagem com a identidade visual própria do Plotquake e a naturalidade fotográfica definida para as capas.
+- **Referência de linguagem History**: Desenvolver a história por cenas, pessoas, escolhas e evidências, com perguntas que conduzem à próxima descoberta. Planejar os planos e sua duração pelo conteúdo e pela tensão da passagem; variar filmagens, detalhes, fotos, documentos, mapas e gráficos com função narrativa. O rodízio automático de mídias e os intervalos semelhantes entre cortes são recursos de apoio, não a direção final desejada. A estrutura, a quantidade e a duração das cenas seguem a pauta. Aplicar essa linguagem com a identidade visual própria do Plotquake e a naturalidade fotográfica definida para as capas.
 - **Cadência de referência**: Buscar mudanças de informação, foco, enquadramento ou movimento a cada **4 a 5 segundos**, com pausas deliberadas quando a leitura e a tensão pedirem. A cadência orienta a direção, sem impor cortes mecânicos ou um gate automático de movimentos.
 - **Procedência**: Pesquisar mídias autênticas e registrar as fontes utilizadas. Imagens geradas e reconstruções podem apoiar a narrativa, com identificação clara quando puderem ser confundidas com arquivo histórico. Não fabricar citações, manchetes atribuídas a jornais, estatísticas ou cenas privadas apresentadas como fatos.
 - **Acabamento editorial**: Não inserir na narração, nas legendas ou nos créditos em tela frases como "feito por IA", "AI-generated" ou "made with AI", nem nomes de modelos, ferramentas ou marcas de produção. Manter a procedência completa nos registros internos e identificar reconstruções históricas com termos documentais discretos, como "Illustrative reconstruction". Preservar atribuições de arquivo e créditos exigidos pelas fontes. Essa preferência visual não elimina eventuais declarações de conteúdo sintético exigidas pela plataforma na publicação manual.
@@ -65,7 +70,7 @@ O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, es
 - **Voz Canônica**: **Charon**, masculina, em **US English**, mantida durante todo o episódio. Trocas de voz dependem de nova orientação explícita.
 - **Calibração Tonal Grave**: Configurado para soar **pouca coisa mais grave que o padrão** (-1.0 semitom de afinação) com ressonância barítona de peito e dicção cinematográfica de "voz de autoridade/voz de cinema". O script `worker/synthesize_narration.py` aplica automaticamente a instrução vocal no Gemini Live e calibra o tom via FFmpeg preservando o tempo e a naturalidade milimétrica do áudio.
 - **Estilo de Entrega**: Narração documental séria, envolvente e natural, com presença e autoridade no estilo do History Channel. Variar ritmo, ênfase e intensidade de acordo com pessoas, acontecimentos e revelações. Usar pausas motivadas pelo sentido e pela tensão da cena, com fluidez de inglês americano falado. Evitar cadência robótica, solenidade constante, voz de trailer em todas as frases e interpretação idêntica de blocos diferentes. Manter a voz canônica e a calibração tonal definidas acima.
-- **Trilha Sonora**: Base de tensão contínua em sub-graves (*tension drone*) em `public/assets/audio/tension_score.wav` somada a efeitos sonoros pontuais.
+- **Trilha sonora e ambientes**: Escolher música, silêncio e efeitos conforme o tema e a função de cada passagem. A base de tensão em `public/assets/audio/tension_score.wav` é um recurso disponível; não impor suspense constante a biografias, cultura, lugares ou outros assuntos que peçam tratamento diferente.
 - **Regra**: Nunca use sintetizadores básicos de sistema operacional (como Windows SAPI) para produções oficiais.
 
 ---
@@ -74,10 +79,10 @@ O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, es
 - **REGRA DE OURO**: **NUNCA use um frame aleatório extraído do vídeo para a capa!** A capa é uma peça de arte independente e autoral feita sob medida.
 - **Naturalidade da capa**: Buscar aparência fotográfica convincente, preferindo fotos reais e recortes fiéis de pessoas, produtos e objetos quando disponíveis. Composições geradas devem respeitar proporções, materiais, inscrições e detalhes físicos plausíveis. Usar o Dourado/Âmbar como acento de luz e identidade, com brilho moderado; evitar aparência de pôster sintético, objetos deformados, teclas ou letras incoerentes, ruínas gratuitas e contornos luminosos excessivos. Aplicar a tipografia com controle de legibilidade e fidelidade ao título. A arte continua sendo própria do episódio, mesmo quando construída a partir de fotografias.
 - **Conceito Visual**:
-  - **Protagonista em Chiaroscuro**: Rosto expressivo de figura histórica/executiva ou silhueta misteriosa com iluminação dramática;
-  - **Luz e Atmosfera Dourada**: Brilho de borda (*rim light*) no tom **Dourado/Âmbar Plotquake (`#E5A158` / `#F6C383`)** com fundo escuro e esfumaçado;
+  - **Elemento central conforme a pauta**: Pessoa, produto, marca, objeto, vestígio, paisagem ou lugar reconhecível que comunique a promessa do episódio;
+  - **Luz e identidade dourada**: Usar o **Dourado/Âmbar Plotquake (`#E5A158` / `#F6C383`)** como assinatura. Escolher iluminação e atmosfera adequadas ao assunto, incluindo luz natural e cores do local; chiaroscuro, fumaça e suspense são opções, não exigências para toda capa;
   - **Micro-Copy de 2 a 3 Palavras**: Texto curto e legível (ex.: `"TOO LATE?"`, `"EMPIRE FALLS"`, `"THE WRONG BET"`), usando fundo de contraste e a cor dourada para a palavra principal. Título e capa devem entregar a promessa comprovada pelo roteiro;
-  - **Resolução e arquivo**: Composição horizontal 16:9, referência `1280x720`, em PNG ou JPG de alta qualidade. Salvar uma capa própria por episódio em `public/assets/images/` e indicar o caminho no JSON do episódio; o documentário BlackBerry usa `public/assets/images/blackberry-thumbnail.png`.
+  - **Resolução e arquivo**: Composição horizontal 16:9, referência `1280x720`, em PNG ou JPG de alta qualidade. Salvar uma capa própria por episódio em `public/assets/images/` e indicar o caminho no JSON do episódio; o documentário BlackBerry usa `public/assets/images/blackberry-thumbnail-v2.png`.
 
 ---
 
@@ -88,7 +93,7 @@ O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, es
 4. **Voz e montagem**: A voz usa Gemini 3.8 Live, Charon e calibração de **-1 semitom**, preservando o tempo. A montagem acompanha as durações reais dos áudios, incluindo toda a fala. O mínimo de duração não pode ser cumprido com padding ou repetição.
 5. **Produção na nuvem**: Síntese, preparação pesada e render rodam no **GitHub Actions** (`.github/workflows/render-documentary.yml`), preservando a máquina do usuário. Acompanhar a execução, corrigir falhas concretas e aproveitar áudio já válido quando a alteração for somente visual.
    - **Identificação da execução**: Ao iniciar um episódio, preencher `episode_title` com o nome do tema ou título do vídeo para identificá-lo na lista do GitHub Actions. O nome da execução inclui esse texto e seu número; na ausência do título, usa o caminho do episódio.
-   - **Blocos técnicos dinâmicos**: O áudio completo determina a timeline; criar quantos blocos de vídeo forem necessários, independentes dos quatro atos, com até quatro workers simultâneos. O tamanho de referência de cada bloco não limita a duração do episódio. Renderizar uma única mixagem contínua e incorporá-la ao vídeo unido; não dividir o AAC por blocos. Preservar blocos válidos para recuperação de falhas. Alterações futuras não devem cancelar nem reiniciar uma execução em andamento.
+   - **Blocos técnicos dinâmicos**: O áudio completo determina a timeline; criar quantos blocos de vídeo forem necessários, independentes da estrutura narrativa escolhida, com até quatro workers simultâneos. O tamanho de referência de cada bloco não limita a duração do episódio. Renderizar uma única mixagem contínua e incorporá-la ao vídeo unido; não dividir o AAC por blocos. Preservar blocos válidos para recuperação de falhas. Alterações futuras não devem cancelar nem reiniciar uma execução em andamento.
 6. **Entrega somente ao Drive**: O fluxo envia à pasta do Google Drive:
    - `documentary_final.mp4` (Vídeo Full HD 1080p);
    - a capa própria do episódio, em PNG ou JPG;

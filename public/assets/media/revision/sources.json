@@ -1,0 +1,255 @@
+{
+  "films": [
+    {
+      "identifier": "Townandt1950",
+      "title": "Town and the Telephone, The",
+      "creator": "Murphy (Owen) Productions",
+      "date": "ca. late 1950s",
+      "licenseurl": "http://creativecommons.org/licenses/publicdomain/"
+    },
+    {
+      "identifier": "WeLearnA1965",
+      "title": "We Learn About the Telephone I",
+      "creator": "Fairbanks (Jerry) Productions",
+      "date": "1965",
+      "licenseurl": "http://creativecommons.org/licenses/publicdomain/"
+    }
+  ],
+  "assets": [
+    {
+      "key": "telephone_exchange_archive",
+      "src": "assets/media/revision/switching-floor-1965-proof.mp4",
+      "kind": "video",
+      "durationSeconds": 6,
+      "credit": "Bell System context · 1965 · Fairbanks (Jerry) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/WeLearnA1965",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_operators_archive",
+      "src": "assets/media/revision/telephone-operators-1965.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · 1965 · Fairbanks (Jerry) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/WeLearnA1965",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_cable_archive",
+      "src": "assets/media/revision/telephone-patching-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_accounting_archive",
+      "src": "assets/media/revision/telephone-accounting-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_dial_archive",
+      "src": "assets/media/revision/telephone-dial-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_operators_close_archive",
+      "src": "assets/media/revision/telephone-operators-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_engineering_archive",
+      "src": "assets/media/revision/telephone-engineering-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "telephone_lab_archive",
+      "src": "assets/media/revision/telephone-lab-late1950s.mp4",
+      "kind": "video",
+      "durationSeconds": 8,
+      "credit": "Bell System context · ca. late 1950s · Murphy (Owen) Productions / Prelinger Archives · Public domain",
+      "origin": "https://archive.org/details/Townandt1950",
+      "license": "Public domain",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "changes": "Excerpt trimmed and muted; original 4:3 image preserved. Contextual American telephone industry footage, not an ITT operation or a Chilean event.",
+      "width": 640,
+      "height": 480,
+      "fit": "contain",
+      "vintageFilter": false
+    },
+    {
+      "key": "nixon",
+      "src": "assets/media/revision/richard-nixon-1972.jpg",
+      "kind": "image",
+      "credit": "Richard Nixon · 1972 official portrait · Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Operations. U.S. Army Audiovisual Center.\t (ca. 1974 - 05/15/1984) · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait_(1).jpg",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 2205,
+      "height": 2939,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "kissinger",
+      "src": "assets/media/revision/henry-kissinger-1973-1977.jpg",
+      "kind": "image",
+      "credit": "Henry Kissinger · 1973–1977 official portrait · U.S. Department of State from United States · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Henry_A._Kissinger,_U.S._Secretary_of_State,_1973-1977.jpg",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 2000,
+      "height": 2459,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "frank_church",
+      "src": "assets/media/revision/frank-church-1961.png",
+      "kind": "image",
+      "credit": "Senator Frank Church · 1961 portrait · The United States of America · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Frank_Church_1961_Congressional_Portrait.png",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 482,
+      "height": 612,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "eduardo_frei",
+      "src": "assets/media/revision/eduardo-frei-cabinet-ca1966.jpg",
+      "kind": "image",
+      "credit": "Eduardo Frei and his cabinet · circa 1966 · Biblioteca del Congreso Nacional · CC BY 3.0 cl",
+      "origin": "https://commons.wikimedia.org/wiki/File:Eduardo_Frei_Montalva_saluda_a_su_Gabinete_de_ministros.jpg",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 2538,
+      "height": 1806,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "jorge_alessandri",
+      "src": "assets/media/revision/jorge-alessandri-ca1960.jpg",
+      "kind": "image",
+      "credit": "Jorge Alessandri · circa 1960 portrait · Biblioteca del Congreso Nacional de Chile · CC BY 3.0 cl",
+      "origin": "https://commons.wikimedia.org/wiki/File:Retrato_de_Jorge_Alessandri.JPG",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 1024,
+      "height": 689,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "white_house_1970",
+      "src": "assets/media/revision/nixon-kissinger-kraemer-1970.png",
+      "kind": "image",
+      "credit": "Nixon, Kissinger and Fritz Kraemer · January 2, 1970 · contextual meeting · White House Press · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Pentagon_strategist_Fritz_G.A._Kraemer,_National_Security_Advisor_Henry_Kissinger,_and_President_Richard_Nixon_at_Oval_Office_in_The_White_House.png",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "changes": "Documentary framing and color treatment; dates identify the photograph, not every event narrated.",
+      "width": 1264,
+      "height": 744,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "key": "itt_split_1995",
+      "src": "assets/media/itt/itt-split-1995.svg",
+      "kind": "image",
+      "origin": "editorial-graphic",
+      "credit": "Plotquake editorial diagram · FEC Advisory Opinion 1996–23 and ITT Industries 1996 Annual Report",
+      "license": "Original Plotquake vector graphic",
+      "fit": "contain",
+      "motion": "still",
+      "zoomStart": 1,
+      "zoomEnd": 1
+    }
+  ],
+  "note": "Excerpts acquired and visually inspected locally; no full source film needs downloading during render."
+}

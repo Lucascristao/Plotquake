@@ -51,8 +51,21 @@ The title's word “missed” refers to losing the strategic transition, not ign
 
 ## Duration and limits
 
-There are 40 scenes in four acts, with chapter markers at the start of each act. Narration is approximately 2,870 whitespace-separated words, intended to support a roughly 18–20 minute documentary at a measured delivery. This is a planning estimate. The minimum 900 seconds must be checked against the actual synthesized speech. Do not loop or pad the ending to satisfy the duration.
+There are 40 scenes in four acts, with chapter markers at the start of each act. Narration is approximately 2,864 whitespace-separated words, intended to support a roughly 18–20 minute documentary at a measured delivery. This is a planning estimate. The minimum 900 seconds must be checked against the actual synthesized speech. Do not loop or pad the ending to satisfy the duration.
 
 The source schema fixes Charon, minus one semitone, and a 900-second minimum. Voice generation, audio fidelity, media licensing, final synchronization, rendered-picture review, and Drive receipt confirmation are pipeline responsibilities and have not been claimed complete by this content file.
 
 This documentary offers a sourced chronology and an editorial causal interpretation. The documents do not prove private thoughts, a single exclusive cause, or the outcome of an alternate strategy. It makes no investment recommendation and no claim of measured future CTR or retention.
+
+## Spoken-language revision, October 16, 2026
+
+The revision changes narration only in bb-01, bb-02, bb-07, bb-18, bb-23, bb-31 and bb-32. It removes commentary about how the story is being told, makes the opening transition concrete, follows the product and software decisions, and explains inventory and financing in ordinary spoken English. The PlayBook passage continues to specify **native** email/calendar; it does not imply that all earlier email access was impossible. The financing passage remains an announced agreement.
+
+The other 33 narration texts are unchanged and can reuse matching valid scene WAVs. Baseline source: `out/revision-script-baseline/blackberry.json`. All 40 scene IDs, source links, voice, pitch and visual fields were preserved. Four acts remain useful for this particular chronology; they are not a template requirement for future topics.
+
+
+## Authored montage revision, October 16, 2026
+
+Each of the forty scenes now has an explicit visualPlan with chosen assets, variants, framing and relative reading times. The builder fits those choices to complete measured narration, limits video excerpts to their available frames and redistributes remaining picture time to stills. The four chapters serve these particular stories; future episodes can use another count and form. Music gains vary with the passage. The new cover uses an authentic object reference, natural materials and restrained amber light; cover provenance travels in the publication package.
+
+This revision reuses the existing five licensed support-video files and photographs. The movement shows contemporary communications and technical context; it is not presented as footage of private RIM meetings or historical launches. Original historical BlackBerry launch footage is still a limitation of this collection. The documented 2008 and 2011 revenue figures provide a restrained chart alongside Balsillie's authenticated quotation.

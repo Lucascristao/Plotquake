@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">ITT's separation into three independent companies, December 19, 1995</title>
+  <desc id="desc">Old ITT separated into ITT Hartford, an insurance business; ITT Industries, with automotive, defense electronics and fluid technology businesses; and new ITT, focused on hospitality, gaming, entertainment and information services. The separation distributed shares to the existing shareholders.</desc>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="35%" r="85%">
+      <stop offset="0" stop-color="#142031"/>
+      <stop offset="1" stop-color="#05070c"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#152033"/>
+      <stop offset="1" stop-color="#0c1322"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#background)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="110" y="114" font-size="25" font-weight="700" letter-spacing="4" fill="#F6C383">DECEMBER 19, 1995</text>
+    <text x="110" y="184" font-size="49" font-weight="700" fill="#F8FAFC">One conglomerate becomes three companies</text>
+    <rect x="735" y="250" width="450" height="142" rx="8" fill="#0c1322" stroke="#E5A158" stroke-width="2"/>
+    <text x="960" y="327" text-anchor="middle" font-size="70" font-weight="700" letter-spacing="8" fill="#F6C383">ITT</text>
+    <text x="960" y="366" text-anchor="middle" font-size="24" fill="#CBD5E1">Before the separation</text>
+    <g fill="none" stroke="#E5A158" stroke-width="3">
+      <path d="M960 392V467M370 467H1550M370 467V536M960 467V536M1550 467V536"/>
+    </g>
+    <g fill="#E5A158">
+      <circle cx="370" cy="536" r="5"/><circle cx="960" cy="536" r="5"/><circle cx="1550" cy="536" r="5"/>
+    </g>
+    <g fill="url(#card)" stroke="#475569" stroke-width="2">
+      <rect x="110" y="550" width="520" height="282" rx="10"/>
+      <rect x="700" y="550" width="520" height="282" rx="10"/>
+      <rect x="1290" y="550" width="520" height="282" rx="10"/>
+    </g>
+    <g fill="#E5A158"><rect x="110" y="550" width="520" height="5"/><rect x="700" y="550" width="520" height="5"/><rect x="1290" y="550" width="520" height="5"/></g>
+    <g fill="#F8FAFC" font-size="40" font-weight="700" text-anchor="middle">
+      <text x="370" y="623">ITT Hartford</text>
+      <text x="960" y="623">ITT Industries</text>
+      <text x="1550" y="623">New ITT</text>
+    </g>
+    <g fill="#CBD5E1" font-size="28" text-anchor="middle">
+      <text x="370" y="709">Insurance</text>
+      <text x="960" y="691">Automotive</text>
+      <text x="960" y="736">Defense and electronics</text>
+      <text x="960" y="781">Fluid technology</text>
+      <text x="1550" y="691">Hospitality and gaming</text>
+      <text x="1550" y="736">Entertainment</text>
+      <text x="1550" y="781">Information services</text>
+    </g>
+    <text x="960" y="914" text-anchor="middle" font-size="29" fill="#F6C383">Independent publicly traded companies</text>
+    <text x="960" y="958" text-anchor="middle" font-size="25" fill="#CBD5E1">Shares distributed to the existing shareholders</text>
+    <text x="110" y="1024" font-size="20" fill="#94A3B8">Editorial diagram • Sources: FEC Advisory Opinion 1996–23; ITT Industries 1996 Annual Report</text>
+  </g>
+</svg>

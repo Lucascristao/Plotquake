@@ -9,7 +9,7 @@ import tempfile
 import unittest
 import wave
 
-from render_documentary import (assemble, cached_chunk, file_hash, make_plan, probe,
+from render_documentary import (assemble, cached_chunk, file_hash, make_plan, probe, render_master,
                                 validate_plan, write_json)
 
 
@@ -60,8 +60,8 @@ class RenderDocumentaryTests(unittest.TestCase):
                 output.setframerate(48000)
                 output.writeframes(b"".join(struct.pack("<h", round(8000 * math.sin(i * 2 * math.pi * 220 / 48000)))
                                            for i in range(97 * 1600)))
-            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(pcm),
-                            "-c:a", "aac", "-b:a", "192k", "-f", "mp4", str(master)], check=True)
+            render_master(plan, master, timeline={"id": plan["episodeId"], "fps": 30,
+                          "durationInFrames": 97, "audio": {"narration": str(pcm)}, "acts": []})
             output = directory / "documentary_final.mp4"
             assemble(plan, directory, master, output)
             streams = probe(output)["streams"]

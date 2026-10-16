@@ -87,7 +87,9 @@ export type DocumentaryEpisode = {
   fps: number;
   durationInFrames: number;
   audio?: {
-    music?: string | {src: string; volume?: number};
+    music?: string | {src: string; volume?: number;
+      /** Absolute gain over global frame windows; the last matching cue wins. */
+      cues?: {from: number; durationInFrames: number; volume: number}[]};
     narration?: string;
     effects?: {src: string; from: number; durationInFrames?: number; volume?: number}[];
   };
