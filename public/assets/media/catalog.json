@@ -756,6 +756,589 @@
       "changes": "Muted illustrative footage; selected excerpt, framing and color treatment",
       "trimStartSeconds": 0.3,
       "fit": "cover"
+    },
+    {
+      "key": "itt_building",
+      "src": "assets/media/itt/itt_building-1.jpg",
+      "kind": "image",
+      "credit": "Historic ITT headquarters · present-day view (2008) · Jim.henderson · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:ITT_HQ_75_Broad_St_entry_jeh.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2836,
+      "height": 2305,
+      "fit": "cover",
+      "focus": {
+        "x": 0.43,
+        "y": 0.4
+      },
+      "date": "2008-04-16",
+      "description": "Looking east from head of Marketfield Street at w:ITT Corporation former HQ at 75 Broad Street Manhattan. See File:75 Broad SW door jeh.JPG for southwestern door."
+    },
+    {
+      "key": "itt_building",
+      "src": "assets/media/itt/itt_building-2.jpg",
+      "kind": "image",
+      "credit": "Historic ITT headquarters entrance · present-day view (2008) · Jim.henderson · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:75_Broad_SW_door_jeh_detail.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1400,
+      "height": 1042,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "Taken on 13 December 2008",
+      "description": "Looking northeast at southwestern corner door of 75 Broad Street at corner of South Williams Street, former headquarters of w:ITT Corporation, on a cloudy afternoon. See File:75 Broad south door detail jeh.jpg for more pixels"
+    },
+    {
+      "key": "itt_building",
+      "src": "assets/media/itt/itt_building-3.jpg",
+      "kind": "image",
+      "credit": "Historic ITT building · present-day architectural detail (2016) · Christine Loria · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:ITT_Building.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3456,
+      "height": 5184,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "2016-10-15 19:08:22",
+      "description": "Site: ITT Building",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "switchboard",
+      "src": "assets/media/itt/switchboard-1.jpg",
+      "kind": "image",
+      "credit": "Fort Dix telephone operators · circa 1950 · Unknown authorUnknown author · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Placing_a_telephone_call_at_Fort_Dix_A.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 3302,
+      "height": 2124,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "Circa 1950",
+      "description": "Operators assist US Army soldiers in making a telephone call at Fort Dix, 1940s or 1950s"
+    },
+    {
+      "key": "rotary_phone",
+      "src": "assets/media/itt/rotary_phone-1.jpg",
+      "kind": "image",
+      "credit": "Western Electric Model 500 · preserved period equipment · ProhibitOnions at English Wikipedia · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:WE500dialphone.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 2272,
+      "height": 1704,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1 March 2006 (original upload date)",
+      "description": "A Western Electric Model 500 dial phone. Self taken."
+    },
+    {
+      "key": "telephone_network",
+      "src": "assets/media/itt/telephone_network-1.jpg",
+      "kind": "image",
+      "credit": "1951 Model 500 components · preserved equipment · Mcheath at English Wikipedia · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Westernelectricmodel500networkcloseupDSCN0258.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1024,
+      "height": 768,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "30 December 2008 (original upload date)",
+      "description": "From my personal collection. A 12/1951 dated network in a Western Electric model 500. Network is model 425A, the original unit introduced in 1949. Inside the \"potted\" network are varistors, capacitors, and cosmoline.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "telephone_network",
+      "src": "assets/media/itt/telephone_network-2.jpg",
+      "kind": "image",
+      "credit": "1951 Model 500 mechanism · preserved equipment · Mcheath at English Wikipedia · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:1951westernelectricmodel500leftsideDSCN0257.JPG",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1024,
+      "height": 768,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "30 December 2008 (original upload date)",
+      "description": "From my personal collection. The left side of the works of a model 500, dated 12/1951. This model has the separate board to wire the handset cord to which is visible in the lower center of the picture.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "john_mccone",
+      "src": "assets/media/itt/john_mccone-1.jpg",
+      "kind": "image",
+      "credit": "John McCone · CIA official portrait · Central Intelligence Agency · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:John_McCone.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 584,
+      "height": 652,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "",
+      "description": "John McCone, 6th Director of Central Intelligence.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "john_mccone",
+      "src": "assets/media/itt/john_mccone-2.jpg",
+      "kind": "image",
+      "credit": "John McCone and Eugene Wigner · 1958 · ENERGY.GOV · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:HD.3F.131_(11237959596).jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1920,
+      "height": 1546,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1958-12-02",
+      "description": "Eugene P. Wigner. 1958. L to R- Eugene P. Wigner and AEC Chairman John McCone."
+    },
+    {
+      "key": "allende",
+      "src": "assets/media/itt/allende-1.jpg",
+      "kind": "image",
+      "credit": "Salvador Allende at the United Nations · 1970–1973 · Bernard Gotfryd · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_President_of_Chile,_gtfy.00154.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1920,
+      "height": 2413,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "between 1970 and 1973date QS:P,+1970-00-00T00:00:00Z/8,P1319,+1970-00-00T00:00:00Z/9,P1326,+1973-00-00T00:00:00Z/9",
+      "description": "Salvador Allende, President of Chile (United Nations, New York).",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "allende",
+      "src": "assets/media/itt/allende-2.jpg",
+      "kind": "image",
+      "credit": "Salvador Allende at the United Nations · 1970–1973 · Bernard Gotfryd · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_President_of_Chile,_gtfy.00151.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1920,
+      "height": 1803,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "between 1970 and 1973date QS:P,+1970-00-00T00:00:00Z/8,P1319,+1970-00-00T00:00:00Z/9,P1326,+1973-00-00T00:00:00Z/9",
+      "description": "Salvador Allende, President of Chile (United Nations, New York)."
+    },
+    {
+      "key": "allende_cabinet",
+      "src": "assets/media/itt/allende-3.jpg",
+      "kind": "image",
+      "credit": "Allende and his cabinet · 1970 · Biblioteca del Congreso Nacional de Chile · CC BY 3.0 cl",
+      "origin": "https://commons.wikimedia.org/wiki/File:Gabinete_allende_2_1024.jpg",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 500,
+      "height": 313,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1970",
+      "description": "Gabinete del Gobierno de Salvador Allende.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "santiago",
+      "src": "assets/media/itt/santiago-1.jpg",
+      "kind": "image",
+      "credit": "Merced Street, Santiago · circa 1970 · Casa de Oswaldo Cruz / Fiocruz · photographer unrecorded · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Aspectos_gerais_da_paisagem,_Casa_de_Oswaldo_Cruz_(DL-VP-RF-04-115).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 664,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "Unknown date c. 1970",
+      "description": "View of the 700 block of Merced Street, in downtown Santiago de Chile.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "santiago",
+      "src": "assets/media/itt/santiago-2.jpg",
+      "kind": "image",
+      "credit": "Plaza de Armas, Santiago · circa 1970 · Casa de Oswaldo Cruz / Fiocruz · photographer unrecorded · CC BY-SA 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:Aspectos_gerais_da_paisagem,_Casa_de_Oswaldo_Cruz_(DL-VP-RF-04-117).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 658,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "Unknown date (c. 1970)",
+      "description": "Partial view of the Plaza de Armas from Merced Street, in Santiago de Chile.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "santiago_late1970s",
+      "src": "assets/media/itt/santiago_late1970s-1.jpg",
+      "kind": "image",
+      "credit": "Santiago aerial view · late 1970s · ESO/Seggewiss · CC BY 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Santiago_(seggewiss-santiago).jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 1920,
+      "height": 1270,
+      "fit": "cover",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "18 March 2012, 20:59:00 (upload date)",
+      "description": "Flying over Santiago de Chile in the late 1970s. The hill visible in the city is San Cristobal, just to the North of the Bellas Artes area."
+    },
+    {
+      "key": "la_moneda",
+      "src": "assets/media/itt/la_moneda-1.jpg",
+      "kind": "image",
+      "credit": "La Moneda under attack · September 11, 1973 · Biblioteca del Congreso Nacional de Chile · CC BY 3.0 cl",
+      "origin": "https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 698,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1973-09-11",
+      "description": "Coup of September 11, 1973. Bombing of La Moneda (presidential palace)",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "sheraton",
+      "src": "assets/media/itt/sheraton-1.jpg",
+      "kind": "image",
+      "credit": "Sheraton-Charles Hotel, New Orleans · 1960s postcard · uncredited · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Sheraton-Charles_Hotel_New_Orleans_postcard.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 612,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1960sdate QS:P,+1960-00-00T00:00:00Z/8",
+      "description": "Sheraton-Charles Hotel New Orleans postcard (former St. Charles Hotel). Undated, probably mid or late 1960s.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "avis",
+      "src": "assets/media/itt/avis-1.jpg",
+      "kind": "image",
+      "credit": "Avis rental cars · New South Wales, February 15, 1961 · Museums of History NSW - State Archives Collection · No restrictions",
+      "origin": "https://commons.wikimedia.org/wiki/File:Avis_Rent-A-Car.jpg",
+      "license": "No restrictions",
+      "licenseUrl": "https://www.flickr.com/commons/usage/",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 755,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "1961-02-15",
+      "description": "Title: Avis Rent-A-Car Dated: 15/02/1961 Digital ID: NRS21573_2_PR003847_c Series: NRS 21573 Glass plate and acetate negatives with ‘PR’ [Public Relations] prefix [State Rail] Rights: No known copyright restrictions www.records.nsw.gov.au/about-us/rights-and-permissions We'd love to hear from you if you use our photos/documents. Many other photos in our collection are available to view and browse on our website.",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "cia_headquarters",
+      "src": "assets/media/itt/cia_headquarters-1.jpg",
+      "kind": "image",
+      "credit": "CIA headquarters · later contextual view, 1980–2006 · Carol M. Highsmith · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_CIA_headquarters,_Langley,_Virginia_14348v.jpg",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 960,
+      "height": 748,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "between 1980 and 2006",
+      "description": "",
+      "zoomStart": 1.01,
+      "zoomEnd": 1.055
+    },
+    {
+      "key": "telephone_network",
+      "src": "assets/media/itt/itt-pentaconta-card.jpg",
+      "kind": "image",
+      "credit": "ITT/CGCT Pentaconta diagnostic card · preserved equipment · Fil22plm · CC0",
+      "origin": "https://commons.wikimedia.org/wiki/File:80-column_punched_card_edited_by_sub-assemblies_of_a_Pentaconta_electromechanical_telephone_exchange.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment; video muted",
+      "width": 1920,
+      "height": 852,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "2024-04-12 22:30:45",
+      "description": "The Pentaconta telephone exchange was produced and used between 1960 and 1990. The designer and manufacturer for France was CGCT ː Compagnie Générale de Constructions Téléphoniques; subsidiary of the ITT company established in the United States. It is a cross-bar electromechanical switch version. This punched card is in IBM 80 column format. It was produced by the central diagnostic system and gave the status of the organs during incidents (operating faults). This innovation has since been installed on all telephone equipment in order to identify the origin of malfunctions and improve the quality of service."
+    },
+    {
+      "key": "telephone_network",
+      "src": "assets/media/itt/itt-teletype.jpg",
+      "kind": "image",
+      "credit": "ITT teletype · preserved 1967 equipment, photographed in 2016 · Jim Kuhn · CC BY 4.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:ITT_Intelex_Teletype_L015.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "changes": "Cinematic crop, pan, zoom and color treatment; video muted",
+      "width": 1920,
+      "height": 1920,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "date": "2016-02-07 13:28:27",
+      "description": "Moscow-Washington teletype hotline, 1967 at the LBJ Presidential Library."
+    },
+    {
+      "key": "richard_helms",
+      "src": "assets/media/itt/richard-helms-1968.jpg",
+      "kind": "image",
+      "credit": "Richard Helms, White House Cabinet Room · March 27, 1968 · Yoichi Okamoto · Public domain",
+      "origin": "https://commons.wikimedia.org/wiki/File:Advisors,_CIA_Director_Richard_Helms_-_NARA_-_192536.tif",
+      "license": "Public domain",
+      "changes": "Cinematic crop, pan, zoom and color treatment; video muted",
+      "width": 1920,
+      "height": 1297,
+      "fit": "contain",
+      "focus": {
+        "x": 0.34,
+        "y": 0.43
+      },
+      "date": "27 March 1968date QS:P571,+1968-03-27T00:00:00Z/11",
+      "description": "Scope and content: Location: White House Cabinet Room. Depicted: CIA Director Richard Helms, Ambassador Walworth Barbour."
+    },
+    {
+      "kind": "image",
+      "license": "Public domain — U.S. federal government work",
+      "fit": "contain",
+      "motion": "push",
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "key": "document_offer",
+      "src": "assets/media/itt/offer-1973.png",
+      "credit": "U.S. Senate · ITT and Chile · 1973, p. 16",
+      "publication": "U.S. Senate — ITT and Chile, p. 16",
+      "date": "JUNE 21, 1973",
+      "origin": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "changes": "Unretouched rasterization of the complete second conclusions bullet, original p. 16 (PDF p. 20); amber highlight added by the renderer."
+    },
+    {
+      "kind": "image",
+      "license": "Public domain — U.S. federal government work",
+      "fit": "contain",
+      "motion": "push",
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "key": "document_funding",
+      "src": "assets/media/itt/funding-1975.png",
+      "credit": "U.S. Senate staff report · Covert Action in Chile · 1975",
+      "publication": "U.S. Senate staff report — Covert Action in Chile",
+      "date": "1975",
+      "origin": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+      "changes": "Unretouched rasterization of complete paragraph on PDF p. 29 (section II.C); amber highlight added by the renderer."
+    },
+    {
+      "kind": "image",
+      "license": "Public domain — U.S. federal government work",
+      "fit": "contain",
+      "motion": "push",
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "key": "document_early_offer",
+      "src": "assets/media/itt/early-offer-1975.png",
+      "credit": "U.S. Senate staff report · Covert Action in Chile · 1975",
+      "publication": "U.S. Senate staff report — Covert Action in Chile",
+      "date": "1975",
+      "origin": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+      "changes": "Unretouched rasterization of complete paragraph on PDF p. 28 (section II.C), retaining the rejected-offer wording."
+    },
+    {
+      "kind": "image",
+      "license": "Public domain — U.S. federal government work",
+      "fit": "contain",
+      "motion": "push",
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "key": "document_1973",
+      "src": "assets/media/itt/senate-conclusions-1973.png",
+      "credit": "U.S. Senate · ITT and Chile · 1973, p. 16",
+      "publication": "U.S. Senate — ITT and Chile, p. 16",
+      "date": "JUNE 21, 1973",
+      "origin": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "changes": "Unretouched full-page rasterization, original p. 16 (PDF p. 20)."
+    },
+    {
+      "key": "itt_reconstruction",
+      "src": "assets/media/itt/telephone-exchange-reconstruction.png",
+      "kind": "image",
+      "origin": "generated",
+      "reconstruction": true,
+      "credit": "Plotquake · AI illustrative reconstruction of a generic late-1960s telephone exchange",
+      "license": "Original generated illustration",
+      "changes": "Not a historical photograph or a depiction of a specific ITT installation.",
+      "fit": "cover",
+      "motion": "pan-right",
+      "zoomStart": 1.02,
+      "zoomEnd": 1.09
+    },
+    {
+      "key": "itt_reconstruction",
+      "src": "assets/media/itt/executive-office-reconstruction.png",
+      "kind": "image",
+      "origin": "generated",
+      "reconstruction": true,
+      "credit": "Plotquake · AI illustrative reconstruction of an anonymous 1970 executive office",
+      "license": "Original generated illustration",
+      "changes": "Not a historical photograph or a record of an actual private meeting.",
+      "fit": "cover",
+      "motion": "push",
+      "zoomStart": 1.02,
+      "zoomEnd": 1.09
+    },
+    {
+      "key": "itt_office",
+      "src": "assets/media/itt/executive-office-reconstruction.png",
+      "kind": "image",
+      "origin": "generated",
+      "reconstruction": true,
+      "credit": "Plotquake · AI illustrative reconstruction of an anonymous 1970 executive office",
+      "license": "Original generated illustration",
+      "changes": "Not a historical photograph or a record of an actual private meeting.",
+      "fit": "cover",
+      "motion": "pull",
+      "zoomStart": 1.09,
+      "zoomEnd": 1.02
+    },
+    {
+      "key": "itt_conglomerate",
+      "src": "assets/media/itt/conglomerate.svg",
+      "kind": "image",
+      "origin": "editorial-graphic",
+      "credit": "Plotquake editorial explainer · ITT corporate histories and filings",
+      "license": "Original Plotquake vector graphic",
+      "fit": "contain",
+      "motion": "still",
+      "zoomStart": 1,
+      "zoomEnd": 1
+    },
+    {
+      "key": "itt_election_timeline",
+      "src": "assets/media/itt/election-1970.svg",
+      "kind": "image",
+      "origin": "editorial-graphic",
+      "credit": "Plotquake editorial timeline · U.S. Senate and FRUS records",
+      "license": "Original Plotquake vector graphic",
+      "fit": "contain",
+      "motion": "still",
+      "zoomStart": 1,
+      "zoomEnd": 1
     }
   ]
 }

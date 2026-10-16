@@ -17,7 +17,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: plotquake-documentary
+  group: plotquake-documentary-${{ inputs.episode_path || 'episodes/blackberry.json' }}
   cancel-in-progress: false
 
 jobs:
@@ -48,6 +48,22 @@ jobs:
           cache: pip
           cache-dependency-path: worker/requirements.txt
 
+      - name: Select this episode's narration directory and cache
+        id: episode
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          from worker.synthesize_narration import safe_id
+          source = Path(os.environ['EPISODE_PATH'])
+          episode_id = safe_id(json.loads(source.read_text(encoding='utf-8-sig'))['id'])
+          fingerprint = hashlib.sha256(source.read_bytes() + Path('worker/synthesize_narration.py').read_bytes()).hexdigest()
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f'id={episode_id}\n')
+              output.write(f'audio_dir=public/generated-audio/{episode_id}\n')
+              output.write(f'voice_key=plotquake-voice-v3-{episode_id}-{fingerprint}\n')
+          PY
+
       - name: Install FFmpeg and dependencies
         run: |
           sudo apt-get update -qq
@@ -60,6 +76,17 @@ jobs:
         run: python scripts/create_score.py
 
       - name: Restore previously completed narration scenes
+        id: voice_cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ steps.episode.outputs.audio_dir }}
+          key: ${{ steps.episode.outputs.voice_key }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            ${{ steps.episode.outputs.voice_key }}-
+            plotquake-voice-v3-${{ steps.episode.outputs.id }}-
+
+      - name: Recover legacy narration once when no episode-specific cache exists
+        if: steps.voice_cache.outputs.cache-matched-key == ''
         uses: actions/cache/restore@v4
         with:
           path: public/generated-audio
@@ -72,11 +99,11 @@ jobs:
         run: python worker/synthesize_narration.py --episode "$EPISODE_PATH"
 
       - name: Save completed scenes for recovery
-        if: always() && hashFiles('public/generated-audio/**/*.json') != ''
+        if: always() && steps.episode.outputs.id != '' && hashFiles(format('{0}/**/*.json', steps.episode.outputs.audio_dir)) != ''
         uses: actions/cache/save@v4
         with:
-          path: public/generated-audio
-          key: plotquake-voice-v2-${{ hashFiles('episodes/*.json', 'worker/synthesize_narration.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ steps.episode.outputs.audio_dir }}
+          key: ${{ steps.episode.outputs.voice_key }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Build the actual narration timeline and publication package
         run: |
@@ -99,7 +126,7 @@ jobs:
           if-no-files-found: error
           path: |
             src/episodes/renderEpisode.json
-            public/generated-audio/
+            ${{ steps.episode.outputs.audio_dir }}/
             public/assets/audio/tension_score.wav
             public/assets/audio/chapter_transition.wav
             public/assets/audio/reveal_accent.wav

@@ -1,0 +1,20 @@
+[
+  {
+    "key": "thumbnail",
+    "path": "public/assets/images/itt-thumbnail.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: ads-marketing. Asset type: a dedicated original YouTube thumbnail for Plotquake, landscape 16:9, 1280x720 composition, premium cinematic historical business documentary. Subject: International Telephone and Telegraph (ITT), a corporation that offered the CIA one million dollars in 1970; this is an editorial symbolic cover, not an archival photograph. Foreground on the left: a glossy black late-1960s rotary desk telephone with its receiver resting slightly off the cradle, coiled cord leading into darkness. Midground on the right: one weathered closed manila document folder, large simple black type 'CIA' on its cover, no official seal and no fabricated document text. Background: anonymous corporate office glass and deep charcoal shadows, subtle cigarette-era atmosphere without a visible smoker. Restrained golden amber #E5A158 and pale gold #F6C383 rim light, tactile paper and Bakelite, strong chiaroscuro, high contrast, elegant photographic realism, cinematic 50mm lens. Exact primary text: 'THE OFFER', huge condensed uppercase with THE white and OFFER golden amber, clean central-right negative space, readable at phone thumbnail size, generous edge margins. The small CIA lettering is part of the folder prop only; no other text. No cash handover, no handshake, no suggestion the offer was accepted, no weapons, no flags, no fake headline, no watermark. A compelling visual contrast between an ordinary telephone and extraordinary political power."
+  },
+  {
+    "key": "telephone-exchange",
+    "path": "public/assets/media/itt/telephone-exchange-reconstruction.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: historical-scene. Asset type: original cinematic illustrative reconstruction for a Plotquake documentary, widescreen 16:9, 1920x1080 composition. A plausible late-1960s international telephone exchange after hours: long rows of electromechanical switching racks, dense copper cable bundles and patch panels, a few warm indicator lights, a rotary desk telephone in the near foreground, no modern flat screens or laptops. No identifiable people and no claim this is an actual ITT facility or recorded event. View down the aisle with strong depth, low camera angle and natural 35mm documentary lens. Photorealistic industrial texture, understated film grain, dark graphite shadows, restrained warm golden amber #E5A158 practical lighting, elegant archival-inspired cinematography. The scene will be clearly labeled an illustrative reconstruction in the video. No readable signs, no fake logos, no watermark, no text. Compose with enough detail and negative space for slow cinematic pans and zooms."
+  },
+  {
+    "key": "executive-office",
+    "path": "public/assets/media/itt/executive-office-reconstruction.png",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: historical-scene. Asset type: cinematic illustrative reconstruction for a Plotquake historical business documentary, widescreen 16:9, 1920x1080 composition. A believable 1970 Manhattan corporate executive office at dusk, empty and seen obliquely through a half-open glass door. A large walnut desk holds a black rotary telephone, a stack of plain manila folders with no readable writing, a mechanical adding machine and paper ledgers. Wood paneling, modest leather chairs, venetian blinds casting long geometric shadows, distant period city rooftops in rain. No modern screens, no laptop, no identifiable people, no specific company logo, no CIA prop, no cash. This is a generic editorial illustration of business and political access, not a reconstruction of any claimed private meeting. Restrained photorealism, natural 50mm film lens, subtle grain, deep graphite with warm golden amber #E5A158 practical desk-lamp light and cool blue dusk outside. Tense, quiet, expensive, documentary rather than action-film. Clear layered composition suitable for a slow push-in, no text, no watermark."
+  }
+]

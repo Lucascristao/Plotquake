@@ -1,0 +1,830 @@
+{
+  "id": "itt-million-dollar-offer",
+  "title": "The Phone Company That Offered the CIA $1 Million",
+  "subtitle": "A telephone empire, a presidential election, and a corporate offer that reached the secret state.",
+  "description": "In 1970, International Telephone and Telegraph sought the CIA's help as Salvador Allende approached power in Chile. A million-dollar offer was rejected. Other corporate political funding, advice on secret channels, and economic pressure appear in the documentary record. This film follows Harold Geneen's conglomerate, the former CIA director on its board, the two phases of the 1970 election struggle, the documents that exposed the relationship, and the empire's eventual breakup. Based on U.S. Senate investigations, declassified government records, and corporate filings. The 1970 offers are distinguished from the 1973 coup; the film does not claim that ITT bought or financed that coup. Illustrative reconstructions are not records of private meetings. Dollar figures are nominal U.S. dollars.",
+  "tags": [
+    "ITT",
+    "International Telephone and Telegraph",
+    "Harold Geneen",
+    "John McCone",
+    "CIA",
+    "Salvador Allende",
+    "Chile",
+    "Church Committee",
+    "corporate history",
+    "business documentary",
+    "Cold War",
+    "Plotquake"
+  ],
+  "voice": "Charon",
+  "pitchSemitones": -1,
+  "minimumDurationSeconds": 900,
+  "thumbnail": "public/assets/images/itt-thumbnail.png",
+  "acts": [
+    {
+      "id": "act-1",
+      "title": "The Company Behind the Call",
+      "subtitle": "A telephone business becomes an empire of unrelated businesses.",
+      "scenes": [
+        {
+          "id": "itt-01",
+          "caption": "1970 | A million-dollar offer",
+          "narration": "One million dollars. In 1970, the chairman of an American telephone company offered money to the CIA to help stop a presidential candidate in Chile. The CIA rejected the offer. But that refusal was not the end of the relationship. It was the beginning of a question that would reach the United States Senate: how far could a corporation go to protect a business it feared losing?",
+          "visualKeys": [
+            "rotary_phone",
+            "cia_headquarters",
+            "itt_building",
+            "allende",
+            "document_offer"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-02",
+          "caption": "International Telephone and Telegraph",
+          "narration": "The company was International Telephone and Telegraph. ITT. Behind those three letters stood telephone networks, hotels, insurance, and a sprawling collection of acquisitions. One of its directors had run American intelligence. Its executives could move between corporate offices and the national security world. When Chile threatened the value of its telephone investment, the company sought more than a better commercial deal. It sought help shaping the political outcome.",
+          "visualKeys": [
+            "itt_building",
+            "switchboard",
+            "sheraton",
+            "john_mccone",
+            "itt_conglomerate"
+          ],
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ]
+        },
+        {
+          "id": "itt-03",
+          "caption": "1920 | International Telephone and Telegraph begins",
+          "narration": "ITT began in 1920, long before the smartphone, when a telephone connection required physical infrastructure and local permission. The name described an international ambition. A network could join distant customers, but the business behind it depended on cables, switching equipment, workers, and the rules of each country. Expansion meant putting valuable assets inside someone else's borders. The connection could cross a frontier. Ownership still had to answer to a government.",
+          "visualKeys": [
+            "telephone_network",
+            "switchboard",
+            "rotary_phone",
+            "itt_building",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S05"
+          ]
+        },
+        {
+          "id": "itt-04",
+          "caption": "The asset cannot leave with the investor",
+          "narration": "That is the special risk of an infrastructure business. A retailer can stop ordering merchandise. An investor can sell a security. A telephone operator cannot simply pack up the network when politics changes. The lines still run through the city. Customers still need service. The equipment remains where it was installed. A foreign owner's financial interest and a nation's control over essential services can occupy the same wires, with very different priorities.",
+          "visualKeys": [
+            "telephone_network",
+            "santiago",
+            "switchboard",
+            "itt_office",
+            "rotary_phone",
+            "itt_reconstruction"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-05",
+          "caption": "Harold Geneen | The acquisition years",
+          "narration": "Harold Geneen gave ITT a different kind of scale. He took command in 1959 and turned diversification into a corporate identity. The company's own later history credits the Geneen era with more than three hundred fifty acquisitions between 1960 and 1977. This was expansion by purchasing existing businesses. Instead of waiting for one telephone operation to grow, headquarters could add another company, another management team, another stream of earnings.",
+          "visualKeys": [
+            "itt_building",
+            "itt_office",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S05",
+            "S07"
+          ]
+        },
+        {
+          "id": "itt-06",
+          "chapter": "An empire you could sleep inside",
+          "caption": "1968 | Sheraton joins ITT",
+          "narration": "The acquisitions made the empire visible in unexpected places. ITT owned Sheraton from 1968. Its wider portfolio included Hartford insurance and Continental Baking, the company associated with Wonder Bread. A customer might sleep in one part of the conglomerate and buy food connected to another. The telephone name concealed a much larger proposition: one corporate center believed it could allocate capital across businesses with almost nothing else in common.",
+          "visualKeys": [
+            "sheraton",
+            "itt_conglomerate",
+            "itt_building",
+            "avis",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S06",
+            "S07"
+          ]
+        },
+        {
+          "id": "itt-07",
+          "caption": "Diversification | The promise of the conglomerate",
+          "narration": "The attraction was understandable. Different industries do not move in perfect unison. A business having a difficult year might sit beside another generating cash. Headquarters could compare results, choose investments, and buy additional operations. But adding businesses does not eliminate the need to understand them. A hotel, an insurer, and a telephone network depend on different relationships. A consolidated financial statement can bring their earnings together without bringing their risks under control.",
+          "visualKeys": [
+            "itt_conglomerate",
+            "sheraton",
+            "itt_building",
+            "telephone_network",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S05"
+          ]
+        },
+        {
+          "id": "itt-08",
+          "caption": "An empire meets a national boundary",
+          "narration": "For a multinational, one of those risks sits outside the balance sheet's neat columns. A government may decide that a private service should become public property. To the investor, that threatens an asset and future income. To supporters of nationalization, the same asset can represent foreign control over a basic necessity. A negotiation about compensation is possible. So is a political fight over who should have owned the business in the first place.",
+          "visualKeys": [
+            "telephone_network",
+            "santiago",
+            "allende",
+            "itt_building"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-09",
+          "caption": "Chile | The telephone investment at risk",
+          "narration": "In Chile, ITT had a direct stake in the national telephone business. Salvador Allende, leading the Popular Unity coalition, promised a socialist transformation that included bringing major industries and services under Chilean control. This was not an abstract argument in a distant capital. If his program reached ITT's operation, the corporation could lose control of a business that could not move away. Its political exposure had become a concrete threat to ownership.",
+          "visualKeys": [
+            "santiago",
+            "telephone_network",
+            "allende",
+            "switchboard",
+            "itt_building"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-10",
+          "caption": "1970 | Two interests begin to converge",
+          "narration": "Washington approached the same election through the Cold War. Officials feared the spread of Marxist influence and another hostile government in the hemisphere. ITT approached it with a corporate investment at stake. Those interests overlapped, but they were not identical. A government could pursue an anti-Communist strategy whether or not a telephone company benefited. A company could protect its property while describing the danger in the language that Washington already understood.",
+          "visualKeys": [
+            "allende",
+            "cia_headquarters",
+            "telephone_network",
+            "itt_building",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "title": "The Director on the Board",
+      "subtitle": "A private investment reaches the intelligence world.",
+      "scenes": [
+        {
+          "id": "itt-11",
+          "caption": "John McCone | From the CIA to the corporate board",
+          "narration": "The crucial bridge was John McCone. An industrialist before entering intelligence leadership, he served as Director of Central Intelligence from 1961 to 1965 under Presidents Kennedy and Johnson. By 1970, he sat on ITT's board. He knew the institution Geneen wanted to approach and the people who led it. A boardroom concern could reach intelligence headquarters through a man who had once occupied its most powerful office.",
+          "visualKeys": [
+            "john_mccone",
+            "cia_headquarters",
+            "itt_building",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S08",
+            "S09"
+          ]
+        },
+        {
+          "id": "itt-12",
+          "caption": "Access | A former director calls the current director",
+          "narration": "McCone contacted Richard Helms, the serving intelligence director. Contacts followed between ITT and William Broe, who headed the CIA's Western Hemisphere division. The company had found a route into an institution designed to influence events secretly. That access did not make the agency an obedient corporate department. It did mean executives could put a private financial concern before officials possessing capabilities no ordinary business had: clandestine contacts, political intelligence, and covert channels.",
+          "visualKeys": [
+            "john_mccone",
+            "richard_helms",
+            "cia_headquarters",
+            "rotary_phone",
+            "itt_office",
+            "itt_reconstruction"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-13",
+          "caption": "July 1970 | The first approach",
+          "narration": "In July 1970, before Chileans voted, Geneen met Broe. The proposal was to have the CIA channel substantial private business money to Jorge Alessandri, Allende's conservative opponent. Broe refused to handle it. Agency policy at that stage allowed an operation against Allende's coalition, but not direct backing for a particular presidential candidate. The distinction created a strange boundary: Washington was already trying to damage one side while declining to finance the other candidate directly.",
+          "visualKeys": [
+            "document_early_offer",
+            "itt_office",
+            "john_mccone",
+            "rotary_phone",
+            "richard_helms"
+          ],
+          "sourceIds": [
+            "S03"
+          ]
+        },
+        {
+          "id": "itt-14",
+          "caption": "A refusal with another door left open",
+          "narration": "Broe's refusal did not end the discussion. A CIA memorandum later prepared for congressional hearings acknowledged that the agency advised ITT about the security of its proposed funding channels. The company could proceed on its own, with guidance about getting money through discreetly. That is the first important turn in this story. The agency declined to carry the corporation's money, while helping the corporation understand how it might move the money itself.",
+          "visualKeys": [
+            "document_funding",
+            "cia_headquarters",
+            "itt_office",
+            "rotary_phone",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S03"
+          ]
+        },
+        {
+          "id": "itt-15",
+          "caption": "The Senate's finding | At least $350,000",
+          "narration": "At least three hundred fifty thousand dollars. That is the amount the Senate's later investigation said ITT passed to the Alessandri campaign. The committee described CIA advice on secure funding mechanisms, including a channel involving agency assets. The agency had declined to handle the company's money. The company nevertheless found a way to fund the campaign. A rejected proposal and a completed transfer now sat in the same documentary record, describing different parts of the relationship.",
+          "visualKeys": [
+            "document_funding",
+            "santiago",
+            "itt_office",
+            "telephone_network",
+            "cia_headquarters"
+          ],
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "document_funding",
+            "atSeconds": 0,
+            "durationSeconds": 14,
+            "source": "U.S. Senate | Covert Action in Chile",
+            "date": "1975",
+            "sourceUrl": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.012,
+                "y": 0.865,
+                "width": 0.635,
+                "height": 0.1
+              }
+            ]
+          },
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-16",
+          "chapter": "The election did not end the contest",
+          "caption": "September 4, 1970 | Allende wins the largest share",
+          "narration": "On September fourth, Allende won the largest share of the popular vote, about thirty-six percent. He had a plurality, not an outright majority. Under Chile's constitutional process, Congress would choose between the leading candidates. Tradition favored the popular-vote leader, but the parliamentary decision had not yet happened. To Allende's opponents, that interval looked like a final opening. The campaign had ended. The struggle over who would become president had not.",
+          "visualKeys": [
+            "allende",
+            "itt_election_timeline",
+            "santiago",
+            "rotary_phone"
+          ],
+          "sourceIds": [
+            "S10"
+          ]
+        },
+        {
+          "id": "itt-17",
+          "caption": "A parliamentary route around the result",
+          "narration": "One scenario envisioned Congress choosing Alessandri instead. He would resign, allowing outgoing President Eduardo Frei to contest a new election against Allende. It was an attempt to use the remaining constitutional steps to reverse the direction set by the popular vote. Its success depended on Chilean politicians making choices they had not yet made. For executives watching from abroad, the uncertain parliamentary arithmetic offered something more immediate than waiting to negotiate with an Allende government.",
+          "visualKeys": [
+            "itt_election_timeline",
+            "santiago",
+            "allende",
+            "itt_office",
+            "rotary_phone"
+          ],
+          "sourceIds": [
+            "S10"
+          ]
+        },
+        {
+          "id": "itt-18",
+          "caption": "September 1970 | Another million-dollar proposal",
+          "narration": "One million dollars appears again after the election. According to the Senate's 1973 report, Geneen offered that amount to support a United States government plan to build a coalition in Chile's Congress and prevent Allende from becoming president. McCone carried the offer to Helms and Henry Kissinger. The intended customer was now unmistakably the American government. The proposed service was a political outcome in another country, before its president had even taken office.",
+          "visualKeys": [
+            "document_offer",
+            "itt_building",
+            "john_mccone",
+            "richard_helms",
+            "allende"
+          ],
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "document_offer",
+            "atSeconds": 0,
+            "durationSeconds": 14,
+            "source": "U.S. Senate | ITT and Chile, 1970–71",
+            "date": "1973",
+            "sourceUrl": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.067,
+                "y": 0.195,
+                "width": 0.255,
+                "height": 0.235
+              }
+            ]
+          },
+          "sourceIds": [
+            "S02"
+          ]
+        },
+        {
+          "id": "itt-19",
+          "caption": "September 15, 1970 | Washington's own money",
+          "narration": "At the White House, a different sum entered the record. Notes Helms took at a September fifteenth meeting with President Nixon recorded ten million dollars available, more if necessary, and a demand for a plan within forty-eight hours. An amount made available was not an amount actually spent. But it showed the government's own commitment. ITT was approaching officials already willing to direct American resources against Allende. The corporation's proposed million was not the source of Washington's entire operation.",
+          "visualKeys": [
+            "richard_helms",
+            "cia_headquarters",
+            "rotary_phone",
+            "itt_office",
+            "allende",
+            "itt_reconstruction"
+          ],
+          "sourceIds": [
+            "S20"
+          ]
+        },
+        {
+          "id": "itt-20",
+          "caption": "Track One and Track Two | Different operations",
+          "narration": "Washington was pursuing more than one route. A September CIA message distinguished a parliamentary approach, Track One, from a military approach, Track Two. The latter was to be concealed even from the American ambassador and State Department. These were government operations with their own chains of authority. The existence of ITT contacts does not turn every secret American action into an ITT project. It shows the dangerous environment into which the company's proposal had entered.",
+          "visualKeys": [
+            "cia_headquarters",
+            "richard_helms",
+            "document_1973",
+            "santiago",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "title": "The Wires Lead Back to Washington",
+      "subtitle": "Economic pressure, a failed objective, and documents that escape the office.",
+      "scenes": [
+        {
+          "id": "itt-21",
+          "caption": "Economic pressure | Credit, equipment, and confidence",
+          "narration": "Economic pressure could operate without a soldier crossing a border. A diplomatic cable recorded suggestions to stop renewing loans, delay orders and spare parts, and encourage businesses to close. These were proposals circulating in the crisis, not proof that every suggested step occurred. The mechanism was concrete. A firm short of credit might cut activity. Equipment without parts might fail. A population expecting shortages might rush to buy. Financial confidence could become a political weapon.",
+          "visualKeys": [
+            "itt_building",
+            "itt_office",
+            "telephone_network",
+            "switchboard",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S13"
+          ]
+        },
+        {
+          "id": "itt-22",
+          "caption": "A further twist | ITT rejects a CIA proposal",
+          "narration": "The relationship did not move in only one direction. The Senate's 1973 conclusions said ITT's leaders considered a CIA proposal to create economic chaos in Chile, then rejected it as impractical. The company that had sought government intervention now balked at a plan coming back from the agency. Shared opposition to Allende had brought the two sides into contact. It had not given them an agreed method, or made either side willing to accept every proposal from the other.",
+          "visualKeys": [
+            "document_1973",
+            "itt_building",
+            "john_mccone",
+            "cia_headquarters",
+            "itt_office",
+            "itt_reconstruction"
+          ],
+          "sourceIds": [
+            "S02"
+          ]
+        },
+        {
+          "id": "itt-23",
+          "caption": "The objective fails | Allende takes office",
+          "narration": "The immediate objective failed. On October twenty-fourth, Chile's Congress confirmed Allende. He was inaugurated on November third, 1970. The corporation now faced the government its executives had tried to prevent. This was the difference between influence and control, exposed by an outcome. ITT had access to powerful Americans. It had money available. Neither was enough to determine the final decision of Chile's Congress or keep Allende out of the presidential palace.",
+          "visualKeys": [
+            "allende",
+            "itt_election_timeline",
+            "santiago",
+            "itt_building",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S21"
+          ]
+        },
+        {
+          "id": "itt-24",
+          "caption": "1971 | Corporate pressure continues",
+          "narration": "The company's effort did not simply stop at inauguration. The Senate investigation found that ITT encouraged other American companies to organize pressure on Kissinger and the White House in early 1971. Executives were still trying to turn shared commercial exposure into political leverage. A group of worried investors could present a larger problem than one telephone subsidiary. But organizing a corporate position was not the same as controlling what the government or Chile would do next.",
+          "visualKeys": [
+            "itt_office",
+            "itt_building",
+            "telephone_network",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S02"
+          ]
+        },
+        {
+          "id": "itt-25",
+          "caption": "March 1972 | The internal papers become public",
+          "narration": "Then the paper trail escaped. In March 1972, columnist Jack Anderson began publishing revelations drawn from internal ITT documents about its Chilean political efforts. Memoranda created to move information inside a corporation now carried a different kind of value outside it. They connected executives, officials, and proposals in a form the public could examine. What had been a tool for managing the problem became part of the problem the company had to manage.",
+          "visualKeys": [
+            "document_1973",
+            "document_offer",
+            "document_funding",
+            "itt_building",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S15"
+          ]
+        },
+        {
+          "id": "itt-26",
+          "caption": "Exposure | A political setback for Washington",
+          "narration": "American officials recognized the damage. An interagency paper in April described publication of the ITT documents as a setback for United States policy and a political gain for Allende. The papers gave substance to accusations of foreign plotting and threatened to taint the Chilean opposition. The effort to protect American interests had produced evidence that could strengthen the politician those interests opposed. The corporation's private conversations were now helping its adversary make a public case.",
+          "visualKeys": [
+            "allende",
+            "document_1973",
+            "santiago",
+            "cia_headquarters",
+            "itt_building"
+          ],
+          "sourceIds": [
+            "S14"
+          ]
+        },
+        {
+          "id": "itt-27",
+          "caption": "April 18, 1972 | ITT's assets are expropriated",
+          "narration": "On April eighteenth, 1972, Chile expropriated ITT's assets. The feared loss of control had become reality. Nationalization had already been part of the political confrontation before the documents became public. But the disclosures transformed the company's position in that confrontation. ITT was no longer only a foreign owner defending an investment. Its internal records had exposed an effort to influence who would govern the country. The business it had tried to protect was now out of its control.",
+          "visualKeys": [
+            "telephone_network",
+            "allende",
+            "santiago",
+            "itt_building",
+            "document_1973"
+          ],
+          "sourceIds": [
+            "S15"
+          ]
+        },
+        {
+          "id": "itt-28",
+          "caption": "The documents become a paperback",
+          "narration": "Chile's government translated the ITT memoranda into Spanish and made them available as an inexpensive paperback. A Washington memorandum noted the resulting damage to the opposition. That was a remarkable change in distribution. Information once meant for a small circle of executives could now be purchased and read by the people whose political future those executives had discussed. Secrecy had protected the company's freedom to maneuver. Publication made the maneuver itself a political fact.",
+          "visualKeys": [
+            "document_1973",
+            "document_offer",
+            "santiago",
+            "allende",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S16"
+          ]
+        },
+        {
+          "id": "itt-29",
+          "chapter": "When the records reached the Senate",
+          "caption": "1973 | Witnesses, memoranda, and contradictions",
+          "narration": "Senator Frank Church's subcommittee investigated the relationship. Inside the hearings, the documents did not produce one agreed account. A government memorandum describing the inquiry records disputes over who initiated contacts, what officials had proposed, and whether an executive's written description matched an official's recollection. The written record could be placed beside the later explanation and the differences examined. Conversations once conducted between a handful of powerful men had become questions those men could no longer answer entirely in private.",
+          "visualKeys": [
+            "document_1973",
+            "john_mccone",
+            "richard_helms",
+            "itt_office"
+          ],
+          "sourceIds": [
+            "S04"
+          ]
+        },
+        {
+          "id": "itt-30",
+          "caption": "The question behind the testimony",
+          "narration": "That process exposed the central tension. A business could describe its approach as giving the government information or requesting assistance. Yet the financial offers and proposed political outcomes required a more specific explanation. What exactly was the government being asked to do? Who would benefit? Who would bear the consequences? The hearing room brought a private calculation into public view: a company's concern about an investment had reached discussions about another nation's choice of president.",
+          "visualKeys": [
+            "document_1973",
+            "itt_building",
+            "document_offer",
+            "allende",
+            "telephone_network",
+            "itt_reconstruction"
+          ],
+          "sourceIds": [
+            "S04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "act-4",
+      "title": "What the Empire Could Not Control",
+      "subtitle": "The political tragedy and the corporate ending follow different paths.",
+      "scenes": [
+        {
+          "id": "itt-31",
+          "caption": "1975 | A wider investigation",
+          "narration": "In 1975, the Senate's broader intelligence investigation placed the corporate contacts inside a longer history of American covert action in Chile. The enlarged record changed the scale of the picture. ITT was one participant in a struggle involving Chilean parties, American policymakers, intelligence officials, and other businesses. The rejected offer was one connection. The advice on secret channels was another. The corporate funding that reached a campaign was a third. Together, they exposed how commercial interests could enter a covert political struggle.",
+          "visualKeys": [
+            "document_early_offer",
+            "document_funding",
+            "cia_headquarters",
+            "santiago",
+            "itt_building"
+          ],
+          "sourceIds": [
+            "S01"
+          ]
+        },
+        {
+          "id": "itt-32",
+          "caption": "September 11, 1973 | The palace under attack",
+          "narration": "Chile's military overthrew Allende on September eleventh, 1973. The presidential palace came under attack. Allende died, and the country entered military rule. The struggle that had begun with ballots and congressional negotiations now ended in force. But the million-dollar offers belonged to 1970, when Allende had not yet taken office. The ITT inquiry had been examining those earlier efforts as Chile moved toward another, far more violent rupture.",
+          "visualKeys": [
+            "la_moneda",
+            "allende",
+            "santiago",
+            "document_1973",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S22",
+            "S11"
+          ]
+        },
+        {
+          "id": "itt-33",
+          "caption": "The official record | Intervention and its limits",
+          "narration": "The CIA's report to Congress in 2000 acknowledged its attempt to instigate a coup in 1970. For 1973, it described knowledge of military plotting and relationships with some plotters, while saying the agency did not instigate that coup. That is the agency's retrospective account. Its admitted earlier intervention and continuing contacts remain part of the history. But the rejected ITT offers of 1970 do not establish that the company paid for the military takeover three years later.",
+          "visualKeys": [
+            "cia_headquarters",
+            "richard_helms",
+            "document_1973",
+            "santiago",
+            "la_moneda"
+          ],
+          "sourceIds": [
+            "S11"
+          ]
+        },
+        {
+          "id": "itt-34",
+          "caption": "Beyond the balance sheet | The human consequences",
+          "narration": "The dictatorship's consequences reached far beyond corporate accounts. Torture, disappearances, and other grave violations under military rule became matters of investigation and demands for justice. Families confronted losses that no financial settlement could repair. The files in this story preserve one part of a much larger struggle: executives protecting property, officials pursuing geopolitical goals, and Chileans whose future was being contested. The consequences of political power could never be contained inside a corporate financial report.",
+          "visualKeys": [
+            "santiago",
+            "la_moneda",
+            "allende",
+            "document_1973"
+          ],
+          "sourceIds": [
+            "S17"
+          ]
+        },
+        {
+          "id": "itt-35",
+          "caption": "A company survives its scandal",
+          "narration": "ITT did not disappear when the Chile story became public. The conglomerate continued for decades. That survival is another uncomfortable part of the record. Exposure can change a company's reputation without ending its ability to operate. A hotel still takes reservations. An insurer still writes policies. A manufacturing business still has orders to fill. The corporate machine can continue through institutions and customers whose immediate needs are far removed from the conduct under investigation.",
+          "visualKeys": [
+            "sheraton",
+            "itt_building",
+            "itt_office",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S05"
+          ]
+        },
+        {
+          "id": "itt-36",
+          "caption": "After Geneen | A different corporate future",
+          "narration": "The eventual end of the old empire followed a different path. Geneen's acquisition era gave way to the leadership of Rand Araskog and a long period of corporate change. By 1995, ITT chose to divide itself into three independent public companies. This was not a bankruptcy or a sudden disappearance. Shareholders would own separate businesses. The organization assembled under one name was being taken apart, with operating companies continuing beyond the original umbrella.",
+          "visualKeys": [
+            "itt_building",
+            "sheraton",
+            "itt_office",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S05",
+            "S19"
+          ]
+        },
+        {
+          "id": "itt-37",
+          "caption": "December 19, 1995 | Three companies replace one empire",
+          "narration": "The separation was completed on December nineteenth, 1995. ITT Hartford held the insurance business. ITT Industries held manufacturing operations, including automotive, defense electronics, and fluid technology. The new ITT concentrated on hospitality, entertainment, gaming, and information services. The list itself reveals how far the original telephone company had traveled. One name had connected businesses with radically different customers and economics. The breakup gave those businesses separate corporate identities and separate financial futures.",
+          "visualKeys": [
+            "itt_building",
+            "sheraton",
+            "itt_conglomerate",
+            "telephone_network"
+          ],
+          "sourceIds": [
+            "S18",
+            "S19"
+          ]
+        },
+        {
+          "id": "itt-38",
+          "caption": "The empire changes shape",
+          "narration": "The businesses were real. So were their differences. In 1994, ITT Sheraton reported that more than forty-five million customers stayed at its properties across sixty countries. A company once associated with international telephone lines had become a vast hospitality operator as well. The breakup did not undo that history. It changed the architecture around it. The legacy survived in assets and companies that no longer needed to appear beneath one all-encompassing corporate name.",
+          "visualKeys": [
+            "sheraton",
+            "itt_building",
+            "itt_office",
+            "rotary_phone"
+          ],
+          "sourceIds": [
+            "S06"
+          ]
+        },
+        {
+          "id": "itt-39",
+          "caption": "The line between investment and political power",
+          "narration": "Return to the telephone network in Chile. The original commercial problem was who would control an asset and what happened if that control changed. ITT's response reached beyond prices, service, and compensation into political funding and secret government contact. That crossing is what makes the case endure. When a corporation believes a political result threatens its property, the resources built to serve customers can become resources directed at influencing who is allowed to govern them.",
+          "visualKeys": [
+            "telephone_network",
+            "rotary_phone",
+            "itt_building",
+            "allende",
+            "cia_headquarters"
+          ],
+          "sourceIds": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        {
+          "id": "itt-40",
+          "caption": "The offer failed. The documents remained.",
+          "narration": "The million-dollar offer did not buy the outcome. Allende became president. ITT lost control of its Chilean assets, and the documents outlived the secrecy around them. Years later, the conglomerate itself split apart. The lasting revelation is not that a company controlled everything. It is that executives with an investment to defend could reach the secret state and offer money to shape another country's future. A telephone business had found a line into power. The public discovered where that line led.",
+          "visualKeys": [
+            "rotary_phone",
+            "document_offer",
+            "document_funding",
+            "itt_building",
+            "santiago"
+          ],
+          "sourceIds": [
+            "S01",
+            "S15",
+            "S19"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "U.S. Senate, Covert Action in Chile, 1963–1973, 1975",
+      "url": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+      "note": "Primary Senate findings, printed pp.12–14: ITT approaches, rejected million-dollar offer, advice on secure channels and at least $350,000 to the Alessandri campaign. Supports itt-01, itt-09, itt-12, itt-15 and itt-31. The amount offered is not treated as a payment accepted by CIA. Accessed 2026-10-16."
+    },
+    {
+      "id": "S02",
+      "title": "U.S. Senate, The International Telephone and Telegraph Company and Chile, 1970–71, 1973",
+      "url": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "note": "Primary investigation, conclusions printed pp.16–17: substantial July offer rejected; separate September $1 million proposal transmitted by McCone to Kissinger and Helms; economic-chaos proposal considered and rejected; early-1971 corporate pressure. Supports itt-18, itt-22 and itt-24. Original government PDF downloaded and the relevant conclusions rasterized directly for the film. No fabricated quotation is used."
+    },
+    {
+      "id": "S03",
+      "title": "FRUS E–16, Document 104: CIA memorandum, Background for Chilean Hearings, March 21, 1972",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d104",
+      "note": "Contemporary CIA briefing prepared for congressional testimony. Records July 16/27 Geneen–Broe meetings, refusal to channel corporate funds, advice on secure channels and policy against direct candidate support. Supports itt-13 and itt-14. This is a defensive agency account, not an independent finding; inconsistent denials elsewhere in it are not repeated as settled history."
+    },
+    {
+      "id": "S04",
+      "title": "FRUS E–16, Document 131: memorandum describing CIA discussions with Church's investigators, March 19, 1973",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d131",
+      "note": "Primary State Department memorandum recording CIA officials' account of questioning. Contains disputes about initiative, economic pressure and discrepancies between memoranda and recollections. Supports itt-29 and itt-30. Reported denials are not converted into proof that alleged events never occurred."
+    },
+    {
+      "id": "S05",
+      "title": "ITT, 2011 investor presentation, Heritage of Disciplined Value Creation, slide 19",
+      "url": "https://www.sec.gov/Archives/edgar/data/216228/000115752311003953/a6788079_ex992.htm",
+      "note": "Company-authored SEC-filed primary record: 1920 creation, more than 350 acquisitions in the 1960–1977 Geneen era, subsequent Araskog leadership and 1995 three-way separation. Supports itt-03, itt-05, itt-35 and itt-36. Acquisitions are not described as 350 companies still simultaneously owned. No immediate causal link is drawn between the Chile scandal and the 1995 breakup."
+    },
+    {
+      "id": "S06",
+      "title": "ITT Destinations, 1995 distribution prospectus",
+      "url": "https://investors.itt.com/static-files/aeec1404-8895-4fa5-9e09-33565a56e902",
+      "note": "Primary corporate prospectus: Sheraton wholly owned since 1968; over 45 million customers in 60 countries in 1994. Supports itt-06 and itt-38. Customer stays are presented as the company's reported figure, not unique individuals. Document also provides hospitality portfolio context."
+    },
+    {
+      "id": "S07",
+      "title": "Harvard Business School Baker Library, Lehman Brothers historical company description: ITT Continental Baking",
+      "url": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91219477-OPP-52.pdf",
+      "note": "Archival institutional description preserved as an exhibit in a USPTO record; supports 1959 leadership transition and portfolio examples Continental Baking, Sheraton and Hartford. Used only for corporate chronology and ownership, not private motives or dialogue. Supports itt-02, itt-05 and itt-06. Institutional archival context supplements direct corporate filings."
+    },
+    {
+      "id": "S08",
+      "title": "CIA, John Alex McCone biographical record, February 16, 1982",
+      "url": "https://www.cia.gov/readingroom/document/cia-rdp88b00443r001003860150-1",
+      "note": "Primary agency biography: industrial and government career, 1961–1965 intelligence directorship and ITT directorship. Supports itt-11. McCone is explicitly a former director in the 1970 story; he is not confused with serving director Helms."
+    },
+    {
+      "id": "S09",
+      "title": "CIA, Profiles in Leadership: Directors of the Central Intelligence Agency and Its Predecessors, 1941–2023",
+      "url": "https://www.cia.gov/resources/csi/static/4789eee9e734cd7409eed3d133929b36/Profiles-in-Leadership-Updated-July-2023.pdf",
+      "note": "Official agency chronology confirms McCone's November 1961–April 1965 tenure and the presidents he served. Supports itt-11. Career context is not evidence of personal involvement in every later agency operation."
+    },
+    {
+      "id": "S10",
+      "title": "FRUS E–16, Document 18: Intelligence Memorandum, September 7, 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d18",
+      "note": "Contemporary post-election analysis provides the popular-vote result, parliamentary choice, historical precedent and Alessandri-resignation/Frei-election scenario. Supports itt-16 and itt-17. Allende's share is rounded to about 36 percent; he did not win a majority."
+    },
+    {
+      "id": "S11",
+      "title": "CIA Activities in Chile, Report to Congress, September 18, 2000",
+      "url": "https://irp.fas.org/cia/product/chile/",
+      "note": "Primary CIA report republished by FAS. Historical Context and Awareness of Coup Plotting sections support itt-10 and itt-33; supporting material corroborates the coup chronology in itt-32. The retrospective conclusion is explicitly attributed to CIA."
+    },
+    {
+      "id": "S12",
+      "title": "FRUS E–16, Document 22: CIA message to Station Chile, September 21, 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d22",
+      "note": "Contemporary primary cable explicitly distinguishes Track One parliamentary approach and Track Two military approach and excludes ambassador/State from the latter. Supports itt-20; does not establish an ITT-funded military operation."
+    },
+    {
+      "id": "S13",
+      "title": "FRUS E–16, Document 25: Korry backchannel message, September 24, 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d25",
+      "note": "Contemporary cable records suggestions by a partly redacted source concerning credit, spare parts, business closures and confidence. Supports itt-21. Proposals are expressly distinguished from completed actions; not all are attributed to ITT."
+    },
+    {
+      "id": "S14",
+      "title": "FRUS E–16, Document 106: interagency paper on Chile, April 1972",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d106",
+      "note": "Primary interagency assessment calls the Anderson–ITT documents a policy setback and political gain for Allende. Supports itt-26. Its strategic assessment is attributed to American officials, not made into a quantified estimate of electoral impact."
+    },
+    {
+      "id": "S15",
+      "title": "FRUS XXI, Document 296: editorial note on ITT disclosures and expropriation",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d296",
+      "note": "Official documentary-edition chronology, citing primary archives: Anderson disclosures began March 21, 1972; expropriation April 18, 1972; Senate inquiry. Supports itt-25 and itt-27. Seizure of operational control is distinct from the later formal expropriation; the episode uses the April 18 expropriation date."
+    },
+    {
+      "id": "S16",
+      "title": "FRUS XXI, Document 294: Jorden memorandum to Kissinger, April 10, 1972",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d294",
+      "note": "Primary NSC memorandum: Spanish paperback edition of ITT papers and damage to opposition. Supports itt-28. No invented newspaper headline, author quotation or page layout is substituted for the genuine documents."
+    },
+    {
+      "id": "S17",
+      "title": "United Nations Committee against Torture, concluding observations on Chile, 2004",
+      "url": "https://docstore.ohchr.org/SelfServices/FilesHandler.ashx?enc=6505Vh6rSPo2dc0sLnv7hbIX6aPAv%2BwDl8UldmRebx5D1PlhBU8BLM6Ko7O%2FALokZi7edcOLbZg6%2BqgpfYgPeQ%3D%3D",
+      "note": "Primary UN treaty-body findings discuss torture, disappearances and other grave violations under military dictatorship and accountability obstacles. Supports the limited human-rights context in itt-34. No casualty total or corporate criminal liability is inferred."
+    },
+    {
+      "id": "S18",
+      "title": "Federal Election Commission, Advisory Opinion 1996–23 record",
+      "url": "https://www.fec.gov/files/legal/aos/1996-23/1074193.pdf",
+      "note": "Primary government record of corporate facts submitted for a political-committee affiliation opinion: breakup completed December 19, 1995; three independent publicly traded companies and their business areas. Supports itt-37. Used for transaction structure, not as an opinion on Chile."
+    },
+    {
+      "id": "S19",
+      "title": "ITT Industries, 1996 Annual Report",
+      "url": "https://investors.itt.com/static-files/5b517671-ad58-4381-8662-173cce2118da",
+      "note": "Primary corporate report confirms December 19, 1995 distribution to shareholders of ITT Destinations and ITT Hartford, and continued ITT Industries operations. Supports itt-36 and itt-37. The corporation's separation is not described as a court-ordered breakup or a bankruptcy."
+    },
+    {
+      "id": "S20",
+      "title": "FRUS XXI, Document 93: Helms's notes from meeting with Nixon, September 15, 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d93",
+      "note": "Official edition transcribes primary handwritten notes recording $10 million available, more if necessary, and 48 hours for a plan. Supports itt-19. Available resources are not represented as money actually spent or as ITT's money. No verbatim quotation is used."
+    },
+    {
+      "id": "S21",
+      "title": "FRUS E–16, Document 35: Helms briefing, November 5, 1970",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve16/d35",
+      "note": "Contemporary primary briefing confirms congressional vote October 24 and inauguration November 3. Supports itt-23. Partisan characterizations of Chilean politics in the briefing are not adopted as neutral fact."
+    },
+    {
+      "id": "S22",
+      "title": "FRUS XXI, Document 346: coup situation report, September 11, 1973",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d346",
+      "note": "Contemporary primary memorandum reports joint military/police operation and air attack on the presidential palace. Supports the limited chronology in itt-32, corroborated by S11. Preliminary speculation and unconfirmed casualty claims are omitted."
+    }
+  ]
+}

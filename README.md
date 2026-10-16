@@ -6,11 +6,13 @@ Cinematic business history documentaries in US English. Charon narration is cali
 
 Start the production in Codex or Antigravity. Research and write the story, select photographs and video excerpts, and generate illustrative images when useful. The agent directs the edit freely; no O Dinheiro Explica editorial contracts or repeated approval stages are required.
 
-The source episode lives in `episodes/blackberry.json`. Its scenes contain narration, short contextual captions and media keys. `public/assets/media/catalog.json` connects those keys to the selected media and credits. Several assets may share a key to vary the edit. Generated historical reconstructions are identified on screen.
+Each source episode lives in `episodes/<episode>.json`; `episodes/blackberry.json` is the first example. Its scenes contain narration, short contextual captions and media keys. `public/assets/media/catalog.json` connects those keys to the selected media and credits. Several assets may share a key to vary the edit. Generated historical reconstructions are identified on screen.
 
 ## Produce in the cloud
 
 After saving the episode and media to GitHub, run the **Render Documentary - Plotquake** workflow with the episode path. A deliberate change under `render-trigger/` also starts this workflow. It synthesizes recoverable narration per scene, creates the score, calculates the timeline from the complete audio, renders 1920×1080 at 30 FPS, and uploads the package to the configured Plotquake Google Drive folder.
+
+Explicitly choose the intended `episode_path` when starting a run; its default is `episodes/blackberry.json`, including the push trigger. Different episode paths can run in parallel on independent cloud runners. Runs for the same path are serialized, with automatic cancellation disabled. Starting another episode does not update the code, narration or edit of a run already in progress. A run started before this episode-specific grouping keeps its original concurrency group; do not start that same episode again while its older run is still active.
 
 Future runs prepare the episode once, then split its full visual timeline into as many balanced chunks as needed. Up to four workers render those chunks concurrently. Five minutes is a target chunk size, not a limit on the story or its four narrative acts. Longer episodes get more chunks; their complete duration is preserved. Each worker processes a list, avoiding a separate GitHub matrix job for every chunk.
 
@@ -20,7 +22,7 @@ Elapsed time depends on the episode, runner availability, preparation and transf
 
 The delivery contains `documentary_final.mp4`, dedicated `thumbnail.jpg`, publication text and JSON, visual credits and a Drive receipt with links. Publication to YouTube remains manual. No YouTube upload is performed.
 
-The existing GitHub secrets are `GEMINI_API_KEY`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, and `GOOGLE_DRIVE_FOLDER_ID`. Their values stay in GitHub. Completed voice scenes are cached so a retry can resume without regenerating everything.
+The existing GitHub secrets are `GEMINI_API_KEY`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN`, and `GOOGLE_DRIVE_FOLDER_ID`. Their values stay in GitHub. Completed voice scenes are cached under the selected episode ID, so a retry can resume without regenerating everything. When no episode-specific v3 cache exists, the workflow can import existing v2 narration; each scene is still checked against its script, voice and audio hash. Only the selected episode's directory is saved into the v3 cache and passed to rendering. Narration from other episodes does not change that episode's video-chunk fingerprint.
 
 ## Edit locally
 

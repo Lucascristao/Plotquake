@@ -62,8 +62,12 @@ def validate_plan(plan: dict) -> None:
 def render_fingerprint(plan: dict, root: Path) -> str:
     fingerprint = hashlib.sha256(json.dumps(plan, sort_keys=True).encode())
     files = [root / value for value in ("package-lock.json", "remotion.config.ts", "worker/render_documentary.py")]
-    for directory in ("src", "public/assets", "public/generated-audio"):
-        files.extend(path for path in (root / directory).rglob("*") if path.is_file())
+    audio_root = (root / "public/generated-audio").resolve()
+    episode_audio = (audio_root / str(plan["episodeId"])).resolve()
+    if not episode_audio.is_relative_to(audio_root) or episode_audio == audio_root:
+        raise ValueError("Episode narration must stay inside its own generated-audio directory.")
+    for directory in (root / "src", root / "public/assets", episode_audio):
+        files.extend(path for path in directory.rglob("*") if path.is_file())
     for path in sorted(set(files)):
         if path.is_file():
             fingerprint.update(path.relative_to(root).as_posix().encode())
