@@ -52,6 +52,7 @@ O Plotquake conta **histórias dramáticas de poder e dinheiro** com pessoas, es
 - **Montagem livre**: Usar arquivo, fotos, documentos, mapas, gráficos, vídeos e imagens geradas conforme a função de cada passagem. Os componentes são recursos disponíveis, sem obrigação de alternar cartões ou repetir um modelo de cena.
 - **Cadência de referência**: Buscar mudanças de informação, foco, enquadramento ou movimento a cada **4 a 5 segundos**, com pausas deliberadas quando a leitura e a tensão pedirem. A cadência orienta a direção, sem impor cortes mecânicos ou um gate automático de movimentos.
 - **Procedência**: Pesquisar mídias autênticas e registrar as fontes utilizadas. Imagens geradas e reconstruções podem apoiar a narrativa, com identificação clara quando puderem ser confundidas com arquivo histórico. Não fabricar citações, manchetes atribuídas a jornais, estatísticas ou cenas privadas apresentadas como fatos.
+- **Acabamento editorial**: Não inserir na narração, nas legendas ou nos créditos em tela frases como "feito por IA", "AI-generated" ou "made with AI", nem nomes de modelos, ferramentas ou marcas de produção. Manter a procedência completa nos registros internos e identificar reconstruções históricas com termos documentais discretos, como "Illustrative reconstruction". Preservar atribuições de arquivo e créditos exigidos pelas fontes. Essa preferência visual não elimina eventuais declarações de conteúdo sintético exigidas pela plataforma na publicação manual.
 
 ---
 
