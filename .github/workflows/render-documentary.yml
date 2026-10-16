@@ -1,4 +1,5 @@
 name: Render Documentary - Plotquake
+run-name: "Plotquake · ${{ inputs.episode_title || inputs.episode_path || 'episodes/blackberry.json' }} · #${{ github.run_number }}"
 
 on:
   workflow_dispatch:
@@ -8,6 +9,11 @@ on:
         type: string
         default: episodes/blackberry.json
         required: true
+      episode_title:
+        description: Episode name or video title shown in the Actions list
+        type: string
+        default: ''
+        required: false
   push:
     branches: [main]
     paths: ['render-trigger/**']
