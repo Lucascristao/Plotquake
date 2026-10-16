@@ -14,6 +14,24 @@ export type DocumentaryChart = {
 
 export type DocumentaryQuote = {text: string; author: string; title?: string; year?: string};
 
+/** Coordinates refer to the complete original clipping, from 0 to 1. */
+export type NewspaperHighlightBox = {x: number; y: number; width: number; height: number};
+
+export type DocumentaryNewspaper = {
+  mode: 'clipping' | 'reconstruction';
+  /** Timing relative to the scene; independent from its underlying shots. */
+  from: number;
+  durationInFrames: number;
+  imageSrc?: string;
+  headline?: string;
+  subheadline?: string;
+  source?: string;
+  date?: string;
+  sourceUrl?: string;
+  highlightWords?: string[];
+  highlightBoxes?: NewspaperHighlightBox[];
+};
+
 export type DocumentaryShot = {
   id: string;
   type: 'image' | 'video' | 'chart' | 'quote';
@@ -48,6 +66,7 @@ export type DocumentaryScene = {
   audioSrc?: string;
   caption?: string;
   shots: DocumentaryShot[];
+  newspaper?: DocumentaryNewspaper;
 };
 
 export type DocumentaryAct = {

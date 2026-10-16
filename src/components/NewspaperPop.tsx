@@ -1,142 +1,60 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Img, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {resolveMedia} from '../media';
 import {PLOTQUAKE_THEME} from '../theme';
+import type {DocumentaryNewspaper} from '../types';
 
-type NewspaperPopProps = {
-  headline: string;
-  subheadline?: string;
-  date: string;
-  source: string;
-  highlightWords?: string[];
-  delay?: number;
+const HighlightedText = ({text, words}: {text: string; words: string[]}) => {
+  const terms = [...new Set(words.filter((word) => word.trim()))].sort((a, b) => b.length - a.length);
+  if (!terms.length) return <>{text}</>;
+  const expression = new RegExp(`(${terms.map((word) => word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+  const matches = new Set(terms.map((word) => word.toLocaleLowerCase('en-US')));
+  return <>{text.split(expression).map((part, index) => matches.has(part.toLocaleLowerCase('en-US'))
+    ? <mark key={index} style={{background: PLOTQUAKE_THEME.colors.primaryHighlight, color: 'inherit',
+      padding: '0 .06em', boxDecorationBreak: 'clone'}}>{part}</mark>
+    : part)}</>;
 };
 
-export const NewspaperPop = ({
-  headline,
-  subheadline,
-  date,
-  source,
-  highlightWords = [],
-  delay = 0,
-}: NewspaperPopProps) => {
+/** A genuine clipping stays intact. Written reconstructions always carry an editorial label. */
+export const NewspaperPop = ({mode, imageSrc, headline, subheadline, date, source,
+  durationInFrames, highlightWords = [], highlightBoxes = []}: DocumentaryNewspaper) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const pop = spring({frame, fps, config: {damping: 22, stiffness: 110, mass: .8}});
+  const scale = interpolate(pop, [0, 1], [.94, 1]);
+  const enter = interpolate(frame, [0, 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const exit = interpolate(frame, [Math.max(0, durationInFrames - 8), durationInFrames], [1, 0],
+    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const editorial = mode === 'reconstruction';
+  const label = editorial ? 'EDITORIAL RECONSTRUCTION' : 'ORIGINAL DOCUMENT';
 
-  const pop = spring({
-    frame: frame - delay,
-    fps,
-    config: {damping: 14, stiffness: 100, mass: 0.8},
-  });
-
-  const scale = interpolate(pop, [0, 1], [0.82, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const rotation = interpolate(pop, [0, 1], [-4, -0.8], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const opacity = interpolate(pop, [0, 0.6], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        inset: 0,
-        display: 'grid',
-        placeItems: 'center',
-        background: 'rgba(5, 7, 12, 0.7)',
-        backdropFilter: 'blur(8px)',
-        zIndex: 20,
-        opacity,
-      }}
-    >
-      <div
-        style={{
-          width: 1200,
-          padding: '48px 64px',
-          backgroundColor: '#f4ede2', // Aged paper color
-          color: '#1a1815',
-          boxShadow: '0 30px 90px rgba(0,0,0,0.85), inset 0 0 100px rgba(0,0,0,0.06)',
-          border: '1px solid rgba(0,0,0,0.25)',
-          transform: `scale(${scale}) rotate(${rotation}deg)`,
-          fontFamily: '"Georgia", serif',
-        }}
-      >
-        {/* Newspaper Header */}
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-            borderBottom: '4px double #1a1815',
-            paddingBottom: 16,
-            marginBottom: 28,
-          }}
-        >
-          <div>
-            <div
-              style={{
-                fontSize: 48,
-                fontWeight: 900,
-                letterSpacing: 2,
-                textTransform: 'uppercase',
-                fontFamily: '"Times New Roman", serif',
-              }}
-            >
-              {source}
-            </div>
-            <div style={{fontSize: 16, letterSpacing: 1, textTransform: 'uppercase'}}>
-              Special Historical Edition • Vol. LXXIV
-            </div>
-          </div>
-          <div style={{fontSize: 20, fontWeight: 700, fontStyle: 'italic'}}>
-            {date}
-          </div>
+  return <div style={{position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column',
+    alignItems: 'center', justifyContent: 'center', gap: 20, background: 'rgba(5,7,12,.90)',
+    zIndex: 20, opacity: Math.min(enter, exit), padding: '90px 100px', boxSizing: 'border-box'}}>
+    <div style={{color: PLOTQUAKE_THEME.colors.primaryLight, fontSize: 18, letterSpacing: 3,
+      fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 700}}>{label}</div>
+    <div style={{transform: `scale(${scale}) rotate(-.5deg)`, boxShadow: '0 24px 90px rgba(0,0,0,.65)'}}>
+      {imageSrc ? <div style={{position: 'relative', lineHeight: 0}}>
+        {/* Intrinsic proportions keep normalized highlights aligned, without cropping or letterboxing. */}
+        <Img src={resolveMedia(imageSrc)} style={{display: 'block', maxWidth: 1480, maxHeight: 720,
+          width: 'auto', height: 'auto'}} />
+        {highlightBoxes.map((box, index) => <div key={index} style={{position: 'absolute',
+          left: `${box.x * 100}%`, top: `${box.y * 100}%`, width: `${box.width * 100}%`,
+          height: `${box.height * 100}%`, background: PLOTQUAKE_THEME.colors.primaryHighlight,
+          mixBlendMode: 'multiply', pointerEvents: 'none'}} />)}
+      </div> : <div style={{width: 1280, padding: '56px 64px', boxSizing: 'border-box',
+        background: '#f4ede2', color: '#1a1815', fontFamily: 'Georgia, serif',
+        borderTop: `5px solid ${PLOTQUAKE_THEME.colors.primary}`}}>
+        <div style={{fontSize: 54, fontWeight: 700, lineHeight: 1.16, letterSpacing: -.7}}>
+          <HighlightedText text={headline ?? ''} words={highlightWords} />
         </div>
-
-        {/* Main Headline */}
-        <div
-          style={{
-            fontSize: 56,
-            fontWeight: 900,
-            lineHeight: 1.12,
-            letterSpacing: -1,
-            textTransform: 'uppercase',
-            textAlign: 'center',
-            marginBottom: 20,
-            borderBottom: '2px solid #1a1815',
-            paddingBottom: 24,
-          }}
-        >
-          {headline}
-        </div>
-
-        {/* Subheadline with Golden Amber highlighter marker effect (logo-matched) */}
-        {subheadline && (
-          <div
-            style={{
-              fontSize: 28,
-              lineHeight: 1.35,
-              fontWeight: 600,
-              textAlign: 'center',
-              color: '#1a1815',
-              padding: '12px 24px',
-              backgroundColor: PLOTQUAKE_THEME.colors.primaryHighlight,
-              display: 'inline-block',
-              width: '100%',
-              boxSizing: 'border-box',
-              borderRadius: 4,
-            }}
-          >
-            {subheadline}
-          </div>
-        )}
-      </div>
+        {subheadline && <div style={{fontSize: 29, lineHeight: 1.4, marginTop: 28}}>
+          <HighlightedText text={subheadline} words={highlightWords} />
+        </div>}
+      </div>}
     </div>
-  );
+    {(source || date) && <div style={{maxWidth: 1440, color: '#cbd5e1', fontSize: 19, lineHeight: 1.4,
+      textAlign: 'center', fontFamily: 'Arial, Helvetica, sans-serif'}}>
+      {editorial && source ? 'Research: ' : ''}{[source, date].filter(Boolean).join(' • ')}
+    </div>}
+  </div>;
 };

@@ -21,15 +21,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  render:
+  prepare:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      render_key: ${{ steps.plan.outputs.render_key }}
     env:
       EPISODE_PATH: ${{ inputs.episode_path || 'episodes/blackberry.json' }}
-      GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-      GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-      GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-      GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID || vars.GOOGLE_DRIVE_FOLDER_ID || '1t_G2GMGgexWTT__2i0adglk1ZGjB_sw1' }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       PYTHONUNBUFFERED: '1'
 
@@ -84,10 +83,129 @@ jobs:
           python worker/build_episode.py --episode "$EPISODE_PATH"
           python worker/build_youtube_package.py --episode "$EPISODE_PATH"
 
-      - name: Render the complete documentary in Full HD
+      - name: Plan as many balanced video chunks as the complete story needs
+        id: plan
+        run: python worker/render_documentary.py plan
+
+      - name: Render one continuous audio master for the complete film
+        run: python worker/render_documentary.py master-audio
+
+      - name: Pass the exact timeline, audio and publication package to the next jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: prepared-episode
+          overwrite: true
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            src/episodes/renderEpisode.json
+            public/generated-audio/
+            public/assets/audio/tension_score.wav
+            public/assets/audio/chapter_transition.wav
+            public/assets/audio/reveal_accent.wav
+            renders/render_plan.json
+            renders/master_audio.m4a
+            renders/thumbnail.jpg
+            renders/youtube_package.txt
+            renders/youtube_package.json
+            renders/visual_credits.txt
+
+  render_chunks:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: Checkout the same production commit
+        uses: actions/checkout@v4
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install this worker's render dependencies
         run: |
-          npm run render -- src/index.ts Documentary renders/documentary_final.mp4 \
-            --gl=swangle --concurrency=2 --codec=h264 --audio-codec=aac --crf=18
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          npm ci --no-audit --no-fund
+      - name: Download the prepared episode
+        uses: actions/download-artifact@v4
+        with:
+          name: prepared-episode
+      - name: Recover this worker's completed video chunks
+        uses: actions/cache/restore@v4
+        with:
+          path: renders/chunks
+          key: plotquake-video-v1-${{ needs.prepare.outputs.render_key }}-worker-${{ matrix.worker }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            plotquake-video-v1-${{ needs.prepare.outputs.render_key }}-worker-${{ matrix.worker }}-
+      - name: Render the assigned video chunks without splitting the master audio
+        run: python worker/render_documentary.py render-worker --worker ${{ matrix.worker }}
+      - name: Save completed chunks even if a later chunk failed
+        if: always() && hashFiles('renders/chunks/chunk_*.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: renders/chunks
+          key: plotquake-video-v1-${{ needs.prepare.outputs.render_key }}-worker-${{ matrix.worker }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Preserve this worker's completed chunks
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-worker-${{ matrix.worker }}
+          overwrite: true
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: warn
+          path: |
+            renders/chunks/chunk_*.mp4
+            renders/chunks/chunk_*.json
+
+  assemble_and_deliver:
+    needs: [prepare, render_chunks]
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      EPISODE_PATH: ${{ inputs.episode_path || 'episodes/blackberry.json' }}
+      GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+      GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+      GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+      GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID || vars.GOOGLE_DRIVE_FOLDER_ID || '1t_G2GMGgexWTT__2i0adglk1ZGjB_sw1' }}
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: Checkout the same production commit
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+      - name: Install assembly and Drive dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install -r worker/requirements.txt
+      - name: Restore the actual timeline, continuous audio, cover and metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: prepared-episode
+      - name: Collect all completed video chunks
+        uses: actions/download-artifact@v4
+        with:
+          pattern: video-worker-*
+          path: renders/chunks
+          merge-multiple: true
+      - name: Join the complete video and copy its continuous audio master
+        run: python worker/render_documentary.py assemble
 
       - name: Deliver the complete package to Google Drive
         run: |
@@ -109,10 +227,16 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: documentary-package-${{ github.run_id }}
-          retention-days: 7
+          overwrite: true
+          retention-days: 1
+          compression-level: 0
           if-no-files-found: warn
           path: |
-            renders/
+            renders/documentary_final.mp4
+            renders/thumbnail.jpg
+            renders/youtube_package.txt
+            renders/youtube_package.json
+            renders/visual_credits.txt
+            renders/drive_receipt.json
+            renders/render_plan.json
             src/episodes/renderEpisode.json
-            public/generated-audio/**/*.json
-            public/generated-audio/**/*.wav

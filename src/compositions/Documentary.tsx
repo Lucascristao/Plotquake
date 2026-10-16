@@ -5,6 +5,7 @@ import {QuoteCard} from '../components/QuoteCard';
 import {ActMarker} from '../components/ActMarker';
 import {BrollPlayer} from '../components/BrollPlayer';
 import {MediaCaption} from '../components/MediaCaption';
+import {NewspaperPop} from '../components/NewspaperPop';
 import {resolveMedia} from '../media';
 import type {DocumentaryEpisode, DocumentaryScene, DocumentaryShot} from '../types';
 
@@ -56,6 +57,10 @@ const Scene = ({scene, captionFrom = 10}: {scene: DocumentaryScene; captionFrom?
         <Shot shot={shot} previousSrc={previousImage} canDissolve={index > 0} />
       </Sequence>;
     })}
+    {scene.newspaper && <Sequence name="Document evidence" from={scene.newspaper.from}
+      durationInFrames={scene.newspaper.durationInFrames}>
+      <NewspaperPop {...scene.newspaper} />
+    </Sequence>}
     {scene.caption && captionFrom < scene.durationInFrames - 30 && <Sequence from={captionFrom}
       durationInFrames={Math.min(165, scene.durationInFrames - captionFrom)}>
       <SceneCaption caption={scene.caption} durationInFrames={Math.min(165, scene.durationInFrames - captionFrom)} />

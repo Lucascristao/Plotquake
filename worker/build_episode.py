@@ -30,6 +30,74 @@ def image_card_background(shot: dict, shots: list[dict]) -> dict:
     return result
 
 
+def build_newspaper(value: dict, assets: dict, scene_frames: int, public_root: Path,
+                    media_credits: dict, scene_id: str) -> dict:
+    """An author-timed evidence overlay; it never replaces a visual shot or changes narration."""
+    start = float(value.get("atSeconds", 0))
+    duration = float(value.get("durationSeconds", 8))
+    if not math.isfinite(start) or not math.isfinite(duration) or start < 0 or duration <= 0:
+        raise ValueError(f"Invalid newspaper timing in {scene_id}: use finite, nonnegative start and positive duration.")
+    first_frame = round(start * FPS)
+    if first_frame >= scene_frames:
+        raise ValueError(f"Newspaper starts after the scene ends: {scene_id}.")
+    result = {key: copy.deepcopy(value[key]) for key in
+              ("headline", "subheadline", "date", "source", "sourceUrl", "highlightWords") if key in value}
+    mode = value.get("mode", "reconstruction")
+    if mode not in ("clipping", "reconstruction"):
+        raise ValueError(f"Unknown newspaper mode in {scene_id}: {mode}.")
+    result.update({"mode": mode, "from": first_frame,
+                   "durationInFrames": min(scene_frames - first_frame, max(1, round(duration * FPS)))})
+    boxes = []
+    for box in value.get("highlightBoxes", []):
+        normalized = {key: float(box[key]) for key in ("x", "y", "width", "height")}
+        if (not all(math.isfinite(number) for number in normalized.values())
+            or normalized["x"] < 0 or normalized["y"] < 0
+            or normalized["width"] <= 0 or normalized["height"] <= 0
+            or normalized["x"] + normalized["width"] > 1.000001
+            or normalized["y"] + normalized["height"] > 1.000001):
+            raise ValueError(f"Newspaper highlight boxes must stay inside the original image (0–1): {scene_id}.")
+        boxes.append(normalized)
+    if boxes:
+        result["highlightBoxes"] = boxes
+    key = value.get("mediaKey")
+    if mode == "clipping" and not key:
+        raise ValueError(f"Newspaper clipping needs an image mediaKey from the catalog: {scene_id}.")
+    if key:
+        candidates = assets.get(key, [])
+        if not candidates or candidates[0].get("kind") != "image":
+            raise ValueError(f"Newspaper mediaKey must identify a catalog image: {scene_id}/{key}.")
+        asset = candidates[0]
+        src = asset["src"]
+        if not src.startswith(("https://", "http://")):
+            local = (public_root / src).resolve()
+            if not local.is_relative_to(public_root.resolve()) or not local.is_file():
+                raise ValueError(f"Newspaper clipping does not exist: {src}.")
+        result["imageSrc"] = src
+        result.setdefault("source", asset.get("publication") or asset.get("credit", "Document clipping"))
+        result.setdefault("date", asset.get("date", ""))
+        result.setdefault("sourceUrl", asset.get("sourceUrl") or asset.get("origin", ""))
+        if asset.get("reconstruction") or asset.get("origin") in ("generated", "reconstruction", "ai-generated"):
+            result["mode"] = "reconstruction"
+        credit = {field: asset[field] for field in
+                  ("src", "credit", "origin", "license", "licenseUrl", "changes") if field in asset}
+        credit["credit"] = " · ".join(dict.fromkeys(filter(None, (result.get("source"), credit.get("credit")))))
+        if result.get("sourceUrl"):
+            credit["origin"] = result["sourceUrl"]
+        if result["mode"] == "reconstruction":
+            credit["credit"] = "Editorial reconstruction · " + credit["credit"]
+        # Separate entry preserves any image's ordinary media credit and document-specific provenance.
+        media_credits[f"newspaper:{scene_id}"] = credit
+    else:
+        if not str(result.get("headline", "")).strip():
+            raise ValueError(f"Editorial newspaper reconstruction needs headline text: {scene_id}.")
+        media_credits[f"newspaper:{scene_id}"] = {
+            "credit": "Editorial reconstruction" + (f" · Research: {result['source']}" if result.get("source") else ""),
+            "origin": result.get("sourceUrl", ""),
+            "changes": "Original editorial layout, not an archival newspaper page.",
+        }
+    return result
+
+
 def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Path) -> dict:
     assets = {}
     for asset in catalog["assets"]:
@@ -110,6 +178,9 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
             output_scene = {"id": scene_id, "startFrame": act_cursor, "durationInFrames": frames,
                             "narration": scene["narration"], "caption": scene.get("caption", ""),
                             "audioSrc": path.resolve().relative_to(public_root.resolve()).as_posix(), "shots": shots}
+            if scene.get("newspaper"):
+                output_scene["newspaper"] = build_newspaper(scene["newspaper"], assets, frames, public_root,
+                                                           media_credits, scene_id)
             if scene.get("chapter"):
                 result["chapters"].append({"title": str(scene["chapter"]), "startFrame": cursor + act_cursor})
             output_act["scenes"].append(output_scene)
