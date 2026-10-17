@@ -89,7 +89,7 @@ def build_shots(scene: dict, assets: dict, frames: int, public_root: Path,
         key = entry.get("mediaKey")
         candidates = assets.get(key, [])
         variant = entry.get("variantIndex", 0)
-        if key is None and entry.get("type") in ("chart", "quote"):
+        if key is None and entry.get("type") in ("chart", "quote", "facts"):
             asset = {"kind": "image"}
         elif not candidates or not isinstance(variant, int) or not 0 <= variant < len(candidates):
             raise ValueError(f"Unknown visualPlan asset/variant in {scene_id}: {key}/{variant}.")
@@ -104,15 +104,16 @@ def build_shots(scene: dict, assets: dict, frames: int, public_root: Path,
             media_credits[src] = {field: asset[field] for field in
                                   ("src", "credit", "origin", "license", "licenseUrl", "changes") if field in asset}
         kind = entry.get("type", asset["kind"])
-        if kind not in ("image", "video", "chart", "quote"):
+        if kind not in ("image", "video", "chart", "quote", "facts"):
             raise ValueError(f"Unknown shot type in {scene_id}: {kind}")
         if kind in ("image", "video") and kind != asset["kind"]:
             raise ValueError(f"Shot type does not match selected media: {scene_id}/{key}.")
-        if kind in ("chart", "quote") and asset["kind"] == "video":
+        if kind in ("chart", "quote", "facts") and asset["kind"] == "video":
             raise ValueError(f"Card background must be a still: {scene_id}/{key}.")
         origin = asset.get("origin", "documentary")
         shot = {"id": f"{scene_id}-shot-{index + 1}", "type": kind,
                 "sourceLabel": asset.get("credit", ""), "origin": origin,
+                "mediaIdentity": (asset.get("reuseFamily") or asset.get("originalMedia") or (src if origin in ("generated", "reconstruction") else origin) or src) if src else None,
                 "reconstruction": bool(asset.get("reconstruction") or origin in ("generated", "reconstruction", "ai-generated")),
                 "motion": asset.get("motion", ("push", "pan-left", "pull", "pan-right")[index % 4]),
                 "focus": asset.get("focus", {"x": .5, "y": .5}), "fit": asset.get("fit", "cover"),
@@ -121,7 +122,7 @@ def build_shots(scene: dict, assets: dict, frames: int, public_root: Path,
                 "zoomEnd": asset.get("zoomEnd", 1.13 if index % 2 == 0 else 1.03)}
         if src:
             shot["src"] = src
-        for field in ("motion", "focus", "fit", "transition", "zoomStart", "zoomEnd", "caption", "vintageFilter"):
+        for field in ("motion", "focus", "fit", "transition", "zoomStart", "zoomEnd", "caption", "vintageFilter", "displayWidth"):
             if field in entry:
                 shot[field] = copy.deepcopy(entry[field])
             elif field in asset:
@@ -143,6 +144,8 @@ def build_shots(scene: dict, assets: dict, frames: int, public_root: Path,
             if asset.get("durationSeconds"):
                 # Leave a short tail for the renderer's dissolve overlap.
                 cap = math.floor((float(asset["durationSeconds"]) - start) / rate * FPS) - 12
+        if kind == "facts":
+            shot["facts"] = copy.deepcopy(scene["facts"])
         if kind == "chart":
             shot["chart"] = normalize_chart(scene["chart"])
         elif kind == "quote":
@@ -263,7 +266,11 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
                 raise ValueError(f"Narration missing or stale for {scene_id}; run synthesize_narration.py --episode first.")
             seconds = float(audio["durationSeconds"])
             measured_seconds += seconds
-            frames = math.ceil(seconds * FPS)
+            pause = float(scene.get("pauseAfterSeconds", 0))
+            if not math.isfinite(pause) or pause < 0:
+                raise ValueError(f"Invalid authored pause in {scene_id}.")
+            # Breathing room is editorial timing, never counted toward minimum spoken duration.
+            frames = math.ceil(seconds * FPS) + round(pause * FPS)
             shots = build_shots(scene, assets, frames, public_root, media_credits, global_scene_index)
             for shot in shots:
                 if shot["type"] == "quote":
@@ -295,6 +302,16 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
                          "Expand the actual script. No repeated footage or silence is added to stretch runtime.")
     result["durationInFrames"] = cursor
     result["metadata"]["narrationSeconds"] = measured_seconds
+    # Record actual selected identities, including aliases/crops, for authoring review.
+    usage = {}
+    for act in result["acts"]:
+        for scene in act["scenes"]:
+            for shot in scene["shots"]:
+                identity = shot.get("mediaIdentity")
+                if identity:
+                    usage.setdefault(identity, []).append({"scene": scene["id"], "shot": shot["id"],
+                        "kind": shot["type"], "from": act["startFrame"] + scene["startFrame"] + shot["from"]})
+    result["metadata"]["mediaUsage"] = usage
     result["mediaCredits"] = list(media_credits.values()) + copy.deepcopy(source.get("thumbnailCredits", []))
     result["chapters"] = sorted(result["chapters"], key=lambda item: item["startFrame"])
     return result

@@ -34,7 +34,7 @@ export type DocumentaryNewspaper = {
 
 export type DocumentaryShot = {
   id: string;
-  type: 'image' | 'video' | 'chart' | 'quote';
+  type: 'image' | 'video' | 'chart' | 'quote' | 'facts';
   from: number;
   durationInFrames: number;
   src?: string;
@@ -43,9 +43,10 @@ export type DocumentaryShot = {
   origin?: string;
   reconstruction?: boolean;
   focus?: FocusPoint;
+  displayWidth?: number;
   zoomStart?: number;
   zoomEnd?: number;
-  motion?: 'push' | 'pull' | 'pan-left' | 'pan-right' | 'still';
+  motion?: 'push' | 'pull' | 'pan-left' | 'pan-right' | 'pan-up' | 'pan-down' | 'still';
   fit?: 'cover' | 'contain';
   /** Source-video trim, in composition frames. */
   trimBefore?: number;
@@ -56,6 +57,7 @@ export type DocumentaryShot = {
   transition?: 'cut' | 'dissolve';
   chart?: DocumentaryChart;
   quote?: DocumentaryQuote;
+  facts?: {title: string; subtitle?: string; steps: {label: string; detail?: string}[]; source?: string};
 };
 
 export type DocumentaryScene = {
@@ -64,6 +66,8 @@ export type DocumentaryScene = {
   durationInFrames: number;
   narration?: string;
   audioSrc?: string;
+  /** Derived playback gain; the cached voice WAV remains unchanged. */
+  audioGain?: number;
   caption?: string;
   shots: DocumentaryShot[];
   newspaper?: DocumentaryNewspaper;
@@ -87,7 +91,9 @@ export type DocumentaryEpisode = {
   fps: number;
   durationInFrames: number;
   audio?: {
-    music?: string | {src: string; volume?: number;
+    music?: string | {src: string; volume?: number; loop?: boolean;
+      /** WAV already contains score playback level, pause envelope and fades. */
+      directed?: boolean;
       /** Absolute gain over global frame windows; the last matching cue wins. */
       cues?: {from: number; durationInFrames: number; volume: number}[]};
     narration?: string;

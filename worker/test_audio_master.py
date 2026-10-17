@@ -1,4 +1,4 @@
-"""Listen to decoded test signals to verify complete speech, offsets and musical direction."""
+"""Measure decoded test signals to verify complete speech, offsets and musical direction."""
 from array import array
 import hashlib
 import io
@@ -112,6 +112,67 @@ class AudioMasterTests(unittest.TestCase):
         self.assertAlmostEqual(rms(samples, 3.57, 3.63) / reference, .02 / .13 * 1.22 * .8, delta=.03)
         self.assertAlmostEqual(rms(samples, 4.47, 4.53) / reference, 1.22 * .5, delta=.04)
         self.assertLess(rms(samples, 5.94, 5.99), .002)
+
+    def test_scene_audio_gain_changes_only_playback_and_preserves_full_voice(self):
+        first, second = self.public / "first.wav", self.public / "second.wav"
+        write_tone(first, 1.5, 440, tail_frequency=990)
+        write_tone(second, 2, 660)
+        hashes = [hashlib.sha256(path.read_bytes()).hexdigest() for path in (first, second)]
+        episode = {"id": "gain-test", "fps": 30, "durationInFrames": 180,
+                   "acts": [
+                       {"startFrame": 0, "scenes": [{"id": "first", "startFrame": 15,
+                           "durationInFrames": 45, "audioSrc": "first.wav", "audioGain": .5, "shots": []}]},
+                       {"startFrame": 90, "scenes": [{"id": "second", "startFrame": 15,
+                           "durationInFrames": 60, "audioSrc": "second.wav", "audioGain": 1.25, "shots": []}]}]}
+        output = self.directory / "gain-master.m4a"
+        render_master(make_plan(episode), output, timeline=episode, public_root=self.public)
+        samples = decode(output)
+        # Voice normalization is measured on the original mono WAV. Copy it
+        # to L/R at unity so the master preserves that target and preview level.
+        reference = 9000 / 32768 / math.sqrt(2)
+        self.assertLess(rms(samples, .1, .4), .001)
+        self.assertAlmostEqual(rms(samples, .7, 1.1), reference * .5, delta=.004)
+        self.assertAlmostEqual(rms(samples, 1.9, 1.98), reference * .5, delta=.006)
+        self.assertLess(rms(samples, 2.1, 3.3), .001)
+        self.assertAlmostEqual(rms(samples, 3.7, 4.1), reference * 1.25, delta=.006)
+        self.assertGreater(rms(samples, 5.35, 5.48), reference)
+        self.assertEqual(hashes, [hashlib.sha256(path.read_bytes()).hexdigest() for path in (first, second)])
+
+    def test_directed_music_keeps_prepared_level_and_ignores_legacy_fades_and_cues(self):
+        write_tone(self.public / "directed.wav", 6, 220, channels=2)
+        episode = {"id": "directed-test", "fps": 30, "durationInFrames": 180, "acts": [],
+                   "audio": {"music": {"src": "directed.wav", "directed": True, "loop": False,
+                       "cues": [{"from": 30, "durationInFrames": 90, "volume": .01}]}}}
+        output = self.directory / "directed-master.m4a"
+        render_master(make_plan(episode), output, timeline=episode, public_root=self.public)
+        samples = decode(output)
+        reference = 9000 / 32768 / math.sqrt(2)
+        # No second 0.72, silent-scene 1.22 boost, cue attenuation or global fades.
+        for start, end in [(0.1, .4), (1.1, 1.4), (3.1, 3.4), (5.7, 5.9)]:
+            self.assertAlmostEqual(rms(samples, start, end), reference, delta=.005)
+
+    def test_directed_music_defaults_to_playing_once(self):
+        write_tone(self.public / "short-directed.wav", 2, 220, channels=2)
+        episode = {"id": "nonloop-test", "fps": 30, "durationInFrames": 180, "acts": [],
+                   "audio": {"music": {"src": "short-directed.wav", "directed": True, "volume": .5}}}
+        output = self.directory / "nonloop-master.m4a"
+        render_master(make_plan(episode), output, timeline=episode, public_root=self.public)
+        samples = decode(output)
+        self.assertGreater(rms(samples, .2, 1.8), .09)
+        self.assertLess(rms(samples, 2.2, 5.9), .001)
+
+    def test_invalid_voice_gain_is_rejected_without_rewriting_source(self):
+        voice = self.public / "voice.wav"
+        write_tone(voice, 1, 440)
+        source_hash = hashlib.sha256(voice.read_bytes()).hexdigest()
+        for gain in [-.1, float("nan"), float("inf")]:
+            episode = {"id": "invalid-gain", "fps": 30, "durationInFrames": 30,
+                       "acts": [{"startFrame": 0, "scenes": [{"id": "voice", "startFrame": 0,
+                           "durationInFrames": 30, "audioSrc": "voice.wav", "audioGain": gain, "shots": []}]}]}
+            with self.assertRaisesRegex(ValueError, "finite, nonnegative gain"):
+                render_master(make_plan(episode), self.directory / "bad-gain.m4a",
+                              timeline=episode, public_root=self.public)
+        self.assertEqual(source_hash, hashlib.sha256(voice.read_bytes()).hexdigest())
 
     def test_overlong_spoken_file_is_rejected_instead_of_silently_truncated(self):
         write_tone(self.public / "too-long.wav", 2)

@@ -31,3 +31,7 @@ O episódio de 21min29,5s foi entregue ao Drive pela execução [38942950141](ht
 ## Como retomar o trabalho
 
 Trabalhar somente no BlackBerry até concluir sua nova entrega e conferência. O ITT compartilha mecanismos que produziram os problemas e deve ser revisto depois; ter arquivo e dois documentos inseridos não garante por si só boa montagem. Preservar entregas antigas como referência, não publicá-las automaticamente e não reiniciar execuções alheias à revisão autorizada. A entrega continua sendo ao Google Drive, com publicação manual pelo usuário.
+
+## Registro da correção
+
+A nova autoria, o reaproveitamento de voz e os limites reais de verificação do BlackBerry estão em [BLACKBERRY_REVISION.md](BLACKBERRY_REVISION.md). A técnica de som está em [AUDIO_DIRECTION.md](AUDIO_DIRECTION.md). A primeira entrega não foi apagada nem tratada como corrigida apenas porque novas regras foram documentadas.

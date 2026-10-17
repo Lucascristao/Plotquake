@@ -178,6 +178,18 @@ def _audio_seconds(src: str) -> float:
     return float(streams[0].get("duration", info["format"].get("duration", 0)))
 
 
+def _audio_channels(src: str) -> int:
+    if not src.startswith(("http://", "https://")) and Path(src).suffix.lower() == ".wav":
+        with wave.open(src, "rb") as audio:
+            return audio.getnchannels()
+    info = probe(Path(src)) if not src.startswith(("http://", "https://")) else json.loads(
+        subprocess.check_output(["ffprobe", "-v", "error", "-show_streams", "-of", "json", src], text=True))
+    streams = [stream for stream in info["streams"] if stream["codec_type"] == "audio"]
+    if not streams:
+        raise ValueError(f"Audio source has no audio stream: {src}")
+    return int(streams[0]["channels"])
+
+
 def _number(value: float) -> str:
     return f"{value:.12f}".rstrip("0").rstrip(".") or "0"
 
@@ -212,7 +224,8 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
     inputs, filters, labels, voiced = [], [], [], []
 
     def add_track(src: str, start: int, volume: float, *, length: int | None = None,
-                  trim: float = 0, speed: float = 1, loop: bool = False, music: bool = False) -> str:
+                  trim: float = 0, speed: float = 1, loop: bool = False, music: bool = False,
+                  mono_voice: bool = False) -> str:
         index = len(labels)
         path = _media_path(src, public_root)
         if loop:
@@ -229,7 +242,12 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
             inputs.extend(["-f", "concat", "-safe", "0", "-i", str(playlist)])
         else:
             inputs.extend(["-i", path])
-        chain = ["aresample=48000", "aformat=sample_fmts=fltp:channel_layouts=stereo"]
+        chain = ["aresample=48000"]
+        if mono_voice:
+            # Web playback copies a mono voice to L/R. FFmpeg's implicit center
+            # upmix attenuates it by 3dB, invalidating the measured active-RMS target.
+            chain.append("pan=stereo|c0=c0|c1=c0")
+        chain.append("aformat=sample_fmts=fltp:channel_layouts=stereo")
         if trim or length is not None:
             settings = [f"start={_number(trim)}"]
             if length is not None:
@@ -263,7 +281,7 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
         labels.append(label)
         return label
 
-    def add_voice(src: str, start: int, length: int, context: str) -> None:
+    def add_voice(src: str, start: int, length: int, context: str, volume: float = 1) -> None:
         start, length = _frame(start, context + " start"), _frame(length, context + " duration")
         if not length or start + length > frames:
             raise ValueError(f"Narration window is outside the complete timeline: {context}")
@@ -272,7 +290,8 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
         # A final trim must never conceal an overlong or incorrectly placed spoken file.
         if seconds <= 0 or seconds > length / fps + 1 / rate:
             raise ValueError(f"Complete narration exceeds its scene window: {context}")
-        add_track(src, start, 1)
+        add_track(src, start, _gain(volume, context + " audioGain"),
+                  mono_voice=_audio_channels(path) == 1)
         voiced.append((start, start + length))
 
     audio = episode.get("audio") or {}
@@ -283,7 +302,8 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
         for scene in act.get("scenes", []):
             scene_start = act_start + _frame(scene["startFrame"], "Scene start")
             if scene.get("audioSrc"):
-                add_voice(scene["audioSrc"], scene_start, scene["durationInFrames"], scene["id"])
+                add_voice(scene["audioSrc"], scene_start, scene["durationInFrames"], scene["id"],
+                          scene.get("audioGain", 1))
             # Preserve any deliberately audible footage as well as the separate narration/effects.
             shots = scene.get("shots", [])
             for index, shot in enumerate(shots):
@@ -305,23 +325,28 @@ def _master_graph(episode: dict, public_root: Path, working_dir: Path) -> tuple[
     music = audio.get("music")
     if music:
         music = {"src": music, "volume": .13} if isinstance(music, str) else music
-        base = _gain(music.get("volume", .13), "Music volume")
-        label = add_track(music["src"], 0, base, length=frames, loop=music.get("loop", True), music=True)
+        directed = music.get("directed", False)
+        base = _gain(music.get("volume", 1 if directed else .13), "Music volume")
+        label = add_track(music["src"], 0, base, length=frames,
+                          loop=music.get("loop", not directed), music=True)
         gain = _number(base)
-        # Cues use global frame intervals and absolute gains; the last matching cue wins.
-        for cue in music.get("cues", []):
-            start = _frame(cue["from"], "Music cue start")
-            length = _frame(cue["durationInFrames"], "Music cue duration")
-            volume = _gain(cue["volume"], "Music cue volume")
-            condition = f"gte(t,{_number(start / fps)})*lt(t,{_number((start + length) / fps)})"
-            gain = f"if({condition},{_number(volume)},{gain})"
-        windows = _merged_windows(voiced)
-        if windows:
-            condition = "+".join(f"gte(t,{_number(start / fps)})*lt(t,{_number(end / fps)})" for start, end in windows)
-            gain += f"*if(gt({condition},0),1,1.22)"
-        else:
-            gain += "*1.22"
-        gain += f"*min(1,t/1.7)*max(0,min(1,({_number(duration)}-t)/{_number(min(3, duration))}))"
+        # A directed WAV already contains its playback level, real-pause envelope
+        # and generator fades. Applying legacy scene cues/fades would mix it twice.
+        if not directed:
+            # Global intervals and absolute gains; the last matching cue wins.
+            for cue in music.get("cues", []):
+                start = _frame(cue["from"], "Music cue start")
+                length = _frame(cue["durationInFrames"], "Music cue duration")
+                volume = _gain(cue["volume"], "Music cue volume")
+                condition = f"gte(t,{_number(start / fps)})*lt(t,{_number((start + length) / fps)})"
+                gain = f"if({condition},{_number(volume)},{gain})"
+            windows = _merged_windows(voiced)
+            if windows:
+                condition = "+".join(f"gte(t,{_number(start / fps)})*lt(t,{_number(end / fps)})" for start, end in windows)
+                gain += f"*if(gt({condition},0),1,1.22)"
+            else:
+                gain += "*1.22"
+            gain += f"*min(1,t/1.7)*max(0,min(1,({_number(duration)}-t)/{_number(min(3, duration))}))"
         filters.append(f"[{label}]volume='if(isnan(t),0,{gain})':eval=frame[music]")
         labels[-1] = "music"
     for effect in audio.get("effects", []):

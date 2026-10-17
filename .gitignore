@@ -8,3 +8,8 @@ out/
 debug.log
 public/generated-audio/
 tmp/
+
+public/assets/images/blackberry-redo/
+public/assets/video/blackberry-redo/
+public/assets/audio/*-score*.wav
+public/assets/audio/*-score*.json

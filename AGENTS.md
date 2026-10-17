@@ -115,3 +115,5 @@ Para histórias empresariais em que seja útil, os quatro atos abaixo são um ex
 
 ### Aprendizados da primeira entrega
 O registro factual dos problemas do BlackBerry e das decisões do usuário está em [docs/PRODUCTION_LESSONS.md](docs/PRODUCTION_LESSONS.md). Usá-lo para evitar a repetição dessas falhas, mantendo este AGENTS.md como fonte canônica das regras.
+
+A adaptação técnica do som está em [docs/AUDIO_DIRECTION.md](docs/AUDIO_DIRECTION.md), e a revisão concreta do BlackBerry em [docs/BLACKBERRY_REVISION.md](docs/BLACKBERRY_REVISION.md). Esses registros distinguem preparação, verificações realizadas e entrega final.

@@ -1,8 +1,8 @@
 {
   "id": "blackberry-touchscreen-revolution",
-  "title": "BlackBerry: The Empire That Missed the Touchscreen Revolution",
-  "subtitle": "A keyboard built an empire. A changing idea of the smartphone broke its defenses.",
-  "description": "BlackBerry helped put the office in a pocket. Then the smartphone became a platform for everything else. This documentary follows the people, product decisions, software transition, and inventory crisis behind BlackBerry's retreat from internally developed phones, and the software business that survived. Based on company filings, contemporary product announcements, and official technical documentation. Financial figures are in U.S. dollars unless stated otherwise. Analysis of strategy is identified in the research notes; illustrative visuals are not evidence of private meetings.",
+  "title": "BlackBerry's $20 Billion Trap",
+  "subtitle": "Its revenue hit a record four years after the iPhone. The comeback arrived too late.",
+  "description": "In fiscal 2011, BlackBerry reported a record $19.9 billion in revenue, four years after the iPhone arrived. Its strongest results concealed a harder question: how do you replace a successful platform while it is still paying the bills? This original documentary follows the keyboards, people, app stores, delayed software and inventory commitments behind the smartphone reversal, and the QNX and security business that continued. The title rounds annual revenue, not a valuation or a cash loss. Financial figures are in U.S. dollars unless stated otherwise.",
   "tags": [
     "BlackBerry",
     "Research In Motion",
@@ -31,552 +31,340 @@
           "chapter": "The cost of being late",
           "caption": "2013 | The comeback becomes an inventory crisis",
           "narration": "Nine hundred thirty-four million dollars. In 2013, BlackBerry recorded a charge against inventory and supply commitments, primarily tied to its new Z10. The phone meant to lead a comeback had become a financial burden. Six years earlier, the iPhone had challenged its world. Since then, BlackBerry had built touchscreens, bought new software, and worked on a replacement platform. By the time that platform reached customers, the market had moved again.",
-          "visualKeys": [
-            "blackberry_z10",
-            "steve_jobs",
-            "blackberry_storm",
-            "blackberry_playbook",
-            "circuit",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_z10",
               "variantIndex": 0,
-              "weight": 1.4
+              "weight": 2.2,
+              "motion": "push",
+              "caption": "BlackBerry Z10",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.08
             },
             {
-              "mediaKey": "blackberry_z10",
+              "mediaKey": "bb_redo_voa_heins_two_devices",
               "variantIndex": 0,
-              "weight": 0.6,
-              "focus": {
-                "x": 0.5,
-                "y": 0.7
+              "weight": 0.65,
+              "motion": "push",
+              "caption": "BlackBerry 10 launch | 2013"
+            },
+            {
+              "mediaKey": "bb_redo_iphone_original_front",
+              "variantIndex": 0,
+              "weight": 0.85,
+              "motion": "pull",
+              "caption": "Original iPhone",
+              "zoomStart": 1.08,
+              "zoomEnd": 1.02
+            }
+          ],
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_z10_inventory_2014",
+            "atSeconds": 3,
+            "durationSeconds": 12,
+            "source": "BlackBerry · Annual Report 2014",
+            "date": "PDF page 45",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2014.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.76933,
+                "y": 0.592846,
+                "width": 0.102299,
+                "height": 0.092308
               },
-              "zoomStart": 1.2,
-              "zoomEnd": 1.25
-            },
-            {
-              "mediaKey": "steve_jobs",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 2
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1,
-              "trimStartSeconds": 4
-            }
-          ],
-          "musicVolume": 0.12
-        },
-        {
-          "id": "bb-02",
-          "caption": "A changing battlefield",
-          "narration": "BlackBerry's customers were still carrying its phones while engineers worked on their replacements. The company had to keep those customers connected, persuade developers to build for a new system, and deliver devices people would buy. All three took time. Meanwhile, buyers were learning new habits on rival phones. How did a company that helped create mobile communication fall so far behind the people using it?",
-          "visualKeys": [
-            "blackberry_curve",
-            "office",
-            "data_center",
-            "blackberry_z10",
-            "iphone_modern",
-            "smartphone_crowd",
-            "waterloo"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.3
-            }
-          ],
-          "musicVolume": 0.1
+              {
+                "x": 0.23387,
+                "y": 0.685154,
+                "width": 0.377874,
+                "height": 0.092308
+              }
+            ]
+          },
+          "pauseAfterSeconds": 0.8
         },
         {
           "id": "bb-03",
           "caption": "1984 | Research In Motion begins",
           "narration": "The beginning was Waterloo, Ontario. In 1984, Mike Lazaridis and Douglas Fregin founded Research In Motion, the company later known as BlackBerry. Its eventual breakthrough was not a giant display or a library of entertainment. It was access. In 1999, the BlackBerry solution made a business proposition tangible: important messages could reach you when you were away from your desk. The office no longer had to stay inside the office.",
-          "visualKeys": [
-            "waterloo",
-            "mike_lazaridis",
-            "circuit",
-            "office",
-            "blackberry_keyboard"
-          ],
           "visualPlan": [
             {
               "mediaKey": "waterloo",
               "variantIndex": 0,
-              "weight": 1,
-              "caption": "Waterloo, Ontario · later company headquarters"
+              "weight": 0.8,
+              "motion": "pan-right",
+              "caption": "RIM headquarters, Waterloo | later photograph",
+              "fit": "cover",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.065
             },
             {
               "mediaKey": "mike_lazaridis",
-              "variantIndex": 1,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
               "variantIndex": 0,
-              "weight": 1,
-              "caption": "Office communications · contextual photograph"
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1,
-              "caption": "A later BlackBerry handset"
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1,
+              "weight": 1.2,
+              "motion": "push",
+              "caption": "Mike Lazaridis",
               "focus": {
                 "x": 0.5,
-                "y": 0.7
-              }
+                "y": 0.32
+              },
+              "zoomStart": 1.02,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_pager_850_museum",
               "variantIndex": 0,
-              "weight": 1,
-              "motion": "pull"
+              "weight": 1.5,
+              "motion": "pan-up",
+              "caption": "BlackBerry 850 | preserved device",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.07
+          ]
         },
         {
           "id": "bb-04",
           "caption": "Push email | Information comes to you",
           "narration": "To understand the attraction, forget today's phone for a moment. Picture a working day organized around a computer and an inbox. BlackBerry's push technology reversed the routine of checking for news. Messages came to the device automatically. A manager could answer between appointments. A colleague could receive a decision without waiting for someone to return. The technology sold a practical advantage: a shorter distance between an event and a response.",
-          "visualKeys": [
-            "office",
-            "data_center",
-            "blackberry_keyboard",
-            "blackberry_bold"
-          ],
           "visualPlan": [
             {
               "mediaKey": "office",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 0.8,
+              "motion": "pan-left",
+              "caption": "The office revolved around the inbox",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.06
             },
             {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 5
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
+              "mediaKey": "bb_redo_rim_957_front",
               "variantIndex": 0,
-              "weight": 1,
+              "weight": 1.5,
+              "motion": "push",
+              "caption": "RIM 957 | preserved device",
               "focus": {
                 "x": 0.5,
-                "y": 0.3
-              }
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
+                "y": 0.43
+              },
+              "zoomStart": 1.02,
+              "zoomEnd": 1.09
             }
-          ],
-          "musicVolume": 0.07
+          ]
         },
         {
           "id": "bb-05",
           "caption": "The keyboard becomes a habit",
           "narration": "The little keyboard mattered because it made that promise usable. Physical keys gave fingers a repeatable place to land. Short replies became a habit, and the device became part of the working day. Its design was an answer to a specific question: how do you communicate efficiently while moving? That answer would become a powerful identity. It would also shape the terms on which BlackBerry judged the machines coming next.",
-          "visualKeys": [
-            "blackberry_keyboard",
-            "blackberry_bold",
-            "office",
-            "blackberry_curve",
-            "blackberry_storm",
-            "steve_jobs"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1,
+              "variantIndex": 0,
+              "weight": 1.7,
+              "motion": "pan-up",
+              "caption": "Physical keys | BlackBerry Bold 9000",
               "focus": {
                 "x": 0.5,
-                "y": 0.7
+                "y": 0.68
               },
-              "zoomStart": 1.1,
-              "zoomEnd": 1.22
+              "zoomStart": 1.02,
+              "zoomEnd": 1.08
+            },
+            {
+              "mediaKey": "bb_redo_pearl_disassembled_2010",
+              "variantIndex": 0,
+              "weight": 0.9,
+              "motion": "pan-left",
+              "caption": "BlackBerry Pearl | disassembled, 2010",
+              "zoomStart": 1.04,
+              "zoomEnd": 1.08
             },
             {
               "mediaKey": "blackberry_bold",
               "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "steve_jobs",
-              "variantIndex": 0,
-              "weight": 0.8
+              "weight": 1.1,
+              "motion": "pull",
+              "zoomStart": 1.1,
+              "zoomEnd": 1.025
             }
-          ],
-          "musicVolume": 0.06
+          ]
         },
         {
           "id": "bb-06",
           "caption": "More than a handset",
           "narration": "Behind the keyboard stood a larger system. BlackBerry combined devices, software, services, and security features for organizations. The customer was not always one person choosing a phone at a store. A company had to consider administration, information, and the people who supported its employees. That made the contest broader than hardware. A rival had to become useful to the person carrying the phone and acceptable to the organization responsible for it.",
-          "visualKeys": [
-            "data_center",
-            "circuit",
-            "blackberry_bold",
-            "office",
-            "blackberry_devices"
-          ],
           "visualPlan": [
             {
               "mediaKey": "data_center",
               "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 10
+              "weight": 0.8,
+              "motion": "push",
+              "caption": "The service behind the handset"
             },
             {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
+              "mediaKey": "bb_redo_obama_blackberry_g8_2010",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 4
-            },
-            {
-              "mediaKey": "blackberry_devices",
-              "variantIndex": 1,
-              "weight": 1.3
+              "weight": 1.4,
+              "motion": "pan-right",
+              "caption": "Barack Obama shows his BlackBerry | G8, 2010",
+              "fit": "cover",
+              "zoomStart": 1.04,
+              "zoomEnd": 1.08
             }
-          ],
-          "musicVolume": 0.07
+          ]
         },
         {
           "id": "bb-07",
           "caption": "Lazaridis and Balsillie | A shared command",
           "narration": "For years, Mike Lazaridis and Jim Balsillie shared the job of chief executive. They led a company whose phones depended on its own software and services. That gave BlackBerry control over much of the experience, from the keyboard to the delivery of a message. Changing the phone meant work across that whole system. Customers still expected the familiar service to keep working while the company built what would replace it.",
-          "visualKeys": [
-            "mike_lazaridis",
-            "jim_balsillie",
-            "blackberry_keyboard",
-            "data_center",
-            "circuit",
-            "waterloo",
-            "office"
-          ],
           "visualPlan": [
             {
               "mediaKey": "mike_lazaridis",
-              "variantIndex": 0,
-              "weight": 1.3
+              "variantIndex": 1,
+              "weight": 1.2,
+              "motion": "pan-down",
+              "caption": "Mike Lazaridis",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.07
             },
             {
               "mediaKey": "jim_balsillie",
               "variantIndex": 0,
-              "weight": 1.3
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 18
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.4,
+              "motion": "pull",
+              "caption": "Jim Balsillie",
+              "zoomStart": 1.1,
+              "zoomEnd": 1.025
             },
             {
               "mediaKey": "waterloo",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 2,
-              "weight": 1
+              "weight": 0.8,
+              "motion": "push",
+              "caption": "Research In Motion",
+              "fit": "cover",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.055
             }
-          ],
-          "musicVolume": 0.08
+          ]
         },
         {
           "id": "bb-08",
           "caption": "BBM | The network inside the phone",
           "narration": "The appeal escaped the boardroom. BlackBerry Messenger, or BBM, connected friends as well as colleagues. The company's 2011 annual report described more than thirty-nine million BBM users worldwide. Messaging gave people a reason to join, and people gave their friends another reason to stay. This was already a social network built around a device. BlackBerry understood that a phone could be more valuable because of everyone else using it.",
-          "visualKeys": [
-            "blackberry_curve",
-            "smartphone_crowd",
-            "blackberry_bold",
-            "blackberry_keyboard"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_curve",
+              "mediaKey": "bb_redo_pearl_owner_2006",
               "variantIndex": 0,
-              "weight": 1.3
+              "weight": 1,
+              "motion": "pan-left",
+              "caption": "BlackBerry Pearl | 2006",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.065
             },
             {
               "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1,
+              "variantIndex": 0,
+              "weight": 1.6,
+              "motion": "push",
+              "caption": "BlackBerry Curve 8520",
               "focus": {
                 "x": 0.5,
-                "y": 0.3
-              }
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 0,
-              "weight": 1,
-              "caption": "Mobile messaging · contemporary context"
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 0,
-              "weight": 1,
-              "motion": "pull"
+                "y": 0.4
+              },
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             }
           ],
-          "musicVolume": 0.065
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_bbm_users_2011",
+            "atSeconds": 7,
+            "durationSeconds": 14,
+            "source": "RIM · Annual Report 2011",
+            "date": "PDF page 6",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2011.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.557287,
+                "y": 0.153834,
+                "width": 0.336746,
+                "height": 0.124
+              }
+            ]
+          }
         },
         {
           "id": "bb-09",
           "caption": "The business behind the connection",
           "narration": "There was money on both sides of that connection. Research In Motion sold hardware and earned service revenue. Its 2008 annual report described monthly service fees charged to carriers for active subscriber accounts. The handset brought a customer into a continuing relationship. For the business, that relationship could be valuable beyond the original sale. For a competitor, replacing the handset was only one part of breaking into BlackBerry's position.",
-          "visualKeys": [
-            "blackberry_bold",
-            "data_center",
-            "office",
-            "blackberry_keyboard",
-            "circuit",
-            "blackberry_curve"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 2
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.2,
+              "motion": "pan-right",
+              "caption": "The handset was part of a continuing service",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "data_center",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 3
-            },
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1
+              "type": "facts",
+              "weight": 1.5
             }
           ],
-          "musicVolume": 0.07
+          "facts": {
+            "title": "More than a handset sale",
+            "subtitle": "Research In Motion | the service model",
+            "steps": [
+              {
+                "label": "The handset",
+                "detail": "A customer entered the platform"
+              },
+              {
+                "label": "An active subscriber account",
+                "detail": "The relationship continued after purchase"
+              },
+              {
+                "label": "Monthly service fees",
+                "detail": "RIM charged carriers for active accounts"
+              }
+            ],
+            "source": "Research In Motion · Annual Report 2008"
+          }
         },
         {
           "id": "bb-10",
           "caption": "Success leaves evidence everywhere",
           "narration": "And the evidence of success kept arriving. In fiscal 2008, revenue nearly doubled to just over six billion dollars. More than half of new subscriber additions in the final quarter came from outside the enterprise market. BlackBerry was expanding beyond its original stronghold, not retreating into it. That matters because the next chapter did not begin with a dying company. It began with a company receiving powerful confirmation that its strategy worked.",
-          "visualKeys": [
-            "waterloo",
-            "jim_balsillie",
-            "blackberry_curve",
-            "blackberry_bold",
-            "blackberry_keyboard",
-            "office"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_pearl_8120_computex_2008",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.3,
+              "motion": "pan-up",
+              "caption": "BlackBerry 8120 | Computex, 2008",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             },
             {
-              "mediaKey": "jim_balsillie",
+              "mediaKey": "bb_redo_pda_collection_2006",
               "variantIndex": 0,
-              "weight": 1.4
+              "weight": 0.9,
+              "motion": "pull",
+              "caption": "Mobile phones and PDAs | 2006 collection",
+              "zoomStart": 1.08,
+              "zoomEnd": 1.025
             },
             {
               "mediaKey": "blackberry_curve",
               "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.2,
-              "motion": "pull"
+              "weight": 1.1,
+              "motion": "push",
+              "caption": "BlackBerry Curve | the expanding product family",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             }
-          ],
-          "musicVolume": 0.09
+          ]
         }
       ]
     },
@@ -590,449 +378,235 @@
           "chapter": "A phone becomes a platform",
           "caption": "January 9, 2007 | Apple introduces iPhone",
           "narration": "On January ninth, 2007, Steve Jobs introduced the iPhone in San Francisco. Apple presented a phone, a music player, and an internet communications device in one object. The interface was a large multitouch display. Its significance was not simply that the buttons had disappeared. The same surface could become a keyboard, a map, a photograph, or a web page. The device could change its shape in software.",
-          "visualKeys": [
-            "steve_jobs",
-            "iphone_original",
-            "blackberry_keyboard",
-            "smartphone_crowd",
-            "iphone_modern"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "steve_jobs",
+              "mediaKey": "bb_redo_jobs_macworld_2007_a",
               "variantIndex": 0,
-              "weight": 1.5
-            },
-            {
-              "mediaKey": "steve_jobs",
-              "variantIndex": 0,
-              "weight": 0.6,
-              "zoomStart": 1.1,
-              "zoomEnd": 1.17,
+              "weight": 1.15,
+              "motion": "push",
+              "caption": "Steve Jobs | Macworld, January 9, 2007",
               "focus": {
-                "x": 0.5,
-                "y": 0.65
-              }
+                "x": 0.48,
+                "y": 0.4
+              },
+              "fit": "cover",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "iphone_original",
+              "mediaKey": "bb_redo_iphone_map_use",
+              "weight": 0.8,
+              "caption": "Original iPhone | Maps, 2007"
+            },
+            {
+              "mediaKey": "bb_redo_iphone_macworld_display_a",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 0.7
-            },
-            {
-              "mediaKey": "iphone_original",
-              "variantIndex": 0,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 0,
-              "weight": 1,
-              "caption": "The touchscreen form continued to evolve"
+              "weight": 1.3,
+              "motion": "pan-up",
+              "caption": "The original iPhone on display | Macworld, 2007",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.115
+          ]
         },
         {
           "id": "bb-12",
           "caption": "The first iPhone was not the final answer",
           "narration": "The first model also had limits. Apple's announcement listed EDGE networking and Wi-Fi, not a modern high-speed cellular experience. Its American launch was tied to one carrier, and its starting price was four hundred ninety-nine dollars. Seen from an established communications business, this was a rival with tradeoffs. History can make a revolution appear inevitable. In the moment, an incumbent has to judge an unfinished product against a business that already pays.",
-          "visualKeys": [
-            "iphone_original",
-            "data_center",
-            "steve_jobs",
-            "blackberry_bold",
-            "office",
-            "blackberry_keyboard"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "iphone_original",
+              "mediaKey": "bb_redo_iphone_macworld_display_b",
               "variantIndex": 0,
-              "weight": 1.5
+              "weight": 1.4,
+              "motion": "pull",
+              "caption": "Macworld | January 2007",
+              "zoomStart": 1.08,
+              "zoomEnd": 1.025
             },
             {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "steve_jobs",
+              "mediaKey": "bb_redo_iphone_user_2007",
               "variantIndex": 0,
-              "weight": 0.8
+              "weight": 1.1,
+              "motion": "pan-right",
+              "caption": "Original iPhone in use | July 2007",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             },
             {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_original",
+              "mediaKey": "bb_redo_iphone_original_front",
               "variantIndex": 0,
-              "weight": 1.2,
-              "motion": "pull"
+              "weight": 0.85,
+              "motion": "pan-up",
+              "caption": "Original 8 GB iPhone | preserved handset",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             }
-          ],
-          "musicVolume": 0.065
-        },
-        {
-          "id": "bb-13",
-          "caption": "Two definitions of the same object",
-          "narration": "That is where the strategic danger begins. If the main job is answering messages, a practiced thumb on physical keys has an obvious appeal. If the main job becomes browsing, viewing, navigating, and running whatever software comes next, the balance shifts. The question is no longer which phone performs the old task best. It is which platform lets people discover new tasks.",
-          "visualKeys": [
-            "blackberry_keyboard",
-            "blackberry_bold",
-            "iphone_original",
-            "iphone_modern",
-            "smartphone_crowd",
-            "office"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1,
-              "focus": {
-                "x": 0.5,
-                "y": 0.75
-              }
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_original",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1,
-              "trimStartSeconds": 7
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            }
-          ],
-          "musicVolume": 0.08
+          ]
         },
         {
           "id": "bb-14",
           "caption": "2008 | Apple opens the software door",
           "narration": "In March 2008, Apple announced development tools for native iPhone applications and a new way to distribute them: the App Store. Outside developers could build software, set a price, and reach customers through one storefront. Apple said developers would retain seventy percent of sales revenue. The phone was becoming a business opportunity for people who did not work at Apple. Their effort could make Apple's product more useful without Apple inventing every use.",
-          "visualKeys": [
-            "steve_jobs",
-            "iphone_original",
-            "office",
-            "circuit",
-            "iphone_modern",
-            "data_center",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "steve_jobs",
+              "mediaKey": "bb_redo_iphone_seattle_keyboard_2007",
               "variantIndex": 0,
-              "weight": 0.8
-            },
-            {
-              "mediaKey": "iphone_original",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
               "weight": 1,
-              "trimStartSeconds": 1
+              "motion": "push",
+              "caption": "The software keyboard | iPhone release, 2007",
+              "zoomStart": 1.03,
+              "zoomEnd": 1.08
             },
             {
-              "mediaKey": "circuit",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 14
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 7
+              "type": "chart",
+              "weight": 1.8
             }
           ],
-          "musicVolume": 0.08
+          "chart": {
+            "title": "An incentive for outside developers",
+            "subtitle": "App Store sales revenue split announced in 2008",
+            "suffix": "%",
+            "maxValue": 100,
+            "values": [
+              {
+                "label": "Developer",
+                "value": 70,
+                "highlight": true
+              },
+              {
+                "label": "Apple",
+                "value": 30
+              }
+            ],
+            "source": "Apple · iPhone SDK announcement, March 2008"
+          }
         },
         {
           "id": "bb-15",
           "caption": "July 2008 | Ten million downloads in a weekend",
           "narration": "By July, the mechanism was visible. Apple reported more than ten million application downloads in the App Store's first weekend. The catalog ranged from games to medical tools and business software. The important change was distribution. A developer could place a new idea in front of people already carrying compatible devices. A customer could add a capability without replacing the phone. The screen was the entrance. The growing software economy was the deeper threat.",
-          "visualKeys": [
-            "iphone_original",
-            "smartphone_crowd",
-            "office",
-            "iphone_modern",
-            "data_center"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "iphone_original",
+              "mediaKey": "bb_redo_iphone_buyers_2007",
               "variantIndex": 0,
-              "weight": 1.2
+              "weight": 1.3,
+              "motion": "pan-left",
+              "caption": "iPhone buyers | June 29, 2007",
+              "fit": "cover",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.065
             },
             {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
+              "mediaKey": "bb_redo_iphone_macworld_crowd",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 0.9,
+              "motion": "pull",
+              "caption": "Macworld | January 2007",
+              "fit": "cover",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.025
             },
             {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1,
-              "trimStartSeconds": 6
+              "mediaKey": "bb_redo_jobs_macworld_2007_b",
+              "variantIndex": 0,
+              "weight": 0.9,
+              "motion": "push",
+              "caption": "Steve Jobs | Macworld, 2007",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             }
-          ],
-          "musicVolume": 0.1
+          ]
         },
         {
           "id": "bb-16",
           "caption": "2008 | Google opens another front",
           "narration": "Apple was not alone. In August 2008, Google previewed Android Market, another route connecting developers with people carrying smartphones. BlackBerry faced a wider shift than a duel with one famous device. Distribution could attract developers; useful applications could attract buyers; buyers could justify more development. That feedback loop helps explain why copying a screen was not enough. A company needed other businesses to believe its platform deserved their time, even as alternatives multiplied.",
-          "visualKeys": [
-            "circuit",
-            "office",
-            "smartphone_crowd",
-            "data_center",
-            "iphone_modern",
-            "blackberry_storm"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
+              "mediaKey": "bb_redo_android_g1_launch_2008",
+              "variantIndex": 0,
+              "weight": 1.5,
+              "motion": "pan-right",
+              "caption": "Android on the T-Mobile G1 | September 2008",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 8
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1,
-              "caption": "Competing smartphone platforms · contextual handset"
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
+              "mediaKey": "bb_redo_android_g1_open",
+              "variantIndex": 0,
+              "weight": 1.1,
+              "motion": "pan-up",
+              "caption": "HTC Dream / T-Mobile G1 | 2009 photograph",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.11
+          ]
         },
         {
           "id": "bb-17",
           "caption": "The rival approaches the enterprise",
           "narration": "Apple also moved toward the office. Its 2008 software announcement included Microsoft Exchange ActiveSync support for push email, contacts, and calendars, alongside remote wipe and corporate security features. This did not make every organization abandon BlackBerry. It made the boundary less secure. An employee could want the consumer experience while an administrator gained more tools to support it. BlackBerry's rival was learning to cross the line between personal desire and institutional approval.",
-          "visualKeys": [
-            "office",
-            "iphone_original",
-            "data_center",
-            "blackberry_bold",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "office",
+              "mediaKey": "bb_redo_iphone_email_composition",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 0.7,
+              "motion": "push",
+              "caption": "Original iPhone | email, 2007"
             },
             {
-              "mediaKey": "iphone_original",
+              "mediaKey": "bb_redo_obama_blackberry_g8_2010",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.1,
+              "motion": "push",
+              "caption": "Government adoption | G8, 2010",
+              "focus": {
+                "x": 0.58,
+                "y": 0.45
+              },
+              "fit": "cover",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 5
-            },
-            {
-              "mediaKey": "blackberry_bold",
+              "mediaKey": "blackberry_keyboard",
               "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.3,
+              "motion": "pull",
+              "caption": "BlackBerry Bold 9000",
+              "zoomStart": 1.09,
+              "zoomEnd": 1.025
             }
-          ],
-          "musicVolume": 0.08
+          ]
         },
         {
           "id": "bb-18",
           "caption": "2008 | BlackBerry answers with Storm",
           "narration": "In 2008, Verizon announced the BlackBerry Storm. BlackBerry was taking its touchscreen response to consumers and business users, with browsing, multimedia, navigation, and messaging on its own platform. The familiar keyboard had given way to a different way of operating the phone. Now the company had to persuade people to choose that experience while developers and buyers were discovering what Apple's growing software catalog could do.",
-          "visualKeys": [
-            "blackberry_storm",
-            "blackberry_keyboard",
-            "iphone_original",
-            "office",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_storm",
               "variantIndex": 0,
-              "weight": 1.3
+              "weight": 1.2,
+              "motion": "push",
+              "caption": "BlackBerry Storm | touchscreen response",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.075
             },
             {
               "mediaKey": "blackberry_storm",
               "variantIndex": 1,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 0.7
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 0,
-              "weight": 1,
-              "focus": {
-                "x": 0.5,
-                "y": 0.35
-              }
-            },
-            {
-              "mediaKey": "iphone_original",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
+              "weight": 1.1,
+              "motion": "pan-left",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             }
-          ],
-          "musicVolume": 0.11
+          ]
         },
         {
           "id": "bb-19",
           "caption": "Fiscal 2011 | Record sales after the iPhone",
           "narration": "Then came the result that complicates the familiar story. For fiscal 2011, Research In Motion reported fifty-two point three million smartphone shipments and nineteen point nine billion dollars in revenue. Both were records. Jim Balsillie celebrated the performance. Four years after the iPhone's introduction, BlackBerry was still reaching new financial heights. A business can grow in absolute terms while the future becomes less favorable. Strong results can buy time. They can also disguise its price.",
-          "visualKeys": [
-            "blackberry_bold",
-            "jim_balsillie",
-            "blackberry_curve",
-            "blackberry_keyboard",
-            "waterloo",
-            "blackberry_storm",
-            "office"
-          ],
           "quote": {
             "text": "record shipments and financial performance",
             "author": "Jim Balsillie",
@@ -1041,49 +615,14 @@
           },
           "visualPlan": [
             {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
+              "type": "chart",
+              "weight": 2.8
             },
             {
-              "mediaKey": "jim_balsillie",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1.6,
-              "type": "chart"
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "jim_balsillie",
-              "variantIndex": 0,
-              "weight": 1.5,
-              "type": "quote"
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 2,
-              "weight": 1
+              "type": "quote",
+              "weight": 0.85
             }
           ],
-          "musicVolume": 0.07,
           "chart": {
             "title": "Revenue kept climbing",
             "subtitle": "Research In Motion · fiscal years · USD billions",
@@ -1102,58 +641,31 @@
             "suffix": "B",
             "maxValue": 22,
             "source": "Research In Motion: 2008 annual report and fiscal 2011 results"
-          }
-        },
-        {
-          "id": "bb-20",
-          "caption": "The cost of changing everything",
-          "narration": "Now put yourself inside that dilemma. Existing products serve real customers and bring in money. A radical replacement demands engineers, new tools, new applications, and the cooperation of partners. Move too slowly, and expectations escape. Move too abruptly, and the business funding the transition can weaken. It shows why the decisive battle would be fought over timing, integration, and execution as much as industrial design.",
-          "visualKeys": [
-            "office",
-            "blackberry_bold",
-            "circuit",
-            "mike_lazaridis",
-            "blackberry_storm",
-            "waterloo"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "mike_lazaridis",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.3
-            }
-          ],
-          "musicVolume": 0.07
+          },
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_results_2011",
+            "atSeconds": 6,
+            "durationSeconds": 18,
+            "source": "RIM · Annual Report 2011",
+            "date": "PDF page 31",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2011.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.4753,
+                "y": 0.48279,
+                "width": 0.036589,
+                "height": 0.040387
+              },
+              {
+                "x": 0.220841,
+                "y": 0.200213,
+                "width": 0.092725,
+                "height": 0.040387
+              }
+            ]
+          },
+          "pauseAfterSeconds": 1.2
         }
       ]
     },
@@ -1167,526 +679,364 @@
           "chapter": "Building a second BlackBerry",
           "caption": "2010 | Research In Motion acquires QNX",
           "narration": "In 2010, Research In Motion agreed to acquire QNX Software Systems from Harman. QNX brought operating-system expertise from demanding fields, including automotive and industrial systems. Lazaridis publicly pointed to its technology and unannounced product plans. This was a serious attempt to secure a new foundation. But acquiring an operating system does not deliver a finished consumer platform. The engineering purchase is the opening move. Integration, applications, and adoption still have to follow.",
-          "visualKeys": [
-            "mike_lazaridis",
-            "circuit",
-            "data_center",
-            "office",
-            "blackberry_playbook",
-            "waterloo"
-          ],
           "visualPlan": [
             {
               "mediaKey": "mike_lazaridis",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 20
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
+              "weight": 1.2,
+              "motion": "pull",
+              "caption": "Mike Lazaridis",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.025
             },
             {
               "mediaKey": "blackberry_playbook",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.2
+              "weight": 1.6,
+              "motion": "pan-up",
+              "caption": "PlayBook | the QNX-based direction",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             }
-          ],
-          "musicVolume": 0.095
+          ]
         },
         {
           "id": "bb-22",
           "caption": "2011 | A tablet carries the next bet",
           "narration": "The PlayBook put that new direction in a customer's hands. Research In Motion and Best Buy announced an April nineteenth, 2011 launch in the United States and Canada. The tablet had a seven-inch display, cameras, multitasking, and a starting price of four hundred ninety-nine dollars. It was pitched as a professional product. The ambition was clear: BlackBerry wanted a place in the larger world of mobile computing, beyond the familiar keyboard handset.",
-          "visualKeys": [
-            "blackberry_playbook",
-            "office",
-            "mike_lazaridis",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_playbook",
               "variantIndex": 1,
-              "weight": 1.4
+              "weight": 1.4,
+              "motion": "push",
+              "caption": "BlackBerry PlayBook | launched April 2011",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "blackberry_playbook",
+              "mediaKey": "bb_redo_playbook_charging_pod",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 2,
-              "weight": 0.7
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "mike_lazaridis",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1.3
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
+              "weight": 1.1,
+              "motion": "pan-right",
+              "caption": "PlayBook | charging dock",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.08
+          ]
         },
         {
           "id": "bb-23",
           "caption": "The missing step between promise and product",
           "narration": "Customers could buy a PlayBook in April 2011. Native email and calendar capabilities arrived in a major software update the following February, as BlackBerry's annual report recorded. The company known for putting messages in people's pockets was still completing those familiar functions on its new tablet. Buyers could judge the product already on the shelf, even as engineers worked to deliver the experience BlackBerry had promised.",
-          "visualKeys": [
-            "blackberry_playbook",
-            "blackberry_keyboard",
-            "office",
-            "data_center"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_playbook",
+              "mediaKey": "bb_redo_playbook_case",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1,
-              "focus": {
-                "x": 0.5,
-                "y": 0.4
-              }
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.2,
+              "motion": "pull",
+              "caption": "BlackBerry PlayBook",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.025
             },
             {
               "mediaKey": "blackberry_playbook",
               "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1.2,
-              "motion": "pull"
+              "weight": 1,
+              "motion": "pan-left",
+              "caption": "PlayBook | rear hardware",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             }
           ],
-          "musicVolume": 0.045
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_playbook_email_2012",
+            "atSeconds": 5,
+            "durationSeconds": 14,
+            "source": "RIM · Annual Report 2012",
+            "date": "PDF page 26",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2012.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.307033,
+                "y": 0.125389,
+                "width": 0.106613,
+                "height": 0.257021
+              },
+              {
+                "x": 0.394905,
+                "y": 0.360274,
+                "width": 0.229164,
+                "height": 0.257021
+              }
+            ]
+          },
+          "pauseAfterSeconds": 0.9
         },
         {
           "id": "bb-24",
           "caption": "December 2011 | A $485 million inventory provision",
           "narration": "The commercial cost surfaced before that update arrived. In December 2011, Research In Motion announced an approximately four hundred eighty-five million dollar pretax inventory provision for PlayBook tablets. It cited competition, high inventory, and the software delay, and described increased promotions to encourage sales. This was largely a noncash accounting charge. But the signal was real: products planned for one level of demand were meeting another. Expectations were now expensive objects sitting in the distribution system.",
-          "visualKeys": [
-            "blackberry_playbook",
-            "wall_street",
-            "office",
-            "circuit"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1.3
-            },
-            {
-              "mediaKey": "wall_street",
-              "variantIndex": 2,
+              "mediaKey": "bb_redo_playbook_rear",
+              "variantIndex": 0,
               "weight": 1,
-              "caption": "Financial markets · contextual photograph"
+              "motion": "pan-down",
+              "caption": "BlackBerry PlayBook",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             },
             {
               "mediaKey": "blackberry_playbook",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1,
-              "motion": "pull"
+              "weight": 1.4,
+              "motion": "push",
+              "caption": "The inventory provision | December 2011",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.08
             }
           ],
-          "musicVolume": 0.08
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_playbook_provision_2012",
+            "atSeconds": 4,
+            "durationSeconds": 16,
+            "source": "RIM · Annual Report 2012",
+            "date": "PDF page 184",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2012.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.217043,
+                "y": 0.277677,
+                "width": 0.093957,
+                "height": 0.105043
+              },
+              {
+                "x": 0.69918,
+                "y": 0.277677,
+                "width": 0.17424,
+                "height": 0.105043
+              }
+            ]
+          }
         },
         {
           "id": "bb-25",
           "caption": "January 2012 | A change at the top",
           "narration": "In January 2012, the co-chief executives handed leadership to Thorsten Heins. Lazaridis became vice chair, and Balsillie initially remained a director. Heins came from inside the organization, having joined from Siemens in 2007. The transition was presented as a succession plan, not an admission that the business had no future. He also inherited a schedule that competitors would not pause to accommodate.",
-          "visualKeys": [
-            "waterloo",
-            "mike_lazaridis",
-            "jim_balsillie",
-            "office",
-            "circuit"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_heins_beta_2012",
               "variantIndex": 0,
-              "weight": 1.3
-            },
-            {
-              "mediaKey": "mike_lazaridis",
-              "variantIndex": 0,
-              "weight": 1
+              "weight": 1.4,
+              "motion": "push",
+              "caption": "Thorsten Heins with BlackBerry 10 beta | 2012",
+              "focus": {
+                "x": 0.5,
+                "y": 0.35
+              },
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             },
             {
               "mediaKey": "jim_balsillie",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 0.8,
+              "motion": "pan-left",
+              "caption": "Jim Balsillie",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.07
             },
             {
-              "mediaKey": "office",
+              "mediaKey": "bb_redo_heins_portrait_2013",
               "variantIndex": 0,
               "weight": 1,
-              "caption": "Leadership transition · contextual office photograph"
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1,
-              "motion": "pull"
+              "motion": "pull",
+              "caption": "Thorsten Heins | 2013 portrait",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.025
             }
-          ],
-          "musicVolume": 0.055
+          ]
         },
         {
           "id": "bb-26",
           "caption": "June 2012 | BlackBerry 10 slips into 2013",
           "narration": "By June, the schedule had slipped again. Research In Motion said the integration of features and a large volume of code was taking longer than anticipated. Its first BlackBerry 10 smartphones were now expected in the first quarter of calendar 2013. The same results announcement described a planned workforce reduction of about five thousand people. The company was trying to construct its next engine while cutting costs around the engine still keeping it moving.",
-          "visualKeys": [
-            "office",
-            "circuit",
-            "blackberry_keyboard",
-            "blackberry_z10",
-            "waterloo",
-            "data_center"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1.3
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
+              "mediaKey": "bb_redo_pearl_disassembled_2010",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.3,
+              "motion": "push",
+              "caption": "The hardware and software transition",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.08
             },
             {
-              "mediaKey": "blackberry_z10",
+              "mediaKey": "bb_redo_q10_settings_2013",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.2,
+              "motion": "pan-up",
+              "caption": "BlackBerry 10 | Q10 system settings, 2013",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.065
             },
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_voa_rim_exterior",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
+              "weight": 0.6,
+              "motion": "push",
+              "caption": "Research In Motion | 2013 archive"
             }
-          ],
-          "musicVolume": 0.11
+          ]
         },
         {
           "id": "bb-27",
           "caption": "Waiting has a second cost",
           "narration": "A delay does more than postpone revenue from a new device. It can complicate the sale of the old one. In December 2012, the company warned that anticipation of BlackBerry 10 could cause some customers to defer purchases of existing BlackBerry 7 products. The bridge between generations was becoming its own financial problem. Customers were being asked to wait, while competitors could keep offering phones, attracting developers, and establishing habits that a later launch would have to break.",
-          "visualKeys": [
-            "blackberry_bold",
-            "blackberry_z10",
-            "blackberry_curve",
-            "office",
-            "iphone_modern",
-            "smartphone_crowd"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_bold",
+              "mediaKey": "blackberry_devices",
               "variantIndex": 1,
-              "weight": 1
+              "weight": 1.3,
+              "motion": "push",
+              "focus": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "fit": "contain",
+              "zoomStart": 1.04,
+              "zoomEnd": 1.12,
+              "caption": "BlackBerry Bold 9900 (center) | BlackBerry 7"
             },
             {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "blackberry_curve",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
+              "mediaKey": "bb_redo_bb10_dev_alpha_2012",
+              "weight": 1.1,
+              "motion": "pan-up",
+              "fit": "contain",
+              "displayWidth": 640,
+              "zoomStart": 1.015,
+              "zoomEnd": 1.06,
+              "caption": "BlackBerry 10 Dev Alpha | June 2012"
             }
-          ],
-          "musicVolume": 0.065
+          ]
         },
         {
           "id": "bb-28",
           "caption": "January 30, 2013 | The new BlackBerry arrives",
           "narration": "On January thirtieth, 2013, BlackBerry 10 finally arrived. The company unveiled the all-touch Z10 and the keyboard-equipped Q10. A gesture-based interface and a central communications Hub promised a fresh experience. The launch also showed how much had changed. This was no longer a small adjustment to the old formula. BlackBerry was asking the market to reconsider its software, its interface, and its identity at the same time. Research In Motion began operating under the BlackBerry name.",
-          "visualKeys": [
-            "blackberry_z10",
-            "blackberry_keyboard",
-            "office",
-            "waterloo",
-            "blackberry_devices"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_z10",
+              "mediaKey": "bb_redo_voa_stage_device_reveal",
               "variantIndex": 0,
-              "weight": 1.3
+              "weight": 0.65,
+              "motion": "push",
+              "caption": "BlackBerry 10 launch | January 2013"
             },
             {
-              "mediaKey": "blackberry_keyboard",
+              "mediaKey": "bb_redo_q10_front_2013",
               "variantIndex": 0,
-              "weight": 1,
-              "caption": "BlackBerry retained a physical-keyboard product line"
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1,
+              "weight": 1.4,
+              "motion": "push",
+              "caption": "BlackBerry Q10 | 2013",
               "focus": {
                 "x": 0.5,
-                "y": 0.3
-              }
+                "y": 0.4
+              },
+              "zoomStart": 1.02,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
+              "mediaKey": "bb_redo_q10_rear_2013",
               "variantIndex": 0,
-              "weight": 1,
-              "motion": "pull"
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_devices",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.1,
+              "motion": "pan-down",
+              "caption": "The BlackBerry name | Q10, 2013",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.12
+          ]
         },
         {
           "id": "bb-29",
           "caption": "A comeback needs more than a launch",
           "narration": "BlackBerry announced seventy thousand applications for the new platform. That was a substantial launch catalog, but a count cannot guarantee that each customer finds the particular services they want. Availability also rolled out by market: the United Kingdom first, Canada in February, with American availability expected in March. A global unveiling was not an instant global reset. The new phones had to earn purchases one market, one distribution channel, and one customer's decision at a time.",
-          "visualKeys": [
-            "blackberry_z10",
-            "office",
-            "circuit",
-            "smartphone_crowd",
-            "iphone_modern"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_z10",
+              "mediaKey": "bb_redo_q10_white",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1,
+              "motion": "pan-up",
+              "caption": "BlackBerry Q10 | retail display",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.07
             },
             {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1.2
+              "type": "facts",
+              "weight": 1.7
             }
           ],
-          "musicVolume": 0.07
+          "facts": {
+            "title": "The Z10 did not arrive everywhere at once",
+            "subtitle": "BlackBerry Z10 | rollout announced in January 2013",
+            "steps": [
+              {
+                "label": "United Kingdom",
+                "detail": "First availability"
+              },
+              {
+                "label": "Canada",
+                "detail": "February 2013"
+              },
+              {
+                "label": "United States",
+                "detail": "Expected in March 2013"
+              }
+            ],
+            "source": "BlackBerry · January 30, 2013 announcement"
+          }
         },
         {
           "id": "bb-30",
           "caption": "2013 | The Z10 inventory charge",
           "narration": "Then the turnaround collided with demand. BlackBerry's filings described lower sales through to customers than expected and growing stock in distribution channels. In its second quarter of fiscal 2014, the company recorded the nine hundred thirty-four million dollar charge introduced at the beginning of this story. It was primarily attributable to Z10 devices. The expensive part was not simply designing a new phone. It was committing resources on the assumption that enough people would buy it.",
-          "visualKeys": [
-            "blackberry_z10",
-            "office",
-            "wall_street",
-            "circuit",
-            "waterloo"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_z10",
               "variantIndex": 0,
-              "weight": 1.4
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 0.7,
-              "zoomStart": 1.18,
-              "zoomEnd": 1.24
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "wall_street",
-              "variantIndex": 0,
               "weight": 1,
-              "caption": "Financial markets · contextual photograph"
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1.2
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1,
-              "motion": "pull"
+              "motion": "pull",
+              "caption": "BlackBerry Z10 | demand fell short",
+              "zoomStart": 1.1,
+              "zoomEnd": 1.025
             }
           ],
-          "musicVolume": 0.09
+          "newspaper": {
+            "mode": "clipping",
+            "mediaKey": "bb_document_z10_inventory_2014",
+            "atSeconds": 9,
+            "durationSeconds": 16,
+            "source": "BlackBerry · Annual Report 2014",
+            "date": "PDF page 45",
+            "sourceUrl": "https://www.annualreports.com/HostedData/AnnualReportArchive/B/TSX_BB_2014.pdf",
+            "highlightBoxes": [
+              {
+                "x": 0.76933,
+                "y": 0.592846,
+                "width": 0.102299,
+                "height": 0.092308
+              },
+              {
+                "x": 0.23387,
+                "y": 0.685154,
+                "width": 0.377874,
+                "height": 0.092308
+              }
+            ]
+          },
+          "pauseAfterSeconds": 1.1
         }
       ]
     },
@@ -1696,532 +1046,222 @@
       "subtitle": "The final decision is what to stop defending.",
       "scenes": [
         {
-          "id": "bb-31",
-          "chapter": "What remained after the phones",
-          "caption": "Inventory is a forecast made physical",
-          "narration": "The phones had already been built. Components had been ordered, and suppliers had commitments from BlackBerry before enough customers had decided to buy. With demand falling short, the company had to reduce the value assigned to inventory and supply commitments in its accounts. Much of the charge was noncash, but it reflected a costly commercial mistake: BlackBerry had prepared for sales the Z10 was failing to deliver.",
-          "visualKeys": [
-            "blackberry_z10",
-            "circuit",
-            "office",
-            "wall_street"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 2
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1,
-              "focus": {
-                "x": 0.5,
-                "y": 0.65
-              }
-            },
-            {
-              "mediaKey": "wall_street",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1.2,
-              "motion": "pull"
-            }
-          ],
-          "musicVolume": 0.04
-        },
-        {
           "id": "bb-32",
           "caption": "November 2013 | Financing buys another chance",
           "narration": "In November 2013, Fairfax Financial and other institutional investors agreed to invest one billion dollars in BlackBerry through convertible debt. The financing could later become shares in the company. BlackBerry was raising money for another attempt at transformation while the handset business remained in trouble. The next leader would have to decide where that money could make a difference, and which parts of the old BlackBerry were worth carrying forward.",
-          "visualKeys": [
-            "waterloo",
-            "wall_street",
-            "office",
-            "data_center",
-            "blackberry_z10"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
+              "type": "facts",
               "weight": 1
-            },
-            {
-              "mediaKey": "wall_street",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 16
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.2
             }
           ],
-          "musicVolume": 0.07
+          "facts": {
+            "title": "$1 billion for another transformation",
+            "subtitle": "November 2013 | financing, not sales revenue",
+            "steps": [
+              {
+                "label": "Fairfax and institutional investors",
+                "detail": "Agreed to provide new financing"
+              },
+              {
+                "label": "Convertible debt",
+                "detail": "Debt issued by BlackBerry"
+              },
+              {
+                "label": "Possible future shares",
+                "detail": "The debt could convert into equity"
+              }
+            ],
+            "source": "BlackBerry · financing announcement, November 2013"
+          }
         },
         {
           "id": "bb-33",
           "caption": "John Chen | A different assignment",
           "narration": "The agreement also brought John Chen into the leadership transition, as executive chair and interim chief executive. His assignment was increasingly about transforming the business model. That changes the question a leader must answer. Instead of asking only how to win the next handset contest, the company could ask which capabilities customers would still pay for without a BlackBerry phone. Security, communications, and embedded software could have a future even if mass-market hardware did not.",
-          "visualKeys": [
-            "waterloo",
-            "office",
-            "blackberry_z10",
-            "data_center",
-            "circuit",
-            "iphone_modern"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_chen_techonomy_2010",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 0,
-              "weight": 1,
-              "caption": "Business transformation · contextual office photograph"
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.5,
+              "motion": "push",
+              "caption": "John Chen (right) | Techonomy, 2010",
+              "focus": {
+                "x": 0.8,
+                "y": 0.4
+              },
+              "fit": "cover",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.09
             },
             {
               "mediaKey": "data_center",
               "variantIndex": 3,
-              "weight": 1
+              "weight": 0.7,
+              "motion": "push",
+              "caption": "Security and enterprise software"
+            },
+            {
+              "mediaKey": "bb_redo_q10_rear_2013",
+              "variantIndex": 0,
+              "weight": 1,
+              "motion": "pull",
+              "caption": "BlackBerry Q10",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.02
             }
-          ],
-          "musicVolume": 0.065
+          ]
         },
         {
           "id": "bb-34",
           "caption": "The software can serve a rival's device",
           "narration": "A concrete example was enterprise device management. BlackBerry's documentation for Enterprise Service 10 described managing BlackBerry, iOS, and Android devices from a unified interface. That is a profound reversal of perspective. A rival's handset could become something BlackBerry helped a customer administer. The value moved away from requiring everyone to carry the same branded object. An organization still needed to connect people and protect information, even when the phones came from somewhere else.",
-          "visualKeys": [
-            "data_center",
-            "blackberry_devices",
-            "iphone_modern",
-            "office",
-            "smartphone_crowd",
-            "circuit"
-          ],
           "visualPlan": [
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 10
-            },
             {
               "mediaKey": "blackberry_devices",
               "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_modern",
-              "variantIndex": 1,
-              "weight": 1
+              "weight": 1.3,
+              "motion": "pan-right",
+              "caption": "A device fleet could cross brands",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.07
             },
             {
               "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
+              "variantIndex": 2,
+              "weight": 0.8,
+              "motion": "push",
+              "caption": "Illustrative office use"
             },
             {
               "mediaKey": "data_center",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
               "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1
+              "weight": 1,
+              "motion": "pan-left",
+              "caption": "Enterprise infrastructure | illustrative view",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.065
             }
-          ],
-          "musicVolume": 0.07
+          ]
         },
         {
           "id": "bb-35",
           "caption": "September 2016 | Internal hardware development ends",
           "narration": "In September 2016, Chen announced that BlackBerry planned to end all internal hardware development and outsource that function to partners. The company would concentrate on software, including security and applications. This did not mean every BlackBerry-branded handset vanished at that instant. It meant the company was changing its role. The business that had once integrated the handheld experience would no longer carry the same responsibility for developing the physical product itself.",
-          "visualKeys": [
-            "blackberry_devices",
-            "waterloo",
-            "office",
-            "circuit",
-            "data_center"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_devices",
               "variantIndex": 0,
-              "weight": 1.3
+              "weight": 1.4,
+              "motion": "push",
+              "caption": "BlackBerry Classic | hardware development would move to partners",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_pearl_3g_front_2010",
               "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 21
-            },
-            {
-              "mediaKey": "blackberry_devices",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
+              "weight": 1.1,
+              "motion": "pull",
+              "caption": "BlackBerry Pearl 3G | hardware from an earlier era",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.02
             }
           ],
-          "musicVolume": 0.065
-        },
-        {
-          "id": "bb-36",
-          "caption": "Changing the business changes the risk",
-          "narration": "Chen explained the financial logic: reducing capital requirements and improving returns on invested capital. Hardware demands commitments before demand is certain. Software has its own costs, competition, and execution risks, but it changes where the company places its resources. After years spent defending a place in the phone market, BlackBerry was choosing a different contest. The difficult decision was no longer which handset could restore its status. It was how much of that status to leave behind.",
-          "visualKeys": [
-            "wall_street",
-            "circuit",
-            "blackberry_z10",
-            "data_center",
-            "office",
-            "blackberry_keyboard",
-            "waterloo"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "wall_street",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 15
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1.4
-            }
-          ],
-          "musicVolume": 0.06
+          "pauseAfterSeconds": 0.8
         },
         {
           "id": "bb-37",
           "caption": "January 4, 2022 | Legacy services reach their end",
           "narration": "The emotional ending came later. BlackBerry set January fourth, 2022 as the end of legacy services for older BlackBerry operating systems, BlackBerry 10, and PlayBook software. It warned that affected devices would no longer function reliably for services including calls, messages, and data. That notice applied to specified legacy platforms. It was not the death certificate of the corporation. For people who remembered the keyboard as a badge of connection, though, it marked an era's closing door.",
-          "visualKeys": [
-            "blackberry_keyboard",
-            "blackberry_bold",
-            "blackberry_z10",
-            "blackberry_playbook",
-            "blackberry_devices"
-          ],
           "visualPlan": [
             {
               "mediaKey": "blackberry_keyboard",
               "variantIndex": 0,
-              "weight": 1.4
+              "weight": 1,
+              "motion": "pan-up",
+              "caption": "A familiar keyboard | legacy BlackBerry",
+              "zoomStart": 1.02,
+              "zoomEnd": 1.075
             },
             {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_devices",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1.4,
-              "motion": "pull"
+              "type": "facts",
+              "weight": 1.5
             }
           ],
-          "musicVolume": 0.025
+          "facts": {
+            "title": "An era ended. The company continued.",
+            "subtitle": "January 4, 2022 | legacy services",
+            "steps": [
+              {
+                "label": "Legacy services ended",
+                "detail": "Specified BlackBerry OS, BlackBerry 10 and PlayBook software"
+              },
+              {
+                "label": "Older devices affected",
+                "detail": "Calls, messages and data could become unreliable"
+              },
+              {
+                "label": "BlackBerry continued",
+                "detail": "Secure communications and QNX software"
+              }
+            ],
+            "source": "BlackBerry · legacy services notice; corporate documentation"
+          },
+          "pauseAfterSeconds": 1.0
         },
         {
           "id": "bb-38",
           "caption": "A quieter BlackBerry remains",
           "narration": "The present-day company tells a less visible story. BlackBerry describes businesses in secure communications and QNX foundational software for automotive and other demanding systems. The technology no longer has to announce itself with a keyboard in someone's palm. The QNX acquisition belonged to the struggle to build a new mobile future. Its importance outlasted the smartphone comeback. A move can fail to save one business and still help support the business that survives it.",
-          "visualKeys": [
-            "waterloo",
-            "data_center",
-            "circuit",
-            "office"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_qnx_chen_event",
               "variantIndex": 0,
-              "weight": 1
+              "weight": 1.5,
+              "motion": "push",
+              "caption": "BlackBerry QNX | John Chen and Justin Trudeau, 2019"
             },
             {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 22
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "office",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "circuit",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "waterloo",
+              "mediaKey": "bb_redo_chen_techonomy_2010",
               "variantIndex": 0,
-              "weight": 1.2
+              "weight": 1.1,
+              "motion": "pan-right",
+              "caption": "John Chen (right) | 2010 portrait",
+              "focus": {
+                "x": 0.8,
+                "y": 0.4
+              },
+              "fit": "cover",
+              "zoomStart": 1.035,
+              "zoomEnd": 1.075
             }
-          ],
-          "musicVolume": 0.07
-        },
-        {
-          "id": "bb-39",
-          "caption": "The lesson is bigger than a keyboard",
-          "narration": "BlackBerry's fall from the center of the smartphone market cannot be explained by a single dismissive quotation or one stubborn preference. The record shows responses, investment, a new platform, delays, and demand that failed to meet expectations. Its old strengths did not become worthless overnight. Their relative importance changed. The company had to build for new expectations while serving customers who valued the old system. That is the trap a successful business can build around itself.",
-          "visualKeys": [
-            "mike_lazaridis",
-            "jim_balsillie",
-            "blackberry_storm",
-            "blackberry_playbook",
-            "blackberry_z10",
-            "smartphone_crowd",
-            "data_center",
-            "blackberry_keyboard"
-          ],
-          "visualPlan": [
-            {
-              "mediaKey": "mike_lazaridis",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "jim_balsillie",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_storm",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_playbook",
-              "variantIndex": 1,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 3,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 1,
-              "weight": 1
-            }
-          ],
-          "musicVolume": 0.075
+          ]
         },
         {
           "id": "bb-40",
           "caption": "The future can arrive before the numbers reveal it",
           "narration": "At the beginning, BlackBerry shortened the distance between a message and an answer. Its rivals expanded the question: what else could a phone become? By the time BlackBerry delivered its most ambitious answer, it was competing against established habits as well as devices. The company survived by changing what it chose to defend. The empire in people's pockets did not. And the warning remains: the most dangerous moment for a market leader may arrive while the sales figures still look extraordinary.",
-          "visualKeys": [
-            "blackberry_keyboard",
-            "steve_jobs",
-            "iphone_original",
-            "smartphone_crowd",
-            "blackberry_z10",
-            "data_center",
-            "waterloo"
-          ],
           "visualPlan": [
             {
-              "mediaKey": "blackberry_keyboard",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "steve_jobs",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "iphone_original",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "smartphone_crowd",
-              "variantIndex": 2,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_z10",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "data_center",
-              "variantIndex": 4,
-              "weight": 1,
-              "trimStartSeconds": 12
-            },
-            {
-              "mediaKey": "waterloo",
-              "variantIndex": 0,
-              "weight": 1
-            },
-            {
-              "mediaKey": "blackberry_keyboard",
+              "mediaKey": "blackberry_bold",
               "variantIndex": 1,
-              "weight": 1.6,
-              "motion": "pull"
+              "weight": 1.35,
+              "motion": "push",
+              "caption": "The keyboard that defined an era",
+              "zoomStart": 1.025,
+              "zoomEnd": 1.085
+            },
+            {
+              "mediaKey": "bb_redo_iphone_user_2007",
+              "variantIndex": 0,
+              "weight": 1.1,
+              "motion": "pull",
+              "caption": "New habits took hold | 2007",
+              "zoomStart": 1.085,
+              "zoomEnd": 1.025
             }
-          ],
-          "musicVolume": 0.055
+          ]
         }
       ]
     }
@@ -2387,5 +1427,78 @@
       "src": "public/assets/images/blackberry-thumbnail-v2.png",
       "changes": "Editorial thumbnail reinterpretation using the handset photograph as visual reference; replaced surroundings, lighting and typography. Not an archival photograph."
     }
+  ],
+  "mediaManifest": "episodes/blackberry-media-manifest.json",
+  "score": {
+    "engine": "ode-procedural-v1",
+    "volume": 0.72,
+    "pauseLift": 1.6,
+    "pauseMinimumSeconds": 0.8,
+    "segments": [
+      {
+        "fromScene": "bb-01",
+        "throughScene": "bb-01",
+        "profile": "alert",
+        "gain": 1.12,
+        "pluck": 0.55
+      },
+      {
+        "fromScene": "bb-03",
+        "throughScene": "bb-10",
+        "profile": "finance",
+        "gain": 1.02,
+        "pluck": 0.65
+      },
+      {
+        "fromScene": "bb-11",
+        "throughScene": "bb-17",
+        "profile": "market",
+        "gain": 1.02,
+        "pluck": 0.9
+      },
+      {
+        "fromScene": "bb-18",
+        "throughScene": "bb-19",
+        "profile": "alert",
+        "gain": 1.05,
+        "pluck": 0.65
+      },
+      {
+        "fromScene": "bb-21",
+        "throughScene": "bb-23",
+        "profile": "personal_finance",
+        "gain": 0.93,
+        "pluck": 0.45
+      },
+      {
+        "fromScene": "bb-24",
+        "throughScene": "bb-30",
+        "profile": "alert",
+        "gain": 1.12,
+        "pluck": 0.95
+      },
+      {
+        "fromScene": "bb-32",
+        "throughScene": "bb-35",
+        "profile": "finance",
+        "gain": 0.9,
+        "pluck": 0.4
+      },
+      {
+        "fromScene": "bb-37",
+        "throughScene": "bb-40",
+        "profile": "personal_finance",
+        "gain": 0.86,
+        "pluck": 0.2
+      }
+    ]
+  },
+  "revisionNotes": [
+    "Re-edited after the first delivery: complete BlackBerry before revising ITT.",
+    "Unchanged narration retained; six redundant explanatory scenes removed, without adding silence or repeated shots.",
+    "Specific archived devices/events, six original-document inserts, purposeful longer holds and differing camera direction.",
+    "Photos limited to two appearances by original family; videos conservatively counted by source recording, at most three.",
+    "Source/licensing attribution remains in the delivery package. Narrative labels identify objects, people and dates.",
+    "Six short authored breaths follow the opening, record results, missing native email, Z10 charge, hardware exit and legacy notice. They are dramatic spacing; the 900-second minimum is still measured from narration WAVs alone."
   ]
 }

@@ -122,6 +122,36 @@ class VisualPlanTests(unittest.TestCase):
         plain = {**scene, "visualPlan": [{"mediaKey": "still"}]}
         self.assertEqual(build_shots(plain, self.assets, 60, self.public, {}, 0)[0]["type"], "image")
 
+    def test_native_facts_chart_and_quote_need_no_catalog_image(self):
+        scene = {
+            "id": "native-evidence",
+            "facts": {"title": "A platform transition", "steps": [
+                {"label": "Build", "detail": "A documented engineering decision"},
+                {"label": "Release", "detail": "A documented launch date"}],
+                "source": "Primary company report"},
+            "chart": {"title": "Documented revenue", "data": [
+                {"label": "Fiscal year", "percentage": 19.9}]},
+            "quote": {"text": "Documented words", "author": "A named witness"},
+            "visualPlan": [{"type": "chart", "weight": 1},
+                           {"type": "facts", "weight": 2},
+                           {"type": "quote", "weight": 1}],
+        }
+        original, credits = copy.deepcopy(scene), {}
+        # An empty catalog proves native evidence doesn't need a photo placeholder.
+        shots = build_shots(scene, {}, 480, self.public, credits, 3)
+        self.assert_coverage(shots, 480)
+        self.assertEqual([shot["type"] for shot in shots], ["chart", "facts", "quote"])
+        self.assertEqual([shot["durationInFrames"] for shot in shots], [120, 240, 120])
+        for shot in shots:
+            self.assertNotIn("src", shot)
+            self.assertIsNone(shot["mediaIdentity"])
+        self.assertEqual(shots[0]["chart"]["values"][0]["value"], 19.9)
+        self.assertEqual(shots[1]["facts"], scene["facts"])
+        self.assertEqual(shots[2]["quote"]["author"], "A named witness")
+        self.assertEqual(credits, {})
+        shots[1]["facts"]["steps"][0]["detail"] = "Output-only change"
+        self.assertEqual(scene, original)
+
     def test_video_keeps_catalog_vintage_treatment_and_authored_override(self):
         self.assets["archive"][0]["vintageFilter"] = True
         scene = {"id": "vintage", "visualPlan": [{"mediaKey": "archive"}]}
@@ -152,8 +182,10 @@ class VisualPlanTests(unittest.TestCase):
         source = {"id": "visual-plan-test", "voice": "Charon", "pitchSemitones": -1,
                   "acts": [{"id": "first", "title": "First section", "scenes": scenes[:1]},
                            {"id": "second", "title": "Second section", "scenes": scenes[1:]}]}
+        scenes[1]["pauseAfterSeconds"] = 1.2
         result = build_episode(source, self.catalog(), audio_dir, self.public)
         frames = [math.ceil(wav_seconds(path) * FPS) for path in originals]
+        frames[1] += 36
         self.assertEqual(result["durationInFrames"], sum(frames))
         self.assertAlmostEqual(result["metadata"]["narrationSeconds"], 900)
         self.assertEqual(result["acts"][1]["startFrame"], frames[0])
@@ -169,6 +201,10 @@ class VisualPlanTests(unittest.TestCase):
                 self.assertGreaterEqual(scene["durationInFrames"] / FPS, wav_seconds(original))
                 self.assertEqual(digest(original), originals[original])
         self.assertEqual(shot_lengths([1, 3, 2], 600, [None, None, None]), [100, 300, 200])
+        # The visual breathing room cannot satisfy an otherwise-short spoken minimum.
+        source["minimumDurationSeconds"] = 901
+        with self.assertRaisesRegex(ValueError, "requires at least 901"):
+            build_episode(source, self.catalog(), audio_dir, self.public)
 
 
 if __name__ == "__main__":

@@ -76,7 +76,7 @@ def main() -> None:
     text = (f"TITLE\n{package['title']}\n\nDESCRIPTION\n{package['description']}\n\n"
             f"TAGS\n{', '.join(package['tags'])}\n\nRESEARCH SOURCES\n{source_text}\n")
     credit_text = "\n\n".join("\n".join(str(item[key]) for key in
-        ("src", "credit", "origin", "licenseUrl", "changes") if item.get(key)) for item in package["mediaCredits"])
+        ("src", "credit", "origin", "license", "licenseUrl", "changes") if item.get(key)) for item in package["mediaCredits"])
     if credit_text:
         text += "\nVISUAL CREDITS\n" + credit_text + "\n"
         (destination / "visual_credits.txt").write_text(credit_text + "\n", encoding="utf-8")

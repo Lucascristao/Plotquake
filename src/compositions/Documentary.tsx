@@ -2,6 +2,7 @@ import {AbsoluteFill, Audio, Sequence, interpolate, useCurrentFrame} from 'remot
 import {KenBurnsImage} from '../components/KenBurnsImage';
 import {MarketChart} from '../components/MarketChart';
 import {QuoteCard} from '../components/QuoteCard';
+import {FactSequence} from '../components/FactSequence';
 import {ActMarker} from '../components/ActMarker';
 import {BrollPlayer} from '../components/BrollPlayer';
 import {MediaCaption} from '../components/MediaCaption';
@@ -27,11 +28,12 @@ const Shot = ({shot, previousSrc, canDissolve}: {shot: DocumentaryShot; previous
         label={shot.sourceLabel} reconstruction={shot.reconstruction} vintageFilter={shot.vintageFilter} />
     ) : background ? (
       <KenBurnsImage src={background} durationInFrames={shot.durationInFrames}
-        focus={shot.focus} zoomStart={shot.zoomStart} zoomEnd={shot.zoomEnd} motion={shot.motion}
+        focus={shot.focus} displayWidth={shot.displayWidth} zoomStart={shot.zoomStart} zoomEnd={shot.zoomEnd} motion={shot.motion}
         fit={shot.fit} caption={shot.type === 'image' ? shot.caption : undefined}
         sourceLabel={shot.sourceLabel} reconstruction={shot.reconstruction} />
     ) : <AbsoluteFill style={{background: 'radial-gradient(ellipse at 65% 40%, #1c2634, #05070c 78%)'}} />}
     {shot.type === 'chart' && shot.chart && <MarketChart {...shot.chart} delay={5} />}
+    {shot.type === 'facts' && shot.facts && <FactSequence {...shot.facts} durationInFrames={shot.durationInFrames} />}
     {shot.type === 'quote' && shot.quote && <QuoteCard quote={shot.quote.text}
       author={shot.quote.author} title={shot.quote.title} year={shot.quote.year} delay={5} />}
   </AbsoluteFill>;
@@ -46,7 +48,7 @@ const SceneCaption = ({caption, durationInFrames}: {caption: string; durationInF
 
 const Scene = ({scene, captionFrom = 10}: {scene: DocumentaryScene; captionFrom?: number}) => (
   <AbsoluteFill>
-    {scene.audioSrc && <Audio src={resolveMedia(scene.audioSrc)} volume={1} />}
+    {scene.audioSrc && <Audio src={resolveMedia(scene.audioSrc)} volume={scene.audioGain ?? 1} />}
     {scene.shots.map((shot, index) => {
       const next = scene.shots[index + 1];
       // The preceding picture stays under a dissolve, avoiding a flash to black.
@@ -74,7 +76,9 @@ export const Documentary = ({episode}: DocumentaryProps) => {
   const music = typeof episode.audio?.music === 'string'
     ? {src: episode.audio.music, volume: 0.13}
     : episode.audio?.music;
-  // A global clock keeps fades correct when a short score loops.
+  const directedMusic = music?.directed ?? false;
+  // Directed music already carries one continuous pause envelope and fades.
+  // Legacy short scores still use the global clock so looping cannot reset fades.
   const masterFade = Math.min(
     interpolate(frame, [0, fps * 1.7], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
     interpolate(frame, [Math.max(0, episode.durationInFrames - fps * 3), episode.durationInFrames], [1, 0],
@@ -90,8 +94,10 @@ export const Documentary = ({episode}: DocumentaryProps) => {
 
   return (
     <AbsoluteFill style={{backgroundColor: '#05070c', fontFamily: 'Arial, Helvetica, sans-serif'}}>
-      {music && <Audio src={resolveMedia(music.src)} loop
-        volume={(musicCue?.volume ?? music.volume ?? 0.13) * masterFade * (isVoiced ? 1 : 1.22)} />}
+      {music && <Audio src={resolveMedia(music.src)} loop={music.loop ?? !directedMusic}
+        volume={directedMusic
+          ? (music.volume ?? 1)
+          : (musicCue?.volume ?? music.volume ?? 0.13) * masterFade * (isVoiced ? 1 : 1.22)} />}
       {episode.audio?.narration && <Audio src={resolveMedia(episode.audio.narration)} volume={1} />}
       {episode.audio?.effects?.map((effect, index) => <Sequence key={index} from={effect.from}
         durationInFrames={effect.durationInFrames}>
