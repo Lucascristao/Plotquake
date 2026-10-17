@@ -193,8 +193,22 @@ def catalog_record(source: dict, asset: dict) -> dict:
 
 def prepare_asset(source: dict, asset: dict, public_root: Path, cache_dir: Path,
                   ffmpeg: str, ffprobe: str, attempts: int = 4, timeout: float = 60) -> dict:
-    original, source_receipt = download_source(source, cache_dir, attempts, timeout)
     destination = safe_output(public_root, asset["src"])
+    # Selected original JPEGs can travel in Git with a source/provenance manifest.
+    # Verify their exact bytes instead of requesting the same public thumbnail again.
+    if asset["kind"] == "image" and destination.is_file() and asset.get("preparedSha256"):
+        if file_hash(destination) != asset["preparedSha256"]:
+            raise ValueError(f"Versioned source photo checksum mismatch: {asset['id']}")
+        from PIL import Image
+        with Image.open(destination) as image:
+            image.load()
+            if image.format != "JPEG":
+                raise ValueError(f"Expected original JPEG: {asset['id']}")
+            record = catalog_record(source, asset)
+            record.update({"width": image.width, "height": image.height})
+        print(f"Verified versioned source photo {asset['id']}", flush=True)
+        return record
+    original, source_receipt = download_source(source, cache_dir, attempts, timeout)
     destination.parent.mkdir(parents=True, exist_ok=True)
     recipe = fingerprint({"version": VERSION, "asset": asset, "sourceSha256": source_receipt["sha256"],
                           "encoding": "JPEG-original-or-mjpeg-q2 / H264-crf18-medium-yuv420p-30fps-max1080"})

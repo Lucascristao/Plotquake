@@ -822,7 +822,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/heins-beta-2012.jpg",
       "label": "Thorsten Heins · BlackBerry 10 beta, 2012",
-      "note": "Actual beta demonstration; avoid naming an exact day because EXIF and prose differ."
+      "note": "Actual beta demonstration; avoid naming an exact day because EXIF and prose differ.",
+      "preparedSha256": "225607b6d2724cedbdd4a700ad06c95e97c1b663d36e02cb793e85d6f68afef0"
     },
     {
       "id": "heins-portrait-2013",
@@ -830,7 +831,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/heins-portrait-2013.jpg",
       "label": "Thorsten Heins · 2013",
-      "note": "Actual executive portrait; not a private meeting."
+      "note": "Actual executive portrait; not a private meeting.",
+      "preparedSha256": "9806aa529c9f1286bb5de2f724f1a68329a53a38f903303f4dd4b65aec77993f"
     },
     {
       "id": "chen-techonomy-2010",
@@ -838,7 +840,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/chen-techonomy-2010.jpg",
       "label": "John Chen · Techonomy, 2010",
-      "note": "A portrait captured before his BlackBerry appointment; do not identify this event as 2013."
+      "note": "A portrait captured before his BlackBerry appointment; do not identify this event as 2013.",
+      "preparedSha256": "a2610724422e1e132c2654931cc9ecda4f3b8298b806b6cde6f6a509b105536c"
     },
     {
       "id": "lazaridis-royal-society-2014",
@@ -854,7 +857,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/playbook-charging-pod.jpg",
       "label": "BlackBerry PlayBook · charging pod",
-      "note": "Preserved hardware photographed in 2016."
+      "note": "Preserved hardware photographed in 2016.",
+      "preparedSha256": "0e11b71c36623438bd5f12fe733891ae834e66dc55a6488562a6e4a9d29a3679"
     },
     {
       "id": "playbook-case",
@@ -862,7 +866,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/playbook-case.jpg",
       "label": "BlackBerry PlayBook · convertible case",
-      "note": "Preserved hardware photographed in 2016."
+      "note": "Preserved hardware photographed in 2016.",
+      "preparedSha256": "79704c1b1f82b2e62c003f7c46b488129bf05ccc2eb445a9f1767f5cefed1fb8"
     },
     {
       "id": "playbook-rear",
@@ -870,7 +875,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/playbook-rear.jpg",
       "label": "BlackBerry PlayBook · rear hardware",
-      "note": "Preserved hardware photographed in 2023; not a launch photograph."
+      "note": "Preserved hardware photographed in 2023; not a launch photograph.",
+      "preparedSha256": "713367462ffb93476f6f689d1c5ca498a0a75708fff2a90d211c1a86a6ae3ffc"
     },
     {
       "id": "q10-rear-2013",
@@ -878,7 +884,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/q10-rear-2013.jpg",
       "label": "BlackBerry Q10 · 2013",
-      "note": "Actual Q10, not a Bold stand-in."
+      "note": "Actual Q10, not a Bold stand-in.",
+      "preparedSha256": "3fe7ddadbd5e4212465c9b4ccb05f6a94039d3af46e69c04401d1c4db2605807"
     },
     {
       "id": "q10-front-2013",
@@ -886,7 +893,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/q10-front-2013.jpg",
       "label": "BlackBerry Q10 · 2013",
-      "note": "Actual Q10, physical-keyboard BB10 model."
+      "note": "Actual Q10, physical-keyboard BB10 model.",
+      "preparedSha256": "f6bbb2cf5462a09bce4d28357625c93b37eaaae8a3e17c929b0aa89a60a51ec9"
     },
     {
       "id": "q10-settings-2013",
@@ -894,7 +902,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/q10-settings-2013.jpg",
       "label": "BlackBerry Q10 · system settings",
-      "note": "Actual handset screen photographed in 2013."
+      "note": "Actual handset screen photographed in 2013.",
+      "preparedSha256": "40d0009e72735dd9e38847391e50c57e0480681d79f29eed01b90cdfa61cfa77"
     },
     {
       "id": "q10-white",
@@ -902,7 +911,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/q10-white.jpg",
       "label": "BlackBerry Q10 · white model",
-      "note": "640×480 source: use a framed object view rather than aggressive full-screen enlargement."
+      "note": "640×480 source: use a framed object view rather than aggressive full-screen enlargement.",
+      "preparedSha256": "949faec30a3f450bde55ef1b32464a9f1adc5c6fdeb1ab97e56a8da8b33aeae7"
     },
     {
       "id": "pda-collection-2006",
@@ -910,7 +920,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/pda-collection-2006.jpg",
       "label": "Mobile phones and PDAs · collection, 2006",
-      "note": "Context showing several devices. Its extracted BlackBerry crop is deliberately excluded as the same original photo."
+      "note": "Context showing several devices. Its extracted BlackBerry crop is deliberately excluded as the same original photo.",
+      "preparedSha256": "e91076151e836ec9dee14173a08159ab600ea70d75251ca9016bfbf980bca4ec"
     },
     {
       "id": "jobs-macworld-2007-a",
@@ -918,7 +929,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/jobs-macworld-2007-a.jpg",
       "label": "Steve Jobs · Macworld, January 2007",
-      "note": "Actual announcement event."
+      "note": "Actual announcement event.",
+      "preparedSha256": "d276690fa3e5a4e0027cade39bffff04cc174254629eef8730410377164ffeba"
     },
     {
       "id": "jobs-macworld-2007-b",
@@ -926,7 +938,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/jobs-macworld-2007-b.jpg",
       "label": "Steve Jobs · Macworld, January 2007",
-      "note": "Separate photograph at the same event; avoid near-identical adjacent appearances."
+      "note": "Separate photograph at the same event; avoid near-identical adjacent appearances.",
+      "preparedSha256": "bbca926f44e25d0aa38e52a56c46e668db3c03b418c5f0c022e0de1ea9e18b1b"
     },
     {
       "id": "iphone-macworld-display-a",
@@ -934,7 +947,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-macworld-display-a.jpg",
       "label": "Original iPhone · Macworld, January 2007",
-      "note": "Original 2007 device, not a 3G/4/5C substitute."
+      "note": "Original 2007 device, not a 3G/4/5C substitute.",
+      "preparedSha256": "3f184b28abc3714da078ed5ad776f582597182e2a56616781cb986a87682b9a3"
     },
     {
       "id": "iphone-macworld-display-b",
@@ -942,7 +956,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-macworld-display-b.jpg",
       "label": "Original iPhone · Macworld, January 2007",
-      "note": "Separate capture of the display; only use if it shows a different detail worth explaining."
+      "note": "Separate capture of the display; only use if it shows a different detail worth explaining.",
+      "preparedSha256": "dbc6ef47243f29c661bbe8222f251edc126706c99924930ec06b48634112a572"
     },
     {
       "id": "iphone-macworld-crowd",
@@ -950,7 +965,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-macworld-crowd.jpg",
       "label": "Macworld crowd · January 2007",
-      "note": "Actual audience interest around the unveiled device."
+      "note": "Actual audience interest around the unveiled device.",
+      "preparedSha256": "f4dfbead847e797f91d9a187f2889e5c793c4ccfb7410628a371242a37f3d308"
     },
     {
       "id": "iphone-hands-on-2007",
@@ -966,7 +982,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-seattle-keyboard-2007.jpg",
       "label": "iPhone touchscreen keyboard · Seattle release, 2007",
-      "note": "Actual physical interaction with original software keyboard."
+      "note": "Actual physical interaction with original software keyboard.",
+      "preparedSha256": "c819317a9ee3779acebcacd0509dfe2ffaf6f9722c77eb079fcafbddb4f4df7d"
     },
     {
       "id": "iphone-buyers-2007",
@@ -974,7 +991,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-buyers-2007.jpg",
       "label": "iPhone buyers · June 29, 2007",
-      "note": "Actual launch-day customers, not actors."
+      "note": "Actual launch-day customers, not actors.",
+      "preparedSha256": "72bfe826528403839d28e681ab8023201e6c78b97837fdc35e887d2cb65ea9a5"
     },
     {
       "id": "iphone-user-2007",
@@ -982,7 +1000,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-user-2007.jpg",
       "label": "Original iPhone · July 2007",
-      "note": "Period user/device context; do not invent identity or a private opinion."
+      "note": "Period user/device context; do not invent identity or a private opinion.",
+      "preparedSha256": "a89f0097ab09ef2460d5e27e7d8e9dc6ebeb911f35ead19ef1f35e7387c65f13"
     },
     {
       "id": "iphone-original-front",
@@ -990,7 +1009,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/iphone-original-front.jpg",
       "label": "Original iPhone · preserved 8 GB handset",
-      "note": "Object reference photographed in 2012. Credit is Pavel Ševela, taken from Attribution rather than the promotional Artist template."
+      "note": "Object reference photographed in 2012. Credit is Pavel Ševela, taken from Attribution rather than the promotional Artist template.",
+      "preparedSha256": "ed047534d0ea700247d59527b8781eeb9020eb05eefcecad8b1e2caec247f831"
     },
     {
       "id": "iphone-original-detail",
@@ -1006,7 +1026,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/obama-blackberry-g8-2010.jpg",
       "label": "Barack Obama shows his BlackBerry · G8, 2010",
-      "note": "Official Pete Souza photograph. Editorial historical use; do not imply endorsement or invent the leaders' conversation."
+      "note": "Official Pete Souza photograph. Editorial historical use; do not imply endorsement or invent the leaders' conversation.",
+      "preparedSha256": "6b791939fcfeea942bfd956c8d2288117ebc3bb675af8583fd4ef4f9ac9065d5"
     },
     {
       "id": "pearl-8120-computex-2008",
@@ -1014,7 +1035,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/pearl-8120-computex-2008.jpg",
       "label": "BlackBerry 8120 · Computex, 2008",
-      "note": "Period trade-show product photograph."
+      "note": "Period trade-show product photograph.",
+      "preparedSha256": "76803fd39114da827d5df7a5c2c689089df6cac4f25b01f9d0eb2d56f3cab92e"
     },
     {
       "id": "pearl-8100-museum",
@@ -1030,7 +1052,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/pearl-3g-front-2010.jpg",
       "label": "BlackBerry Pearl 3G · 2010",
-      "note": "Specific Pearl family model, useful for expanding consumer line; do not substitute for Storm/Q10."
+      "note": "Specific Pearl family model, useful for expanding consumer line; do not substitute for Storm/Q10.",
+      "preparedSha256": "b3fb8aac2b5cbdf15ba0e1d69ce157de4922eb3a8d668e3e95eec98a817efe91"
     },
     {
       "id": "pearl-disassembled-2010",
@@ -1038,7 +1061,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/pearl-disassembled-2010.jpg",
       "label": "BlackBerry Pearl · disassembled, 2010",
-      "note": "Actual BlackBerry parts, replacing generic circuit imagery."
+      "note": "Actual BlackBerry parts, replacing generic circuit imagery.",
+      "preparedSha256": "38e206fb5a899a77a37c0d6e72a064569f88dbf0817c45d125244d935421763e"
     },
     {
       "id": "pearl-flip-2008",
@@ -1070,7 +1094,8 @@
       "kind": "image",
       "src": "assets/images/blackberry-redo/pearl-owner-2006.jpg",
       "label": "BlackBerry Pearl · October 2006",
-      "note": "Period owner photograph, useful for consumer adoption. Do not invent an owner quotation or opinion."
+      "note": "Period owner photograph, useful for consumer adoption. Do not invent an owner quotation or opinion.",
+      "preparedSha256": "ed6d7bf91ce450e01a72575f0ca21e206c8cbb99e4402364a2eae930e7f06d11"
     },
     {
       "id": "voa-heins-two-devices",
@@ -1148,7 +1173,8 @@
       "sourceId": "pager-850-museum",
       "src": "assets/images/blackberry-redo/pager-850-museum.jpg",
       "label": "BlackBerry 850 — museum handset",
-      "note": "Derived crop of the existing PDA collection photo; shares exactly the same reuse allowance. Photograph capture date follows the original, not derivative upload metadata."
+      "note": "Derived crop of the existing PDA collection photo; shares exactly the same reuse allowance. Photograph capture date follows the original, not derivative upload metadata.",
+      "preparedSha256": "be4805aba078f9b659b6cfcdf7ef9cc604ba81b943b7e1b26555159464d78732"
     },
     {
       "id": "rim-957-front",
@@ -1156,7 +1182,8 @@
       "sourceId": "rim-957-front",
       "src": "assets/images/blackberry-redo/rim-957-front.jpg",
       "label": "BlackBerry 957 — preserved handset",
-      "note": "Later photograph of preserved hardware; do not describe it as a photograph taken in 1999."
+      "note": "Later photograph of preserved hardware; do not describe it as a photograph taken in 1999.",
+      "preparedSha256": "a968ce3bef1e12eb78c26e1308a2690fb7f3ab8e0d4d6b7b3131e921380d5b6e"
     },
     {
       "id": "android-g1-open",
@@ -1164,7 +1191,8 @@
       "sourceId": "android-g1-open",
       "src": "assets/images/blackberry-redo/android-g1-open.jpg",
       "label": "HTC Dream / T-Mobile G1 — Android",
-      "note": "Photographed in 2009; period Android hardware, not the 2008 launch event."
+      "note": "Photographed in 2009; period Android hardware, not the 2008 launch event.",
+      "preparedSha256": "65e0368f8c7b6dc27841fc392befd2861966a6b0b921c07a294ca91bacf0324f"
     },
     {
       "id": "android-g1-launch-2008",
@@ -1172,7 +1200,8 @@
       "sourceId": "android-g1-launch-2008",
       "src": "assets/images/blackberry-redo/android-g1-launch-2008.jpg",
       "label": "T-Mobile G1 launch — September 2008",
-      "note": "Actual 2008 launch-event photograph showing Android calendar on the G1."
+      "note": "Actual 2008 launch-event photograph showing Android calendar on the G1.",
+      "preparedSha256": "c1c5fed4fc4e136853dcc42eb1f6aef8d496f62d19b28d61c5617803247b3b2f"
     },
     {
       "id": "bb10-dev-alpha-2012",
@@ -1180,7 +1209,8 @@
       "sourceId": "bb10-dev-alpha-2012",
       "src": "assets/images/blackberry-redo/bb10-dev-alpha-2012.jpg",
       "label": "BlackBerry 10 Dev Alpha | June2012",
-      "note": "Actual development prototype, June2012. Low-resolution source366x336; use as a documentary inset, not an aggressively enlarged full-screen hero. It is not the retail Z10 release."
+      "note": "Actual development prototype, June2012. Low-resolution source366x336; use as a documentary inset, not an aggressively enlarged full-screen hero. It is not the retail Z10 release.",
+      "preparedSha256": "95dcd2a8b877ac647c186500b182616e2aeb229c218fc6090e0d2bcc916bbcf7"
     }
   ],
   "selectionNotes": [

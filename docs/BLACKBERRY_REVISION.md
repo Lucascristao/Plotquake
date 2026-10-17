@@ -28,3 +28,5 @@ Textos técnicos CC0/CC BY-SA e nomes de catálogo ficam fora da imagem. Autoria
 O workflow oferece uma execução opcional `prepare_only` para pesquisar/preparar o acervo, gerar o master e produzir trechos curtos de conferência na nuvem. É uma ferramenta de desenvolvimento desta revisão, sem aprovação obrigatória. A produção normal continua enviando o filme, capa e pacote ao Drive; publicação no YouTube continua manual.
 
 Quadros dos documentos e do componente explicativo foram inspecionados em 1080p. Testes técnicos verificam voz completa, offsets, ganhos e duração. Não houve visualização/audição integral da nova versão antes do seu render. Concluir BlackBerry, conferir a entrega e só depois iniciar a revisão do ITT.
+
+A primeira prévia de nuvem (`38990214485`, commit `8924968`) parou antes do render por HTTP429 ao recuperar uma foto do Wikimedia. As 30 fotografias selecionadas que já estavam baixadas/inspecionadas passam a viajar no repositório, com SHA256 no manifesto e verificação local, sem solicitar novamente as mesmas miniaturas. Vídeos pesados continuam sendo preparados na nuvem. Isso não gera nova narração nem altera entregas anteriores.
