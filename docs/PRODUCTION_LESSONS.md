@@ -30,8 +30,40 @@ O episódio de 21min29,5s foi entregue ao Drive pela execução [38942950141](ht
 
 ## Como retomar o trabalho
 
+**Atualização de escopo — 17/10/2026:** o usuário considera o vídeo atual do BlackBerry concluído e declarou que não o editará. A orientação de retomada abaixo registra a revisão autorizada em 16/10 e não autoriza reabrir o filme agora. Aplicar os novos aprendizados narrativos às próximas pautas, conforme o registro ao final deste documento e o AGENTS.md. Mudanças de título, capa e descrição seguem o pedido específico do usuário.
+
 Trabalhar somente no BlackBerry até concluir sua nova entrega e conferência. O ITT compartilha mecanismos que produziram os problemas e deve ser revisto depois; ter arquivo e dois documentos inseridos não garante por si só boa montagem. Preservar entregas antigas como referência, não publicá-las automaticamente e não reiniciar execuções alheias à revisão autorizada. A entrega continua sendo ao Google Drive, com publicação manual pelo usuário.
 
 ## Registro da correção
 
 A nova autoria, o reaproveitamento de voz e os limites reais de verificação do BlackBerry estão em [BLACKBERRY_REVISION.md](BLACKBERRY_REVISION.md). A técnica de som está em [AUDIO_DIRECTION.md](AUDIO_DIRECTION.md). A primeira entrega não foi apagada nem tratada como corrigida apenas porque novas regras foram documentadas.
+
+## Aprendizados narrativos para as próximas pautas — 17/10/2026
+
+Este registro parte das observações editoriais feitas pelo usuário sobre o BlackBerry, não de uma nova audição ou visualização integral pelo agente. O pedido foi desenvolver esses aprendizados para os próximos vídeos, preservando o filme atual. As diretrizes canônicas estão na seção **Direção de pauta para os próximos documentários** do [AGENTS.md](../AGENTS.md).
+
+### Fazer sentir o peso dos acontecimentos
+
+O usuário considerou a explicação clara e tecnicamente cuidadosa, mas percebeu passagens próximas de uma reportagem empresarial: os fatos avançavam antes que sua importância se tornasse concreta. Citou a provisão de aproximadamente US$485 milhões relacionada ao PlayBook como exemplo de um resultado que precisava de mais espaço narrativo.
+
+Nas próximas pautas, pesquisar e desenvolver a distância entre o que uma decisão prometia e o que de fato entregou. Uma cifra ganha dimensão quando o espectador compreende a aposta anterior e a consequência documentada: um lançamento perde força, uma solução continua incompleta, um prazo se estreita ou uma alternativa fica mais difícil. Selecionar a consequência que as fontes permitem demonstrar. No exemplo do PlayBook, a provisão pode ser relacionada ao estoque, à competição e ao atraso de software documentados, mantendo sua natureza predominantemente não monetária; não a apresentar como US$485 milhões saindo do caixa, nem inventar empregos perdidos ou recursos que teriam financiado outro produto. Esse exemplo orienta a escrita futura e não é uma proposta de remontagem do BlackBerry.
+
+### Manter a pergunta central presente durante a origem
+
+O usuário apontou risco de dispersão nos primeiros quatro minutos: depois da cobrança de US$934 milhões na abertura, a história volta a 1984 e percorre email, teclado, BBM e modelo comercial. Esses antecedentes têm valor, mas podem afastar por muito tempo a pergunta de quem clicou para compreender a perda do mercado.
+
+Nas próximas histórias, apresentar o contexto junto de sua função no conflito. A origem de uma vantagem ajuda a compreender por que ela se tornou valiosa, por que pessoas dependeram dela e o que dificultaria substituí-la. Distribuir os antecedentes à medida que a história precisa deles, mantendo a questão inicial reconhecível sem repetir o gancho. Não adotar quatro minutos como teto de introdução, nem obrigar toda biografia, investigação ou história de lugar a antecipar uma queda. O interesse precisa continuar se desenvolvendo enquanto o espectador aprende o contexto.
+
+### Transformar nomes em pessoas diante de escolhas
+
+O usuário percebeu Lazaridis, Balsillie, Jobs e Heins sobretudo como nomes associados a decisões corporativas. Para as próximas pautas, a pesquisa deve buscar o que tornava uma escolha plausível e o que estava em risco quando ela foi feita: resultados que a sustentavam, obrigações assumidas, limitações conhecidas, alternativas disponíveis e divergências públicas documentadas.
+
+Uma decisão pode ter boas razões à época e produzir um resultado ruim. Explicar essa distância evita tratar personagens como pessoas que deveriam conhecer o futuro. Usar declarações públicas com fonte e contexto; atribuir o que um personagem efetivamente disse, separar análise de intenção comprovada e preservar as incertezas. Não preencher lacunas com pensamentos, diálogos ou conflitos privados inventados. Essa abordagem também vale para pesquisadores, testemunhas, moradores, trabalhadores e outras pessoas que a pauta colocar no centro.
+
+### Variar a arquitetura da narração
+
+O usuário identificou a repetição de uma mesma construção: data, descrição do acontecimento e frase explicando sua importância. A clareza deve permanecer, com variedade na maneira de conduzir a experiência. Em alguns momentos, começar pela consequência e reconstruir a decisão pode ser mais expressivo; em outros, acompanhar uma ação, observar um objeto, apresentar uma declaração documentada ou explicar uma limitação funciona melhor. A cronologia continua disponível quando servir à história.
+
+Variar extensão de frases, duração das explicações e proximidade dos personagens de acordo com o conteúdo. Dar tempo para compreender uma revelação antes de avançar, com pausas de sentido e direção vocal específica. Não trocar o padrão antigo por um novo rodízio obrigatório, uma pergunta a cada cena ou frases de efeito constantes. A progressão deve vir das relações entre os fatos, não de conectivos de suspense nem de uma trilha que tente compensar uma escrita uniforme.
+
+Esses aprendizados foram incorporados às instruções de autoria. Este registro não demonstra aplicação em um novo filme, não altera o BlackBerry e não cria testes automáticos, contratos editoriais ou etapas adicionais de aprovação.

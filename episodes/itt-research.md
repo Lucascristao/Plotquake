@@ -2,6 +2,8 @@
 
 Episode source: [itt.json](./itt.json). Research accessed October 16, 2026.
 
+Revision analysis resumed October 17, 2026: see [ITT_REVISION.md](../docs/ITT_REVISION.md) for the scene-specific narrative diagnosis, media-reuse findings, and additional Senate/OPIC evidence. Those recommendations are planned changes, not a rewritten source or a newly rendered film. The October 16 production notes below remain a historical record of that version.
+
 The film's promise is a documented offer, followed by the much less familiar corporate story behind it. The title is **The Phone Company That Offered the CIA $1 Million**. It does not promise that ITT purchased the CIA, bought a government, or paid for Chile's 1973 coup.
 
 The source contains 40 scenes and four flexible acts. Its 2,896 narration words suggest roughly 21 minutes at 140 words per minute; the synthesized WAV files determine the actual duration and chapters. There are three additional chapter entries, making seven chapter entries with the four act openings. There is no duration ceiling or narration padding.

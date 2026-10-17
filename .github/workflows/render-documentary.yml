@@ -106,6 +106,23 @@ jobs:
             plotquake-voice-v2-${{ hashFiles('episodes/*.json', 'worker/synthesize_narration.py') }}-
             plotquake-voice-v2-
 
+      - name: Reuse previously prepared source media
+        uses: actions/cache@v4
+        with:
+          path: |
+            out/media-cache/blackberry-redo
+            public/assets/images/blackberry-redo
+            public/assets/video/blackberry-redo
+            out/media-cache/itt-revision
+            public/assets/images/itt-revision
+            public/assets/video/itt-revision
+          key: plotquake-source-media-v1-${{ hashFiles('episodes/*media-manifest.json', 'episodes/itt-revision-media-plan.json', 'worker/prepare_blackberry_media.py', 'worker/prepare_itt_revision_media.py') }}
+          restore-keys: |
+            plotquake-source-media-v1-
+
+      - name: Prepare this episode's selected source assets before speech synthesis
+        run: python worker/prepare_episode.py --episode "$EPISODE_PATH" --media-only
+
       - name: Narrate the episode with Charon and canonical baritone pitch
         run: python worker/synthesize_narration.py --episode "$EPISODE_PATH"
 
@@ -115,17 +132,6 @@ jobs:
         with:
           path: ${{ steps.episode.outputs.audio_dir }}
           key: ${{ steps.episode.outputs.voice_key }}-${{ github.run_id }}-${{ github.run_attempt }}
-
-      - name: Reuse previously prepared source media
-        uses: actions/cache@v4
-        with:
-          path: |
-            out/media-cache/blackberry-redo
-            public/assets/images/blackberry-redo
-            public/assets/video/blackberry-redo
-          key: plotquake-source-media-v1-${{ hashFiles('episodes/*media-manifest.json', 'worker/prepare_blackberry_media.py') }}
-          restore-keys: |
-            plotquake-source-media-v1-
 
       - name: Prepare selected archival media, measured timeline and directed score
         run: python worker/prepare_episode.py --episode "$EPISODE_PATH"
@@ -166,6 +172,8 @@ jobs:
             public/assets/audio/*-score-directed.json
             public/assets/images/blackberry-redo/
             public/assets/video/blackberry-redo/
+            public/assets/images/itt-revision/
+            public/assets/video/itt-revision/
             public/assets/audio/chapter_transition.wav
             public/assets/audio/reveal_accent.wav
             renders/render_plan.json
@@ -272,6 +280,20 @@ jobs:
           merge-multiple: true
       - name: Join the complete video and copy its continuous audio master
         run: python worker/render_documentary.py assemble
+
+      - name: Extract inspection samples from the completed MP4
+        continue-on-error: true
+        run: python worker/inspect_final_documentary.py --video renders/documentary_final.mp4 --timeline src/episodes/renderEpisode.json --output-dir renders/review-final
+
+      - name: Preserve final-file inspection samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-inspection-${{ github.run_id }}
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: warn
+          path: renders/review-final/
 
       - name: Deliver the complete package to Google Drive
         run: |

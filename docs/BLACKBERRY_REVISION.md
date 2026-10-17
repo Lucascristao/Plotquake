@@ -2,6 +2,8 @@
 
 Estado: montagem autorada e integração técnica preparadas; prévia em nuvem e nova entrega final ainda pendentes neste registro. Não confundir com a primeira entrega, já concluída no Drive.
 
+**Orientação posterior — 17/10/2026:** o usuário declarou que o vídeo atual já está feito e não será editado. O estado acima e as instruções de retomada abaixo são o registro histórico de 16/10, não uma autorização vigente para nova revisão do filme. Aplicar os [aprendizados narrativos de 17/10](PRODUCTION_LESSONS.md#aprendizados-narrativos-para-as-próximas-pautas--17102026) às próximas pautas. Essa decisão de escopo não equivale a uma nova verificação audiovisual ou confirmação de entrega pelo agente.
+
 ## Decisões aplicadas na fonte
 
 - Título: **BlackBerry's $20 Billion Trap**. Os US$20 bilhões arredondam a receita anual de US$19,9 bilhões de 2011; não representam perda de caixa nem valor de mercado.

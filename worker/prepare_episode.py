@@ -15,8 +15,16 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--episode", required=True, type=Path)
     parser.add_argument("--output", type=Path, default=Path("src/episodes/renderEpisode.json"))
+    parser.add_argument("--media-only", action="store_true", help="Prepare selected source assets before synthesis.")
     args = parser.parse_args()
     source = json.loads(args.episode.read_text(encoding="utf-8-sig"))
+    if source.get("mediaPreparationPlan"):
+        subprocess.run([sys.executable, "worker/prepare_itt_revision_media.py",
+                        "--plan", str(source["mediaPreparationPlan"]),
+                        "--catalog", "public/assets/media/catalog.json", "--public-root", "public",
+                        "--cache-dir", "out/media-cache/itt-revision"], check=True)
+    if args.media_only:
+        return
     catalog = json.loads(Path("public/assets/media/catalog.json").read_text(encoding="utf-8-sig"))
     media_manifest = source.get("mediaManifest")
     if media_manifest:

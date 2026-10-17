@@ -6,6 +6,8 @@ O Plotquake produz documentários originais em inglês americano sobre pessoas, 
 
 A pauta determina a forma: uma guerra de marcas pode acompanhar decisões e reações; uma biografia, uma trajetória; uma investigação, evidências e hipóteses; a história de um lugar, o território, suas pessoas e transformações. Quatro atos são uma possibilidade. Quantidade de partes, cenas, duração e ritmo acompanham cada história.
 
+Para as próximas pautas, consultar também a seção **Direção de pauta para os próximos documentários** do [AGENTS.md](../AGENTS.md): pergunta central com progressão, contextualização ligada à promessa inicial, escolhas humanas documentadas, consequências compreensíveis e variedade na escrita para narração. A origem desses aprendizados está no [registro de produção de 17/10/2026](PRODUCTION_LESSONS.md#aprendizados-narrativos-para-as-próximas-pautas--17102026). O usuário encerrou alterações de vídeo no BlackBerry; essas orientações não reabrem o filme.
+
 A produção busca vídeos junto às fotos, documentos, mapas e gráficos, com função narrativa e procedência registrada. Narração, música, ambientes, pausas, montagem e capa recebem tratamento adequado ao episódio. A identidade dourada/âmbar é comum ao canal; ela permite capas e cenas fotográficas naturais.
 
 Para voz Charon, calibração de -1 semitom, duração mínima real, fontes, identificação de reconstruções, capas, produção no GitHub Actions, recuperação de blocos e entrega somente ao Drive, seguir as seções correspondentes de [AGENTS.md](../AGENTS.md). A publicação no YouTube é manual.

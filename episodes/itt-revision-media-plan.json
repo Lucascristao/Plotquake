@@ -1,0 +1,3033 @@
+{
+  "version": 1,
+  "episodeId": "itt-million-dollar-offer",
+  "purpose": "Authored archive for the ITT revision. Heavy preparation runs in GitHub Actions. No generated historical people or fake documents.",
+  "limitations": [
+    "No reusable licensed Chile 1970 election or 1973 ITT hearing motion footage was secured. Bell System footage is identified only as American telephone-industry context; historical Chile passages use authentic photographs and original documents.",
+    "No verified reusable Harold Geneen or William Broe portrait was secured. Their actions are shown through genuine documentary records and labeled explanatory diagrams, without invented faces."
+  ],
+  "sources": [
+    {
+      "id": "cabinet",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/AllendeMinistros.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:AllendeMinistros.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:AllendeMinistros.jpg",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "1970",
+      "expectedBytes": 162555,
+      "localSource": "assets/documents/itt-revision/originals/cabinet.jpg",
+      "expectedSha256": "c85f7cd82817d0ce7f29cbcdfe9b530213a0c0ed7c06143faebcf62a8a4e5c33"
+    },
+    {
+      "id": "night",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/El_d%C3%ADa_que_gan%C3%B3_Allende.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende.jpg",
+      "author": "Paul Lowry from New York, EEUU de A",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "captureDate": "1970-09-04 00:57",
+      "expectedBytes": 1437192,
+      "localSource": "assets/documents/itt-revision/originals/night.jpg",
+      "expectedSha256": "2646342d24796ca01958ccc6d67707312a56d60f35fd33d550b9af278ec8a924"
+    },
+    {
+      "id": "night2",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/El_d%C3%ADa_que_gan%C3%B3_Allende_Edificio_de_la_FECH.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende_Edificio_de_la_FECH.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende_Edificio_de_la_FECH.jpg",
+      "author": "Paul Lowry",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "captureDate": "1970-09-04 15:00:55",
+      "expectedBytes": 6649111,
+      "localSource": "assets/documents/itt-revision/originals/night2.jpg",
+      "expectedSha256": "9549ad9f1b5ec2c3c12df5463444756a2e0c93bba18ec58a757ae8ab944aa1a2"
+    },
+    {
+      "id": "investiture",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Salvador_Allende_es_elegido_Presidente_de_la_Rep%C3%BAblica.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_es_elegido_Presidente_de_la_Rep%C3%BAblica.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_es_elegido_Presidente_de_la_Rep%C3%BAblica.jpg",
+      "author": "Biblioteca del Congreso Nacional de Chile",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "captureDate": "1970-11-04",
+      "expectedBytes": 326398,
+      "expectedSha1": "9848d331793d12276ff49eb1f694128319dc9324",
+      "localSource": "assets/documents/itt-revision/originals/investiture.jpg",
+      "expectedSha256": "147f937eec7f0aa748c587965b20f6b3310a7a09e5b8b570e9ec41305d0db113"
+    },
+    {
+      "id": "peru",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Salvador_Allende%2C_Velasco_Alvarado_y_Clodomiro_Almeyda.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_Velasco_Alvarado_y_Clodomiro_Almeyda.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_Velasco_Alvarado_y_Clodomiro_Almeyda.jpg",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "1970",
+      "expectedBytes": 57014,
+      "localSource": "assets/documents/itt-revision/originals/peru.jpg",
+      "expectedSha256": "02642d7e67cf285cc34a1c2117ee6ea285580e731a0604ea17c7c7f61cb8006a"
+    },
+    {
+      "id": "rojas",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gonzalo_Rojas_con_el_Presidente_Salvador_Allende_%281970%29.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Gonzalo_Rojas_con_el_Presidente_Salvador_Allende_(1970).jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Gonzalo_Rojas_con_el_Presidente_Salvador_Allende_(1970).jpg",
+      "author": "Fundacion Gonzalo Rojas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "captureDate": "2009-04-13 16:04:08",
+      "expectedBytes": 2574846,
+      "expectedSha1": "b13ae9320a4da8534f083c97ec96be3b8a957e6b",
+      "localSource": "assets/documents/itt-revision/originals/rojas.jpg",
+      "expectedSha256": "668fe9de034d8ea5b27c2d88d295f36104fd9675c27716e47bc36f8a458c605d"
+    },
+    {
+      "id": "allende-portrait",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Allende_1970-1973.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Allende_1970-1973.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Allende_1970-1973.jpg",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "between 1970 and 1973date QS:P,+1970-00-00T00:00:00Z/8,P1319,+1970-00-00T00:00:00Z/9,P1326,+1973-00-00T00:00:00Z/9",
+      "expectedBytes": 101284,
+      "expectedSha1": "444aa31791ca6c21f9b79c751f00f93a6656322c",
+      "localSource": "assets/documents/itt-revision/originals/allende-portrait.jpg",
+      "expectedSha256": "4915993422d6404b646c108b6909f5f3c95d8319cc520ff83dcad78c271e05d9"
+    },
+    {
+      "id": "allende-bcn",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Salvador_Allende-BCN.JPG",
+      "original": "https://commons.wikimedia.org/wiki/File:Salvador_Allende-BCN.JPG",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende-BCN.JPG",
+      "author": "Biblioteca del Congreso Nacional de Chile",
+      "license": "CC BY 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/cl/deed.en",
+      "captureDate": "circa 1970date QS:P,+1970-00-00T00:00:00Z/9,P1480,Q5727902",
+      "expectedBytes": 796133,
+      "expectedSha1": "40d247609b904dea7d70799b69ffe4e008760997",
+      "localSource": "assets/documents/itt-revision/originals/allende-bcn.JPG",
+      "expectedSha256": "923905e12d626954b659555b1e792d4ee9bdffbe85c36831c990a84fdcdde30e"
+    },
+    {
+      "id": "allende-speech",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Salvador_Allende_-_Fc-011547.png",
+      "original": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_-_Fc-011547.png",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_-_Fc-011547.png",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "circa 1970date QS:P,+1970-00-00T00:00:00Z/9,P1480,Q5727902",
+      "expectedBytes": 8469604,
+      "expectedSha1": "ae4943f61709f8b35cc0006a29bfe34857e55aeb",
+      "localSource": "assets/documents/itt-revision/originals/allende-speech.png",
+      "expectedSha256": "c18111a2a21b98cdd41be09badaaab7cdc56743a3af97b3703723907578f5167"
+    },
+    {
+      "id": "copper",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Salvador_Allende_en_Rancagua_por_nacionalizaci%C3%B3n_del_cobre.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_en_Rancagua_por_nacionalizaci%C3%B3n_del_cobre.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_en_Rancagua_por_nacionalizaci%C3%B3n_del_cobre.jpg",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "1971-07-11",
+      "expectedBytes": 533475,
+      "expectedSha1": "9ce697fb34436b63b10ffdf900178282ca3693de",
+      "localSource": "assets/documents/itt-revision/originals/copper.jpg",
+      "expectedSha256": "9a2339d9e74464cc0fa49c10faaf21a5cc8e4de6bd7c9e422e716fe9f5a8f876"
+    },
+    {
+      "id": "anderson",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jack_Anderson%2C_RIT_NandE_1973_May4_Complete.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Jack_Anderson,_RIT_NandE_1973_May4_Complete.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Jack_Anderson,_RIT_NandE_1973_May4_Complete.jpg",
+      "author": "Rochester Institute of Technology",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AJack_Anderson%2C_RIT_NandE_1973_May4_Complete.jpg",
+      "captureDate": "1973-05-04",
+      "expectedBytes": 514738,
+      "expectedSha1": "365f0bca58d2b4e6ba5155c8c423f96edb1f69c3",
+      "localSource": "assets/documents/itt-revision/originals/anderson.jpg",
+      "expectedSha256": "1d0b0ecdad5dcbf83cd5cfde0748f91a09c4f17dc0179ea1c8c0241077bc32bb"
+    },
+    {
+      "id": "letelier",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Orlando_Letelier%2C_Washingron_DC%2C_1976_%28de_Marcelo_Montecino%29.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Orlando_Letelier,_Washingron_DC,_1976_(de_Marcelo_Montecino).jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Orlando_Letelier,_Washingron_DC,_1976_(de_Marcelo_Montecino).jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "captureDate": "",
+      "expectedBytes": 1614726
+    },
+    {
+      "id": "helms-cia",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/DCI_Richard_Helms_Kudos_early1970s_%2830768944602%29.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:DCI_Richard_Helms_Kudos_early1970s_(30768944602).jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:DCI_Richard_Helms_Kudos_early1970s_(30768944602).jpg",
+      "author": "Central Intelligence Agency from Washington, D.C.",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3ADCI_Richard_Helms_Kudos_early1970s_(30768944602).jpg",
+      "captureDate": "2016-11-09 16:45",
+      "expectedBytes": 608615,
+      "expectedSha1": "9d13ce7747becc39f6ddf281dda18929adbda013"
+    },
+    {
+      "id": "excomm",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Cuba_Missile_Crisis.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:The_Cuba_Missile_Crisis.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:The_Cuba_Missile_Crisis.jpg",
+      "author": "Cecil Stoughton. White House Photographs",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Cuba_Missile_Crisis.jpg",
+      "captureDate": "1962-10-29",
+      "expectedBytes": 141051,
+      "expectedSha1": "8908612a02febb73b7e537031cb447e9b456ed3d"
+    },
+    {
+      "id": "allende-voting",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/SalvadorAllende1973.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:SalvadorAllende1973.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:SalvadorAllende1973.jpg",
+      "author": "Biblioteca del Congreso Nacional - Chile",
+      "license": "CC BY-SA 3.0 cl",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/cl/deed.en",
+      "captureDate": "1973",
+      "expectedBytes": 368087
+    },
+    {
+      "id": "church2",
+      "kind": "image",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Church_Sen_Frank_Shot_2.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Church_Sen_Frank_Shot_2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Church_Sen_Frank_Shot_2.jpg",
+      "author": "The Salt Lake Tribune",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AChurch_Sen_Frank_Shot_2.jpg",
+      "captureDate": "1960-10-29",
+      "expectedBytes": 106413
+    },
+    {
+      "id": "senate-1973",
+      "kind": "document",
+      "downloadUrl": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "original": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf",
+      "author": "U.S. Senate · Committee on Foreign Relations · 1973",
+      "license": "Public domain · U.S. Government work",
+      "licenseUrl": "https://www.govinfo.gov/about/policies",
+      "maxDownloadBytes": 25000000,
+      "localSource": "assets/documents/itt-revision/senate-itt-1973.pdf",
+      "expectedSha256": "8a3fa076a8ce00359f9cb981b18a75ccf114080d94ca8b330d189bd936f3d9f5"
+    },
+    {
+      "id": "frus21",
+      "kind": "document",
+      "downloadUrl": "https://static.history.state.gov/frus/frus1969-76v21/pdf/frus1969-76v21.pdf",
+      "original": "https://history.state.gov/historicaldocuments/frus1969-76v21",
+      "reuseFamily": "frus1969-76v21",
+      "author": "U.S. Department of State · Foreign Relations of the United States",
+      "license": "Public domain · U.S. Government work",
+      "licenseUrl": "https://history.state.gov/about/faq",
+      "maxDownloadBytes": 60000000,
+      "localSource": "assets/documents/itt-revision/frus21.pdf",
+      "expectedSha256": "251bda4f4719a38a1f1c3356dc98a8c13e4d2aac534554848d38a1bf770fb6d8"
+    },
+    {
+      "id": "dfc-ledger",
+      "kind": "document",
+      "downloadUrl": "https://www.dfc.gov/sites/default/files/2019-12/DFC_OPIC_Claims_Arbitral_Awards_2019.pdf",
+      "original": "https://www.dfc.gov/sites/default/files/2019-12/DFC_OPIC_Claims_Arbitral_Awards_2019.pdf",
+      "reuseFamily": "https://www.dfc.gov/sites/default/files/2019-12/DFC_OPIC_Claims_Arbitral_Awards_2019.pdf",
+      "author": "Overseas Private Investment Corporation / U.S. International Development Finance Corporation, Claims and Arbitral Awards, FY1966–FY2019, PDF p.5, ITT/Chile row. U.S. Government publication; public domain.",
+      "license": "Public domain · U.S. Government work",
+      "licenseUrl": "https://www.dfc.gov/sites/default/files/2019-12/DFC_OPIC_Claims_Arbitral_Awards_2019.pdf",
+      "maxDownloadBytes": 50000000,
+      "localSource": "assets/documents/itt-revision/originals/dfc-ledger.pdf",
+      "expectedSha256": "f54bcd1ba94882335dced016ef95ff853c4803aa1cd225f0ae4a511560e3104a"
+    }
+  ],
+  "assets": [
+    {
+      "key": "itt_rev_phone",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/rotary_phone-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:WE500dialphone.jpg",
+      "caption": "Preserved rotary telephone",
+      "display": {
+        "caption": "Preserved rotary telephone",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_mccone",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/john_mccone-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:John_McCone.jpg",
+      "caption": "John McCone · former CIA director",
+      "display": {
+        "caption": "John McCone · former CIA director",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_mccone2",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/john_mccone-2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:HD.3F.131_(11237959596).jpg",
+      "caption": "John McCone with Eugene Wigner · 1958",
+      "display": {
+        "caption": "John McCone with Eugene Wigner · 1958",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_helms",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/richard-helms-1968.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Advisors,_CIA_Director_Richard_Helms_-_NARA_-_192536.tif",
+      "caption": "Richard Helms · CIA director",
+      "display": {
+        "caption": "Richard Helms · CIA director",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_cia",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/cia_headquarters-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_CIA_headquarters,_Langley,_Virginia_14348v.jpg",
+      "caption": "CIA headquarters · Langley, Virginia",
+      "display": {
+        "caption": "CIA headquarters · Langley, Virginia",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_itt1",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt_building-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:ITT_HQ_75_Broad_St_entry_jeh.jpg",
+      "caption": "Former ITT headquarters · later photograph",
+      "display": {
+        "caption": "Former ITT headquarters · later photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_itt2",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt_building-2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:75_Broad_SW_door_jeh_detail.JPG",
+      "caption": "Former ITT headquarters · later photograph",
+      "display": {
+        "caption": "Former ITT headquarters · later photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_itt3",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt_building-3.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:ITT_Building.jpg",
+      "caption": "Former ITT building · later photograph",
+      "display": {
+        "caption": "Former ITT building · later photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_allende",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/allende-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_President_of_Chile,_gtfy.00154.jpg",
+      "caption": "Salvador Allende · United Nations",
+      "display": {
+        "caption": "Salvador Allende · United Nations",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_allende2",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/allende-2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_President_of_Chile,_gtfy.00151.jpg",
+      "caption": "Salvador Allende",
+      "display": {
+        "caption": "Salvador Allende",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_allende3",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/allende-3.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Gabinete_allende_2_1024.jpg",
+      "caption": "Salvador Allende",
+      "display": {
+        "caption": "Salvador Allende",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_santiago1",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/santiago-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Aspectos_gerais_da_paisagem,_Casa_de_Oswaldo_Cruz_(DL-VP-RF-04-115).jpg",
+      "caption": "Santiago · archival photograph",
+      "display": {
+        "caption": "Santiago · archival photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_santiago2",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/santiago-2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Aspectos_gerais_da_paisagem,_Casa_de_Oswaldo_Cruz_(DL-VP-RF-04-117).jpg",
+      "caption": "Plaza de Armas, Santiago · circa 1970",
+      "display": {
+        "caption": "Plaza de Armas, Santiago · circa 1970",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_santiago3",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/santiago_late1970s-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Santiago_(seggewiss-santiago).jpg",
+      "caption": "Santiago · late 1970s",
+      "display": {
+        "caption": "Santiago · late 1970s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_sheraton",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/sheraton-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Sheraton-Charles_Hotel_New_Orleans_postcard.jpg",
+      "caption": "Sheraton-Charles Hotel · 1960s postcard",
+      "display": {
+        "caption": "Sheraton-Charles Hotel · 1960s postcard",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_teletype",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt-teletype.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:ITT_Intelex_Teletype_L015.jpg",
+      "caption": "Preserved ITT teletype · 1967 equipment",
+      "display": {
+        "caption": "Preserved ITT teletype · 1967 equipment",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_card",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt-pentaconta-card.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:80-column_punched_card_edited_by_sub-assemblies_of_a_Pentaconta_electromechanical_telephone_exchange.jpg",
+      "caption": "Preserved Pentaconta switching equipment",
+      "display": {
+        "caption": "Preserved Pentaconta switching equipment",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_switchboard",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/switchboard-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Placing_a_telephone_call_at_Fort_Dix_A.jpg",
+      "caption": "Telephone switchboard · archival context",
+      "display": {
+        "caption": "Telephone switchboard · archival context",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_network1",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/telephone_network-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Westernelectricmodel500networkcloseupDSCN0258.JPG",
+      "caption": "Telephone infrastructure · contextual photograph",
+      "display": {
+        "caption": "Telephone infrastructure · contextual photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_network2",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/telephone_network-2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:1951westernelectricmodel500leftsideDSCN0257.JPG",
+      "caption": "Telephone infrastructure · contextual photograph",
+      "display": {
+        "caption": "Telephone infrastructure · contextual photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_moneda",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/la_moneda-1.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg",
+      "caption": "La Moneda · September 11, 1973",
+      "display": {
+        "caption": "La Moneda · September 11, 1973",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_nixon",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/richard-nixon-1972.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Richard_Nixon_presidential_portrait_(1).jpg",
+      "caption": "Richard Nixon · 1972",
+      "display": {
+        "caption": "Richard Nixon · 1972",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_kissinger",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/henry-kissinger-1973-1977.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Henry_A._Kissinger,_U.S._Secretary_of_State,_1973-1977.jpg",
+      "caption": "Henry Kissinger · later portrait",
+      "display": {
+        "caption": "Henry Kissinger · later portrait",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_nixonmeeting",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/nixon-kissinger-kraemer-1970.png",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Pentagon_strategist_Fritz_G.A._Kraemer,_National_Security_Advisor_Henry_Kissinger,_and_President_Richard_Nixon_at_Oval_Office_in_The_White_House.png",
+      "caption": "Nixon and Kissinger · 1970 White House photograph",
+      "display": {
+        "caption": "Nixon and Kissinger · 1970 White House photograph",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_alessandri",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/jorge-alessandri-ca1960.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Retrato_de_Jorge_Alessandri.JPG",
+      "caption": "Jorge Alessandri · circa 1960",
+      "display": {
+        "caption": "Jorge Alessandri · circa 1960",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_frei",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/eduardo-frei-cabinet-ca1966.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Eduardo_Frei_Montalva_saluda_a_su_Gabinete_de_ministros.jpg",
+      "caption": "Eduardo Frei and his cabinet · circa 1966",
+      "display": {
+        "caption": "Eduardo Frei and his cabinet · circa 1966",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_church",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/frank-church-1961.png",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Frank_Church_1961_Congressional_Portrait.png",
+      "caption": "Senator Frank Church · 1961 portrait",
+      "display": {
+        "caption": "Senator Frank Church · 1961 portrait",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_split",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/itt-split-1995.svg",
+      "reuseFamily": "assets/media/itt/itt-split-1995.svg",
+      "caption": "ITT · the 1995 separation",
+      "display": {
+        "caption": "ITT · the 1995 separation",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_conglomerate",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/conglomerate.svg",
+      "reuseFamily": "assets/media/itt/conglomerate.svg",
+      "caption": "ITT · selected businesses",
+      "display": {
+        "caption": "ITT · selected businesses",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_election",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/election-1970.svg",
+      "reuseFamily": "assets/media/itt/election-1970.svg",
+      "caption": "Chile · the 1970 presidential selection",
+      "display": {
+        "caption": "Chile · the 1970 presidential selection",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_dial",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-dial-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-dial-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_operators",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-operators-1965.mp4",
+      "reuseFamily": "https://archive.org/details/WeLearnA1965#distinct-excerpt=assets/media/revision/telephone-operators-1965.mp4",
+      "caption": "American telephone industry · Bell System, 1965",
+      "display": {
+        "caption": "American telephone industry · Bell System, 1965",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_switch",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/switching-floor-1965-proof.mp4",
+      "reuseFamily": "https://archive.org/details/WeLearnA1965#distinct-excerpt=assets/media/revision/switching-floor-1965-proof.mp4",
+      "caption": "American telephone industry · Bell System, 1965",
+      "display": {
+        "caption": "American telephone industry · Bell System, 1965",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_patch",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-patching-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-patching-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_accounts",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-accounting-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-accounting-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_engineering",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-engineering-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-engineering-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_lab",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-lab-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-lab-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_operators2",
+      "method": "existing",
+      "existingSrc": "assets/media/revision/telephone-operators-late1950s.mp4",
+      "reuseFamily": "https://archive.org/details/Townandt1950#distinct-excerpt=assets/media/revision/telephone-operators-late1950s.mp4",
+      "caption": "American telephone industry · Bell System, late 1950s",
+      "display": {
+        "caption": "American telephone industry · Bell System, late 1950s",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_cabinet",
+      "method": "photo",
+      "sourceId": "cabinet",
+      "src": "assets/images/itt-revision/cabinet.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:AllendeMinistros.jpg",
+      "caption": "Allende and his cabinet · 1970",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_night",
+      "method": "photo",
+      "sourceId": "night",
+      "src": "assets/images/itt-revision/night.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende.jpg",
+      "caption": "Election-night celebration · September 1970",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_night2",
+      "method": "photo",
+      "sourceId": "night2",
+      "src": "assets/images/itt-revision/night2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:El_d%C3%ADa_que_gan%C3%B3_Allende_Edificio_de_la_FECH.jpg",
+      "caption": "Election-night celebration · Santiago, September 1970",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_investiture",
+      "method": "photo",
+      "sourceId": "investiture",
+      "src": "assets/images/itt-revision/investiture.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_es_elegido_Presidente_de_la_Rep%C3%BAblica.jpg",
+      "caption": "Allende receives the presidential sash · 1970",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_peru",
+      "method": "photo",
+      "sourceId": "peru",
+      "src": "assets/images/itt-revision/peru.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende,_Velasco_Alvarado_y_Clodomiro_Almeyda.jpg",
+      "caption": "Allende, Velasco Alvarado and Almeyda · archival photograph",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_rojas",
+      "method": "photo",
+      "sourceId": "rojas",
+      "src": "assets/images/itt-revision/rojas.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Gonzalo_Rojas_con_el_Presidente_Salvador_Allende_(1970).jpg",
+      "caption": "Allende with poet Gonzalo Rojas · 1970",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_allende_portrait",
+      "method": "photo",
+      "sourceId": "allende-portrait",
+      "src": "assets/images/itt-revision/allende_portrait.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Allende_1970-1973.jpg",
+      "caption": "Salvador Allende · 1970–1973",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_allende_bcn",
+      "method": "photo",
+      "sourceId": "allende-bcn",
+      "src": "assets/images/itt-revision/allende_bcn.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende-BCN.JPG",
+      "caption": "Salvador Allende · archival photograph",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_allende_speech",
+      "method": "photo",
+      "sourceId": "allende-speech",
+      "src": "assets/images/itt-revision/allende_speech.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_-_Fc-011547.png",
+      "caption": "Salvador Allende · archival photograph",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_copper",
+      "method": "photo",
+      "sourceId": "copper",
+      "src": "assets/images/itt-revision/copper.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Salvador_Allende_en_Rancagua_por_nacionalizaci%C3%B3n_del_cobre.jpg",
+      "caption": "Copper-nationalization ceremony · Rancagua, 1971",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_anderson",
+      "method": "photo",
+      "sourceId": "anderson",
+      "src": "assets/images/itt-revision/anderson.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Jack_Anderson,_RIT_NandE_1973_May4_Complete.jpg",
+      "caption": "Jack Anderson · 1973 photograph",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_letelier",
+      "method": "photo",
+      "sourceId": "letelier",
+      "src": "assets/images/itt-revision/letelier.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Orlando_Letelier,_Washingron_DC,_1976_(de_Marcelo_Montecino).jpg",
+      "caption": "Orlando Letelier · Washington, 1976 portrait",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_helms_cia",
+      "method": "photo",
+      "sourceId": "helms-cia",
+      "src": "assets/images/itt-revision/helms_cia.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:DCI_Richard_Helms_Kudos_early1970s_(30768944602).jpg",
+      "caption": "Richard Helms · early 1970s",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_excomm",
+      "method": "photo",
+      "sourceId": "excomm",
+      "src": "assets/images/itt-revision/excomm.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:The_Cuba_Missile_Crisis.jpg",
+      "caption": "McCone in the Kennedy administration · 1962",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_allende_voting",
+      "method": "photo",
+      "sourceId": "allende-voting",
+      "src": "assets/images/itt-revision/allende_voting.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:SalvadorAllende1973.jpg",
+      "caption": "Allende voting · parliamentary election, 1973",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_church2",
+      "method": "photo",
+      "sourceId": "church2",
+      "src": "assets/images/itt-revision/church2.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Church_Sen_Frank_Shot_2.jpg",
+      "caption": "Senator Frank Church",
+      "changes": "Original source photograph retained without enlargement; JPEG encoding and editorial framing/movement only."
+    },
+    {
+      "key": "itt_rev_report_title",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_title.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=1",
+      "pdfPageOneBased": 1,
+      "caption": "U.S. Senate · ITT and Chile · report published June 1973",
+      "documentDate": "1973",
+      "cropTextAnchors": [],
+      "highlightTextAnchors": [],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_intro",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_intro.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=5",
+      "pdfPageOneBased": 5,
+      "caption": "U.S. Senate report · 1973 · publication of the memoranda",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "On March 21",
+        "syndicated columnist"
+      ],
+      "highlightTextAnchors": [
+        "Jack Anderson"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_candidates",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_candidates.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=6",
+      "pdfPageOneBased": 6,
+      "caption": "U.S. Senate report · 1973 · the 1970 candidates",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "The three major candidates",
+        "The Popular Unity candidate"
+      ],
+      "highlightTextAnchors": [
+        "communications"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_mccone",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_mccone.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=7",
+      "pdfPageOneBased": 7,
+      "caption": "U.S. Senate report · 1973 · McCone and Helms",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "Geneen and Broe",
+        "set in motion"
+      ],
+      "highlightTextAnchors": [
+        "series of contacts"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_offer",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_offer.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=8",
+      "pdfPageOneBased": 8,
+      "caption": "U.S. Senate report · 1973 · the September 1970 offer",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "The Million Dollar",
+        "a million dollars"
+      ],
+      "highlightTextAnchors": [
+        "$1,000,000"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_seven_figures",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_seven_figures.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=9",
+      "pdfPageOneBased": 9,
+      "caption": "U.S. Senate report · 1973 · the purpose of the proposed fund",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "There is little doubt",
+        "In short"
+      ],
+      "highlightTextAnchors": [
+        "seven figures"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_intelligence",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_intelligence.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=12",
+      "pdfPageOneBased": 12,
+      "caption": "U.S. Senate report · 1973 · internal assessments",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "Mr. Berrellez",
+        "Christian Democrats"
+      ],
+      "highlightTextAnchors": [],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_broe",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_broe.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=13",
+      "pdfPageOneBased": 13,
+      "caption": "U.S. Senate report · 1973 · Broe approaches Gerrity",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "On September 29th",
+        "Messrs. Broe and Gerrity"
+      ],
+      "highlightTextAnchors": [
+        "economic chaos"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_chaos",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_chaos.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=14",
+      "pdfPageOneBased": 14,
+      "caption": "U.S. Senate report · 1973 · proposals and rejection",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "The specific suggestions",
+        "Mr. Geneen decided"
+      ],
+      "highlightTextAnchors": [
+        "not to implement it"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_calls",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_calls.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=15",
+      "pdfPageOneBased": 15,
+      "caption": "U.S. Senate report · 1973 · continuing contacts",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "Mr. Merriam met",
+        "arranged to have a CIA messenger"
+      ],
+      "highlightTextAnchors": [
+        "copies"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_investment",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_investment.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=17",
+      "pdfPageOneBased": 17,
+      "caption": "U.S. Senate report · 1973 · the telephone investment",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "The Company",
+        "70% interest"
+      ],
+      "highlightTextAnchors": [
+        "$92.5 million"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_valuation",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/document_valuation.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=18",
+      "pdfPageOneBased": 18,
+      "caption": "U.S. Senate report · 1973 · Negotiations in 1971",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "On May 26",
+        "The Chileans offered",
+        "This first phase"
+      ],
+      "highlightTextAnchors": [
+        "$153",
+        "$24 million"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_pressure_plan",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/document_pressure_plan.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=19",
+      "pdfPageOneBased": 19,
+      "caption": "U.S. Senate report · 1973 · Merriam's 1971 proposal",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "Following the meeting",
+        "18-point action plan",
+        "Peterson testified"
+      ],
+      "highlightTextAnchors": [
+        "18-point action plan",
+        "Peterson testified that he took no action"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_negotiation_break",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/document_negotiation_break.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=20",
+      "pdfPageOneBased": 20,
+      "caption": "U.S. Senate report · 1973 · Executives' account of the talks",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "in active negotiations",
+        "Guilfoyle had been",
+        "negotiations were broken off"
+      ],
+      "highlightTextAnchors": [
+        "that meeting was cancelled",
+        "negotiations were broken off"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_church_mccone",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/document_church_mccone.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=21",
+      "pdfPageOneBased": 21,
+      "caption": "Senator Church's hypothetical · Senate report, 1973",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "Senator Church put the issue",
+        "Suppose British Petroleum",
+        "In response to Senator"
+      ],
+      "highlightTextAnchors": [
+        "British Petroleum",
+        "very distressed"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_opic_proposal",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/document_opic_proposal.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=893",
+      "pdfPageOneBased": 893,
+      "caption": "State Department memorandum · March 16, 1973",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "A central question",
+        "OPIC management",
+        "to take a final decision"
+      ],
+      "highlightTextAnchors": [
+        "$92.5",
+        "poses to deny the claim"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_document_opic_settlement",
+      "method": "document",
+      "sourceId": "dfc-ledger",
+      "src": "assets/images/itt-revision/document_opic_settlement.png",
+      "reuseFamily": "https://www.dfc.gov/sites/default/files/2019-12/DFC_OPIC_Claims_Arbitral_Awards_2019.pdf#page=5",
+      "pdfPageOneBased": 5,
+      "caption": "Official OPIC claims ledger · Fiscal 1975 settlement",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "CLAIMS RESOLVED",
+        "ITT Corp.",
+        "$94,091,531",
+        "$34,706,917",
+        "$59,384,614"
+      ],
+      "highlightTextAnchors": [
+        "ITT Corp.",
+        "$34,706,917",
+        "$59,384,614"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_conclusion",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_conclusion.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=22",
+      "pdfPageOneBased": 22,
+      "caption": "U.S. Senate report · 1973 · corporate conduct and sovereignty",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "But what is not to be condoned",
+        "No sovereign nation"
+      ],
+      "highlightTextAnchors": [
+        "overstepped the line"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_report_guarantees",
+      "method": "document",
+      "sourceId": "senate-1973",
+      "src": "assets/images/itt-revision/report_guarantees.png",
+      "reuseFamily": "https://www.govinfo.gov/content/pkg/CPRT-93SPRT95794/pdf/CPRT-93SPRT95794.pdf#page=23",
+      "pdfPageOneBased": 23,
+      "caption": "U.S. Senate report · 1973 · the insurance controversy",
+      "documentDate": "1973",
+      "cropTextAnchors": [
+        "OPIC",
+        "guarantee"
+      ],
+      "highlightTextAnchors": [
+        "ITT"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_opic_later_note",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/opic_later_note.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=893",
+      "pdfPageOneBased": 893,
+      "caption": "FRUS · later editorial note on the insurance settlement",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "The OPIC dispute",
+        "1975",
+        "settlement"
+      ],
+      "highlightTextAnchors": [
+        "1975"
+      ],
+      "changes": "Authentic PDF page pixels; complete text blocks selected for legibility; restrained amber highlights. No text substituted or invented."
+    },
+    {
+      "key": "itt_rev_access",
+      "method": "svg",
+      "src": "assets/images/itt-revision/access.svg",
+      "origin": "Plotquake original graphic · S01, S08, S09",
+      "reuseFamily": "plotquake-itt-graphic:access",
+      "caption": "THE CONNECTION",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">THE CONNECTION</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">ITT board: John McCone</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Former CIA director → Richard Helms</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Further contacts → William Broe</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S01",
+        "S08",
+        "S09"
+      ]
+    },
+    {
+      "key": "itt_rev_channels",
+      "method": "svg",
+      "src": "assets/images/itt-revision/channels.svg",
+      "origin": "Plotquake original graphic · S03",
+      "reuseFamily": "plotquake-itt-graphic:channels",
+      "caption": "A REFUSAL — AND ADVICE",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">A REFUSAL — AND ADVICE</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">CIA would not handle the corporate fund</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">ITT would move its own money</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">CIA advice concerned discreet channels</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S03"
+      ]
+    },
+    {
+      "key": "itt_rev_network_stake",
+      "method": "svg",
+      "src": "assets/images/itt-revision/network_stake.svg",
+      "origin": "Plotquake original graphic · S01, S02",
+      "reuseFamily": "plotquake-itt-graphic:network_stake",
+      "caption": "A BUSINESS THAT COULD NOT LEAVE",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">A BUSINESS THAT COULD NOT LEAVE</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">Cables. Switching equipment. Local permission.</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">An investment fixed inside Chile</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">A government proposing nationalization</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "key": "itt_rev_brands",
+      "method": "svg",
+      "src": "assets/images/itt-revision/brands.svg",
+      "origin": "Plotquake original graphic · S05, S06, S07",
+      "reuseFamily": "plotquake-itt-graphic:brands",
+      "caption": "BEYOND THE TELEPHONE",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">BEYOND THE TELEPHONE</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">ITT → Sheraton hotels</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Continental Baking → Wonder Bread</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Insurance → Hartford</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S05",
+        "S06",
+        "S07"
+      ]
+    },
+    {
+      "key": "itt_rev_vote",
+      "method": "svg",
+      "src": "assets/images/itt-revision/vote.svg",
+      "origin": "Plotquake original graphic · S10",
+      "reuseFamily": "plotquake-itt-graphic:vote",
+      "caption": "SEPTEMBER 1970",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">SEPTEMBER 1970</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">Allende wins the largest share of the popular vote</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">No candidate wins an absolute majority</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Congress must choose between the top two</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    {
+      "key": "itt_rev_tracks",
+      "method": "svg",
+      "src": "assets/images/itt-revision/tracks.svg",
+      "origin": "Plotquake original graphic · S02, S20",
+      "reuseFamily": "plotquake-itt-graphic:tracks",
+      "caption": "TWO SEPARATE SOURCES OF MONEY",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">TWO SEPARATE SOURCES OF MONEY</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">ITT: up to $1 million offered</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">U.S. Government: $10 million made available</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Proposals and authorization are not spending</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S02",
+        "S20"
+      ]
+    },
+    {
+      "key": "itt_rev_dates",
+      "method": "svg",
+      "src": "assets/images/itt-revision/dates.svg",
+      "origin": "Plotquake original graphic · S21",
+      "reuseFamily": "plotquake-itt-graphic:dates",
+      "caption": "THE REMAINING DECISION",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">THE REMAINING DECISION</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">September 4: popular vote</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">October 24: Congress selects Allende</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">November 3: inauguration</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S21"
+      ]
+    },
+    {
+      "key": "itt_rev_valuation",
+      "method": "svg",
+      "src": "assets/images/itt-revision/valuation.svg",
+      "origin": "Plotquake original graphic · S02",
+      "reuseFamily": "plotquake-itt-graphic:valuation",
+      "caption": "THE NEGOTIATING POSITIONS",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">THE NEGOTIATING POSITIONS</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">ITT sought $153 million</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Chile offered $24 million</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">A dispute over compensation and management</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S02"
+      ]
+    },
+    {
+      "key": "itt_rev_management",
+      "method": "svg",
+      "src": "assets/images/itt-revision/management.svg",
+      "origin": "Plotquake original graphic · S23",
+      "reuseFamily": "plotquake-itt-graphic:management",
+      "caption": "TWO DIFFERENT STEPS",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">TWO DIFFERENT STEPS</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">1971: state takes over company management</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">April 18, 1972: expropriation legislation announced</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">Management, announcement and ownership differ</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S23"
+      ]
+    },
+    {
+      "key": "itt_rev_insurance",
+      "method": "svg",
+      "src": "assets/images/itt-revision/insurance.svg",
+      "origin": "Plotquake original graphic · S24",
+      "reuseFamily": "plotquake-itt-graphic:insurance",
+      "caption": "THE PROPERTY DISPUTE CONTINUES",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">THE PROPERTY DISPUTE CONTINUES</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">March 1973: a $92.5 million insurance claim</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">OPIC leadership proposes refusing the claim</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">A proposed rejection was not a final resolution</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S24"
+      ]
+    },
+    {
+      "key": "itt_rev_settlement",
+      "method": "svg",
+      "src": "assets/images/itt-revision/settlement.svg",
+      "origin": "Plotquake original graphic · S25",
+      "reuseFamily": "plotquake-itt-graphic:settlement",
+      "caption": "FISCAL 1975 — THE OPIC LEDGER",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">FISCAL 1975 — THE OPIC LEDGER</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">$34,706,917 in cash</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">$59,384,614 in guarantees</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">$94,091,531 total recorded indemnification</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S25"
+      ]
+    },
+    {
+      "key": "itt_rev_boundaries",
+      "method": "svg",
+      "src": "assets/images/itt-revision/boundaries.svg",
+      "origin": "Plotquake original graphic · S01, S02, S11",
+      "reuseFamily": "plotquake-itt-graphic:boundaries",
+      "caption": "WHAT THE RECORD ESTABLISHES",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"><rect width=\"1920\" height=\"1080\" fill=\"#05070c\"/><path d=\"M120 220H1800\" stroke=\"#E5A158\" stroke-width=\"4\"/><text x=\"120\" y=\"165\" fill=\"#E5A158\" font-family=\"Arial,sans-serif\" font-size=\"54\" font-weight=\"700\">WHAT THE RECORD ESTABLISHES</text><text x=\"145\" y=\"350\" fill=\"#F6C383\" font-family=\"Arial,sans-serif\" font-size=\"48\">1970 offers and channels</text><text x=\"145\" y=\"490\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">1973 coup: a separate event</text><text x=\"145\" y=\"630\" fill=\"#F8FAFC\" font-family=\"Arial,sans-serif\" font-size=\"48\">The documents do not establish that ITT bought it</text><text x=\"145\" y=\"970\" fill=\"#94A3B8\" font-family=\"Arial,sans-serif\" font-size=\"24\">Plotquake · explanatory graphic</text></svg>",
+      "changes": "Original explanatory artwork based on cited documentary sources; not an archival document.",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S11"
+      ]
+    },
+    {
+      "key": "itt_rev_funding",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/funding-1975.png",
+      "reuseFamily": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+      "caption": "U.S. Senate staff report · 1975 · documented corporate funding",
+      "display": {
+        "caption": "U.S. Senate staff report · 1975 · documented corporate funding",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_early",
+      "method": "existing",
+      "existingSrc": "assets/media/itt/early-offer-1975.png",
+      "reuseFamily": "https://www.archives.gov/files/declassification/iscap/pdf/2010-009-doc17.pdf",
+      "caption": "U.S. Senate staff report · 1975 · the earlier offer and refusal",
+      "display": {
+        "caption": "U.S. Senate staff report · 1975 · the earlier offer and refusal",
+        "fit": "contain"
+      }
+    },
+    {
+      "key": "itt_rev_frus_helms",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/frus_helms.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=297",
+      "pdfPageOneBased": 297,
+      "caption": "FRUS · Helms's September 15, 1970 notes",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "10,000,000",
+        "48 hours"
+      ],
+      "highlightTextAnchors": [
+        "10,000,000"
+      ],
+      "changes": "Authentic official-edition PDF page pixels, selected for legibility with restrained amber highlights; not a photograph of an original manuscript."
+    },
+    {
+      "key": "itt_rev_frus_spanish",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/frus_spanish.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=821",
+      "pdfPageOneBased": 821,
+      "caption": "FRUS · embassy assessment of the Spanish paperback · 1972",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "Spanish and made them available",
+        "paperback edition"
+      ],
+      "highlightTextAnchors": [
+        "Spanish",
+        "paperback edition"
+      ],
+      "changes": "Authentic official-edition PDF page pixels, selected for legibility with restrained amber highlights; not a photograph of an original manuscript."
+    },
+    {
+      "key": "itt_rev_frus_disclosures",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/frus_disclosures.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=828",
+      "pdfPageOneBased": 828,
+      "caption": "FRUS · editorial chronology of the 1972 disclosures",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "Following a string of revelations",
+        "Jack Anderson"
+      ],
+      "highlightTextAnchors": [
+        "Jack Anderson"
+      ],
+      "changes": "Authentic official-edition PDF page pixels, selected for legibility with restrained amber highlights; not a photograph of an original manuscript."
+    },
+    {
+      "key": "itt_rev_frus_announcement",
+      "method": "document",
+      "sourceId": "frus21",
+      "src": "assets/images/itt-revision/frus_announcement.png",
+      "reuseFamily": "https://history.state.gov/historicaldocuments/frus1969-76v21#page=838",
+      "pdfPageOneBased": 838,
+      "caption": "FRUS · contemporary memorandum, April 28, 1972",
+      "documentDate": "Official documentary edition",
+      "cropTextAnchors": [
+        "On April 18",
+        "legislation"
+      ],
+      "highlightTextAnchors": [
+        "April 18",
+        "legislation"
+      ],
+      "changes": "Authentic official-edition PDF page pixels, selected for legibility with restrained amber highlights; not a photograph of an original manuscript."
+    }
+  ],
+  "scenePlans": {
+    "itt-r01": {
+      "narrativeFunction": "1970 | The offer",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_phone",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved rotary telephone"
+        },
+        {
+          "mediaKey": "itt_rev_report_title",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate · ITT and Chile · report published June 1973"
+        },
+        {
+          "mediaKey": "itt_rev_allende",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · United Nations"
+        },
+        {
+          "mediaKey": "itt_rev_report_seven_figures",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the purpose of the proposed fund"
+        },
+        {
+          "mediaKey": "itt_rev_itt1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT headquarters · later photograph"
+        }
+      ]
+    },
+    "itt-r02": {
+      "narrativeFunction": "John McCone | A director on both sides of the connection",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_mccone",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "John McCone · former CIA director"
+        },
+        {
+          "mediaKey": "itt_rev_excomm",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "McCone in the Kennedy administration · 1962"
+        },
+        {
+          "mediaKey": "itt_rev_access",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE CONNECTION"
+        },
+        {
+          "mediaKey": "itt_rev_helms",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Richard Helms · CIA director"
+        },
+        {
+          "mediaKey": "itt_rev_report_mccone",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · McCone and Helms"
+        },
+        {
+          "mediaKey": "itt_rev_cia",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "CIA headquarters · Langley, Virginia"
+        }
+      ]
+    },
+    "itt-r03": {
+      "narrativeFunction": "July 1970 | Geneen meets Broe",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_itt2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT headquarters · later photograph"
+        },
+        {
+          "mediaKey": "itt_rev_report_candidates",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the 1970 candidates"
+        },
+        {
+          "mediaKey": "itt_rev_alessandri",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Jorge Alessandri · circa 1960"
+        },
+        {
+          "mediaKey": "itt_rev_early",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "U.S. Senate staff report · 1975 · the earlier offer and refusal"
+        },
+        {
+          "mediaKey": "itt_rev_report_intelligence",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · internal assessments"
+        },
+        {
+          "mediaKey": "itt_rev_channels",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "A REFUSAL — AND ADVICE"
+        },
+        {
+          "mediaKey": "itt_rev_helms_cia",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Richard Helms · early 1970s"
+        },
+        {
+          "mediaKey": "itt_rev_accounts",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_allende_portrait",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · 1970–1973"
+        },
+        {
+          "mediaKey": "itt_rev_santiago1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Santiago · archival photograph"
+        }
+      ]
+    },
+    "itt-r05": {
+      "narrativeFunction": "Chile | A network that could not leave",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_operators",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, 1965",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_network1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Telephone infrastructure · contextual photograph"
+        },
+        {
+          "mediaKey": "itt_rev_patch",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_teletype",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved ITT teletype · 1967 equipment"
+        },
+        {
+          "mediaKey": "itt_rev_network_stake",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "A BUSINESS THAT COULD NOT LEAVE"
+        },
+        {
+          "mediaKey": "itt_rev_santiago2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Plaza de Armas, Santiago · circa 1970"
+        },
+        {
+          "mediaKey": "itt_rev_copper",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Copper-nationalization ceremony · Rancagua, 1971"
+        }
+      ]
+    },
+    "itt-r06": {
+      "narrativeFunction": "Harold Geneen | The reach of the conglomerate",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_itt3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT building · later photograph"
+        },
+        {
+          "mediaKey": "itt_rev_conglomerate",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "ITT · selected businesses"
+        },
+        {
+          "mediaKey": "itt_rev_brands",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "BEYOND THE TELEPHONE"
+        },
+        {
+          "mediaKey": "itt_rev_lab",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_sheraton",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Sheraton-Charles Hotel · 1960s postcard"
+        },
+        {
+          "mediaKey": "itt_rev_card",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved Pentaconta switching equipment"
+        }
+      ]
+    },
+    "itt-r07": {
+      "narrativeFunction": "An investment and a Cold War election",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_nixon",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Richard Nixon · 1972"
+        },
+        {
+          "mediaKey": "itt_rev_nixonmeeting",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Nixon and Kissinger · 1970 White House photograph"
+        },
+        {
+          "mediaKey": "itt_rev_kissinger",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Henry Kissinger · later portrait"
+        },
+        {
+          "mediaKey": "itt_rev_allende_bcn",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · archival photograph"
+        },
+        {
+          "mediaKey": "itt_rev_engineering",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        }
+      ]
+    },
+    "itt-r08": {
+      "narrativeFunction": "The Senate's finding | At least $350,000",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_report_calls",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · continuing contacts"
+        },
+        {
+          "mediaKey": "itt_rev_accounts",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_cabinet",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende and his cabinet · 1970"
+        },
+        {
+          "mediaKey": "itt_rev_funding",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate staff report · 1975 · documented corporate funding"
+        },
+        {
+          "mediaKey": "itt_rev_allende2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende"
+        }
+      ]
+    },
+    "itt-r09": {
+      "narrativeFunction": "September 4, 1970 | The voters decide",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_night",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Election-night celebration · September 1970"
+        },
+        {
+          "mediaKey": "itt_rev_election",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "Chile · the 1970 presidential selection"
+        },
+        {
+          "mediaKey": "itt_rev_report_candidates",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the 1970 candidates"
+        },
+        {
+          "mediaKey": "itt_rev_alessandri",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Jorge Alessandri · circa 1960"
+        },
+        {
+          "mediaKey": "itt_rev_frei",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Eduardo Frei and his cabinet · circa 1966"
+        },
+        {
+          "mediaKey": "itt_rev_vote",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "SEPTEMBER 1970"
+        },
+        {
+          "mediaKey": "itt_rev_night2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Election-night celebration · Santiago, September 1970"
+        },
+        {
+          "mediaKey": "itt_rev_santiago1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Santiago · archival photograph"
+        }
+      ]
+    },
+    "itt-r11": {
+      "narrativeFunction": "September 1970 | Another million-dollar proposal",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_mccone2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "John McCone with Eugene Wigner · 1958"
+        },
+        {
+          "mediaKey": "itt_rev_report_offer",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the September 1970 offer"
+        },
+        {
+          "mediaKey": "itt_rev_dial",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_report_seven_figures",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the purpose of the proposed fund"
+        },
+        {
+          "mediaKey": "itt_rev_santiago2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Plaza de Armas, Santiago · circa 1970"
+        },
+        {
+          "mediaKey": "itt_rev_itt1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT headquarters · later photograph"
+        }
+      ]
+    },
+    "itt-r12": {
+      "narrativeFunction": "Washington's separate operation",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_nixonmeeting",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Nixon and Kissinger · 1970 White House photograph"
+        },
+        {
+          "mediaKey": "itt_rev_tracks",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "TWO SEPARATE SOURCES OF MONEY"
+        },
+        {
+          "mediaKey": "itt_rev_helms",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Richard Helms · CIA director"
+        },
+        {
+          "mediaKey": "itt_rev_kissinger",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Henry Kissinger · later portrait"
+        },
+        {
+          "mediaKey": "itt_rev_frus_helms",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "FRUS · Helms's September 15, 1970 notes"
+        },
+        {
+          "mediaKey": "itt_rev_cia",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "CIA headquarters · Langley, Virginia"
+        }
+      ]
+    },
+    "itt-r13": {
+      "narrativeFunction": "A proposal the company would not follow",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_report_chaos",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · proposals and rejection"
+        },
+        {
+          "mediaKey": "itt_rev_network2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Telephone infrastructure · contextual photograph"
+        },
+        {
+          "mediaKey": "itt_rev_engineering",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_report_intelligence",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · internal assessments"
+        },
+        {
+          "mediaKey": "itt_rev_card",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved Pentaconta switching equipment"
+        },
+        {
+          "mediaKey": "itt_rev_santiago3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Santiago · late 1970s"
+        }
+      ]
+    },
+    "itt-r14": {
+      "narrativeFunction": "The objective fails",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_investiture",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende receives the presidential sash · 1970"
+        },
+        {
+          "mediaKey": "itt_rev_dates",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE REMAINING DECISION"
+        },
+        {
+          "mediaKey": "itt_rev_cabinet",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende and his cabinet · 1970"
+        },
+        {
+          "mediaKey": "itt_rev_allende3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende"
+        }
+      ]
+    },
+    "itt-r15": {
+      "narrativeFunction": "Negotiating the price",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_document_valuation",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · Negotiations in 1971"
+        },
+        {
+          "mediaKey": "itt_rev_valuation",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE NEGOTIATING POSITIONS"
+        },
+        {
+          "mediaKey": "itt_rev_operators2",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        },
+        {
+          "mediaKey": "itt_rev_report_investment",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the telephone investment"
+        },
+        {
+          "mediaKey": "itt_rev_peru",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende visiting Peru · 1970"
+        },
+        {
+          "mediaKey": "itt_rev_allende_speech",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · archival photograph"
+        },
+        {
+          "mediaKey": "itt_rev_network1",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Telephone infrastructure · contextual photograph"
+        }
+      ]
+    },
+    "itt-r16": {
+      "narrativeFunction": "October 1, 1971 | The eighteen-point letter",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_document_pressure_plan",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · Merriam's 1971 proposal"
+        },
+        {
+          "mediaKey": "itt_rev_itt2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT headquarters · later photograph"
+        },
+        {
+          "mediaKey": "itt_rev_network2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Telephone infrastructure · contextual photograph"
+        },
+        {
+          "mediaKey": "itt_rev_channels",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "A REFUSAL — AND ADVICE"
+        },
+        {
+          "mediaKey": "itt_rev_report_broe",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · Broe approaches Gerrity"
+        },
+        {
+          "mediaKey": "itt_rev_helms_cia",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Richard Helms · early 1970s"
+        },
+        {
+          "mediaKey": "itt_rev_switch",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, 1965",
+          "vintageFilter": false
+        }
+      ]
+    },
+    "itt-r17": {
+      "narrativeFunction": "The possibility of a settlement",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_letelier",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Orlando Letelier · Washington, 1976 portrait"
+        },
+        {
+          "mediaKey": "itt_rev_allende_portrait",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · 1970–1973"
+        },
+        {
+          "mediaKey": "itt_rev_itt3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Former ITT building · later photograph"
+        }
+      ]
+    },
+    "itt-r18": {
+      "narrativeFunction": "March 1972 | The memoranda become public",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_anderson",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Jack Anderson · 1973 photograph"
+        },
+        {
+          "mediaKey": "itt_rev_report_intro",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · publication of the memoranda"
+        },
+        {
+          "mediaKey": "itt_rev_report_title",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate · ITT and Chile · report published June 1973"
+        },
+        {
+          "mediaKey": "itt_rev_document_negotiation_break",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · Executives' account of the talks"
+        },
+        {
+          "mediaKey": "itt_rev_allende_bcn",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · archival photograph"
+        },
+        {
+          "mediaKey": "itt_rev_frus_spanish",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "FRUS · embassy assessment of the Spanish paperback · 1972"
+        },
+        {
+          "mediaKey": "itt_rev_frus_disclosures",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "FRUS · editorial chronology of the 1972 disclosures"
+        },
+        {
+          "mediaKey": "itt_rev_report_calls",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · continuing contacts"
+        },
+        {
+          "mediaKey": "itt_rev_report_investment",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the telephone investment"
+        },
+        {
+          "mediaKey": "itt_rev_santiago3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pan-right",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Santiago · late 1970s"
+        }
+      ]
+    },
+    "itt-r20": {
+      "narrativeFunction": "April 18, 1972 | A wider expropriation proposal",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_frus_announcement",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "FRUS · contemporary memorandum, April 28, 1972"
+        },
+        {
+          "mediaKey": "itt_rev_management",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "TWO DIFFERENT STEPS"
+        },
+        {
+          "mediaKey": "itt_rev_allende_speech",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · archival photograph"
+        },
+        {
+          "mediaKey": "itt_rev_teletype",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved ITT teletype · 1967 equipment"
+        }
+      ]
+    },
+    "itt-r21": {
+      "narrativeFunction": "1973 | Who initiated the calls?",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_report_mccone",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · McCone and Helms"
+        },
+        {
+          "mediaKey": "itt_rev_switchboard",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Telephone switchboard · archival context"
+        },
+        {
+          "mediaKey": "itt_rev_report_chaos",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · proposals and rejection"
+        },
+        {
+          "mediaKey": "itt_rev_mccone2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "John McCone with Eugene Wigner · 1958"
+        },
+        {
+          "mediaKey": "itt_rev_report_offer",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the September 1970 offer"
+        },
+        {
+          "mediaKey": "itt_rev_mccone",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "John McCone · former CIA director"
+        }
+      ]
+    },
+    "itt-r22": {
+      "narrativeFunction": "Church puts the interference in American terms",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_church",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Senator Frank Church · 1961 portrait"
+        },
+        {
+          "mediaKey": "itt_rev_document_church_mccone",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "Senator Church's hypothetical · Senate report, 1973"
+        },
+        {
+          "mediaKey": "itt_rev_access",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE CONNECTION"
+        },
+        {
+          "mediaKey": "itt_rev_nixon",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Richard Nixon · 1972"
+        },
+        {
+          "mediaKey": "itt_rev_church2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Senator Frank Church"
+        },
+        {
+          "mediaKey": "itt_rev_report_conclusion",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · corporate conduct and sovereignty"
+        }
+      ]
+    },
+    "itt-r23": {
+      "narrativeFunction": "March 1973 | The insurance claim",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_document_opic_proposal",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "State Department memorandum · March 16, 1973"
+        },
+        {
+          "mediaKey": "itt_rev_insurance",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE PROPERTY DISPUTE CONTINUES"
+        },
+        {
+          "mediaKey": "itt_rev_document_valuation",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · Negotiations in 1971"
+        },
+        {
+          "mediaKey": "itt_rev_lab",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        }
+      ]
+    },
+    "itt-r24": {
+      "narrativeFunction": "September 11, 1973 | Chile under military rule",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_moneda",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "La Moneda · September 11, 1973"
+        },
+        {
+          "mediaKey": "itt_rev_allende_voting",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Allende voting · parliamentary election, 1973"
+        },
+        {
+          "mediaKey": "itt_rev_copper",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Copper-nationalization ceremony · Rancagua, 1971"
+        },
+        {
+          "mediaKey": "itt_rev_allende3",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende"
+        }
+      ]
+    },
+    "itt-r25": {
+      "narrativeFunction": "What the record establishes",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_boundaries",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "WHAT THE RECORD ESTABLISHES"
+        },
+        {
+          "mediaKey": "itt_rev_allende2",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende"
+        },
+        {
+          "mediaKey": "itt_rev_peru",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende visiting Peru · 1970"
+        },
+        {
+          "mediaKey": "itt_rev_phone",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Preserved rotary telephone"
+        }
+      ]
+    },
+    "itt-r26": {
+      "narrativeFunction": "The insurance dispute continues",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_insurance",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "THE PROPERTY DISPUTE CONTINUES"
+        },
+        {
+          "mediaKey": "itt_rev_opic_later_note",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "FRUS · later editorial note on the insurance settlement"
+        },
+        {
+          "mediaKey": "itt_rev_report_guarantees",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · the insurance controversy"
+        },
+        {
+          "mediaKey": "itt_rev_rojas",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Allende with poet Gonzalo Rojas · 1970"
+        }
+      ]
+    },
+    "itt-r27": {
+      "narrativeFunction": "1975 | Cash and guarantees",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_document_opic_settlement",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "Official OPIC claims ledger · Fiscal 1975 settlement"
+        },
+        {
+          "mediaKey": "itt_rev_settlement",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "FISCAL 1975 — THE OPIC LEDGER"
+        },
+        {
+          "mediaKey": "itt_rev_accounts",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, late 1950s",
+          "vintageFilter": false
+        }
+      ]
+    },
+    "itt-r28": {
+      "narrativeFunction": "A surviving company",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_split",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "ITT · the 1995 separation"
+        },
+        {
+          "mediaKey": "itt_rev_conglomerate",
+          "variantIndex": 0,
+          "weight": 1.15,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.035,
+          "zoomEnd": 1,
+          "caption": "ITT · selected businesses"
+        },
+        {
+          "mediaKey": "itt_rev_switch",
+          "variantIndex": 0,
+          "weight": 0.85,
+          "motion": "push",
+          "fit": "contain",
+          "caption": "American telephone industry · Bell System, 1965",
+          "vintageFilter": false
+        }
+      ]
+    },
+    "itt-r29": {
+      "narrativeFunction": "The line the documents revealed",
+      "shots": [
+        {
+          "mediaKey": "itt_rev_allende",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Salvador Allende · United Nations"
+        },
+        {
+          "mediaKey": "itt_rev_night",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "Election-night celebration · September 1970"
+        },
+        {
+          "mediaKey": "itt_rev_excomm",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1.015,
+          "zoomEnd": 1.07,
+          "caption": "McCone in the Kennedy administration · 1962"
+        },
+        {
+          "mediaKey": "itt_rev_report_conclusion",
+          "variantIndex": 0,
+          "weight": 1.65,
+          "motion": "push",
+          "fit": "contain",
+          "zoomStart": 1,
+          "zoomEnd": 1.025,
+          "caption": "U.S. Senate report · 1973 · corporate conduct and sovereignty"
+        },
+        {
+          "mediaKey": "itt_rev_allende_voting",
+          "variantIndex": 0,
+          "weight": 1,
+          "motion": "pull",
+          "fit": "contain",
+          "zoomStart": 1.07,
+          "zoomEnd": 1,
+          "caption": "Allende voting · parliamentary election, 1973"
+        }
+      ]
+    }
+  },
+  "reuseReview": {
+    "scope": "Manual source-family review. Distinct document pages are separate evidence; alternative crops of one page share the same family. Different source-film excerpts retain distinct shot files and provenance. No photo identity is refreshed by a crop.",
+    "issues": [],
+    "familyCount": 90,
+    "shotCount": 144,
+    "maximumPhotographOrDocumentUses": 2,
+    "maximumVideoExcerptUses": 3
+  }
+}

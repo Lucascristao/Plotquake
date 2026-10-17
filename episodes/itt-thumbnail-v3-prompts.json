@@ -1,0 +1,27 @@
+{
+  "mode": "built-in image_gen for background editing; deterministic typesetting from actual font file",
+  "intent": "edit",
+  "editTarget": "public/assets/images/itt-thumbnail-v2.png",
+  "output": "public/assets/images/itt-thumbnail-v3.png",
+  "background": "public/assets/images/itt-thumbnail-v3-base.png",
+  "generatedBackground": "C:/Users/lucas/.codex/generated_images/01a149dc-8120-79d3-bd2a-59698f3e6b06/exec-2a94ca9c-7731-42c3-b1ef-c7a2968ce63d.png",
+  "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, a photographic documentary thumbnail of a worn cream rotary telephone on an ordinary wooden desk with a manila ITT folder.\nPrimary request: prepare a clean photographic background for a revised thumbnail. REMOVE ONLY the giant overlaid words \"THE OFFER\" from the upper left and naturally reconstruct the plain dark background that was behind the letters. Preserve the entire telephone, its correct rotary dial and small labels, handset, cord, materials, wear, original camera angle, desk, folder and ITT tab, ordinary window lighting and wide 16:9 composition. Keep all the phone hardware and hand-free object arrangement unchanged. Make the existing golden lighting slightly more restrained and naturally neutral, avoiding a polished advertising or synthetic poster feeling. The left side should remain simple dark usable negative space for separate typesetting. Do not add any new text, insignia, CIA seal, person, documents, props, cash, smoke, dramatic rim glow or decoration. Preserve the small existing ITT folder tab only. No overlaid typography at all: the final headline will be typeset separately using the actual Anton font file. Maintain believable photographic imperfections and moderate contrast. This is an original editorial cover composition, never a purported historical photograph of an ITT/CIA transaction.",
+  "typesetting": {
+    "font": "Anton Regular",
+    "weight": 400,
+    "fontFile": "public/assets/fonts/Anton-Regular.ttf",
+    "fontLicense": "public/assets/fonts/Anton-OFL.txt",
+    "builder": "scripts/build_itt_thumbnail.cjs",
+    "text": [
+      "CIA",
+      "CONNECTION"
+    ],
+    "colors": [
+      "#FFFFFF",
+      "#E5A158"
+    ],
+    "width": 1280,
+    "height": 720
+  },
+  "inspection": "Original telephone/desk/folder photographic composition preserved; old overlaid text removed. Headline rendered with actual Anton font at original proportions; final bitmap visually inspected. Original editorial composition, not evidence of a private meeting."
+}
