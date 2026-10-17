@@ -11,11 +11,13 @@ export const MediaCaption = ({caption, sourceLabel, reconstruction, showSourceLa
 }) => {
   const frame = useCurrentFrame();
   const entrance = interpolate(frame, [8, 22], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const captionOpacity = Math.min(entrance, interpolate(frame, [145, 165], [1, 0],
+    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
   return <>
     {caption && <div style={{position: 'absolute', bottom: 106, left: 92, maxWidth: 1120,
       borderLeft: `3px solid ${PLOTQUAKE_THEME.colors.primary}`, paddingLeft: 20,
       color: '#f8fafc', fontSize: 27, fontWeight: 600, lineHeight: 1.3,
-      textShadow: '0 2px 12px #000, 0 0 25px #000', opacity: entrance,
+      textShadow: '0 2px 12px #000, 0 0 25px #000', opacity: captionOpacity,
       transform: `translateY(${(1 - entrance) * 8}px)`}}>{caption}</div>}
     {showSourceLabel && sourceLabel && <div style={{position: 'absolute', right: 78, bottom: 73, maxWidth: 1000,
       textAlign: 'right', color: 'rgba(255,255,255,0.65)', fontSize: 15,

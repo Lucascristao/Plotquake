@@ -124,6 +124,8 @@ jobs:
             public/assets/images/blackberry-redo
             public/assets/video/blackberry-redo
           key: plotquake-source-media-v1-${{ hashFiles('episodes/*media-manifest.json', 'worker/prepare_blackberry_media.py') }}
+          restore-keys: |
+            plotquake-source-media-v1-
 
       - name: Prepare selected archival media, measured timeline and directed score
         run: python worker/prepare_episode.py --episode "$EPISODE_PATH"

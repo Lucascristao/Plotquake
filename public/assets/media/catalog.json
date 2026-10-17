@@ -49,7 +49,8 @@
       "focus": {
         "x": 0.5,
         "y": 0.5
-      }
+      },
+      "editorialNote": "Optical trackpad differs from the trackball in the Bold9000 manual. Use as a generic BlackBerry keyboard; do not label this handset Bold9000."
     },
     {
       "key": "blackberry_keyboard",
@@ -96,40 +97,6 @@
       "changes": "Cinematic crop, pan, zoom and color treatment",
       "width": 2600,
       "height": 2217,
-      "fit": "contain",
-      "focus": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    {
-      "key": "blackberry_bold",
-      "src": "assets/media/blackberry_bold-1.jpg",
-      "kind": "image",
-      "credit": "Metrónomo · CC BY-SA 2.5 ar",
-      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000.JPG",
-      "license": "CC BY-SA 2.5 ar",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
-      "changes": "Cinematic crop, pan, zoom and color treatment",
-      "width": 4320,
-      "height": 3240,
-      "fit": "contain",
-      "focus": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    {
-      "key": "blackberry_bold",
-      "src": "assets/media/blackberry_bold-2.jpg",
-      "kind": "image",
-      "credit": "Metrónomo · CC BY-SA 2.5 ar",
-      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000_-_2.JPG",
-      "license": "CC BY-SA 2.5 ar",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
-      "changes": "Cinematic crop, pan, zoom and color treatment",
-      "width": 4320,
-      "height": 3240,
       "fit": "contain",
       "focus": {
         "x": 0.5,
@@ -2808,6 +2775,88 @@
       "fit": "contain",
       "locallyPrepared": true,
       "visualReviewNote": "Actual development prototype, June2012. Low-resolution source366x336; use as a documentary inset, not an aggressively enlarged full-screen hero. It is not the retail Z10 release."
+    },
+    {
+      "key": "bb_redo_bold_9000_in_hand_2009",
+      "kind": "image",
+      "src": "assets/images/blackberry-redo/bold-9000-in-hand-2009.jpg",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "sourceId": "bold-9000-in-hand-2009",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "originalMedia": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "credit": "Cheon Fong Liew",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "captureDate": "2009-07-18 05:26:55",
+      "displayLabel": "BlackBerry Bold 9000 | July 2009",
+      "editorialNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device.",
+      "changes": "Source JPEG retained without enlargement; editorial framing/movement in film.",
+      "width": 1280,
+      "height": 960,
+      "fit": "contain",
+      "locallyPrepared": true,
+      "preparedSha256": "17e78d4d24269e0db82fb0f945de4cbaea0808edc83f5e8ff665104022565efb",
+      "visualReviewNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device."
+    },
+    {
+      "key": "bb_redo_bold_9000_wojciech30_2021",
+      "kind": "image",
+      "src": "assets/images/blackberry-redo/bold-9000-wojciech30-2021.jpg",
+      "origin": "https://commons.wikimedia.org/wiki/File:Blackberry_bold_9000.jpg",
+      "sourceId": "bold-9000-wojciech30-2021",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Blackberry_bold_9000.jpg",
+      "originalMedia": "https://commons.wikimedia.org/wiki/File:Blackberry_bold_9000.jpg",
+      "credit": "Wojciech30",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "captureDate": "2021-11-17",
+      "displayLabel": "BlackBerry Bold 9000 | preserved handset",
+      "editorialNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device. Preserved object photographed in2021; do not present as a2008 event photograph.",
+      "changes": "Source JPEG retained without enlargement; editorial framing/movement in film.",
+      "width": 1920,
+      "height": 2560,
+      "fit": "contain",
+      "locallyPrepared": true,
+      "preparedSha256": "5003eea333e9ba3065e69abf85bb7e8aa9782c9ef97938de8cd32c46cb84b10c",
+      "visualReviewNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device. Preserved object photographed in2021; do not present as a2008 event photograph."
+    }
+  ],
+  "excludedReferences": [
+    {
+      "key": "blackberry_bold",
+      "src": "assets/media/blackberry_bold-1.jpg",
+      "kind": "image",
+      "credit": "Metrónomo · CC BY-SA 2.5 ar",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000.JPG",
+      "license": "CC BY-SA 2.5 ar",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4320,
+      "height": 3240,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "editorialNote": "Excluded as a verified Bold9000 reference: physical Menu/WiFi details conflict with the RIM manual. Not a forensic determination of counterfeit status."
+    },
+    {
+      "key": "blackberry_bold",
+      "src": "assets/media/blackberry_bold-2.jpg",
+      "kind": "image",
+      "credit": "Metrónomo · CC BY-SA 2.5 ar",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000_-_2.JPG",
+      "license": "CC BY-SA 2.5 ar",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
+      "changes": "Cinematic crop, pan, zoom and color treatment",
+      "width": 4320,
+      "height": 3240,
+      "fit": "contain",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "editorialNote": "Excluded as a verified Bold9000 reference: physical Menu/WiFi details conflict with the RIM manual. Not a forensic determination of counterfeit status."
     }
   ]
 }

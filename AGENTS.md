@@ -88,7 +88,7 @@ Para histórias empresariais em que seja útil, os quatro atos abaixo são um ex
   - **Elemento central conforme a pauta**: Pessoa, produto, marca, objeto, vestígio, paisagem ou lugar reconhecível que comunique a promessa do episódio;
   - **Luz e identidade dourada**: Usar o **Dourado/Âmbar Plotquake (`#E5A158` / `#F6C383`)** como assinatura. Escolher iluminação e atmosfera adequadas ao assunto, incluindo luz natural e cores do local; chiaroscuro, fumaça e suspense são opções, não exigências para toda capa;
   - **Micro-Copy de 2 a 3 Palavras**: Texto curto e legível (ex.: `"TOO LATE?"`, `"EMPIRE FALLS"`, `"THE WRONG BET"`), usando fundo de contraste e a cor dourada para a palavra principal. Título e capa devem entregar a promessa comprovada pelo roteiro;
-  - **Resolução e arquivo**: Composição horizontal 16:9, referência `1280x720`, em PNG ou JPG de alta qualidade. Salvar uma capa própria por episódio em `public/assets/images/` e indicar o caminho no JSON do episódio; o documentário BlackBerry usa `public/assets/images/blackberry-thumbnail-v2.png`.
+  - **Resolução e arquivo**: Composição horizontal 16:9, referência `1280x720`, em PNG ou JPG de alta qualidade. Salvar uma capa própria por episódio em `public/assets/images/` e indicar o caminho no JSON do episódio; o documentário BlackBerry usa `public/assets/images/blackberry-thumbnail-v3.png`.
 
 ---
 

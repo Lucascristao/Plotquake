@@ -1,0 +1,38 @@
+{
+  "mode": "built-in image_gen",
+  "intent": "edit",
+  "useCase": "precise-object-edit",
+  "output": "public/assets/images/blackberry-thumbnail-v3.png",
+  "editTarget": "public/assets/images/blackberry-thumbnail-v2.png",
+  "references": [
+    {
+      "path": "public/assets/media/blackberry_keyboard-2.jpg",
+      "role": "Initial authentic hardware reference",
+      "credit": "Zvivi, CC BY-SA 3.0",
+      "notes": "Hebrew secondary legends and owner sticker omitted; menu symbol and round trackball retained."
+    },
+    {
+      "path": "public/assets/images/blackberry-redo/bold-9000-in-hand-2009.jpg",
+      "role": "Final keyboard/hardware reference",
+      "credit": "Cheon Fong Liew, CC BY-SA 2.0",
+      "notes": "Authentic English Bold 9000 photographed in 2009, provided by media acquisition."
+    }
+  ],
+  "prompts": [
+    {
+      "stage": "initial hardware correction",
+      "prompt": "Use case: precise-object-edit.\nAsset type: Photographic documentary YouTube thumbnail, landscape 16:9.\nInput images: Image 1 is the edit target (current BlackBerry thumbnail). Image 2 is the AUTHENTIC BlackBerry Bold 9000 hardware reference, not a composition or background reference.\nPrimary request: Correct ONLY the handset in Image 1 to faithfully depict a real BlackBerry Bold 9000 based on Image 2. Preserve the entire composition, camera angle, desk surface and its wear, window, notebook, pen, plant, photographic depth of field, restrained golden rim light and shadows. Preserve the headline EXACTLY \"TOO LATE?\" in its current location, proportions, font, white / golden amber coloring and question mark.\nHardware corrections: use the wide-bodied Bold 9000 silhouette and genuine hardware proportions in Image 2, with black front, thin worn chrome edge, dark inactive screen, earpiece centered above the BlackBerry wordmark and its small seven-dot BlackBerry emblem. REMOVE the incorrect \"WiFi\" text printed on the top-left. The navigation row below the display must have, from left to right: green call symbol; the genuine seven-dot BlackBerry menu symbol (NOT a house icon); a light ROUND PHYSICAL TRACKBALL with chrome ring, not an optical trackpad; curved back-arrow symbol; red end-call symbol. Use the accurate full US English QWERTY Bold 9000 keyboard layout, curved rows, thin chrome separators, black sculpted physical keys, authentic white letter/symbol legends and small red numbers. Keep actual QWERTY row Q W E R T Y U I O P, then A S D F G H J K L with delete/backspace key, then Alt / Z X C V B N M / enter, then shift / 0 / space / sym / shift as physically arranged in the reference. Do not invent extra keys or giant generic glyphs.\nReference treatment: The reference photo has Hebrew secondary legends and a white Star of David owner sticker; OMIT the Hebrew legends and REMOVE that owner sticker. This is a faithful US English version of the SAME Bold 9000 hardware, not a different BlackBerry model.\nFinish: Natural convincing photograph of a used physical phone on the same desk, believable wear, subtle imperfections, accurate materials, no CGI or synthetic poster look. Preserve Image 1's restrained light and framing. Correct the phone only, no new props, no extra captions, no additional words.",
+      "generatedPath": "C:/Users/lucas/.codex/generated_images/01a14775-8914-75b1-bb14-f5922032f2b5/exec-ab74bc48-d5e7-4e45-b8a0-2e7db782da77.png"
+    },
+    {
+      "stage": "focused keyboard refinement",
+      "prompt": "Use case: precise-object-edit.\nInput images: Image 1 is the edit target, the revised documentary thumbnail. Image 2 is an authentic English keyboard BlackBerry Bold 9000 photographed in 2009, provided ONLY as physical hardware reference.\nMake ONE focused correction to Image 1: render the small keyboard legends and physical key layout faithfully to the real US English Bold 9000 keyboard in Image 2. In particular, on the third letter row the separate key immediately between M and the return/enter key has the dollar symbol \"$\" and the small speaker symbol, NOT punctuation semicolon/exclamation. On the second row the J key has \";\" and K has an apostrophe; keep the other letters and symbol placements as on the real reference. The bottom row is left shift, red 0 key, a wide space key, sym key and right shift. Use actual compact handset typography, not giant graphic letters. Exact QWERTY letters must remain correct and readable.\nPreserve EVERYTHING ELSE in Image 1: identical \"TOO LATE?\" headline, size, typography, colors and placement; same used desk, pen, notebook, window, light and photographic texture; same phone pose and framing, worn black front and chrome rim; inactive black screen; BlackBerry logo and wordmark; green call, seven-dot BlackBerry menu symbol, round light physical trackball with chrome ring, curved back arrow, red end-call. No WiFi inscription. Do not copy the active screen content, hand or background from Image 2. Keep the natural photographic look; no new objects, no new words, no composition change.",
+      "generatedPath": "C:/Users/lucas/.codex/generated_images/01a14775-8914-75b1-bb14-f5922032f2b5/exec-902a135e-cd7c-40c1-a2f8-87530eb862f8.png"
+    }
+  ],
+  "inspection": {
+    "composition": "Headline TOO LATE?, desk, notebook, pen, window and amber lighting preserved.",
+    "hardware": "Removed WiFi inscription and house/menu icon; genuine BB menu symbol, round physical trackball, BB logo/wordmark and US QWERTY physical layout used. Dollar/speaker key corrected in second iteration.",
+    "limitation": "Generated photographic composition, not an archival photograph or exact product CAD. Tiny secondary glyphs remain subject to image-generation approximation; do not claim pixel-exact hardware transcription."
+  }
+}

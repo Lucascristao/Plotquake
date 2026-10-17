@@ -813,6 +813,47 @@
       "expectedBytes": 22277,
       "maxDownloadBytes": 22277,
       "provenanceNote": "Actual development prototype, June2012. Low-resolution source366x336; use as a documentary inset, not an aggressively enlarged full-screen hero. It is not the retail Z10 release."
+    },
+    {
+      "id": "bold-9000-in-hand-2009",
+      "kind": "image",
+      "title": "File:BlackBerry Bold in Hand.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/BlackBerry_Bold_in_Hand.jpg/1280px-BlackBerry_Bold_in_Hand.jpg",
+      "originalDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/BlackBerry_Bold_in_Hand.jpg",
+      "author": "Cheon Fong Liew",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "captureDate": "2009-07-18 05:26:55",
+      "width": 1600,
+      "height": 1200,
+      "preparedWidth": 1280,
+      "preparedHeight": 960,
+      "originalBytes": 663473,
+      "maxDownloadBytes": 5242880,
+      "provenanceNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device.",
+      "primarySource": "https://www.flickr.com/photos/liewcf/3741159735/"
+    },
+    {
+      "id": "bold-9000-wojciech30-2021",
+      "kind": "image",
+      "title": "File:Blackberry bold 9000.jpg",
+      "original": "https://commons.wikimedia.org/wiki/File:Blackberry_bold_9000.jpg",
+      "reuseFamily": "https://commons.wikimedia.org/wiki/File:Blackberry_bold_9000.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Blackberry_bold_9000.jpg/1920px-Blackberry_bold_9000.jpg",
+      "originalDownloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Blackberry_bold_9000.jpg",
+      "author": "Wojciech30",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "captureDate": "2021-11-17",
+      "width": 3024,
+      "height": 4032,
+      "preparedWidth": 1920,
+      "preparedHeight": 2560,
+      "originalBytes": 1409104,
+      "maxDownloadBytes": 5242880,
+      "provenanceNote": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device. Preserved object photographed in2021; do not present as a2008 event photograph."
     }
   ],
   "assets": [
@@ -1211,6 +1252,24 @@
       "label": "BlackBerry 10 Dev Alpha | June2012",
       "note": "Actual development prototype, June2012. Low-resolution source366x336; use as a documentary inset, not an aggressively enlarged full-screen hero. It is not the retail Z10 release.",
       "preparedSha256": "95dcd2a8b877ac647c186500b182616e2aeb229c218fc6090e0d2bcc916bbcf7"
+    },
+    {
+      "id": "bold-9000-in-hand-2009",
+      "kind": "image",
+      "sourceId": "bold-9000-in-hand-2009",
+      "src": "assets/images/blackberry-redo/bold-9000-in-hand-2009.jpg",
+      "label": "BlackBerry Bold 9000 | July 2009",
+      "note": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device.",
+      "preparedSha256": "17e78d4d24269e0db82fb0f945de4cbaea0808edc83f5e8ff665104022565efb"
+    },
+    {
+      "id": "bold-9000-wojciech30-2021",
+      "kind": "image",
+      "sourceId": "bold-9000-wojciech30-2021",
+      "src": "assets/images/blackberry-redo/bold-9000-wojciech30-2021.jpg",
+      "label": "BlackBerry Bold 9000 | preserved handset",
+      "note": "Visible trackball, BlackBerry-symbol Menu key and physical keyboard are consistent with the RIM Bold9000 manual. This is photographic compatibility, not forensic examination of the device. Preserved object photographed in2021; do not present as a2008 event photograph.",
+      "preparedSha256": "5003eea333e9ba3065e69abf85bb7e8aa9782c9ef97938de8cd32c46cb84b10c"
     }
   ],
   "selectionNotes": [

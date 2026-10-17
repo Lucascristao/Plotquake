@@ -19,7 +19,7 @@
   "voice": "Charon",
   "pitchSemitones": -1,
   "minimumDurationSeconds": 900,
-  "thumbnail": "public/assets/images/blackberry-thumbnail-v2.png",
+  "thumbnail": "public/assets/images/blackberry-thumbnail-v3.png",
   "acts": [
     {
       "id": "act-1",
@@ -161,7 +161,7 @@
               "variantIndex": 0,
               "weight": 1.7,
               "motion": "pan-up",
-              "caption": "Physical keys | BlackBerry Bold 9000",
+              "caption": "Physical keys | BlackBerry handset",
               "focus": {
                 "x": 0.5,
                 "y": 0.68
@@ -179,12 +179,14 @@
               "zoomEnd": 1.08
             },
             {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
+              "mediaKey": "bb_redo_bold_9000_in_hand_2009",
+              "variantIndex": 0,
               "weight": 1.1,
               "motion": "pull",
               "zoomStart": 1.1,
-              "zoomEnd": 1.025
+              "zoomEnd": 1.025,
+              "caption": "BlackBerry Bold 9000 | July 2009 photograph",
+              "fit": "contain"
             }
           ]
         },
@@ -299,11 +301,11 @@
           "narration": "There was money on both sides of that connection. Research In Motion sold hardware and earned service revenue. Its 2008 annual report described monthly service fees charged to carriers for active subscriber accounts. The handset brought a customer into a continuing relationship. For the business, that relationship could be valuable beyond the original sale. For a competitor, replacing the handset was only one part of breaking into BlackBerry's position.",
           "visualPlan": [
             {
-              "mediaKey": "blackberry_bold",
+              "mediaKey": "bb_redo_bold_9000_wojciech30_2021",
               "variantIndex": 0,
               "weight": 1.2,
               "motion": "pan-right",
-              "caption": "The handset was part of a continuing service",
+              "caption": "BlackBerry Bold 9000 | preserved handset",
               "zoomStart": 1.03,
               "zoomEnd": 1.075
             },
@@ -1244,13 +1246,14 @@
           "narration": "At the beginning, BlackBerry shortened the distance between a message and an answer. Its rivals expanded the question: what else could a phone become? By the time BlackBerry delivered its most ambitious answer, it was competing against established habits as well as devices. The company survived by changing what it chose to defend. The empire in people's pockets did not. And the warning remains: the most dangerous moment for a market leader may arrive while the sales figures still look extraordinary.",
           "visualPlan": [
             {
-              "mediaKey": "blackberry_bold",
-              "variantIndex": 1,
+              "mediaKey": "bb_redo_bold_9000_in_hand_2009",
+              "variantIndex": 0,
               "weight": 1.35,
               "motion": "push",
-              "caption": "The keyboard that defined an era",
+              "caption": "BlackBerry Bold 9000 | July 2009 photograph",
               "zoomStart": 1.025,
-              "zoomEnd": 1.085
+              "zoomEnd": 1.085,
+              "fit": "contain"
             },
             {
               "mediaKey": "bb_redo_iphone_user_2007",
@@ -1424,8 +1427,24 @@
       "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_9000.JPG",
       "license": "CC BY-SA 2.5 ar",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ar/deed.en",
-      "src": "public/assets/images/blackberry-thumbnail-v2.png",
-      "changes": "Editorial thumbnail reinterpretation using the handset photograph as visual reference; replaced surroundings, lighting and typography. Not an archival photograph."
+      "src": "public/assets/images/blackberry-thumbnail-v3.png",
+      "changes": "Prior thumbnail composition reference; handset details revised against documented Bold9000 references. Original editorial surroundings, lighting and typography; not an archival photograph."
+    },
+    {
+      "credit": "Zvivi · CC BY-SA 3.0",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerryBold9000.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "src": "public/assets/images/blackberry-thumbnail-v3.png",
+      "changes": "Photographic product reference for the corrected editorial thumbnail; new setting, light and typography. Not archival footage."
+    },
+    {
+      "credit": "Cheon Fong Liew",
+      "origin": "https://commons.wikimedia.org/wiki/File:BlackBerry_Bold_in_Hand.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "src": "public/assets/images/blackberry-thumbnail-v3.png",
+      "changes": "Photographic product reference for the corrected editorial thumbnail; new setting, light and typography. Not archival footage."
     }
   ],
   "mediaManifest": "episodes/blackberry-media-manifest.json",

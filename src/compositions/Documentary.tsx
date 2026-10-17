@@ -63,7 +63,9 @@ const Scene = ({scene, captionFrom = 10}: {scene: DocumentaryScene; captionFrom?
       durationInFrames={scene.newspaper.durationInFrames}>
       <NewspaperPop {...scene.newspaper} />
     </Sequence>}
-    {scene.caption && captionFrom < scene.durationInFrames - 30 && <Sequence from={captionFrom}
+    {scene.caption && !scene.shots.some((shot) => shot.from < captionFrom + 165 &&
+      shot.from + shot.durationInFrames > captionFrom &&
+      (shot.caption || ['chart', 'quote', 'facts'].includes(shot.type))) && captionFrom < scene.durationInFrames - 30 && <Sequence from={captionFrom}
       durationInFrames={Math.min(165, scene.durationInFrames - captionFrom)}>
       <SceneCaption caption={scene.caption} durationInFrames={Math.min(165, scene.durationInFrames - captionFrom)} />
     </Sequence>}
