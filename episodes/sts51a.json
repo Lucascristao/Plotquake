@@ -3787,5 +3787,10 @@
     "sat-26:0.40",
     "sat-26:0.90",
     "credits:0.5"
-  ]
+  ],
+  "audiovisualReview": {
+    "enabled": true,
+    "model": "gemini-3.8-flash",
+    "scope": "Descriptive observations from the actual completed film, with audio and sampled video. No automatic editorial score or approval; does not claim human listening or continuous full-frame-rate viewing."
+  }
 }

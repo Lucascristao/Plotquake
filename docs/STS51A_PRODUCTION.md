@@ -43,7 +43,22 @@ pages have been inspected. Code checks cover the new publication, timing,
 credits, narration cache and archive preparation paths. These checks do not
 constitute an audiovisual review.
 
-No NASA production run or delivered final MP4 was found at resumption. The next
-step is the cloud preparation run with measured speech and representative
-audiovisual samples. Final runtime, the effective credits, final-file inspection
-and a Drive delivery receipt remain pending. The user publishes to YouTube manually.
+No NASA production run or delivered final MP4 was found at resumption.
+
+The completed source and montage were saved in commit `2c8d899` on
+`codex/sts51a-documentary`. Cloud preparation was dispatched on October 21:
+[run 39678557851](https://github.com/Lucascristao/Plotquake/actions/runs/39678557851).
+This preparation-only execution measures the actual speech, prepares the selected
+media and produces representative audiovisual samples. It does not deliver the
+full film. Its result is still pending at dispatch.
+
+Final runtime, effective credits, final-file inspection and a Drive delivery
+receipt remain pending. The user publishes to YouTube manually.
+
+For the final execution, this episode also requests a descriptive observation of
+the actual completed MP4 through the existing Google production connection. The
+report is supplementary: it uses the audio and sampled video, reports its exact
+input/sampling scope, and does not issue an editorial score or approval. It is
+not a claim of human listening or continuous full-frame-rate viewing. The report
+is kept with internal documentation; failures must remain explicitly unavailable.
+This does not modify or restart the preparation run already in progress.

@@ -73,6 +73,11 @@ def main() -> None:
             if not documentation.is_file() or not documentation.stat().st_size:
                 raise FileNotFoundError(f"The new delivery standard requires separate documentation: {name}")
             paths.append(documentation)
+    if (source.get("audiovisualReview") or {}).get("enabled") is True:
+        for name in ("audiovisual_review.json", "audiovisual_review.md"):
+            observation = Path(args.metadata).parent / "audiovisual-review" / name
+            if observation.is_file() and observation.stat().st_size:
+                paths.append(observation)
     for path in paths:
         print(f"[Drive] Uploading {path.name} ({path.stat().st_size / 1048576:.1f} MB)...", flush=True)
         file_id = uploader.upload(path, name=path.name, folder_id=folder_id,

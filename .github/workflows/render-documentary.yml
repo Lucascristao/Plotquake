@@ -276,6 +276,7 @@ jobs:
       GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
       GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
       GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID || vars.GOOGLE_DRIVE_FOLDER_ID || '1t_G2GMGgexWTT__2i0adglk1ZGjB_sw1' }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       PYTHONUNBUFFERED: '1'
     steps:
       - name: Checkout the same production commit
@@ -318,6 +319,33 @@ jobs:
           if-no-files-found: warn
           path: renders/review-final/
 
+      - name: Observe the completed film's sound and picture when requested by this episode
+        continue-on-error: true
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys
+          source = json.load(open(os.environ['EPISODE_PATH'], encoding='utf-8-sig'))
+          review = source.get('audiovisualReview') or {}
+          if review.get('enabled') is True:
+              subprocess.run([sys.executable, 'worker/review_audiovisual.py',
+                              '--video', 'renders/documentary_final.mp4',
+                              '--timeline', 'src/episodes/renderEpisode.json',
+                              '--output-dir', 'renders/audiovisual-review',
+                              '--model', review.get('model', 'gemini-3.8-flash'),
+                              '--allow-ci-proxy'], check=True)
+          else:
+              print('No assisted audiovisual observation requested for this episode.')
+          PY
+
+      - name: Preserve descriptive audiovisual observations separately from publication text
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audiovisual-observations-${{ github.run_id }}
+          retention-days: 1
+          if-no-files-found: ignore
+          path: renders/audiovisual-review/
+
       - name: Deliver the complete package to Google Drive
         run: |
           python worker/upload_outputs_to_drive.py \
@@ -351,6 +379,8 @@ jobs:
             renders/internal_documentation.json
             renders/internal_documentation.txt
             renders/research_sources.md
+            renders/audiovisual-review/audiovisual_review.json
+            renders/audiovisual-review/audiovisual_review.md
             renders/drive_receipt.json
             renders/render_plan.json
             src/episodes/renderEpisode.json
