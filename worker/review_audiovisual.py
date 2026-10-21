@@ -25,6 +25,7 @@ DOCUMENTATION = [
     "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
     "https://ai.google.dev/gemini-api/docs/files#usage-information",
     "https://ai.google.dev/gemini-api/docs/streaming",
+    "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
     "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash",
 ]
 LIMITATIONS = [
@@ -159,8 +160,13 @@ def analyze(client, path: Path, prompt: str, model: str, *, timeout_seconds: flo
             for event in stream:
                 if time.monotonic() - started > timeout_seconds:
                     raise ReviewUnavailable("The optional analysis exceeded its elapsed time budget.")
-                if value(event, "event_type") == "step.delta" and value(value(event, "delta"), "type") == "text":
-                    fragments.append(value(value(event, "delta"), "text", ""))
+                if value(event, "event_type") == "step.start" and value(value(event, "step"), "type") == "model_output":
+                    # The initial event can already carry text; deltas only
+                    # contain subsequent fragments, per the May 2026 schema.
+                    fragments.extend(value(part, "text", "") or "" for part in (value(value(event, "step"), "content") or [])
+                                     if value(part, "type") == "text")
+                elif value(event, "event_type") == "step.delta" and value(value(event, "delta"), "type") == "text":
+                    fragments.append(value(value(event, "delta"), "text", "") or "")
                 elif value(event, "event_type") == "interaction.completed":
                     final = value(event, "interaction")
         finally:

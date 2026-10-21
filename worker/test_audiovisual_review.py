@@ -38,6 +38,19 @@ class AudiovisualReviewTests(unittest.TestCase):
         self.assertTrue(result["rawDescriptiveResponse"])
         client.files.delete.assert_called_once()
 
+    def test_initial_model_output_text_is_preserved_before_deltas(self):
+        client = client_for("Unused")
+        client.interactions.create.return_value = iter([
+            {"event_type": "step.start", "step": {"type": "thought", "summary": [{"type": "text", "text": "Private thought"}]}},
+            {"event_type": "step.start", "step": {"type": "model_output", "content": [{"type": "text", "text": '{"observations": ['}]}},
+            {"event_type": "step.delta", "delta": {"type": "text", "text": "]}"}},
+            {"event_type": "interaction.completed", "interaction": {"status": "completed"}},
+        ])
+        result = analyze(client, Path("final.mp4"), "Observe.", MODEL)
+        self.assertEqual(result["responseFormat"], "json")
+        self.assertEqual(result["rawDescriptiveResponse"], '{"observations": []}')
+        self.assertNotIn("Private thought", result["rawDescriptiveResponse"])
+
     def test_incomplete_output_does_not_become_observations(self):
         client = client_for("Partial text.", status="incomplete")
         cleanup = {}
