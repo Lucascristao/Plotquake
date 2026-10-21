@@ -113,6 +113,10 @@ def measure_master_audio(master: Path, output: Path) -> dict:
 def still_reviews(episode: dict, props: Path, destination: Path,
                   requests: list[str], browser: str | None) -> list[dict]:
     records = []
+    scene_counts = {}
+    for request in requests:
+        name = request.partition(":")[0]
+        scene_counts[name] = scene_counts.get(name, 0) + 1
     for request in requests:
         scene_id, separator, fraction = request.partition(":")
         if not separator:
@@ -122,10 +126,23 @@ def still_reviews(episode: dict, props: Path, destination: Path,
             raise ValueError("Still fractions must be between 0 and 1.")
         if not scene_id or Path(scene_id).name != scene_id or "/" in scene_id or chr(92) in scene_id:
             raise ValueError(f"Unsafe still scene id: {scene_id!r}")
-        window = scene_windows(episode, [scene_id])[0]
+        if scene_id == "credits":
+            credits = episode.get("endCredits")
+            if not credits:
+                raise ValueError("A credits still requires actual end credits in the episode.")
+            window = {"fromFrame": credits["startFrame"], "durationInFrames": credits["durationInFrames"]}
+        else:
+            window = scene_windows(episode, [scene_id])[0]
         relative = min(window["durationInFrames"] - 1, math.floor(window["durationInFrames"] * fraction))
+        if scene_id == "credits":
+            # A fraction can fall on a card boundary; inspect the card's readable
+            # center rather than a deliberately black transition frame.
+            card = next((card for card in credits["cards"] if card["from"] <= relative < card["from"] + card["durationInFrames"]), None)
+            if card:
+                relative = card["from"] + card["durationInFrames"] // 2
         frame = window["fromFrame"] + relative
-        image = destination / f"{scene_id}-composition.jpg"
+        sample_id = scene_id if scene_counts[scene_id] == 1 else f"{scene_id}-{fraction:g}"
+        image = destination / f"{sample_id}-composition.jpg"
         command = [
             shutil.which("node") or "node", "node_modules/@remotion/cli/remotion-cli.js", "still",
             "src/index.ts", "Documentary", str(image), f"--props={props}", f"--frame={frame}",
@@ -139,7 +156,7 @@ def still_reviews(episode: dict, props: Path, destination: Path,
             "sceneFraction": fraction, "output": image.as_posix(), "width": 1920, "height": 1080,
             "scope": "One full-resolution composition frame from actual episode props. Visual sample only, not a complete-scene viewing.",
         }
-        write_json(destination / f"{scene_id}-composition.json", record)
+        write_json(destination / f"{sample_id}-composition.json", record)
         records.append(record)
     return records
 

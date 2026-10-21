@@ -1,0 +1,3791 @@
+{
+  "id": "sts51a-satellite-rescue",
+  "title": "Why NASA Brought Two Satellites Back to Earth",
+  "subtitle": "Two stranded satellites. Five astronauts. A second chance at orbit.",
+  "description": "The true story of Discovery's STS-51A satellite recovery mission in 1984.",
+  "language": "en-US",
+  "voice": "Charon",
+  "pitchSemitones": -1,
+  "minimumDurationSeconds": 900,
+  "thumbnail": "public/assets/images/sts51a-thumbnail.png",
+  "archivalMediaPlan": "episodes/sts51a-media-plan.json",
+  "researchDocument": "episodes/sts51a-research.md",
+  "publication": {
+    "standard": "cinematic-v1",
+    "description": "In 1984, two communications satellites reached space and ended up in the wrong orbits. Their hardware still worked. Their businesses could not. Months later, five astronauts aboard Discovery set out to bring them home. The mission joined the ambitions of the space shuttle program with an unusual insurance recovery, then confronted the crew with a problem their capture equipment could not solve as planned. Through original mission records, archival footage, and astronaut recollections, this documentary follows the decisions behind STS-51A, the demanding work outside the shuttle, and the remarkable second lives of Westar 6 and Palapa B2. Why go back for satellites that had already been written off—and what did bringing them home actually prove?",
+    "hashtags": [
+      "NASA",
+      "SpaceHistory"
+    ]
+  },
+  "tags": [
+    "NASA",
+    "STS-51A",
+    "space shuttle Discovery",
+    "satellite rescue",
+    "Palapa B2",
+    "Westar 6",
+    "space history",
+    "astronauts",
+    "Lloyds of London",
+    "Anna Fisher",
+    "Joe Allen",
+    "Dale Gardner",
+    "space documentary",
+    "Plotquake"
+  ],
+  "editorialDirection": {
+    "centralQuestion": "Why send astronauts to return two commercially stranded but functioning satellites to Earth, and what made the recovery possible?",
+    "opening": "Begin with the authentic For Sale photograph, identify the commercial purpose immediately, then follow the functioning satellites from their failed deployments to the recovery and later return to service.",
+    "factualDistinctions": [
+      "Satellite versus failed PAM-D upper stage",
+      "Geostationary target versus unusable low orbit",
+      "Additional recovery reimbursement versus total shuttle mission cost",
+      "Pre-discussed contingency versus invented spontaneous improvisation",
+      "Recovering hardware versus proving that routine commercial shuttle servicing was economical"
+    ],
+    "sound": "Measured curiosity for the orbital problem; restrained forward movement during preparation; greater energy during approach and capture; relief after securing each vehicle; reflective resolution. Keep Charon's authority without a continuous trailer delivery.",
+    "status": "Original script and production preparation; final speech durations and audiovisual review remain pending."
+  },
+  "acts": [
+    {
+      "id": "stranded",
+      "title": "Stranded",
+      "subtitle": "Working satellites, unusable orbits",
+      "scenes": [
+        {
+          "id": "sat-01",
+          "caption": "November 1984 · An unusual cargo",
+          "narration": "Two astronauts pose above Discovery's cargo bay with a sign that says For Sale. Below them are two communications satellites, on their way back to Earth. They had already been launched, stranded, and written off by their insurers. Now the hardware was coming home for another chance.\n\nThe shuttle crew had gone into orbit to recover commercial property. Their customers wanted to turn insurance losses into machines someone could use again. It would take more than a jetpack and a photograph. One small fitting on a satellite would force the astronauts to change how they worked.",
+          "sourceIds": [
+            "S15",
+            "S17",
+            "S20",
+            "S25"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_for_sale_wide",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "November 14, 1984 · An unusual cargo"
+            },
+            {
+              "mediaKey": "sat_v42",
+              "variantIndex": 0,
+              "weight": 5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_recovered_bay",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v03",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_palapa_stinger",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            }
+          ],
+          "visualKeys": [
+            "sat_p_for_sale_wide",
+            "sat_v42",
+            "sat_p_recovered_bay",
+            "sat_v03",
+            "sat_p_palapa_stinger"
+          ]
+        },
+        {
+          "id": "sat-02",
+          "caption": "February 1984 · Challenger",
+          "narration": "The trouble began on a flight that seemed to demonstrate exactly what the shuttle was for. Challenger could carry satellites into low Earth orbit, open its enormous cargo doors, and release them into space. From there, a separate rocket stage would take each satellite much farther out.\n\nOn February third, Westar Six left the payload bay. Its destination was a working position high above the equator, serving Western Union's communications network. Western Union had considered other launch options, including Europe's Ariane rocket, before choosing the shuttle on its assessment of price and reliability. Challenger delivered the satellite. Then the upper stage failed to complete its job. Westar was circling Earth, responding to commands, with no way to reach the orbit its customers needed.\n\nA second satellite was still aboard Challenger. Palapa B Two belonged to Indonesia's communications system. Its release was delayed while the first failure was examined. On February sixth, Palapa went out. Its rocket stage also malfunctioned.\n\nTwo deployments had produced the same commercial dead end. The failure was in the equipment meant to raise their orbits. The satellites themselves remained healthy. That distinction would eventually make a rescue worth considering. First, it left their owners with an especially frustrating loss: valuable, functioning machines in places where they could not do their intended work.",
+          "sourceIds": [
+            "S02",
+            "S04",
+            "S15",
+            "S05"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_v46",
+              "variantIndex": 0,
+              "weight": 7.5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Challenger · February 1984",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_launch_41b",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v47",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Westar 6 leaves Challenger",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_control_41b",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v48",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Palapa B2 leaves Challenger",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_control_41b_second",
+              "variantIndex": 0,
+              "weight": 13,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_launch_hardware",
+              "variantIndex": 0,
+              "weight": 23,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            }
+          ],
+          "visualKeys": [
+            "sat_v46",
+            "sat_p_launch_41b",
+            "sat_v47",
+            "sat_p_control_41b",
+            "sat_v48",
+            "sat_p_control_41b_second",
+            "sat_launch_hardware"
+          ]
+        },
+        {
+          "id": "sat-04",
+          "caption": "The orbit was part of the product",
+          "narration": "For a communications satellite, reaching space is only part of the delivery. At roughly twenty-two thousand three hundred miles above the equator, a satellite can circle Earth in step with the planet's rotation. To a dish on the ground, it stays in the same part of the sky. That is what makes a fixed connection practical.\n\nWestar and Palapa were instead traveling through low, elongated orbits only a few hundred miles above Earth. They swept around the planet rather than remaining over their service areas. Their smaller onboard thrusters could make adjustments. They could not replace the missing climb. The distance between those two orbits was the distance between usable businesses and insurance claims.",
+          "sourceIds": [
+            "S17",
+            "S25",
+            "S15"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_orbit_diagram",
+              "variantIndex": 0,
+              "weight": 23,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_v18",
+              "variantIndex": 0,
+              "weight": 16,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v04",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_orbit_diagram",
+            "sat_v18",
+            "sat_v04"
+          ]
+        },
+        {
+          "id": "sat-05",
+          "caption": "A loss with something left to recover",
+          "narration": "Usually, the paperwork would have outlived the spacecraft. The insurers paid for the losses and acquired salvage rights. A machine stranded in orbit could remain there until its orbit decayed. These machines, however, could still be commanded from the ground. Engineers had something to work with.\n\nIf a shuttle could reach them, astronauts might capture them, secure them in the payload bay, and return them for refurbishment. New launches could then put them where the first launches had failed to take them. The insurance settlement had changed who held the financial loss. A recovery might change how much of that loss remained permanent.",
+          "sourceIds": [
+            "S25",
+            "S10",
+            "S17"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_westar_manual",
+              "variantIndex": 0,
+              "weight": 13,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "November 1984 · the eventual recovery"
+            },
+            {
+              "mediaKey": "sat_v10",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Satellite retrieval · STS-51A",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_inspection",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v38",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_westar_manual",
+            "sat_v10",
+            "sat_p_inspection",
+            "sat_v38"
+          ]
+        },
+        {
+          "id": "sat-06",
+          "caption": "The shuttle's other direction",
+          "narration": "The shuttle carried a possibility that ordinary satellite launches did not: substantial cargo space on the way home. Returning hardware was part of the larger ambition behind the vehicle. Astronauts could deliver, inspect, repair, and retrieve equipment instead of treating every launch as a one-way shipment.\n\nWestar and Palapa offered a concrete test. They were real commercial assets, already built, already launched, and already in trouble. Bringing them back would require a chain of operations no single machine could perform alone. Controllers would prepare their orbits. Pilots would bring Discovery alongside. Spacewalkers would make the capture. Inside the cabin, another astronaut would operate the arm that moved them into the bay.\n\nThe financial arrangement depended on a flight that already had other work to do. Discovery would launch two new communications satellites. Recovering the stranded pair would be added to that mission. An August agreement provided for reimbursement of additional recovery expenses. NASA's historical chronology records a payment of five and a half million dollars for bringing both satellites home.\n\nThat figure was not the price of an entire shuttle flight. It was the additional recovery payment within a much larger operation. The insurers were buying a chance to recover value from two losses. NASA was combining that chance with an existing mission and a demonstration of what its new vehicle could accomplish.",
+          "sourceIds": [
+            "S25",
+            "S17",
+            "S01",
+            "S06",
+            "S07",
+            "S28"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_empty_bay",
+              "variantIndex": 0,
+              "weight": 11,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v01",
+              "variantIndex": 0,
+              "weight": 6.5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Discovery’s cargo bay",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_discovery_vab",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_p_gardner_training",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v02",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Anna Fisher at the aft controls",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_anik",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_p_leasat",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_doc_agreement",
+              "variantIndex": 0,
+              "weight": 19,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_p_discovery_lift",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v04",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_empty_bay",
+            "sat_v01",
+            "sat_p_discovery_vab",
+            "sat_p_gardner_training",
+            "sat_v02",
+            "sat_p_anik",
+            "sat_p_leasat",
+            "sat_doc_agreement",
+            "sat_p_discovery_lift",
+            "sat_v04"
+          ]
+        },
+        {
+          "id": "sat-08",
+          "caption": "Rick Hauck · Mission commander",
+          "narration": "Commander Rick Hauck was uneasy with the way the recovery was being presented. In his NASA oral history, he recalled objecting to a public announcement that made success sound too straightforward. Even one satellite would be an extraordinary achievement. The insurance participants understood the distinction between property and people. Hauck remembered underwriter Stephen Merrett emphasizing that the crew should not risk its lives merely to bring the hardware back.",
+          "sourceIds": [
+            "S09"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_crew",
+              "variantIndex": 0,
+              "weight": 11,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "Rick Hauck’s crew · STS-51A"
+            },
+            {
+              "mediaKey": "sat_p_evacuation",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_p_lloyds",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "The crew with Stephen Merrett · London, 1985"
+            }
+          ],
+          "visualKeys": [
+            "sat_p_crew",
+            "sat_p_evacuation",
+            "sat_p_lloyds"
+          ]
+        },
+        {
+          "id": "sat-09",
+          "caption": "Five people, one recovery chain",
+          "narration": "Hauck and pilot David Walker would maneuver Discovery and coordinate the work inside. Joe Allen and Dale Gardner would leave the cabin to retrieve the satellites. Anna Fisher would control the Canadian-built robotic arm.\n\nFisher later described the concentration required while Earth, shuttle, satellite, and arm were moving in her field of view. She was also helping with rendezvous as the spacewalkers prepared. The recovery demanded several jobs at once, with five people dividing the work. Its most famous images would show the men outside. Fisher's positioning of those men and their equipment made much of what followed possible.",
+          "sourceIds": [
+            "S11",
+            "S17",
+            "S01"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_v30",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Discovery’s flight deck",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_fisher_training",
+              "variantIndex": 0,
+              "weight": 11,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v21",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_fisher_camera",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v03",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_fisher_rms",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            }
+          ],
+          "visualKeys": [
+            "sat_v30",
+            "sat_p_fisher_training",
+            "sat_v21",
+            "sat_p_fisher_camera",
+            "sat_v03",
+            "sat_p_fisher_rms"
+          ]
+        },
+        {
+          "id": "sat-10",
+          "caption": "The Manned Maneuvering Unit",
+          "narration": "The jetpack had made its spectacular debut on the same February flight that stranded the satellites. Bruce McCandless flew away from Challenger using the Manned Maneuvering Unit, or M M U. Its nitrogen thrusters allowed an astronaut to translate and turn without a tether connecting him to the shuttle.\n\nThat freedom made distant hardware reachable. It also made control essential. The astronaut approaching a satellite had to match its movement closely enough to establish a physical connection. A collision could disturb the target or damage it. The jetpack was a small maneuvering spacecraft wrapped around a person, and the person was about to become part of a much larger moving assembly.\n\nAn earlier repair mission had already exposed how difficult that connection could be. In April, astronaut George Nelson tried to attach himself to the Solar Maximum Mission satellite. The capture tool would not engage as expected. The operation disturbed the satellite, and the attempted capture had to be abandoned. Controllers and the shuttle crew eventually stabilized and retrieved Solar Max with the robotic arm, allowing repairs to proceed.\n\nFor the next recovery, a successful jetpack flight was only one piece of evidence. The capture interface mattered just as much. A device that worked in preparation still had to meet a real spacecraft, in motion, beyond anyone's ability to walk over and adjust the setup.",
+          "sourceIds": [
+            "S25",
+            "S02",
+            "S14",
+            "S18"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_v49",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "The MMU’s first mission · February 1984",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_mccandless",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_p_stewart",
+              "variantIndex": 0,
+              "weight": 14,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v50",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "George Nelson approaches Solar Max · April 1984",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_solmax_approach",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v51",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Solar Max repairs · STS-41C",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_solmax_repair",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v33",
+              "variantIndex": 0,
+              "weight": 6,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "An on-orbit checklist · STS-51A",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_v49",
+            "sat_p_mccandless",
+            "sat_p_stewart",
+            "sat_v50",
+            "sat_p_solmax_approach",
+            "sat_v51",
+            "sat_p_solmax_repair",
+            "sat_v33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "title": "The Recovery",
+      "subtitle": "A practiced plan meets the real spacecraft",
+      "scenes": [
+        {
+          "id": "sat-12",
+          "caption": "A different way to make contact",
+          "narration": "For Westar and Palapa, engineers developed a long capture device nicknamed the stinger. It would enter the nozzle of the satellite's own apogee motor and lock into place. That motor was separate from the upper stage that had failed months earlier. The astronauts were recovering the satellite, not hauling the failed launch stage back with it.\n\nOnce connected, the jetpack could control the satellite's rotation. Fisher could then use the robotic arm to bring the assembly over the bay. A bridge structure fitted above the satellite's antenna would provide another attachment point. The work was divided into steps, each transferring control while keeping the spacecraft secure.",
+          "sourceIds": [
+            "S15",
+            "S06",
+            "S04"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_doc_stinger",
+              "variantIndex": 0,
+              "weight": 22,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_v06",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "The stinger and an MMU · STS-51A",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_launch_hardware",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.025,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_doc_grapple",
+              "variantIndex": 0,
+              "weight": 16,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            }
+          ],
+          "visualKeys": [
+            "sat_doc_stinger",
+            "sat_v06",
+            "sat_launch_hardware",
+            "sat_doc_grapple"
+          ]
+        },
+        {
+          "id": "sat-13",
+          "caption": "Preparing an alternative",
+          "narration": "The stinger and bridge were only two of the interfaces they needed. A satellite caught outside still had to become cargo safe to carry through reentry. Engineers prepared the cradles, adapters, and restraints that would make that transformation possible. The spacecraft were already in orbit, beyond any final workshop fit check with the retrieval equipment.",
+          "sourceIds": [
+            "S11",
+            "S12",
+            "S15"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_doc_bridge",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_p_rollout",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_doc_cradle",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.025,
+              "zoomEnd": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_doc_bridge",
+            "sat_p_rollout",
+            "sat_doc_cradle"
+          ]
+        },
+        {
+          "id": "sat-14",
+          "caption": "Making the targets catchable",
+          "narration": "Controllers also had to make the satellites catchable. Before Discovery arrived, they changed the targets' orbits and slowed their rotation. The rendezvous plan had to accommodate two deliveries and two recoveries on a tight propellant budget. NASA's technical history counts forty-four orbital-change maneuvers.\n\nThe rescue was already taking shape in commands from the ground. By the time an astronaut approached, much of the work that made contact possible would be invisible in the photograph.",
+          "sourceIds": [
+            "S13",
+            "S15",
+            "S17"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_mission_control",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v38",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_control_ignition",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v37",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_mission_control",
+            "sat_v38",
+            "sat_p_control_ignition",
+            "sat_v37"
+          ]
+        },
+        {
+          "id": "sat-15",
+          "caption": "November 8, 1984 · Discovery",
+          "narration": "High-altitude winds delayed the launch by a day. On November eighth, Discovery lifted off with five astronauts, two new satellites, and the equipment for bringing two others home. It was only Discovery's second trip into space.\n\nThe crew first had to perform the work that had been scheduled before the recovery was added. Anik D Two would serve Canada. Leasat One would support United States Navy communications. These were deliveries, with their own systems to check and deployments to execute. The bay had to be emptied of its outgoing cargo before it could become a place for the returning spacecraft.\n\nAnik left first. Leasat followed, rolling away from the shuttle in its distinctive spinning release. Both deployments succeeded. The crew could turn its attention to the rendezvous with Palapa.\n\nHauck and Walker had to place a crewed vehicle beside a target already traveling around Earth. Simply pointing at it and firing the engines would not do. Changes in speed changed the shuttle's orbit, and the crew used a sequence of maneuvers to arrive in the right place at the right time. The recovery plan now depended on bringing two moving vehicles close enough for Allen to cross the remaining distance himself.",
+          "sourceIds": [
+            "S15",
+            "S17",
+            "S01"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_walkout",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v26",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "November 8, 1984 · Discovery",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v27",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_launch_aerial",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v28",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v01",
+              "variantIndex": 0,
+              "weight": 6.5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v32",
+              "variantIndex": 0,
+              "weight": 5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Anik D2 deployment",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_anik",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v19",
+              "variantIndex": 0,
+              "weight": 18,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Leasat 1 deployment",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v20",
+              "variantIndex": 0,
+              "weight": 14,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Leasat 1 leaves Discovery",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_leasat_earth",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v34",
+              "variantIndex": 0,
+              "weight": 6,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v39",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Rendezvous sight · STS-51A",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_walkout",
+            "sat_v26",
+            "sat_v27",
+            "sat_p_launch_aerial",
+            "sat_v28",
+            "sat_v01",
+            "sat_v32",
+            "sat_p_anik",
+            "sat_v19",
+            "sat_v20",
+            "sat_p_leasat_earth",
+            "sat_v34",
+            "sat_v39"
+          ]
+        },
+        {
+          "id": "sat-17",
+          "caption": "November 12 · Closing on Palapa",
+          "narration": "Discovery approached to within about thirty-five feet of Palapa. Allen and Gardner came through the airlock. Allen fastened himself into the jetpack and took the stinger out toward the satellite. Gardner remained at the payload bay, ready for the next stage of the work.\n\nThe gap was small enough to see across and large enough to separate an astronaut from the safety of the vehicle. Allen guided the capture device into the motor opening. Once attached, he used the jetpack's controls to stop the remaining spin. The target and the astronaut could now be handled as a connected system.\n\nFrom inside Discovery, Fisher moved the arm to a grapple fixture on the capture assembly. Its mechanical hand closed around the attachment point. She could now move Allen and Palapa together over the payload bay.\n\nThe first major problem had been solved: the satellite was captured and under control. But it was not ready to come home. Gardner had to fit the bridge structure that would let the arm handle the satellite in the next configuration. The structure would not seat properly. Something on the real spacecraft obstructed the fit.",
+          "sourceIds": [
+            "S17",
+            "S12",
+            "S15",
+            "S11"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_v33",
+              "variantIndex": 0,
+              "weight": 6,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Preparing the recovery",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_palapa_stinger",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v13",
+              "variantIndex": 0,
+              "weight": 10,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Allen and Palapa · MMU 3",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v02",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Fisher at the arm controls",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_palapa_rms",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v12",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_doc_bridge",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025,
+              "caption": "Preflight bridge design · the attachment that would not seat"
+            }
+          ],
+          "visualKeys": [
+            "sat_v33",
+            "sat_p_palapa_stinger",
+            "sat_v13",
+            "sat_v02",
+            "sat_p_palapa_rms",
+            "sat_v12",
+            "sat_doc_bridge"
+          ]
+        },
+        {
+          "id": "sat-19",
+          "caption": "The clearance problem",
+          "narration": "A protruding waveguide fitting interfered with the bridge. It extended farther than the planned clamps could clear. The attachment they had practiced could not be made on the spacecraft in front of them.\n\nThe crew had discussed this possibility before launch. Fisher recalled that nobody could check the bridge against the real satellite because it was already in orbit. They had considered a manual alternative with their flight director. Allen now disconnected from the capture assembly and stowed his jetpack. He fixed his feet into a restraint beside the pallet in the bay. The arm released the satellite into his hands.\n\nThat transfer changed the work. Allen would keep Palapa steady while Gardner removed the stinger, covered the motor opening, and fitted the adapter needed to secure the satellite in its cradle. Weightlessness made the handling possible. The satellite still had mass, and any push would change its motion.\n\nAllen later said the dramatic picture gave him too much credit. Gardner was doing difficult adapter work largely on his own. One astronaut controlled the machine while the other changed its attachments. Only after they had fitted the landing hardware could they berth and latch Palapa in its cradle. NASA's contemporary mission report called this a practiced backup procedure. The crew had adapted that alternative to the actual problem.",
+          "sourceIds": [
+            "S15",
+            "S11",
+            "S12",
+            "S18"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_doc_waveguide",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_p_gardner_training",
+              "variantIndex": 0,
+              "weight": 14,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v22",
+              "variantIndex": 0,
+              "weight": 6,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Fisher at the aft station · STS-51A",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_fisher_camera",
+              "variantIndex": 0,
+              "weight": 14,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_p_palapa_manual",
+              "variantIndex": 0,
+              "weight": 23,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v23",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Discovery’s aft windows and instruments",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_doc_backup",
+              "variantIndex": 0,
+              "weight": 22,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            }
+          ],
+          "visualKeys": [
+            "sat_doc_waveguide",
+            "sat_p_gardner_training",
+            "sat_v22",
+            "sat_p_fisher_camera",
+            "sat_p_palapa_manual",
+            "sat_v23",
+            "sat_doc_backup"
+          ]
+        },
+        {
+          "id": "sat-21",
+          "caption": "One secured",
+          "narration": "After six hours outside, Palapa was secured in its cradle. The first recovery was complete. Between spacewalks, the crew serviced the suits and revised the method for Westar.\n\nCarrying one satellite also complicated the pursuit of the other. Flight director Randy Stone later described the thermal planning involved. The satellite still contained hydrazine, and the team had to consider how the shuttle's orientation would expose it to heat and cold during the next maneuvers. Freezing, damage, or a later leak would create problems for people handling it on the ground. The planning had to protect the spacecraft during the chase and the people who would handle it afterward.\n\nThe cargo bay now contained property worth bringing home and hardware that imposed its own conditions on the rest of the flight.",
+          "sourceIds": [
+            "S15",
+            "S16",
+            "S11"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_palapa_cradle",
+              "variantIndex": 0,
+              "weight": 18,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v25",
+              "variantIndex": 0,
+              "weight": 11,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Aboard Discovery · STS-51A",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_crew_inflight",
+              "variantIndex": 0,
+              "weight": 16,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v37",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v35",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Discovery’s working and living space",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_palapa_cradle",
+            "sat_v25",
+            "sat_p_crew_inflight",
+            "sat_v37",
+            "sat_v35"
+          ]
+        },
+        {
+          "id": "sat-22",
+          "caption": "November 14 · Westar 6",
+          "narration": "For Westar, Gardner flew the jetpack. Allen took the other role. The crew had decided to use the direct handling method and omit the original bridge installation. This time, that choice was part of the revised plan from the start.\n\nGardner reached the satellite, connected the stinger, and controlled its motion. Gardner guided Westar toward Allen, who was secured to a work platform on the robotic arm. Fisher positioned Allen to receive and hold the satellite while the astronauts prepared it for its cradle. For Palapa, Allen had worked from a fixed restraint beside the pallet. Now the arm itself could position his work platform. The change gave him more freedom to hold the spacecraft where Gardner needed it and reduced the chance of contact with its solar panels.\n\nThe second spacewalk lasted five hours and forty-two minutes. Westar joined Palapa in the cargo bay. The mission had now delivered two new satellites and retrieved two others.\n\nAt the end of the work, Gardner and Allen posed above the recovered spacecraft with a small sign: For Sale. It was a joke with a real commercial point. The hardware below them had changed from stranded property into cargo that could be inspected, repaired where necessary, and offered another launch. ",
+          "sourceIds": [
+            "S15",
+            "S18",
+            "S11",
+            "S17",
+            "S10"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_v05",
+              "variantIndex": 0,
+              "weight": 6,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "November 14 · Gardner in MMU 2",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_westar_tool",
+              "variantIndex": 0,
+              "weight": 13,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_v07",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Closing on Westar 6",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_westar_dock",
+              "variantIndex": 0,
+              "weight": 13,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v21",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Anna Fisher at the controls",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_westar_manual",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            },
+            {
+              "mediaKey": "sat_doc_second_eva",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_p_for_sale_wide",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "November 14, 1984 · two recoveries complete"
+            },
+            {
+              "mediaKey": "sat_v42",
+              "variantIndex": 0,
+              "weight": 5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_for_sale_close",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "Westar 6 and Palapa B2 were ready to return"
+            }
+          ],
+          "visualKeys": [
+            "sat_v05",
+            "sat_p_westar_tool",
+            "sat_v07",
+            "sat_p_westar_dock",
+            "sat_v21",
+            "sat_p_westar_manual",
+            "sat_doc_second_eva",
+            "sat_p_for_sale_wide",
+            "sat_v42",
+            "sat_p_for_sale_close"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-life",
+      "title": "A Second Life",
+      "subtitle": "The recovery only mattered if the hardware could work again",
+      "scenes": [
+        {
+          "id": "sat-24",
+          "caption": "November 16 · Coming home",
+          "narration": "With both satellites secured, the crew could prepare to come home. The cradles and restraints would carry them through the shuttle's descent and landing. Discovery closed its payload doors and fired its maneuvering engines.\n\nOn November sixteenth, Hauck landed at Kennedy Space Center after just under eight days in orbit. Workers on Earth would finally be able to inspect hardware that had been inaccessible since February. The recovery had returned a possibility. Refurbishment and another launch still lay ahead.",
+          "sourceIds": [
+            "S15",
+            "S17",
+            "S01"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_recovered_bay",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v43",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "November 16, 1984",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v44",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "Kennedy Space Center",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v45",
+              "variantIndex": 0,
+              "weight": 7,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_inspection",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09
+            }
+          ],
+          "visualKeys": [
+            "sat_p_recovered_bay",
+            "sat_v43",
+            "sat_v44",
+            "sat_v45",
+            "sat_p_inspection"
+          ]
+        },
+        {
+          "id": "sat-25",
+          "caption": "A salvage operation recognized",
+          "narration": "At the White House in December, the five astronauts received Lloyd's silver medals for meritorious salvage operations. They visited the insurance market in London the following year. The recognition celebrated a recovery already completed. The commercial result would take considerably longer to arrive.",
+          "sourceIds": [
+            "S21",
+            "S10",
+            "S17"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_crew",
+              "variantIndex": 0,
+              "weight": 9,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "The five astronauts of STS-51A"
+            },
+            {
+              "mediaKey": "sat_p_lloyds",
+              "variantIndex": 0,
+              "weight": 13,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "A visit to Lloyd’s · London, 1985"
+            }
+          ],
+          "visualKeys": [
+            "sat_p_crew",
+            "sat_p_lloyds"
+          ]
+        },
+        {
+          "id": "sat-26",
+          "caption": "1990 · Westar becomes AsiaSat 1",
+          "narration": "Westar found a new customer in Asia. Hong Kong-based AsiaSat bought it and contracted Hughes to refurbish the spacecraft and adapt its communications payload. On April seventh, nineteen ninety, a Chinese Long March rocket launched it as AsiaSat One.\n\nThe recovered satellite entered service the following month. AsiaSat's history records television service in Myanmar and coverage of the Asian Games later that year. A machine originally launched for an American network was helping broadcasters reach audiences in another region. That service was a concrete consequence of bringing usable hardware back, rather than leaving the first failure as its final outcome.\n\nSix days after AsiaSat One launched, a Delta rocket carried the refurbished Palapa into space as Palapa B Two R. It returned to Indonesia's communications system. More than five years separated the rescue from those two new launches. Recovering the machines had preserved an opportunity; turning that opportunity into service had taken additional work, money, and time.\n\nThe two functioning spacecraft were now back where their communications equipment could do useful work.",
+          "sourceIds": [
+            "S22",
+            "S23",
+            "S24",
+            "S28",
+            "S17"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_westar_approach",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "Westar 6 during its recovery · November 1984"
+            },
+            {
+              "mediaKey": "sat_second_lives",
+              "variantIndex": 0,
+              "weight": 28,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            },
+            {
+              "mediaKey": "sat_p_westar_dock",
+              "variantIndex": 0,
+              "weight": 17,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "The original Westar 6 hardware · recovered in 1984"
+            },
+            {
+              "mediaKey": "sat_doc_palapa_relaunch",
+              "variantIndex": 0,
+              "weight": 18,
+              "motion": "push",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.025
+            }
+          ],
+          "visualKeys": [
+            "sat_p_westar_approach",
+            "sat_second_lives",
+            "sat_p_westar_dock",
+            "sat_doc_palapa_relaunch"
+          ]
+        },
+        {
+          "id": "sat-28",
+          "caption": "What the mission proved",
+          "narration": "The result demonstrated a capability under particular conditions. The targets were reachable and controllable, and their remaining hardware was worth considering for reuse. A recovery added to a flight with other work cannot tell us what a dedicated commercial rescue flight would have cost.\n\nThis became the last mission to use the M M U jetpacks. Satellite servicing continued in other forms. In nineteen ninety-two, another shuttle crew captured a stranded Intelsat satellite, attached a new motor, and released it toward its operating orbit. The ability to intervene survived. Routine return-and-resale remained a much more demanding proposition than a successful spacewalk alone could establish.",
+          "sourceIds": [
+            "S28",
+            "S25",
+            "S27"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_discovery_lift",
+              "variantIndex": 0,
+              "weight": 14,
+              "motion": "pan-left",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "Discovery’s preparation · 1984"
+            },
+            {
+              "mediaKey": "sat_p_gardner_westar",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1,
+              "caption": "STS-51A · the MMU’s final mission"
+            },
+            {
+              "mediaKey": "sat_v04",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_p_saturn_rollout",
+              "variantIndex": 0,
+              "weight": 15,
+              "motion": "pan-right",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1.09,
+              "caption": "Discovery rolls out · 1984"
+            }
+          ],
+          "visualKeys": [
+            "sat_p_discovery_lift",
+            "sat_p_gardner_westar",
+            "sat_v04",
+            "sat_p_saturn_rollout"
+          ]
+        },
+        {
+          "id": "sat-29",
+          "caption": "The value of a way back",
+          "narration": "The reason NASA went back begins with two machines that still had useful work ahead of them. Controllers made the targets reachable. Engineers gave the astronauts ways to hold them. Five people carried the recovery through a problem the main procedure could not solve.\n\nYears later, those satellites were carrying signals again. The little For Sale sign above Discovery's cargo bay had pointed toward a real future.",
+          "sourceIds": [
+            "S15",
+            "S11",
+            "S09",
+            "S22",
+            "S24"
+          ],
+          "visualPlan": [
+            {
+              "mediaKey": "sat_p_crew_inflight",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "pull",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1.09,
+              "zoomEnd": 1
+            },
+            {
+              "mediaKey": "sat_v12",
+              "variantIndex": 0,
+              "weight": 8,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "The recovery in progress · November 1984",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v18",
+              "variantIndex": 0,
+              "weight": 12,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "",
+              "playbackRate": 1
+            },
+            {
+              "mediaKey": "sat_v42",
+              "variantIndex": 0,
+              "weight": 5,
+              "motion": "still",
+              "fit": "contain",
+              "vintageFilter": false,
+              "zoomStart": 1,
+              "zoomEnd": 1,
+              "caption": "November 1984 · the beginning of a second life",
+              "playbackRate": 1
+            }
+          ],
+          "visualKeys": [
+            "sat_p_crew_inflight",
+            "sat_v12",
+            "sat_v18",
+            "sat_v42"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "NASA: STS-51A mission record",
+      "url": "https://www.nasa.gov/mission/sts-51a/",
+      "note": " Crew, date, duration, outbound tasks. Institutional mission record."
+    },
+    {
+      "id": "S02",
+      "title": "NASA: STS-41B Mission Report, March 1984, NASA-authored scan at ibiblio",
+      "url": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-41B%20National%20Space%20Transportation%20Systems%20Program%20Mission%20Report.pdf",
+      "note": " Printed p.9/PDF p.12: deployment results, dates, orbital figures and two-day delay. Contemporary primary report. [NTRS catalog record](https://ntrs.nasa.gov/citations/19850015588) offers the agency's copy/metadata."
+    },
+    {
+      "id": "S03",
+      "title": "John Uri/NASA: 40 Years Ago, STS-41B, February 6, 2024",
+      "url": "https://www.nasa.gov/history/40-years-ago-sts-41b-the-first-flight-of-the-manned-maneuvering-unit/",
+      "note": " First flight day Westar; fourth day Palapa; tested MMU; historical retrospective."
+    },
+    {
+      "id": "S04",
+      "title": "NASA: History of On-Orbit Satellite Fragmentations, 16th edition",
+      "url": "https://ntrs.nasa.gov/api/citations/20220019160/downloads/HOOSF_16e_all_for_STRIVES.pdf",
+      "note": " Westar 6 R/B, printed p.250, and neighboring Palapa B2 R/B entry. Failed PAM-D separation. Relevant indexed text checked; full volume not read."
+    },
+    {
+      "id": "S05",
+      "title": "JAXA space-law library: Appalachian Insurance v. McDonnell Douglas, facts from the 1989 decision",
+      "url": "https://www.jaxa.jp/library/space_law/chapter_3/3-1-2-9/3-1-2-9a_e.html",
+      "note": " Court's factual account: Westar purchase/launch choices, nozzle failure and September 7 Hughes/insurer agreement. Primary judicial record excerpt, not a new engineering investigation."
+    },
+    {
+      "id": "S06",
+      "title": "NASA Space News Roundup, August 31, 1984",
+      "url": "https://historycollection.jsc.nasa.gov/JSCHistoryPortal/history/roundups/issues/84-08-31.pdf",
+      "note": " Page 1, NASA to go after Palapa on 51-A. August 13 agreement, participants, cost ceiling. Contemporary NASA announcement."
+    },
+    {
+      "id": "S07",
+      "title": "NASA: Chronology of Wakeup Calls",
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/07/wakeup-calls.pdf?emrc=f9f90c",
+      "note": " Printed p.16: November 14, 1984, Springer's explanation, $4.8m and $5.5m. Historical compilation."
+    },
+    {
+      "id": "S08",
+      "title": "NASA: Astronautics and Aeronautics, 1979-1984",
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/04/1979-1984.pdf",
+      "note": " November 8-16, 1984 entry, around printed pp.515-516; NASA compilation citing contemporary reports. [NTRS copy](https://ntrs.nasa.gov/api/citations/19900016612/downloads/19900016612.pdf). Financial figures are reporting, not inspected original settlement accounts."
+    },
+    {
+      "id": "S09",
+      "title": "Frederick H. Hauck oral history, November 20, 2003",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/08/hauckfh-11-20-03.pdf?emrc=e6f763",
+      "note": " Printed pp.30-37: incentives, stinger concept, contingency training, public expectations, insurers, medals. Retrospective firsthand account."
+    },
+    {
+      "id": "S10",
+      "title": "Lloyd's: pioneering space rescue mission",
+      "url": "https://www.lloyds.com/about-lloyds/our-market/what-we-insure/space/crowded-space/space-rescue-mission",
+      "note": " Market's institutional account. Useful for involvement, unreliable for exact ceremony year, crew count and stinger mechanics."
+    },
+    {
+      "id": "S11",
+      "title": "Anna L. Fisher oral history, March 3, 2011",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/07/fisheral-3-3-11.pdf?emrc=6ce4d4",
+      "note": " Printed pp.31-35: workload, motion, prelaunch concern about fit, manual backup, arm operation. Retrospective firsthand account."
+    },
+    {
+      "id": "S12",
+      "title": "Joseph P. Allen oral history, November 18, 2004",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/07/allenjp-11-18-04.pdf?emrc=4a8a6f",
+      "note": " Printed pp.4-6 and 12-17: device operation; manual handling; credit for Gardner; changed second recovery. Some remembered dates, durations and hardware descriptions conflict with flight records."
+    },
+    {
+      "id": "S13",
+      "title": "NASA: History of Space Shuttle Rendezvous, 2011",
+      "url": "https://ntrs.nasa.gov/api/citations/20110023479/downloads/20110023479.pdf",
+      "note": " Chapter 19, printed p.127: two-target plan, 44 maneuvers, non-retrieval design. Technical retrospective."
+    },
+    {
+      "id": "S14",
+      "title": "Bollendonk, McCandless and Whitsett: The MMU, A Nice Flying Machine, 1985, NTRS abstract",
+      "url": "https://ntrs.nasa.gov/citations/19850051279",
+      "note": " 24 nitrogen thrusters, six-degree movement, redundant subsystems. Technical participant paper; abstract inspected, full article unavailable there."
+    },
+    {
+      "id": "S15",
+      "title": "NASA JSC-20216: STS-51A Mission Report, December 1984, scan at ibiblio",
+      "url": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+      "note": " Printed pp.8-10/PDF pp.12-14: exact primary and backup procedures; waveguide; second-EVA decision; table of events. Most authoritative operational source consulted."
+    },
+    {
+      "id": "S16",
+      "title": "Brock R. Randy Stone oral history, November 14, 2006",
+      "url": "https://historycollection.jsc.nasa.gov/JSCHistoryPortal/history/oral_histories/StoneBR/StoneBR_11-14-06.pdf",
+      "note": " Printed p.19: thermal/hydrazine planning. Relevant indexed transcript text inspected."
+    },
+    {
+      "id": "S17",
+      "title": "John Uri/NASA: 40 Years Ago, STS-51A, November 8, 2024",
+      "url": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+      "note": " Assignment history, outbound payloads, ceremony and both relaunches. Retrospective institutional synthesis."
+    },
+    {
+      "id": "S18",
+      "title": "John Uri/NASA: 35 Years Ago, STS-51A, November 12, 2019",
+      "url": "https://www.nasa.gov/history/35-years-ago-sts-51a-the-ace-repo-company/",
+      "note": " Retrieval sequence and six-hour / 5:42 EVA durations. Retrospective institutional synthesis."
+    },
+    {
+      "id": "S19",
+      "title": "NASA: Space Shuttle payload statistics",
+      "url": "https://ntrs.nasa.gov/api/citations/19960001128/downloads/19960001128.pdf",
+      "note": " STS-51A payload entry, printed 1-33: retrieved weights 1,262 and 1,119 lb. Relevant indexed table text checked; do not confuse deployed wet mass with recovered mass."
+    },
+    {
+      "id": "S20",
+      "title": "NASA: STS-51A gallery and original image captions",
+      "url": "https://www.nasa.gov/gallery/sts-51a/",
+      "note": " Image IDs include 51A-39-063, 51A-41-058, 51A-46-057; identifies dates, individuals and operations. Media selection/rights remain separate."
+    },
+    {
+      "id": "S21",
+      "title": "Reagan Library: prepared presidential remarks, presentation of Lloyd's medals, December 7, 1984",
+      "url": "https://www.reaganlibrary.gov/public/2025-01/40-744-5752775-017-013-2024.pdf",
+      "note": " Draft dated December 6, headed event December 7; names all five. Primary White House document, not proof of verbatim delivery."
+    },
+    {
+      "id": "S22",
+      "title": "AsiaSat: AsiaSat's First Hero, February 12, 2015",
+      "url": "https://www.asiasat.com/news/blog/yazhouweixingdiyihaoyingxiong",
+      "note": " Purchaser's account of refurbishment, launch, service and retirement. The recovery interval is imprecise; NASA chronology controls."
+    },
+    {
+      "id": "S23",
+      "title": "AsiaSat: milestone timeline",
+      "url": "https://www.asiasat.com/aboutus/30years/milestone",
+      "note": " April 7 launch, Myanmar TV in May, Asian Games later in 1990. Operational institutional history."
+    },
+    {
+      "id": "S24",
+      "title": "NASA Aeronautics and Space Report: launch table",
+      "url": "https://ntrs.nasa.gov/api/citations/19910014772/downloads/19910014772.pdf?attachment=true",
+      "note": " Appendix B-1, printed p.148: B-2P in 1987 versus B2R in 1990. Official historical launch table."
+    },
+    {
+      "id": "S25",
+      "title": "NASA history: More Favored than the Birds, The MMU in Space",
+      "url": "https://www.nasa.gov/history/SP-4219/Chapter13.html",
+      "note": " MMU history, STS-51A, later usage decisions. Broader retrospective, not an economic ledger."
+    },
+    {
+      "id": "S26",
+      "title": "Reagan Library: fourth orbiter and future of space program, August 15, 1986",
+      "url": "https://www.reaganlibrary.gov/archives/speech/statement-building-fourth-shuttle-orbiter-and-future-space-program",
+      "note": " Primary announcement of changed private-satellite launch policy."
+    },
+    {
+      "id": "S27",
+      "title": "NASA: STS-49 mission record",
+      "url": "https://www.nasa.gov/mission/sts-49/",
+      "note": " May 1992 Intelsat recovery and new kick motor, disproving an absolute end to commercial rescue."
+    },
+    {
+      "id": "S28",
+      "title": "NASA Goddard: On-Orbit Satellite Servicing Study, October 2010",
+      "url": "https://www.nasa.gov/wp-content/uploads/2023/10/nasa-satellite-servicing-project-report-0511.pdf?emrc=674f9b0ebd329",
+      "note": " Printed p.16 for historical salvage; pp.80-81 for business-case discussion. Historical Palapa B2P label is an error; do not repeat it."
+    }
+  ],
+  "score": {
+    "engine": "ode-procedural-v1",
+    "volume": 0.72,
+    "pauseLift": 1.5,
+    "pauseMinimumSeconds": 0.95,
+    "segments": [
+      {
+        "fromScene": "sat-01",
+        "throughScene": "sat-01",
+        "profile": "alert",
+        "gain": 0.85,
+        "pluck": 0.35
+      },
+      {
+        "fromScene": "sat-02",
+        "throughScene": "sat-06",
+        "profile": "finance",
+        "gain": 0.82,
+        "pluck": 0.42
+      },
+      {
+        "fromScene": "sat-08",
+        "throughScene": "sat-09",
+        "profile": "personal_finance",
+        "gain": 0.78,
+        "pluck": 0.3
+      },
+      {
+        "fromScene": "sat-10",
+        "throughScene": "sat-14",
+        "profile": "finance",
+        "gain": 0.88,
+        "pluck": 0.58
+      },
+      {
+        "fromScene": "sat-15",
+        "throughScene": "sat-17",
+        "profile": "market",
+        "gain": 0.95,
+        "pluck": 0.7
+      },
+      {
+        "fromScene": "sat-19",
+        "throughScene": "sat-19",
+        "profile": "alert",
+        "gain": 0.9,
+        "pluck": 0.55
+      },
+      {
+        "fromScene": "sat-21",
+        "throughScene": "sat-21",
+        "profile": "personal_finance",
+        "gain": 0.78,
+        "pluck": 0.25
+      },
+      {
+        "fromScene": "sat-22",
+        "throughScene": "sat-22",
+        "profile": "market",
+        "gain": 0.93,
+        "pluck": 0.6
+      },
+      {
+        "fromScene": "sat-24",
+        "throughScene": "sat-26",
+        "profile": "personal_finance",
+        "gain": 0.84,
+        "pluck": 0.38
+      },
+      {
+        "fromScene": "sat-28",
+        "throughScene": "sat-29",
+        "profile": "finance",
+        "gain": 0.72,
+        "pluck": 0.2
+      }
+    ],
+    "endCredits": {
+      "profile": "personal_finance",
+      "gain": 0.65,
+      "pluck": 0.2
+    }
+  },
+  "endCredits": {
+    "enabled": true,
+    "heading": "ARCHIVAL FILM AND PHOTOGRAPHY",
+    "secondsPerCard": 11,
+    "assets": [
+      {
+        "src": "assets/images/sts51a/sat_doc_agreement.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "Space News Roundup: NASA to go after Palapa on 51-A · PDF page 1",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://historycollection.jsc.nasa.gov/JSCHistoryPortal/history/roundups/issues/84-08-31.pdf",
+        "originalMediaUrl": "https://web.archive.org/web/20241213130521id_/https://historycollection.jsc.nasa.gov/JSCHistoryPortal/history/roundups/issues/84-08-31.pdf",
+        "sourceId": "roundup-1984-08-31",
+        "reuseFamily": "roundup-1984-08-31-page-1",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Space News Roundup · August 31, 1984"
+        ],
+        "pdfPageOneBased": 1,
+        "cropRect": [
+          0.018,
+          0.169,
+          0.211,
+          0.333
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_stinger.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A Press Kit, November 1984 · PDF page 17",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/mission/sts-51a/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2023/05/sts-51a-press-kit.pdf",
+        "sourceId": "sts51a-press-kit",
+        "reuseFamily": "sts51a-press-kit-page-17",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Press Kit · November 1984"
+        ],
+        "pdfPageOneBased": 17,
+        "cropRect": [
+          0.18,
+          0.1,
+          0.89,
+          0.7
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_grapple.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A Press Kit, November 1984 · PDF page 18",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/mission/sts-51a/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2023/05/sts-51a-press-kit.pdf",
+        "sourceId": "sts51a-press-kit",
+        "reuseFamily": "sts51a-press-kit-page-18",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Press Kit · November 1984"
+        ],
+        "pdfPageOneBased": 18,
+        "cropRect": [
+          0.17,
+          0.075,
+          0.89,
+          0.29
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_bridge.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A Press Kit, November 1984 · PDF page 19",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/mission/sts-51a/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2023/05/sts-51a-press-kit.pdf",
+        "sourceId": "sts51a-press-kit",
+        "reuseFamily": "sts51a-press-kit-page-19",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Press Kit · November 1984"
+        ],
+        "pdfPageOneBased": 19,
+        "cropRect": [
+          0.15,
+          0.03,
+          0.9,
+          0.385
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_cradle.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A Press Kit, November 1984 · PDF page 21",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/mission/sts-51a/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2023/05/sts-51a-press-kit.pdf",
+        "sourceId": "sts51a-press-kit",
+        "reuseFamily": "sts51a-press-kit-page-21",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Press Kit · November 1984"
+        ],
+        "pdfPageOneBased": 21,
+        "cropRect": [
+          0.17,
+          0.06,
+          0.85,
+          0.43
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_waveguide.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A National Space Transportation System Mission Report (JSC-20216) · PDF page 12",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "originalMediaUrl": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "sourceId": "jsc-20216",
+        "reuseFamily": "jsc-20216-page-12",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Mission Report · JSC-20216"
+        ],
+        "pdfPageOneBased": 12,
+        "cropRect": [
+          0.058,
+          0.65,
+          0.927,
+          0.79
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_backup.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A National Space Transportation System Mission Report (JSC-20216) · PDF page 13",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "originalMediaUrl": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "sourceId": "jsc-20216",
+        "reuseFamily": "jsc-20216-page-13",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Mission Report · JSC-20216"
+        ],
+        "pdfPageOneBased": 13,
+        "cropRect": [
+          0.115,
+          0.12,
+          0.935,
+          0.275
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/sat_doc_second_eva.png",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A National Space Transportation System Mission Report (JSC-20216) · PDF page 13",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "originalMediaUrl": "https://www.ibiblio.org/apollo/Shuttle/Reports/Mission%20Reports/STS-51A%20National%20Space%20Transportation%20Systems%20Mission%20Report.pdf",
+        "sourceId": "jsc-20216",
+        "reuseFamily": "jsc-20216-page-13",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Authentic PDF page pixels cropped to the relevant passage or drawing. Gentle camera movement; golden highlights on quoted source text where the source text layer matches. No replacement text, fabricated newspaper layout or invented labels.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A Mission Report · JSC-20216"
+        ],
+        "pdfPageOneBased": 13,
+        "cropRect": [
+          0.115,
+          0.277,
+          0.935,
+          0.49
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/palapa-relaunch-record.png",
+        "author": "NASA",
+        "title": "U.S.-Launched Applications Satellites, 1984–1990 · Palapa B2R entry",
+        "credit": "NASA",
+        "origin": "https://ntrs.nasa.gov/citations/19910014772",
+        "originalMediaUrl": "https://ntrs.nasa.gov/api/citations/19910014772/downloads/19910014772.pdf",
+        "sourceId": "nasa-launch-record-1990",
+        "reuseFamily": "nasa-19910014772-page-154",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Actual NASA launch-table crop including the April 13, 1990 Palapa B2R row and adjacent rows. The scanned text layer is offset, so no automated highlight is applied. No recreated figures or substitute text.",
+        "screenCredit": [
+          "NASA",
+          "U.S.-Launched Applications Satellites, 1984–1990"
+        ],
+        "pdfPageOneBased": 154,
+        "cropRect": [
+          0.11,
+          0.55,
+          0.955,
+          0.636
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/orbit-comparison.svg",
+        "author": "Plotquake",
+        "title": "The right machine, the wrong orbit",
+        "credit": "Plotquake",
+        "origin": "Plotquake original explanatory diagram based on NASA STS-41B Mission Report (March 1984) and STS-51A mission history; research dossier S02 and S15.",
+        "reuseFamily": "sat-orbit-comparison-original",
+        "license": "Original Plotquake diagram",
+        "licenseUrl": "",
+        "changes": "Original vector comparison; orbit geometry and distances explicitly schematic and not to scale; geostationary equatorial location identified. No purported spacecraft photography.",
+        "screenCredit": false
+      },
+      {
+        "src": "assets/images/sts51a/launch-hardware.svg",
+        "author": "Plotquake",
+        "title": "The satellite and its failed upper stage were different hardware",
+        "credit": "Plotquake",
+        "origin": "Plotquake original explanatory diagram based on NASA STS-41B and STS-51A Mission Reports; research dossier S02 and S15.",
+        "reuseFamily": "sat-launch-hardware-original",
+        "license": "Original Plotquake diagram",
+        "licenseUrl": "",
+        "changes": "Original functional block diagram separating Shuttle, failed PAM-D upper stage and healthy communications satellite; identifies the satellite AKM nozzle as the later capture point. No invented mechanical drawing.",
+        "screenCredit": false
+      },
+      {
+        "src": "assets/images/sts51a/second-lives.svg",
+        "author": "Plotquake",
+        "title": "The recovered satellites returned to service in 1990",
+        "credit": "Plotquake",
+        "origin": "Plotquake original explanatory diagram based on AsiaSat operational history and NASA Aeronautics and Space Report launch table; research dossier S22 and S24.",
+        "reuseFamily": "sat-second-lives-original",
+        "license": "Original Plotquake diagram",
+        "licenseUrl": "",
+        "changes": "Original two-track chronology; distinguishes recovered Palapa B2R (April 13, 1990) from the separate B2P launch; AsiaSat 1 relaunch April 7, 1990.",
+        "screenCredit": false
+      },
+      {
+        "src": "assets/images/sts51a/for_sale_wide.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Dale A. Gardner and Joseph P. Allen pose at the end of the Remote Manipulator System controlled by Anna L. Fisher",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-22-allen-and-gardner-eva2-nov-14-1984-51a-39-063.jpg",
+        "nasaId": "51a-39-063",
+        "sourceId": "photo-nasa51a-wp-22",
+        "reuseFamily": "51a-39-063",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v42.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Spacewalkers holding For Sale sign",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "for-sale-video",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 1055–1060s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 1055,
+        "sourceEndSeconds": 1060
+      },
+      {
+        "src": "assets/images/sts51a/recovered_bay.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "View inside Discovery’s payload bay shortly before the deorbit burn",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-24-payload-bay-before-deorbit-51a-18-020.jpg",
+        "nasaId": "51a-18-020",
+        "sourceId": "photo-nasa51a-wp-24",
+        "reuseFamily": "51a-18-020",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v03.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Fisher and crew aft windows wide",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "fisher-dark-wide",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 28–36s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 28,
+        "sourceEndSeconds": 36
+      },
+      {
+        "src": "assets/images/sts51a/palapa_stinger.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Joe Allen and Palapa B2 during recovery · 51A-41-021",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-41-021",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-41-021/51a-41-021~orig.jpg",
+        "nasaId": "51a-41-021",
+        "sourceId": "photo-51a-41-021",
+        "reuseFamily": "51a-41-021",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v46.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-B POST FLIGHT PRESS CONFERENCE · STS-41B Challenger launch ascent",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-bPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-bPostFlightPressConference/Jsc-849_sts-41-b_postFltPressConf.mp4",
+        "sourceId": "Sts41-bPostFlightPressConference",
+        "reuseFamily": "41b-launch",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 86–93.5s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-B POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 86,
+        "sourceEndSeconds": 93.5
+      },
+      {
+        "src": "assets/images/sts51a/launch_41b.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "LAUNCH - STS-11/41B - KSC",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/s84-26325",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/s84-26325/s84-26325~orig.jpg",
+        "nasaId": "s84-26325",
+        "sourceId": "photo-s84-26325",
+        "reuseFamily": "s84-26325",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41B mission photography · February 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v47.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-B POST FLIGHT PRESS CONFERENCE · First communications satellite deploy: Westar VI",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-bPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-bPostFlightPressConference/Jsc-849_sts-41-b_postFltPressConf.mp4",
+        "sourceId": "Sts41-bPostFlightPressConference",
+        "reuseFamily": "41b-westar-deploy",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 176–184s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-B POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 176,
+        "sourceEndSeconds": 184
+      },
+      {
+        "src": "assets/images/sts51a/control_41b.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "INFLIGHT (MISSION CONTROL CENTER [MCC])- STS-11/41B - JSC",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/s84-26332",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/s84-26332/s84-26332~orig.jpg",
+        "nasaId": "s84-26332",
+        "sourceId": "photo-s84-26332",
+        "reuseFamily": "s84-26332",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41B mission photography · February 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v48.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-B POST FLIGHT PRESS CONFERENCE · Second communications satellite deploy: Palapa B2",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-bPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-bPostFlightPressConference/Jsc-849_sts-41-b_postFltPressConf.mp4",
+        "sourceId": "Sts41-bPostFlightPressConference",
+        "reuseFamily": "41b-palapa-deploy",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 251–259s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-B POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 251,
+        "sourceEndSeconds": 259
+      },
+      {
+        "src": "assets/images/sts51a/control_41b_second.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "INFLIGHT (MISSION CONTROL CENTER [MCC])- STS-11/41B - JSC",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/s84-26333",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/s84-26333/s84-26333~orig.jpg",
+        "nasaId": "s84-26333",
+        "sourceId": "photo-s84-26333",
+        "reuseFamily": "s84-26333",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41B mission photography · February 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v18.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Orbital sunrise along Earth limb",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "earth-sunrise",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 628–645s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 628,
+        "sourceEndSeconds": 645
+      },
+      {
+        "src": "assets/video/sts51a/v04.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Earth through flight-deck windows pan",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "window-earth",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 45–58s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 45,
+        "sourceEndSeconds": 58
+      },
+      {
+        "src": "assets/images/sts51a/westar_manual.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Gardner and Joseph P. Allen maneuver Westar prior to placing it in its cradle in the payload bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-21-eva2-gardner-allen-w-westar.jpg",
+        "nasaId": "51a-39-040",
+        "sourceId": "photo-nasa51a-wp-21",
+        "reuseFamily": "51a-39-040",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v10.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Satellite edge fills left foreground above Earth",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "captured-near",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 346–356s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 346,
+        "sourceEndSeconds": 356
+      },
+      {
+        "src": "assets/images/sts51a/inspection.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Workers inspect the Westar 6, left, and Palapa B2 satellites in Discovery’s payload bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-28-wester-palapa-in-opf.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-28",
+        "reuseFamily": "nasa51a-wp-28",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v38.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Green computer instrument display",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "onboard-display",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 549–556s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 549,
+        "sourceEndSeconds": 556
+      },
+      {
+        "src": "assets/images/sts51a/empty_bay.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "View inside Discovery’s payload bay shortly after orbital insertion",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-12-payload-bay-after-orbital-insertion-51a-01-003.jpg",
+        "nasaId": "51a-01-003",
+        "sourceId": "photo-nasa51a-wp-12",
+        "reuseFamily": "51a-01-003",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v01.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Payload bay against atmospheric limb",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "bay-opening",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 1–7.5s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 1,
+        "sourceEndSeconds": 7.5
+      },
+      {
+        "src": "assets/images/sts51a/discovery_vab.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Workers in the Vehicle Assembly Building (VAB) prepare to lift Discovery for mating with an External Tank (ET) and Solid Rocket Boosters (SRBs)",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-3-discovery-roll-into-vab.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-03",
+        "reuseFamily": "nasa51a-wp-03",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/gardner_training.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A astronaut Dale A. Gardner trains for the capture of a satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-7-gardner-training-aug-21-1984-s84-40155.jpg",
+        "nasaId": "s84-40155",
+        "sourceId": "photo-nasa51a-wp-07",
+        "reuseFamily": "s84-40155",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v02.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Anna Fisher aft controls close-up",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "fisher-dark-close",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 12–20s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 12,
+        "sourceEndSeconds": 20
+      },
+      {
+        "src": "assets/images/sts51a/anik.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Nighttime deploy of the Anik D2 satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-13-anik-deploy-2.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-13",
+        "reuseFamily": "nasa51a-wp-13",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/leasat.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Deploy of the Leasat 1 satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-14-leasat-deploy-51a-34-067.jpg",
+        "nasaId": "51a-34-067",
+        "sourceId": "photo-nasa51a-wp-14",
+        "reuseFamily": "51a-34-067",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/discovery_lift.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Workers lift Discovery to stack it with the ET and SRBs",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-4-discovery-hoisted-in-vab.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-04",
+        "reuseFamily": "nasa51a-wp-04",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/crew.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "The STS-51A crew",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-1-crew-photo-s84-40082.jpg",
+        "nasaId": "s84-40082",
+        "sourceId": "photo-nasa51a-wp-01",
+        "reuseFamily": "s84-40082",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/evacuation.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS-51A astronauts practice rapid evacuation from the launch pad",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-9-evac-drill-during-tcdt.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-09",
+        "reuseFamily": "nasa51a-wp-09",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/lloyds.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "The STS-51A crew, with Lloyd’s of London representative Stephen Merritt during their visit to London",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-29-crew-in-london-postflight.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-29",
+        "reuseFamily": "nasa51a-wp-29",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew visit to Lloyd’s · London, 1985"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v30.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Crew member near forward flight deck",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "crew-forward-cabin",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 170–178s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 170,
+        "sourceEndSeconds": 178
+      },
+      {
+        "src": "assets/images/sts51a/fisher_training.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronaut Anna L. Fisher trains to use the Canadian-built Remote Manipulator System",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-8-fisher-rms-training-s84-40162.jpg",
+        "nasaId": "s84-40162",
+        "sourceId": "photo-nasa51a-wp-08",
+        "reuseFamily": "s84-40162",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v21.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Fisher operating controls from above",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "fisher-blue-overhead",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 797–805s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 797,
+        "sourceEndSeconds": 805
+      },
+      {
+        "src": "assets/images/sts51a/fisher_camera.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronaut Anna Fisher pictured near the aft flight deck of Discovery",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51A-20-004",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51A-20-004/51A-20-004~orig.jpg",
+        "nasaId": "51A-20-004",
+        "sourceId": "photo-51a-20-004",
+        "reuseFamily": "51a-20-004",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/fisher_rms.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Anna L. Fisher operates the Remote Manipulator System from Discovery’s aft flight deck",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-20-fisher-operating-rms-51a-31-067.jpg",
+        "nasaId": "51a-31-067",
+        "sourceId": "photo-nasa51a-wp-20",
+        "reuseFamily": "51a-31-067",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v49.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-B POST FLIGHT PRESS CONFERENCE · MMU free flight against Earth, Bruce McCandless sequence",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-bPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-bPostFlightPressConference/Jsc-849_sts-41-b_postFltPressConf.mp4",
+        "sourceId": "Sts41-bPostFlightPressConference",
+        "reuseFamily": "41b-mccandless-mmu",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 671–678s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-B POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 671,
+        "sourceEndSeconds": 678
+      },
+      {
+        "src": "assets/images/sts51a/mccandless.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "INFLIGHT (CREW ACTIVITY) - STS-11/41B",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/S84-27018",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/S84-27018/S84-27018~orig.jpg",
+        "nasaId": "S84-27018",
+        "sourceId": "photo-s84-27018",
+        "reuseFamily": "s84-27018",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41B mission photography · February 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/stewart.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "s84-27034a",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/s84-27034a",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/s84-27034a/s84-27034a~orig.jpg",
+        "nasaId": "s84-27034a",
+        "sourceId": "photo-s84-27034a",
+        "reuseFamily": "s84-27034a",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41B mission photography · February 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v50.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-C POST FLIGHT PRESS CONFERENCE · Nelson in MMU approaching Solar Maximum Mission satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-cPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-cPostFlightPressConference/Jsc-850_sts-41-c_postFltPressConf.mp4",
+        "sourceId": "Sts41-cPostFlightPressConference",
+        "reuseFamily": "41c-nelson-solmax",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 377–387s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-C POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 377,
+        "sourceEndSeconds": 387
+      },
+      {
+        "src": "assets/images/sts51a/solmax_approach.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "View of Astronaut Nelson using MMU to examine Solar Maximum Mission Satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/41c-22-885",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/41c-22-885/41c-22-885~orig.jpg",
+        "nasaId": "41c-22-885",
+        "sourceId": "photo-41c-22-885",
+        "reuseFamily": "41c-22-885",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41C Solar Maximum Mission photography · April 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v51.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 41-C POST FLIGHT PRESS CONFERENCE · Astronauts repairing SolarMax in Challenger payload bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts41-cPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts41-cPostFlightPressConference/Jsc-850_sts-41-c_postFltPressConf.mp4",
+        "sourceId": "Sts41-cPostFlightPressConference",
+        "reuseFamily": "41c-solmax-repair",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 790–800s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 41-C POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 790,
+        "sourceEndSeconds": 800
+      },
+      {
+        "src": "assets/images/sts51a/solmax_repair.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "41-C mission specialists reapir captured Solar Maximum Mission Satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/41c-37-1711",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/41c-37-1711/41c-37-1711~orig.jpg",
+        "nasaId": "41c-37-1711",
+        "sourceId": "photo-41c-37-1711",
+        "reuseFamily": "41c-37-1711",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-41C Solar Maximum Mission photography · April 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v33.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Actual on-orbit checklist page",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "onorbit-checklist",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 274–280s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 274,
+        "sourceEndSeconds": 280
+      },
+      {
+        "src": "assets/video/sts51a/v06.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · MMU2 controls and stinger against Earth",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "mmu2-prep",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 86–99s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 86,
+        "sourceEndSeconds": 99
+      },
+      {
+        "src": "assets/images/sts51a/rollout.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "The completed stack prepares to leave the VAB for the rollout to Launch Pad 39A",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-5-ready-for-rollout.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-05",
+        "reuseFamily": "nasa51a-wp-05",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/mission_control.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "View of the Mission Control Center Activity during STS 51-A",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-90001",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-90001/51a-90001~orig.jpg",
+        "nasaId": "51a-90001",
+        "sourceId": "photo-51a-90001",
+        "reuseFamily": "51a-90001",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/control_ignition.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "View of the Flight Control Room in the MCC during STS 51-A",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-90016",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-90016/51a-90016~orig.jpg",
+        "nasaId": "51a-90016",
+        "sourceId": "photo-51a-90016",
+        "reuseFamily": "51a-90016",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v37.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Fisher checks notes",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "fisher-checklist",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 534–541s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 534,
+        "sourceEndSeconds": 541
+      },
+      {
+        "src": "assets/images/sts51a/walkout.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "The STS-51A crew leaves crew quarters on their way to Launch Pad 39A",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-10-walkout-nov-8-1984.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-10",
+        "reuseFamily": "nasa51a-wp-10",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v26.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Discovery on launch pad",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-launch-pad",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 77–85s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 77,
+        "sourceEndSeconds": 85
+      },
+      {
+        "src": "assets/video/sts51a/v27.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Ignition and liftoff ground view",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-launch-liftoff",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 94–101s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 94,
+        "sourceEndSeconds": 101
+      },
+      {
+        "src": "assets/images/sts51a/launch_aerial.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Aerial view of the launch of STS 51-A shuttle Discovery",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51A-90014",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51A-90014/51A-90014~orig.jpg",
+        "nasaId": "51A-90014",
+        "sourceId": "photo-51a-90014",
+        "reuseFamily": "51a-90014",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v28.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Discovery ascending",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-launch-ascent",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 113–120s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 113,
+        "sourceEndSeconds": 120
+      },
+      {
+        "src": "assets/video/sts51a/v32.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Nighttime satellite deployment Anik",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "anik-night-deploy",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 200–205s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 200,
+        "sourceEndSeconds": 205
+      },
+      {
+        "src": "assets/video/sts51a/v19.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Leasat1 deploys from bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "leasat-deploy",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 657–677s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 657,
+        "sourceEndSeconds": 677
+      },
+      {
+        "src": "assets/video/sts51a/v20.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Leasat1 freely drifts over clouds",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "leasat-drift",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 695–715s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 695,
+        "sourceEndSeconds": 715
+      },
+      {
+        "src": "assets/images/sts51a/leasat_earth.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Leasat 1 as it departs from Discovery",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-15-leasat-deploy-w-earth-in-background.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-15",
+        "reuseFamily": "nasa51a-wp-15",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v34.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Crew member at forward controls with checklist",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "crew-forward-checklist",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 291–297s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 291,
+        "sourceEndSeconds": 297
+      },
+      {
+        "src": "assets/video/sts51a/v39.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Rendezvous sight and crosshairs",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "rendezvous-sight",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 564–571s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 564,
+        "sourceEndSeconds": 571
+      },
+      {
+        "src": "assets/video/sts51a/v13.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Allen in MMU3 below arm and satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "mmu3-return-close",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 413–423s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 413,
+        "sourceEndSeconds": 423
+      },
+      {
+        "src": "assets/images/sts51a/palapa_rms.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Anna L. Fisher grasps Allen and Palapa with the Remote Manipulator System",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-17-eva-1-allen-w-palapa-on-rms-51a-40-057.jpg",
+        "nasaId": "51a-40-057",
+        "sourceId": "photo-nasa51a-wp-17",
+        "reuseFamily": "51a-40-057",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v12.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Astronaut and RMS above cargo bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "mmu3-return-wide",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 377–385s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 377,
+        "sourceEndSeconds": 385
+      },
+      {
+        "src": "assets/video/sts51a/v22.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Fisher profile at aft station",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "fisher-blue-profile",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 817–823s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 817,
+        "sourceEndSeconds": 823
+      },
+      {
+        "src": "assets/images/sts51a/palapa_manual.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronauts Gardner and Allen during loading of Palapa B-2 in payload bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-41-058",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-41-058/51a-41-058~orig.jpg",
+        "nasaId": "51a-41-058",
+        "sourceId": "photo-51a-41-058",
+        "reuseFamily": "51a-41-058",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v23.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Aft windows and instrument pan",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "aft-cabin-pan",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 866–875s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 866,
+        "sourceEndSeconds": 875
+      },
+      {
+        "src": "assets/images/sts51a/palapa_cradle.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Allen, left, and Dale A. Gardner prepare to place Palapa in its cradle in the payload bay",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-18-eva-1-preparing-to-stow-palapa-in-cradle-51a-41-045.jpg",
+        "nasaId": "51a-41-045",
+        "sourceId": "photo-nasa51a-wp-18",
+        "reuseFamily": "51a-41-045",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v25.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · Fisher reaches overhead beside hose",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "fisher-cabin-overhead",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 902–913s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 902,
+        "sourceEndSeconds": 913
+      },
+      {
+        "src": "assets/images/sts51a/crew_inflight.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Inflight photo of the STS-51A crew",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-23-inflight-crew-photo-51a-13-028.jpg",
+        "nasaId": "51a-13-028",
+        "sourceId": "photo-nasa51a-wp-23",
+        "reuseFamily": "51a-13-028",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v35.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Floating cabin stowage and living space",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "cabin-interior-pan",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 307–316s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 307,
+        "sourceEndSeconds": 316
+      },
+      {
+        "src": "assets/video/sts51a/v05.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · MMU2 astronaut preparing stinger",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "mmu2-prep",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 67–73s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 67,
+        "sourceEndSeconds": 73
+      },
+      {
+        "src": "assets/images/sts51a/westar_tool.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronaut Dale Gardner using MMU to travel to Westar VI satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-46-057",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-46-057/51a-46-057~orig.jpg",
+        "nasaId": "51a-46-057",
+        "sourceId": "photo-51a-46-057",
+        "reuseFamily": "51a-46-057",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v07.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "Best Of STS-51A: 16mm Transfers · MMU astronaut crossing to spinning satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/BestOfSTS-51A16mmTransfers",
+        "originalMediaUrl": "https://archive.org/download/BestOfSTS-51A16mmTransfers/Best-of-STS_51_A-16mm-Transfers_1080p.mp4",
+        "sourceId": "BestOfSTS-51A16mmTransfers",
+        "reuseFamily": "approach-long",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 118–130s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "Best Of STS-51A: 16mm Transfers"
+        ],
+        "sourceStartSeconds": 118,
+        "sourceEndSeconds": 130
+      },
+      {
+        "src": "assets/images/sts51a/westar_dock.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronat Dale Gardner achieves hard dock with Westar VI satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-104-029",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-104-029/51a-104-029~orig.jpg",
+        "nasaId": "51a-104-029",
+        "sourceId": "photo-51a-104-029",
+        "reuseFamily": "51a-104-029",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/for_sale_close.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronaut Dale Gardner holds up for sale sign after EVA",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-104-049",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-104-049/51a-104-049~orig.jpg",
+        "nasaId": "51a-104-049",
+        "sourceId": "photo-51a-104-049",
+        "reuseFamily": "51a-104-049",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/video/sts51a/v43.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Discovery descending toward landing",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-landing-approach",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 1099–1107s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 1099,
+        "sourceEndSeconds": 1107
+      },
+      {
+        "src": "assets/video/sts51a/v44.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Runway approach head-on camera",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-landing-runway",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 1116–1123s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 1116,
+        "sourceEndSeconds": 1123
+      },
+      {
+        "src": "assets/video/sts51a/v45.mp4",
+        "author": "NASA / Johnson Space Center",
+        "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Discovery runway rollout side view",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://archive.org/details/Sts51-aPostFlightPressConference",
+        "originalMediaUrl": "https://archive.org/download/Sts51-aPostFlightPressConference/Jsc-862_sts-51-a_postFltPressConf.mp4",
+        "sourceId": "Sts51-aPostFlightPressConference",
+        "reuseFamily": "51a-landing-rollout",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Silent excerpt of original interval 1137–1144s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS 51-A POST FLIGHT PRESS CONFERENCE"
+        ],
+        "sourceStartSeconds": 1137,
+        "sourceEndSeconds": 1144
+      },
+      {
+        "src": "assets/images/sts51a/westar_approach.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Astronaut Dale Gardner using MMU to travel to Westar VI satellite",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://images.nasa.gov/details/51a-039-034",
+        "originalMediaUrl": "https://images-assets.nasa.gov/image/51a-039-034/51a-039-034~orig.jpg",
+        "nasaId": "51a-039-034",
+        "sourceId": "photo-51a-039-034",
+        "reuseFamily": "51a-039-034",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/gardner_westar.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Dale A. Gardner flies the Manned Maneuvering Unit to capture Westar 6 during the second spacewalk",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-19-eva2-gardner-flying-mmu-to-westar-51a-104-008.jpg",
+        "nasaId": "51a-104-008",
+        "sourceId": "photo-nasa51a-wp-19",
+        "reuseFamily": "51a-104-008",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A mission photography · November 1984"
+        ]
+      },
+      {
+        "src": "assets/images/sts51a/saturn_rollout.jpg",
+        "author": "NASA / Johnson Space Center",
+        "title": "Saturn V rocket on display in the foreground",
+        "credit": "NASA / Johnson Space Center",
+        "origin": "https://www.nasa.gov/history/40-years-ago-sts-51a-the-ace-repo-company/",
+        "originalMediaUrl": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-6-rollout-w-saturn-v.jpg",
+        "nasaId": null,
+        "sourceId": "photo-nasa51a-wp-06",
+        "reuseFamily": "nasa51a-wp-06",
+        "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
+        "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "changes": "Original NASA photograph converted to high-quality JPEG. Aspect ratio retained; authored camera movement and restrained framing in film. No historical objects added or removed.",
+        "screenCredit": [
+          "NASA / Johnson Space Center",
+          "STS-51A crew and preflight photography · 1984"
+        ]
+      },
+      {
+        "src": "assets/audio/sts51a-satellite-rescue-score-directed.wav",
+        "author": "Plotquake",
+        "title": "STS-51A Satellite Rescue · original directed score",
+        "license": "Original Plotquake music",
+        "origin": "Original Plotquake procedural composition · worker/generate_documentary_score.py, with episode direction and worker/prepare_audio_direction.py mixing",
+        "changes": "Original continuous episode score with authored scene direction and narration-aware mixing.",
+        "screenCredit": false
+      },
+      {
+        "src": "assets/audio/chapter_transition.wav",
+        "author": "Plotquake",
+        "title": "Chapter transition · original sound accent",
+        "license": "Original Plotquake sound effect",
+        "origin": "Original Plotquake procedural sound design · scripts/create_score.py make_accent(kind=chapter)",
+        "changes": "Procedurally synthesized transition accent mixed between the story’s acts.",
+        "screenCredit": false
+      }
+    ]
+  },
+  "thumbnailCredits": [
+    {
+      "src": "assets/images/sts51a-thumbnail.png",
+      "credit": "NASA / Johnson Space Center · photograph 51A-39-063; Plotquake cover composition",
+      "origin": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-22-allen-and-gardner-eva2-nov-14-1984-51a-39-063.jpg",
+      "license": "NASA United States government material, subject to NASA media guidelines",
+      "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "changes": "Photographic composite based on the authentic NASA still using the built-in image-generation tool; reframing and extended background; original suit and equipment details used as reference; Anton Regular 400 typography added with the repository font. This cover is separate from historical evidence inside the film. No video frame used."
+    }
+  ],
+  "narrationStyle": "documentary-dynamic-v1",
+  "reviewScenes": [
+    "sat-01",
+    "sat-19",
+    "sat-26"
+  ],
+  "reviewStills": [
+    "sat-04:0.20",
+    "sat-06:0.75",
+    "sat-19:0.08",
+    "sat-19:0.92",
+    "sat-22:0.70",
+    "sat-26:0.40",
+    "sat-26:0.90",
+    "credits:0.5"
+  ]
+}

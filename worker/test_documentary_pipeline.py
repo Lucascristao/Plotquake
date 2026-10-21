@@ -66,6 +66,14 @@ class DocumentaryPipelineTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Expand the actual script"):
                 build_episode(self.source, self.catalog, self.audio_dir, self.public)
 
+    def test_builder_checks_the_same_explicit_narration_style_cache(self):
+        self.source["narrationStyle"] = "documentary-dynamic-v1"
+        with patch("build_episode.cached_scene", return_value={"durationSeconds": 115.137}) as cached:
+            build_episode(self.source, self.catalog, self.audio_dir, self.public)
+        text = self.source["acts"][0]["scenes"][0]["narration"]
+        self.assertEqual(cached.call_args_list[0].args[1],
+                         cache_fingerprint(text, "Charon", -1.0, "documentary-dynamic-v1"))
+
     def test_semantic_asset_variants_are_used_and_preserve_direction(self):
         (self.public / "other.jpg").write_bytes(b"another-file")
         self.catalog["assets"].append({"key": "photo", "src": "other.jpg", "kind": "image",

@@ -67,6 +67,12 @@ def main() -> None:
     credits = Path(args.metadata).parent / "visual_credits.txt"
     if credits.is_file():
         paths.append(credits)
+    if source.get("publication", {}).get("standard") == "cinematic-v1":
+        for name in ("internal_documentation.json", "internal_documentation.txt", "research_sources.md"):
+            documentation = Path(args.metadata).parent / name
+            if not documentation.is_file() or not documentation.stat().st_size:
+                raise FileNotFoundError(f"The new delivery standard requires separate documentation: {name}")
+            paths.append(documentation)
     for path in paths:
         print(f"[Drive] Uploading {path.name} ({path.stat().st_size / 1048576:.1f} MB)...", flush=True)
         file_id = uploader.upload(path, name=path.name, folder_id=folder_id,

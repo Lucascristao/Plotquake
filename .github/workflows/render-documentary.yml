@@ -116,8 +116,12 @@ jobs:
             out/media-cache/itt-revision
             public/assets/images/itt-revision
             public/assets/video/itt-revision
-          key: plotquake-source-media-v1-${{ hashFiles('episodes/*media-manifest.json', 'episodes/itt-revision-media-plan.json', 'worker/prepare_blackberry_media.py', 'worker/prepare_itt_revision_media.py') }}
+            out/media-cache/sts51a-satellite-rescue
+            public/assets/images/sts51a
+            public/assets/video/sts51a
+          key: plotquake-source-media-v2-${{ hashFiles('episodes/*media-manifest.json', 'episodes/*media-plan.json', 'worker/prepare_blackberry_media.py', 'worker/prepare_itt_revision_media.py', 'worker/prepare_archival_media.py') }}
           restore-keys: |
+            plotquake-source-media-v2-
             plotquake-source-media-v1-
 
       - name: Prepare this episode's selected source assets before speech synthesis
@@ -145,7 +149,21 @@ jobs:
 
       - name: Render short audiovisual excerpts when explicitly reviewing a new edit
         if: ${{ inputs.prepare_only }}
-        run: python worker/render_review.py --scenes bb-01 bb-23 bb-38
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys
+          source = json.load(open(os.environ['EPISODE_PATH'], encoding='utf-8-sig'))
+          ids = [scene['id'] for act in source['acts'] for scene in act['scenes']]
+          if not ids:
+              raise ValueError('The episode has no scenes to review.')
+          defaults = ['bb-01', 'bb-23', 'bb-38']
+          scenes = source.get('reviewScenes', defaults if set(defaults) <= set(ids) else
+                              list(dict.fromkeys([ids[0], ids[len(ids) // 2], ids[-1]])))
+          default_stills = ['bb-27:0.70', 'bb-29:0.85'] if {'bb-27', 'bb-29'} <= set(ids) else []
+          stills = source.get('reviewStills', default_stills)
+          subprocess.run([sys.executable, 'worker/render_review.py', '--scenes', *scenes,
+                          '--stills', *stills], check=True)
+          PY
 
       - name: Preserve short review excerpts
         if: ${{ inputs.prepare_only }}
@@ -174,6 +192,8 @@ jobs:
             public/assets/video/blackberry-redo/
             public/assets/images/itt-revision/
             public/assets/video/itt-revision/
+            public/assets/images/sts51a/
+            public/assets/video/sts51a/
             public/assets/audio/chapter_transition.wav
             public/assets/audio/reveal_accent.wav
             renders/render_plan.json
@@ -182,6 +202,9 @@ jobs:
             renders/youtube_package.txt
             renders/youtube_package.json
             renders/visual_credits.txt
+            renders/internal_documentation.json
+            renders/internal_documentation.txt
+            renders/research_sources.md
 
   render_chunks:
     if: ${{ !inputs.prepare_only }}
@@ -325,6 +348,9 @@ jobs:
             renders/youtube_package.txt
             renders/youtube_package.json
             renders/visual_credits.txt
+            renders/internal_documentation.json
+            renders/internal_documentation.txt
+            renders/research_sources.md
             renders/drive_receipt.json
             renders/render_plan.json
             src/episodes/renderEpisode.json

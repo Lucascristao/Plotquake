@@ -1,0 +1,16 @@
+{
+  "createdAt": "2026-10-17",
+  "purpose": "Independent photographic cover for Why NASA Brought Two Satellites Back to Earth",
+  "mode": "Built-in image generation: photographic compositing with an authentic reference; deterministic typography with the repository's Anton Regular font",
+  "reference": {
+    "author": "NASA / Johnson Space Center",
+    "imageId": "51A-39-063",
+    "url": "https://www.nasa.gov/wp-content/uploads/2024/11/sts-51a-22-allen-and-gardner-eva2-nov-14-1984-51a-39-063.jpg",
+    "rightsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+  },
+  "prompt": "Use case: compositing. Asset: premium photographic YouTube documentary thumbnail base for Plotquake, landscape 16:9 at 1280x720 or higher same ratio. Input image 1 is an authentic NASA STS-51A photograph and the precise source insert for the astronauts, their spacesuits, the manipulator arm and the real recovered satellite. Create an independently designed photographic composition from this still photograph, not a video frame. Reframe and composite the real subjects to place both astronauts and the satellite as one physically coherent unit on the RIGHT 60 percent, making them large enough to read on a small screen. Keep the left 40 percent very dark nearly black with clean usable space for large typography that will be added later. Preserve the physical proportions and exact details of suits, helmets, equipment, hand positions, two astronauts, the arm and the satellite. No redesigning suits, no adding random astronauts, no new satellite, no science-fiction machinery. Subtle real-looking Earth horizon across bottom, deep black orbital background, restrained warm golden amber #E5A158 light accent on existing gold satellite foil, photographic documentary appearance and restrained contrast. Preserve believable original lighting. Avoid neon halos, flames, explosions, excessive atmospheric glow, poster art and fake text. NO added text, NO logos, NO watermarks. The small authentic hand-held For Sale sign may remain as photographed if legible; don't invent additional lettering. Only visual composition/background extension/limited tonal finishing. Left-side dark negative space is essential for two lines of Anton typography.",
+  "base": "public/assets/images/sts51a-thumbnail-base.png",
+  "final": "public/assets/images/sts51a-thumbnail.png",
+  "typography": {"font": "Anton Regular", "weight": 400, "copy": ["FOR", "SALE"], "colors": ["#FFFFFF", "#E5A158"], "script": "scripts/build_sts51a_thumbnail.cjs"},
+  "scope": "Cover artwork only. It is not historical evidence inserted into the film. All selected in-film mission photographs, footage and documents retain their separate source records."
+}

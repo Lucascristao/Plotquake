@@ -87,9 +87,24 @@ def resolve_score(source: dict, timeline: dict) -> tuple[list[Segment], int, flo
     if score.get("sampleRate", SAMPLE_RATE) != SAMPLE_RATE:
         raise ValueError("The score uses 48000 Hz PCM.")
     mix_volume = _finite(score.get("volume", .72), "score.volume")
+    credits = timeline.get("endCredits") or {}
+    story_frames = _frame(credits.get("startFrame", frames), "Story duration")
+    story_total = round(story_frames * SAMPLE_RATE / fps)
+
+    def with_credits(segments: list[Segment]) -> list[Segment]:
+        if story_total < total:
+            tail = score.get("endCredits") or {}
+            profile = tail.get("profile", segments[-1].profile)
+            if profile not in PROFILES:
+                raise ValueError(f"Unknown end-credit score profile: {profile}.")
+            segments.append(Segment(story_total, total, profile,
+                                    _finite(tail.get("gain", 0), "End-credit score gain"),
+                                    _finite(tail.get("pluck", .2), "End-credit score pluck")))
+        return segments
+
     raw_segments = score.get("segments")
     if not raw_segments:
-        return [Segment(0, total, "finance")], total, mix_volume
+        return with_credits([Segment(0, story_total, "finance")]), total, mix_volume
 
     scenes = {}
     order = []
@@ -123,9 +138,9 @@ def resolve_score(source: dict, timeline: dict) -> tuple[list[Segment], int, flo
         if segment.start_sample != cursor:
             raise ValueError("Score segments must cover the timeline without gaps or overlaps; use gain 0 for deliberate silence.")
         cursor = segment.end_sample
-    if cursor != total:
-        raise ValueError("Score segments do not reach the measured timeline end.")
-    return segments, total, mix_volume
+    if cursor != story_total:
+        raise ValueError("Score segments do not reach the measured story end.")
+    return with_credits(segments), total, mix_volume
 
 
 def _pad(times: np.ndarray, chord: list[float]) -> np.ndarray:

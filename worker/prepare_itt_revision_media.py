@@ -27,7 +27,13 @@ def prepare_document(original, destination, asset):
         blocks = [b for b in page.get_text("blocks") if len(b) > 4 and str(b[4]).strip()]
         anchors = asset.get("cropTextAnchors", [])
         selected = [b for b in blocks if any(normalize(a) in normalize(str(b[4])) for a in anchors)]
-        if selected:
+        if asset.get("cropRect"):
+            values = [float(value) for value in asset["cropRect"]]
+            if len(values) != 4 or not 0 <= values[0] < values[2] <= 1 or not 0 <= values[1] < values[3] <= 1:
+                raise ValueError("Document cropRect must be a normalized rectangle inside its actual page.")
+            clip = fitz.Rect(values[0] * page.rect.width, values[1] * page.rect.height,
+                             values[2] * page.rect.width, values[3] * page.rect.height)
+        elif selected:
             clip = fitz.Rect(selected[0][:4])
             for block in selected[1:]:
                 clip |= fitz.Rect(block[:4])

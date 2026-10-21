@@ -91,6 +91,16 @@ class DocumentaryScoreTests(unittest.TestCase):
                 write_score(Path(directory) / "invalid.wav", [Segment(0, SAMPLE_RATE, "finance")],
                             SAMPLE_RATE, "limit", chunk_seconds=17)
 
+    def test_credit_tail_extends_music_without_extending_scene_ranges(self):
+        source, timeline = self.fixture()
+        timeline["endCredits"] = {"startFrame": 271, "durationInFrames": 90}
+        timeline["durationInFrames"] = 361
+        source["score"]["endCredits"] = {"profile": "personal_finance", "gain": .45, "pluck": .15}
+        segments, total, _ = resolve_score(source, timeline)
+        self.assertEqual(segments[-2].end_sample, 271 * 1600)
+        self.assertEqual(segments[-1], Segment(271 * 1600, 361 * 1600, "personal_finance", .45, .15))
+        self.assertEqual(total, 361 * 1600)
+
 
 if __name__ == "__main__":
     unittest.main()

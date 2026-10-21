@@ -107,6 +107,21 @@ class AudioDirectionTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "full measured timeline"):
                 prepare_direction(source, copy.deepcopy(timeline), directory / "short.wav", directory / "bad.wav", directory)
 
+    def test_full_credit_tail_is_preserved_without_an_extra_pause_boost(self):
+        with tempfile.TemporaryDirectory(dir=self.root) as temporary:
+            directory = Path(temporary)
+            source, timeline = self.fixture(directory)
+            timeline["episode"]["endCredits"] = {"startFrame": 180, "durationInFrames": 120}
+            timeline["episode"]["durationInFrames"] = 300
+            write_wav(directory / "raw-score.wav", np.full((10 * SAMPLE_RATE, 2), .1), SAMPLE_RATE)
+            report = prepare_direction(source, timeline, directory / "raw-score.wav", directory / "directed.wav", directory)
+            self.assertEqual(report["sampleCount"], 10 * SAMPLE_RATE)
+            self.assertTrue(all(pause["toSeconds"] <= 6 for pause in report["pauses"]))
+            directed, rate = read_pcm16(directory / "directed.wav")
+            raw, _ = read_pcm16(directory / "raw-score.wav")
+            self.assertEqual(len(directed), 10 * SAMPLE_RATE)
+            self.assertAlmostEqual(float(directed[8 * rate, 0] / raw[8 * rate, 0]), .72, delta=.001)
+
 
 if __name__ == "__main__":
     unittest.main()

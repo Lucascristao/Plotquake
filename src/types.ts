@@ -84,6 +84,15 @@ export type DocumentaryAct = {
   scenes: DocumentaryScene[];
 };
 
+export type DocumentaryEndCredits = {
+  startFrame: number;
+  durationInFrames: number;
+  fadeInFrames: number;
+  fadeOutFrames: number;
+  cards: {from: number; durationInFrames: number; heading: string;
+    entries: {lines: string[]}[]}[];
+};
+
 export type DocumentaryEpisode = {
   id: string;
   title: string;
@@ -100,6 +109,8 @@ export type DocumentaryEpisode = {
     effects?: {src: string; from: number; durationInFrames?: number; volume?: number}[];
   };
   acts: DocumentaryAct[];
+  /** Explicit opt-in; follows the story and never contributes to spoken duration. */
+  endCredits?: DocumentaryEndCredits;
   sources?: unknown[];
   metadata?: Record<string, unknown>;
 };

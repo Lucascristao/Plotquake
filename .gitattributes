@@ -1,0 +1,2 @@
+# Preserve original archival documents byte-for-byte across Windows and CI.
+*.pdf binary

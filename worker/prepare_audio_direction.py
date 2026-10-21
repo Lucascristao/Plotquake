@@ -161,7 +161,10 @@ def plan_direction(source: dict, timeline: dict, public_root: Path = PUBLIC_ROOT
     merged = merge_windows(windows)
     pauses = []
     cursor = 0.
-    for first, last in merged + [(duration, duration)]:
+    # End credits have their own authored musical tail. Their lack of narration
+    # must not trigger a prolonged pause boost on top of that arrangement.
+    story_duration = (episode.get("endCredits") or {}).get("startFrame", frames) / fps
+    for first, last in merged + [(story_duration, story_duration)]:
         if first - cursor >= pause_minimum - 1e-9:
             pauses.append({"fromSeconds": cursor, "toSeconds": first,
                            "durationSeconds": first - cursor})

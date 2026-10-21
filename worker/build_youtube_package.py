@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 from synthesize_narration import find_ffmpeg_executable, write_json
+from publication import clean_publication, public_description, write_clean_delivery
 
 
 def timestamp(seconds: int) -> str:
@@ -14,6 +15,8 @@ def timestamp(seconds: int) -> str:
 
 
 def make_package(source: dict, timeline: dict) -> dict:
+    if clean_publication(source):
+        return {"title": source["title"], "description": public_description(source), "tags": source.get("tags", [])}
     fps = timeline["fps"]
     duration = timeline["durationInFrames"] / fps
     chapters = []
@@ -71,6 +74,10 @@ def main() -> None:
     subprocess.run(command, check=True)
     package = make_package(source, timeline)
     write_json(destination / "youtube_package.json", package)
+    if clean_publication(source):
+        write_clean_delivery(source, timeline, destination, package)
+        print("[Package ready] Dedicated 1280x720 thumbnail, clean publication copy and separate production documentation.")
+        return
     source_text = "\n".join(f"[{item.get('id', index + 1)}] {item['title']}\n{item['url']}\n{item.get('note', '')}"
                              for index, item in enumerate(package["sources"]))
     text = (f"TITLE\n{package['title']}\n\nDESCRIPTION\n{package['description']}\n\n"

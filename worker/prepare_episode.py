@@ -18,6 +18,9 @@ def main():
     parser.add_argument("--media-only", action="store_true", help="Prepare selected source assets before synthesis.")
     args = parser.parse_args()
     source = json.loads(args.episode.read_text(encoding="utf-8-sig"))
+    if source.get("archivalMediaPlan"):
+        subprocess.run([sys.executable, "worker/prepare_archival_media.py", "--plan", source["archivalMediaPlan"],
+                        "--cache-dir", f"out/media-cache/{safe_id(source['id'])}"], check=True)
     if source.get("mediaPreparationPlan"):
         subprocess.run([sys.executable, "worker/prepare_itt_revision_media.py",
                         "--plan", str(source["mediaPreparationPlan"]),
@@ -55,6 +58,12 @@ def main():
                         "--timeline", str(args.output), "--score", str(score), "--output", str(directed)], check=True)
     subprocess.run([sys.executable, "worker/build_youtube_package.py", "--episode", str(args.episode),
                     "--render-input", str(args.output)], check=True)
+    if source.get("researchDocument"):
+        import shutil
+        research = Path(source["researchDocument"])
+        if not research.is_file():
+            raise FileNotFoundError(f"Episode research document is missing: {research}")
+        shutil.copyfile(research, Path("renders/research_sources.md"))
 
 
 if __name__ == "__main__":

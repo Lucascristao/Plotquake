@@ -6,6 +6,7 @@ import json
 import math
 from pathlib import Path
 from synthesize_narration import cache_fingerprint, cached_scene, safe_id, write_json
+from publication import apply_publication
 
 FPS = 30
 
@@ -260,7 +261,8 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
         for scene in act["scenes"]:
             scene_id = safe_id(scene["id"])
             path = audio_dir / f"{scene_id}.wav"
-            fingerprint = cache_fingerprint(scene["narration"].strip(), source.get("voice", "Charon"), float(source.get("pitchSemitones", -1)))
+            fingerprint = cache_fingerprint(scene["narration"].strip(), source.get("voice", "Charon"),
+                                            float(source.get("pitchSemitones", -1)), source.get("narrationStyle"))
             audio = cached_scene(path, fingerprint)
             if audio is None:
                 raise ValueError(f"Narration missing or stale for {scene_id}; run synthesize_narration.py --episode first.")
@@ -314,7 +316,13 @@ def build_episode(source: dict, catalog: dict, audio_dir: Path, public_root: Pat
     result["metadata"]["mediaUsage"] = usage
     result["mediaCredits"] = list(media_credits.values()) + copy.deepcopy(source.get("thumbnailCredits", []))
     result["chapters"] = sorted(result["chapters"], key=lambda item: item["startFrame"])
-    return result
+    if (source.get("endCredits") or {}).get("enabled") is True and source.get("score"):
+        # The next preparation steps write this exact continuous master. Resolve
+        # its credit now, so adding a music attribution cannot change film length
+        # after the score has already been synthesized.
+        result["audio"]["music"] = {"src": f"assets/audio/{safe_id(source['id'])}-score-directed.wav",
+                                    "volume": 1, "loop": False, "directed": True}
+    return apply_publication(source, result, catalog)
 
 
 def main() -> None:

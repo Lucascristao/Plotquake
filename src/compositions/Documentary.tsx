@@ -7,6 +7,7 @@ import {ActMarker} from '../components/ActMarker';
 import {BrollPlayer} from '../components/BrollPlayer';
 import {MediaCaption} from '../components/MediaCaption';
 import {NewspaperPop} from '../components/NewspaperPop';
+import {EndCredits} from '../components/EndCredits';
 import {resolveMedia} from '../media';
 import type {DocumentaryEpisode, DocumentaryScene, DocumentaryShot} from '../types';
 
@@ -93,6 +94,11 @@ export const Documentary = ({episode}: DocumentaryProps) => {
   })));
   const isVoiced = sceneWindows.some((scene) => scene.voiced && frame >= scene.from && frame < scene.until);
   const musicCue = music?.cues?.filter((cue) => frame >= cue.from && frame < cue.from + cue.durationInFrames).at(-1);
+  const credits = episode.endCredits;
+  const storyOpacity = credits
+    ? interpolate(frame, [credits.startFrame - fps, credits.startFrame], [1, 0],
+      {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})
+    : 1;
 
   return (
     <AbsoluteFill style={{backgroundColor: '#05070c', fontFamily: 'Arial, Helvetica, sans-serif'}}>
@@ -105,7 +111,7 @@ export const Documentary = ({episode}: DocumentaryProps) => {
         durationInFrames={effect.durationInFrames}>
         <Audio src={resolveMedia(effect.src)} volume={effect.volume ?? 0.16} />
       </Sequence>)}
-      {episode.acts.map((act, index) => {
+      <AbsoluteFill style={{opacity: storyOpacity}}>{episode.acts.map((act, index) => {
         const markerFrom = act.markerFrom ?? (index === 0 ? Math.min(14 * fps, Math.floor(act.durationInFrames / 3)) : 15);
         const markerDuration = Math.max(1, Math.min(135, act.durationInFrames - markerFrom));
         return <Sequence key={act.id} name={act.actTitle} from={act.startFrame} durationInFrames={act.durationInFrames}>
@@ -119,16 +125,19 @@ export const Documentary = ({episode}: DocumentaryProps) => {
               durationInFrames={markerDuration} />
           </Sequence>
         </Sequence>;
-      })}
+      })}</AbsoluteFill>
+      {credits && <Sequence name="End credits" from={credits.startFrame} durationInFrames={credits.durationInFrames}>
+        <EndCredits credits={credits} />
+      </Sequence>}
       {/* Subtle framing and channel signature, consistent across all sources. */}
-      <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {(!credits || frame < credits.startFrame) && <AbsoluteFill style={{pointerEvents: 'none', opacity: storyOpacity}}>
         <div style={{position: 'absolute', top: 0, left: 0, right: 0, height: 48, background: '#020305'}} />
         <div style={{position: 'absolute', bottom: 0, left: 0, right: 0, height: 48, background: '#020305'}} />
         <div style={{position: 'absolute', top: 80, right: 80, color: 'rgba(255,255,255,0.58)',
           fontSize: 18, letterSpacing: 4, fontWeight: 700, textShadow: '0 1px 8px #000'}}>
           PLOT<span style={{color: 'rgba(229,161,88,0.85)'}}>QUAKE</span>
         </div>
-      </AbsoluteFill>
+      </AbsoluteFill>}
     </AbsoluteFill>
   );
 };

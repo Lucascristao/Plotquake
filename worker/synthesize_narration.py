@@ -25,6 +25,27 @@ Sustain quiet tension rather than trailer shouting. Speak at approximately 145 w
 breaths and short dramatic pauses before revelations, changes of fortune and major figures. Keep precisely
 the same voice, tone and microphone distance throughout. Direction is not part of the script to be spoken.
 """
+DYNAMIC_NARRATION_STYLE = "documentary-dynamic-v1"
+DYNAMIC_VOICE_PROMPT = """You are the male narrator of a premium Plotquake documentary.
+Read the provided script exactly, in native United States English. Never introduce yourself, comment on the text,
+summarize it, or add any words. Use the selected Charon voice with a warm, resonant chest baritone: grounded,
+clear and authoritative. Keep the same vocal identity, timbre and microphone distance throughout the episode.
+Let pace, emphasis and emotional intensity follow the meaning of each passage. Move naturally between curiosity,
+concentration, uncertainty, discovery, relief and reflection when the words support them. Speak fluent, natural
+American English at an overall documentary pace near 145 words per minute, varying sentence rhythm rather than
+giving every sentence the same solemn delivery. Use breaths and pauses where the meaning needs them. Allow
+important consequences to register without adding words, repetitive dramatic pauses or exaggerated danger.
+Avoid constant suspense, trailer delivery, shouting or a compulsory dramatic finish to every paragraph.
+These directions guide performance and must never be spoken as part of the script.
+"""
+
+
+def narration_profile(narration_style: str | None = None) -> tuple[str, str]:
+    if not narration_style:
+        return PROMPT_VERSION, DOCUMENTARY_VOICE_PROMPT
+    if narration_style == DYNAMIC_NARRATION_STYLE:
+        return DYNAMIC_NARRATION_STYLE, DYNAMIC_VOICE_PROMPT
+    raise ValueError(f"Unknown narrationStyle: {narration_style}")
 
 
 def digest(path: Path) -> str:
@@ -82,8 +103,10 @@ def speech_tokens(text: str) -> list[str]:
     return re.findall(r"[a-z0-9]+", text.casefold().replace("’", "'"))
 
 
-def cache_fingerprint(text: str, voice: str, pitch: float) -> str:
-    value = json.dumps([PRIMARY_LIVE_MODEL, voice, pitch, PROMPT_VERSION, text], ensure_ascii=False)
+def cache_fingerprint(text: str, voice: str, pitch: float, narration_style: str | None = None) -> str:
+    prompt_version, _ = narration_profile(narration_style)
+    # Preserve the exact legacy serialization when the episode has no opt-in.
+    value = json.dumps([PRIMARY_LIVE_MODEL, voice, pitch, prompt_version, text], ensure_ascii=False)
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
@@ -103,10 +126,11 @@ def cached_scene(path: Path, fingerprint: str) -> dict | None:
     return None
 
 
-async def receive_narration(client, text: str, voice: str) -> tuple[bytes, str]:
+async def receive_narration(client, text: str, voice: str, narration_style: str | None = None) -> tuple[bytes, str]:
+    _, voice_prompt = narration_profile(narration_style)
     config = {"response_modalities": ["AUDIO"], "output_audio_transcription": {},
               "speech_config": {"voice_config": {"prebuilt_voice_config": {"voice_name": voice}}},
-              "system_instruction": {"parts": [{"text": DOCUMENTARY_VOICE_PROMPT}]}}
+              "system_instruction": {"parts": [{"text": voice_prompt}]}}
     chunks, transcript = [], []
     completed = False
     async with client.aio.live.connect(model=PRIMARY_LIVE_MODEL, config=config) as session:
@@ -141,15 +165,16 @@ async def receive_narration(client, text: str, voice: str) -> tuple[bytes, str]:
     return pcm, spoken
 
 
-async def synthesize_scene(client, text: str, target: Path, voice: str, pitch: float, *, force: bool = False) -> dict:
-    fingerprint = cache_fingerprint(text, voice, pitch)
+async def synthesize_scene(client, text: str, target: Path, voice: str, pitch: float, *, force: bool = False,
+                           narration_style: str | None = None) -> dict:
+    fingerprint = cache_fingerprint(text, voice, pitch, narration_style)
     cached = None if force else cached_scene(target, fingerprint)
     if cached:
         print(f"[Voice cache] {target.stem}: {cached['durationSeconds']:.2f}s", flush=True)
         return cached
     target.parent.mkdir(parents=True, exist_ok=True)
     raw = target.with_name(target.stem + ".raw.wav")
-    raw_fingerprint = cache_fingerprint(text, voice, 0.0)
+    raw_fingerprint = cache_fingerprint(text, voice, 0.0, narration_style)
     raw_cache = None if force else cached_scene(raw, raw_fingerprint)
     if raw_cache:
         transcript = raw_cache.get("transcript", "")
@@ -157,7 +182,7 @@ async def synthesize_scene(client, text: str, target: Path, voice: str, pitch: f
         for attempt in range(1, 7):
             try:
                 print(f"[Voice] {target.stem}: {voice}, {PRIMARY_LIVE_MODEL}, attempt {attempt}/6", flush=True)
-                pcm, transcript = await asyncio.wait_for(receive_narration(client, text, voice), timeout=210)
+                pcm, transcript = await asyncio.wait_for(receive_narration(client, text, voice, narration_style), timeout=210)
                 break
             except Exception as exc:
                 message = str(exc)
@@ -172,8 +197,11 @@ async def synthesize_scene(client, text: str, target: Path, voice: str, pitch: f
             audio.setsampwidth(2)
             audio.setframerate(SAMPLE_RATE)
             audio.writeframes(pcm)
-        write_json(raw.with_suffix(".json"), {"fingerprint": raw_fingerprint, "audioSha256": digest(raw),
-                   "durationSeconds": wav_seconds(raw), "transcript": transcript})
+        raw_metadata = {"fingerprint": raw_fingerprint, "audioSha256": digest(raw),
+                        "durationSeconds": wav_seconds(raw), "transcript": transcript}
+        if narration_style:
+            raw_metadata["narrationStyle"] = narration_style
+        write_json(raw.with_suffix(".json"), raw_metadata)
     # Processing failures reuse this raw scene instead of purchasing another generation.
     if pitch:
         apply_baritone_pitch_calibration(raw, target, pitch)
@@ -182,6 +210,8 @@ async def synthesize_scene(client, text: str, target: Path, voice: str, pitch: f
     metadata = {"fingerprint": fingerprint, "model": PRIMARY_LIVE_MODEL, "voice": voice,
                 "pitchSemitones": pitch, "durationSeconds": wav_seconds(target),
                 "audioSha256": digest(target), "rawAudioSha256": digest(raw), "transcript": transcript}
+    if narration_style:
+        metadata["narrationStyle"] = narration_style
     write_json(target.with_suffix(".json"), metadata)
     print(f"[Voice ready] {target.stem}: {metadata['durationSeconds']:.2f}s", flush=True)
     return metadata
@@ -191,6 +221,8 @@ async def synthesize_episode(episode: dict, output_dir: Path, api_key: str, forc
     from google import genai
     episode_id = safe_id(episode["id"])
     voice, pitch = episode.get("voice", DEFAULT_VOICE), float(episode.get("pitchSemitones", DEFAULT_PITCH_SEMITONES))
+    narration_style = episode.get("narrationStyle")
+    narration_profile(narration_style)
     if voice not in ("Charon", "Fenrir"):
         raise ValueError("Plotquake requires the canonical male Charon/Fenrir voice.")
     jobs = [scene for act in episode["acts"] for scene in act["scenes"]]
@@ -204,7 +236,8 @@ async def synthesize_episode(episode: dict, output_dir: Path, api_key: str, forc
     client, total = genai.Client(api_key=api_key), 0.0
     for number, scene in enumerate(jobs, 1):
         print(f"[Episode {episode_id}] Scene {number}/{len(jobs)}", flush=True)
-        result = await synthesize_scene(client, scene["narration"].strip(), output_dir / f"{scene['id']}.wav", voice, pitch, force=force)
+        result = await synthesize_scene(client, scene["narration"].strip(), output_dir / f"{scene['id']}.wav", voice, pitch,
+                                        force=force, narration_style=narration_style)
         total += result["durationSeconds"]
     print(f"[Voice complete] {len(jobs)} scenes, {total:.2f}s ({total / 60:.2f} minutes).", flush=True)
 
