@@ -103,6 +103,12 @@ def speech_tokens(text: str) -> list[str]:
     return re.findall(r"[a-z0-9]+", text.casefold().replace("’", "'"))
 
 
+def transcript_has_script_ending(text: str, spoken: str) -> bool:
+    """Ignore token boundaries in the ending, including M M U/MMU and hyphens."""
+    ending = "".join(speech_tokens(text)[-4:])
+    return "".join(speech_tokens(spoken)).endswith(ending)
+
+
 def cache_fingerprint(text: str, voice: str, pitch: float, narration_style: str | None = None) -> str:
     prompt_version, _ = narration_profile(narration_style)
     # Preserve the exact legacy serialization when the episode has no opt-in.
@@ -162,6 +168,8 @@ async def receive_narration(client, text: str, voice: str, narration_style: str 
         similarity = SequenceMatcher(None, speech_tokens(text), speech_tokens(spoken), autojunk=False).ratio()
         if similarity < .88:
             raise RuntimeError(f"Narration differs from the script (similarity {similarity:.2f}).")
+        if narration_style == DYNAMIC_NARRATION_STYLE and not transcript_has_script_ending(text, spoken):
+            raise RuntimeError("Narration is missing or differs at the script ending; retrying this scene.")
     return pcm, spoken
 
 

@@ -1414,8 +1414,8 @@
       "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Green computer instrument display",
       "caption": "",
       "startSeconds": 549,
-      "endSeconds": 556,
-      "changes": "Silent excerpt of original interval 549–556s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+      "endSeconds": 555.0,
+      "changes": "Silent excerpt of original interval 549–555s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
       "editorialNotes": [],
       "identityVerification": "Candidate interval inside matching source-proxy keyframes whose originalPTS were preserved. Source time is verified at sampled endpoints/interior; full continuous playback and every-frame cut inspection were not performed. Inspect chosen crop in cloud before final use.",
       "display": {
@@ -1425,7 +1425,8 @@
         "zoomStart": 1,
         "zoomEnd": 1,
         "muted": true
-      }
+      },
+      "reviewNote": "Tail trimmed conservatively before an internal cut observed in the prepared 15 fps source proxy; original-master cut precision has not been claimed."
     },
     {
       "key": "sat_p_empty_bay",
@@ -1745,8 +1746,8 @@
       "title": "STS 41-C POST FLIGHT PRESS CONFERENCE · Nelson in MMU approaching Solar Maximum Mission satellite",
       "caption": "",
       "startSeconds": 377,
-      "endSeconds": 387,
-      "changes": "Silent excerpt of original interval 377–387s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+      "endSeconds": 383.8,
+      "changes": "Silent excerpt of original interval 377–383.8s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
       "editorialNotes": [
         "Actual STS-41C and SolarMax flight sequence confirmed by NASA/JSC metadata; MMU astronaut and satellite visible in preserved-PTS keyframes.",
         "Use original NASA film silently under narration; verify chosen crop before final use."
@@ -1759,7 +1760,8 @@
         "zoomStart": 1,
         "zoomEnd": 1,
         "muted": true
-      }
+      },
+      "reviewNote": "Tail trimmed conservatively before an internal cut observed in the prepared 15 fps source proxy; original-master cut precision has not been claimed."
     },
     {
       "key": "sat_p_solmax_approach",
@@ -1911,8 +1913,8 @@
       "title": "STS 51-A POST FLIGHT PRESS CONFERENCE · Fisher checks notes",
       "caption": "",
       "startSeconds": 534,
-      "endSeconds": 541,
-      "changes": "Silent excerpt of original interval 534–541s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+      "endSeconds": 540.0,
+      "changes": "Silent excerpt of original interval 534–540s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
       "editorialNotes": [],
       "identityVerification": "Candidate interval inside matching source-proxy keyframes whose originalPTS were preserved. Source time is verified at sampled endpoints/interior; full continuous playback and every-frame cut inspection were not performed. Inspect chosen crop in cloud before final use.",
       "display": {
@@ -1922,7 +1924,8 @@
         "zoomStart": 1,
         "zoomEnd": 1,
         "muted": true
-      }
+      },
+      "reviewNote": "Tail trimmed conservatively before an internal cut observed in the prepared 15 fps source proxy; original-master cut precision has not been claimed."
     },
     {
       "key": "sat_p_walkout",

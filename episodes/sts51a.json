@@ -343,7 +343,7 @@
         {
           "id": "sat-06",
           "caption": "The shuttle's other direction",
-          "narration": "The shuttle carried a possibility that ordinary satellite launches did not: substantial cargo space on the way home. Returning hardware was part of the larger ambition behind the vehicle. Astronauts could deliver, inspect, repair, and retrieve equipment instead of treating every launch as a one-way shipment.\n\nWestar and Palapa offered a concrete test. They were real commercial assets, already built, already launched, and already in trouble. Bringing them back would require a chain of operations no single machine could perform alone. Controllers would prepare their orbits. Pilots would bring Discovery alongside. Spacewalkers would make the capture. Inside the cabin, another astronaut would operate the arm that moved them into the bay.\n\nThe financial arrangement depended on a flight that already had other work to do. Discovery would launch two new communications satellites. Recovering the stranded pair would be added to that mission. An August agreement provided for reimbursement of additional recovery expenses. NASA's historical chronology records a payment of five and a half million dollars for bringing both satellites home.\n\nThat figure was not the price of an entire shuttle flight. It was the additional recovery payment within a much larger operation. The insurers were buying a chance to recover value from two losses. NASA was combining that chance with an existing mission and a demonstration of what its new vehicle could accomplish.",
+          "narration": "The shuttle carried a possibility that ordinary satellite launches did not: substantial cargo space on the way home. Returning hardware was part of the larger ambition behind the vehicle. Astronauts could deliver, inspect, repair, and retrieve equipment instead of treating every launch as a one-way shipment.\n\nWestar and Palapa offered a concrete test. They were real commercial assets, already built, already launched, and already in trouble. Bringing them back would require a chain of operations no single machine could perform alone. Controllers would prepare their orbits. Pilots would bring Discovery alongside. Spacewalkers would make the capture. Inside the cabin, another astronaut would operate the arm that moved them into the bay.\n\nThe financial arrangement depended on a flight that already had other work to do. Discovery would launch two new communications satellites. Recovering the stranded pair would be added to that mission. The initial August agreement covered Palapa alone, with reimbursement of up to four point eight million dollars for recovery expenses. NASA's historical chronology records a payment of five and a half million dollars for bringing both satellites home.\n\nThat figure was not the price of an entire shuttle flight. It was the additional recovery payment within a much larger operation. The insurers were buying a chance to recover value from two losses. NASA was combining that chance with an existing mission and a demonstration of what its new vehicle could accomplish.",
           "sourceIds": [
             "S25",
             "S17",
@@ -834,7 +834,7 @@
         {
           "id": "sat-14",
           "caption": "Making the targets catchable",
-          "narration": "Controllers also had to make the satellites catchable. Before Discovery arrived, they changed the targets' orbits and slowed their rotation. The rendezvous plan had to accommodate two deliveries and two recoveries on a tight propellant budget. NASA's technical history counts forty-four orbital-change maneuvers.\n\nThe rescue was already taking shape in commands from the ground. By the time an astronaut approached, much of the work that made contact possible would be invisible in the photograph.",
+          "narration": "Controllers also had to make the satellites catchable. Before Discovery arrived, they changed the targets' orbits and slowed their rotation. The rendezvous plan had to accommodate two deliveries and two recoveries on a tight propellant budget. NASA's technical history counts forty-four orbital-change maneuvers.\n\nThe rescue was already taking shape in commands from the ground. None of that work would appear in the famous For Sale photograph.",
           "sourceIds": [
             "S13",
             "S15",
@@ -1486,7 +1486,7 @@
         {
           "id": "sat-24",
           "caption": "November 16 · Coming home",
-          "narration": "With both satellites secured, the crew could prepare to come home. The cradles and restraints would carry them through the shuttle's descent and landing. Discovery closed its payload doors and fired its maneuvering engines.\n\nOn November sixteenth, Hauck landed at Kennedy Space Center after just under eight days in orbit. Workers on Earth would finally be able to inspect hardware that had been inaccessible since February. The recovery had returned a possibility. Refurbishment and another launch still lay ahead.",
+          "narration": "With both satellites secured, the crew could prepare to come home. The cradles and their restraint systems would hold the satellites through descent and landing. Discovery closed its payload doors and fired its maneuvering engines.\n\nOn November sixteenth, Hauck landed at Kennedy Space Center after just under eight days in orbit. Workers on Earth would finally be able to inspect hardware that had been inaccessible since February. The recovery had returned a possibility. Refurbishment and another launch still lay ahead.",
           "sourceIds": [
             "S15",
             "S17",
@@ -2607,13 +2607,13 @@
         "reuseFamily": "onboard-display",
         "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
         "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-        "changes": "Silent excerpt of original interval 549–556s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "changes": "Silent excerpt of original interval 549–555s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
         "screenCredit": [
           "NASA / Johnson Space Center",
           "STS 51-A POST FLIGHT PRESS CONFERENCE"
         ],
         "sourceStartSeconds": 549,
-        "sourceEndSeconds": 556
+        "sourceEndSeconds": 555.0
       },
       {
         "src": "assets/images/sts51a/empty_bay.jpg",
@@ -2973,13 +2973,13 @@
         "reuseFamily": "41c-nelson-solmax",
         "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
         "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-        "changes": "Silent excerpt of original interval 377–387s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "changes": "Silent excerpt of original interval 377–383.8s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
         "screenCredit": [
           "NASA / Johnson Space Center",
           "STS 41-C POST FLIGHT PRESS CONFERENCE"
         ],
         "sourceStartSeconds": 377,
-        "sourceEndSeconds": 387
+        "sourceEndSeconds": 383.8
       },
       {
         "src": "assets/images/sts51a/solmax_approach.jpg",
@@ -3139,13 +3139,13 @@
         "reuseFamily": "fisher-checklist",
         "license": "NASA United States government material; editorial use under NASA media guidelines (not a Creative Commons licence)",
         "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-        "changes": "Silent excerpt of original interval 534–541s; 30 fps H.264 encoding, aspect ratio retained. No synthetic historical imagery.",
+        "changes": "Silent excerpt of original interval 534–540s; 30 fps H.264 encoding, aspect ratio retained. Tail ends before the internal cut identified in the prepared source proxy. No synthetic historical imagery.",
         "screenCredit": [
           "NASA / Johnson Space Center",
           "STS 51-A POST FLIGHT PRESS CONFERENCE"
         ],
         "sourceStartSeconds": 534,
-        "sourceEndSeconds": 541
+        "sourceEndSeconds": 540.0
       },
       {
         "src": "assets/images/sts51a/walkout.jpg",

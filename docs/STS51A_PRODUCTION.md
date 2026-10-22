@@ -62,3 +62,35 @@ input/sampling scope, and does not issue an editorial score or approval. It is
 not a claim of human listening or continuous full-frame-rate viewing. The report
 is kept with internal documentation; failures must remain explicitly unavailable.
 This does not modify or restart the preparation run already in progress.
+
+## Preparation evidence and corrections — October 22, 2026
+
+Preparation run 39678557851 completed successfully. Its initial narration totals
+1,150.0805 seconds (19:10.08); the initial derived film is 1,219.9 seconds with
+69.4 seconds of end credits. These are preparation measurements, not the final
+revised runtime or a Drive delivery.
+
+The 21 returned narration transcripts were compared with the source. Eighteen
+matched word for word after normalization; one differed only in acronym and
+hyphen tokenization. A missing final phrase in sat-14 and a word discrepancy in
+sat-24 led to clearer replacement wording for those scenes. The sat-06 wording
+also now explicitly distinguishes the initial Palapa-only $4.8 million ceiling
+shown in the original agreement from the $5.5 million payment for both vehicles.
+Only these three scenes require fresh narration; the other 18 retain valid audio.
+The opt-in narration style now checks the expected ending of a returned transcript.
+Legacy prompts, fingerprints and behavior remain unchanged.
+
+Eight full-resolution composition samples were inspected, including the financial
+agreement, mission-report passages, the relaunch table, diagrams and end credits.
+The selected text is readable in those samples. Review of prepared source proxies
+identified tails crossing into another shot in v38, v37 and v50. Their source
+intervals are now 549–555, 534–540 and 377–383.8 seconds respectively. Provenance
+records were updated, and the timeline allocator preserves scene duration without
+running past these shorter clips.
+
+The measured initial master is -16.1 LUFS integrated, with 4.1 LU loudness range
+and -0.6 dBTP true peak. Those measurements do not establish subjective musical
+audibility or vocal interpretation. The transcript comparison uses the generator's
+own transcript, not independent ASR. Visual review used composition frames and
+reduced-resolution source proxies; no human or native full-film listening is
+claimed. The final MP4 and its assisted audiovisual observations are still pending.
